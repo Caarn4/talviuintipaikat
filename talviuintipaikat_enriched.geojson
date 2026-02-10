@@ -1,0 +1,7796 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6416,
+          61.1969
+        ]
+      },
+      "properties": {
+        "lipas_id": "516617",
+        "nimi": "Arajärven talviuintipaikka",
+        "kunta": "Akaa",
+        "url": "https://lipas.fi/liikuntapaikat/516617",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.9031,
+          61.192
+        ]
+      },
+      "properties": {
+        "lipas_id": "529917",
+        "nimi": "Toijalan sataman talviuintipaikka",
+        "kunta": "Akaa",
+        "url": "https://lipas.fi/liikuntapaikat/529917",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.8023,
+          63.0688
+        ]
+      },
+      "properties": {
+        "lipas_id": "612275",
+        "nimi": "Suvirannan saunatupa",
+        "kunta": "Alajärvi",
+        "url": "https://lipas.fi/liikuntapaikat/612275",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.2799,
+          64.2286
+        ]
+      },
+      "properties": {
+        "lipas_id": "517994",
+        "nimi": "Linnakallion avantouintipaikka",
+        "kunta": "Alavieska",
+        "url": "https://lipas.fi/liikuntapaikat/517994",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.451,
+          64.2033
+        ]
+      },
+      "properties": {
+        "lipas_id": "517995",
+        "nimi": "Petäjälammen talviuintipaikka",
+        "kunta": "Alavieska",
+        "url": "https://lipas.fi/liikuntapaikat/517995",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6101,
+          62.5754
+        ]
+      },
+      "properties": {
+        "lipas_id": "512889",
+        "nimi": "Harrinrannan avantosauna",
+        "kunta": "Alavus",
+        "url": "https://lipas.fi/liikuntapaikat/512889",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.2967,
+          62.6845
+        ]
+      },
+      "properties": {
+        "lipas_id": "602906",
+        "nimi": "Hukkatuvan rantasauna",
+        "kunta": "Alavus",
+        "url": "https://lipas.fi/liikuntapaikat/602906",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.8658,
+          62.7089
+        ]
+      },
+      "properties": {
+        "lipas_id": "512900",
+        "nimi": "Vetola",
+        "kunta": "Alavus",
+        "url": "https://lipas.fi/liikuntapaikat/512900",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.5454,
+          61.1794
+        ]
+      },
+      "properties": {
+        "lipas_id": "98525",
+        "nimi": "Vääksyn avantouintipaikka",
+        "kunta": "Asikkala",
+        "url": "https://lipas.fi/liikuntapaikat/98525",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.5996,
+          60.5396
+        ]
+      },
+      "properties": {
+        "lipas_id": "612276",
+        "nimi": "Tuomirannan talviuintipaikka",
+        "kunta": "Askola",
+        "url": "https://lipas.fi/liikuntapaikat/612276",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.8653,
+          69.0163
+        ]
+      },
+      "properties": {
+        "lipas_id": "612277",
+        "nimi": "Lapland Hotels Kilpiksen talviuintipaikka",
+        "kunta": "Enontekiö",
+        "url": "https://lipas.fi/liikuntapaikat/612277",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.6925,
+          60.1281
+        ]
+      },
+      "properties": {
+        "lipas_id": "615814",
+        "nimi": "Hanikan talviuintipaikka (Suinonsalmi)",
+        "kunta": "Espoo",
+        "url": "https://lipas.fi/liikuntapaikat/615814",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.7733,
+          60.154
+        ]
+      },
+      "properties": {
+        "lipas_id": "516600",
+        "nimi": "Haukilahden talviuintipaikka (Mellsten)",
+        "kunta": "Espoo",
+        "url": "https://lipas.fi/liikuntapaikat/516600",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.5932,
+          60.1622
+        ]
+      },
+      "properties": {
+        "lipas_id": "516547",
+        "nimi": "Kallvikin talviuintipaikka",
+        "kunta": "Espoo",
+        "url": "https://lipas.fi/liikuntapaikat/516547",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.6262,
+          60.1533
+        ]
+      },
+      "properties": {
+        "lipas_id": "516657",
+        "nimi": "Kivenlahden talviuintipaikka",
+        "kunta": "Espoo",
+        "url": "https://lipas.fi/liikuntapaikat/516657",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.6496,
+          60.135
+        ]
+      },
+      "properties": {
+        "lipas_id": "516597",
+        "nimi": "Klobbenin talviuintipaikka (Soukka)",
+        "kunta": "Espoo",
+        "url": "https://lipas.fi/liikuntapaikat/516597",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.8292,
+          60.2034
+        ]
+      },
+      "properties": {
+        "lipas_id": "98522",
+        "nimi": "Laajalahden talviuintipaikka",
+        "kunta": "Espoo",
+        "url": "https://lipas.fi/liikuntapaikat/98522",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.7497,
+          60.2464
+        ]
+      },
+      "properties": {
+        "lipas_id": "516559",
+        "nimi": "Laaksolahden talviuintipaikka",
+        "kunta": "Espoo",
+        "url": "https://lipas.fi/liikuntapaikat/516559",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.8325,
+          60.1689
+        ]
+      },
+      "properties": {
+        "lipas_id": "609137",
+        "nimi": "Laguuni Vesiurheilukeskus, Talviuintipaikka",
+        "kunta": "Espoo",
+        "url": "https://lipas.fi/liikuntapaikat/609137",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.7541,
+          60.1501
+        ]
+      },
+      "properties": {
+        "lipas_id": "516592",
+        "nimi": "Matinkylän talviuintipaikka",
+        "kunta": "Espoo",
+        "url": "https://lipas.fi/liikuntapaikat/516592",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.659,
+          60.2417
+        ]
+      },
+      "properties": {
+        "lipas_id": "516596",
+        "nimi": "Oittaan talviuintipaikka",
+        "kunta": "Espoo",
+        "url": "https://lipas.fi/liikuntapaikat/516596",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.6365,
+          60.1458
+        ]
+      },
+      "properties": {
+        "lipas_id": "609204",
+        "nimi": "Tyrskyvuoren talviuintipaikka (Laurinlahti)",
+        "kunta": "Espoo",
+        "url": "https://lipas.fi/liikuntapaikat/609204",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.8092,
+          60.1682
+        ]
+      },
+      "properties": {
+        "lipas_id": "606466",
+        "nimi": "Westendin talviuintipaikka",
+        "kunta": "Espoo",
+        "url": "https://lipas.fi/liikuntapaikat/606466",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.1636,
+          61.0775
+        ]
+      },
+      "properties": {
+        "lipas_id": "529934",
+        "nimi": "Kiperin talviuintipaikka",
+        "kunta": "Eura",
+        "url": "https://lipas.fi/liikuntapaikat/529934",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.5656,
+          61.3422
+        ]
+      },
+      "properties": {
+        "lipas_id": "612279",
+        "nimi": "Laitakarin Merihelmen talviuintipaikka",
+        "kunta": "Eurajoki",
+        "url": "https://lipas.fi/liikuntapaikat/612279",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.547,
+          61.3889
+        ]
+      },
+      "properties": {
+        "lipas_id": "612278",
+        "nimi": "Verkkorannan talviuintipaikka",
+        "kunta": "Eurajoki",
+        "url": "https://lipas.fi/liikuntapaikat/612278",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.3039,
+          63.3356
+        ]
+      },
+      "properties": {
+        "lipas_id": "612281",
+        "nimi": "Kivijärven talviuintipaikka",
+        "kunta": "Evijärvi",
+        "url": "https://lipas.fi/liikuntapaikat/612281",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6319,
+          60.8255
+        ]
+      },
+      "properties": {
+        "lipas_id": "518745",
+        "nimi": "Linikkalanlammin talviuintipaikka",
+        "kunta": "Forssa",
+        "url": "https://lipas.fi/liikuntapaikat/518745",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.3149,
+          63.7462
+        ]
+      },
+      "properties": {
+        "lipas_id": "512583",
+        "nimi": "Haapajärven avantouintipaikka",
+        "kunta": "Haapajärvi",
+        "url": "https://lipas.fi/liikuntapaikat/512583",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.0984,
+          63.45
+        ]
+      },
+      "properties": {
+        "lipas_id": "512621",
+        "nimi": "Halsuan Helmen talviuintipaikka",
+        "kunta": "Halsua",
+        "url": "https://lipas.fi/liikuntapaikat/512621",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1834,
+          60.5596
+        ]
+      },
+      "properties": {
+        "lipas_id": "529918",
+        "nimi": "Rampsin avantouintipaikka",
+        "kunta": "Hamina",
+        "url": "https://lipas.fi/liikuntapaikat/529918",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.4303,
+          62.389
+        ]
+      },
+      "properties": {
+        "lipas_id": "612282",
+        "nimi": "Seurakunnan rantasaunan talviuintipaikka",
+        "kunta": "Hankasalmi",
+        "url": "https://lipas.fi/liikuntapaikat/612282",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.9713,
+          59.8199
+        ]
+      },
+      "properties": {
+        "lipas_id": "512711",
+        "nimi": "Tehtaanniemen talviuintipaikka",
+        "kunta": "Hanko",
+        "url": "https://lipas.fi/liikuntapaikat/512711",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.02,
+          61.5686
+        ]
+      },
+      "properties": {
+        "lipas_id": "530026",
+        "nimi": "Jokirannan talviuimapaikka",
+        "kunta": "Hartola",
+        "url": "https://lipas.fi/liikuntapaikat/530026",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.4024,
+          61.0652
+        ]
+      },
+      "properties": {
+        "lipas_id": "612309",
+        "nimi": "Pappilanniemen talviuintipaikka",
+        "kunta": "Hattula",
+        "url": "https://lipas.fi/liikuntapaikat/612309",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.7711,
+          60.8243
+        ]
+      },
+      "properties": {
+        "lipas_id": "513518",
+        "nimi": "INRA-majan talviuintipaikka",
+        "kunta": "Hausjärvi",
+        "url": "https://lipas.fi/liikuntapaikat/513518",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.9991,
+          60.826
+        ]
+      },
+      "properties": {
+        "lipas_id": "513514",
+        "nimi": "Valkjärven leirialueen talviuintipaikka",
+        "kunta": "Hausjärvi",
+        "url": "https://lipas.fi/liikuntapaikat/513514",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.7488,
+          60.8059
+        ]
+      },
+      "properties": {
+        "lipas_id": "513508",
+        "nimi": "Ykslammin talviuintipaikka",
+        "kunta": "Hausjärvi",
+        "url": "https://lipas.fi/liikuntapaikat/513508",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.0247,
+          61.2026
+        ]
+      },
+      "properties": {
+        "lipas_id": "513521",
+        "nimi": "Kylpylän talviuintipaikka",
+        "kunta": "Heinola",
+        "url": "https://lipas.fi/liikuntapaikat/513521",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.638,
+          62.4385
+        ]
+      },
+      "properties": {
+        "lipas_id": "518301",
+        "nimi": "Kermanrannan talviuintipaikka",
+        "kunta": "Heinävesi",
+        "url": "https://lipas.fi/liikuntapaikat/518301",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.6455,
+          62.5414
+        ]
+      },
+      "properties": {
+        "lipas_id": "611910",
+        "nimi": "Varirannan kyläsaunan talviuintipaikka",
+        "kunta": "Heinävesi",
+        "url": "https://lipas.fi/liikuntapaikat/611910",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.9575,
+          60.167
+        ]
+      },
+      "properties": {
+        "lipas_id": "605720",
+        "nimi": "Allas Pool / Merikylpylä / Talviuinti",
+        "kunta": "Helsinki",
+        "url": "https://lipas.fi/liikuntapaikat/605720",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.1598,
+          60.202
+        ]
+      },
+      "properties": {
+        "lipas_id": "609503",
+        "nimi": "Aurinkolahden talviuintipaikka / uintilaituri",
+        "kunta": "Helsinki",
+        "url": "https://lipas.fi/liikuntapaikat/609503",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.0602,
+          60.1597
+        ]
+      },
+      "properties": {
+        "lipas_id": "605737",
+        "nimi": "Furuvik Rantasauna",
+        "kunta": "Helsinki",
+        "url": "https://lipas.fi/liikuntapaikat/605737",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.1297,
+          60.1983
+        ]
+      },
+      "properties": {
+        "lipas_id": "609502",
+        "nimi": "Iso Kallahden talviuintipaikka (Vuosaari-Seura)",
+        "kunta": "Helsinki",
+        "url": "https://lipas.fi/liikuntapaikat/609502",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.9639,
+          60.1692
+        ]
+      },
+      "properties": {
+        "lipas_id": "98516",
+        "nimi": "Katajanokan talviuintipaikka (KJS)",
+        "kunta": "Helsinki",
+        "url": "https://lipas.fi/liikuntapaikat/98516",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.0116,
+          60.165
+        ]
+      },
+      "properties": {
+        "lipas_id": "609928",
+        "nimi": "Kruunuvuorenrannan talviuintipaikka (Laajasalo-Degerö Seura)",
+        "kunta": "Helsinki",
+        "url": "https://lipas.fi/liikuntapaikat/609928",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.9307,
+          60.1521
+        ]
+      },
+      "properties": {
+        "lipas_id": "605721",
+        "nimi": "Löyly Helsinki",
+        "kunta": "Helsinki",
+        "url": "https://lipas.fi/liikuntapaikat/605721",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.0765,
+          60.1985
+        ]
+      },
+      "properties": {
+        "lipas_id": "514391",
+        "nimi": "Marjaniemen talviuintipaikka (Meriuimarit)",
+        "kunta": "Helsinki",
+        "url": "https://lipas.fi/liikuntapaikat/514391",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.8577,
+          60.2004
+        ]
+      },
+      "properties": {
+        "lipas_id": "514392",
+        "nimi": "Munkkiniemen talviuintipaikka (Munkkiniemen Avantouimarit ry)",
+        "kunta": "Helsinki",
+        "url": "https://lipas.fi/liikuntapaikat/514392",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.8991,
+          60.1716
+        ]
+      },
+      "properties": {
+        "lipas_id": "98530",
+        "nimi": "Ouritsaaren talviuintipaikka (TUK)",
+        "kunta": "Helsinki",
+        "url": "https://lipas.fi/liikuntapaikat/98530",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.9833,
+          60.2281
+        ]
+      },
+      "properties": {
+        "lipas_id": "514393",
+        "nimi": "Pikkukosken talviuintipaikka (Uintiseura Kuhat)",
+        "kunta": "Helsinki",
+        "url": "https://lipas.fi/liikuntapaikat/514393",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.9088,
+          60.1806
+        ]
+      },
+      "properties": {
+        "lipas_id": "513811",
+        "nimi": "Rajasaaren talviuintipaikka (HKK-talviuimarit)",
+        "kunta": "Helsinki",
+        "url": "https://lipas.fi/liikuntapaikat/513811",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.116,
+          60.2077
+        ]
+      },
+      "properties": {
+        "lipas_id": "514394",
+        "nimi": "Rastilan talviuintipaikka (Helsingin Latu ja Polku ry)",
+        "kunta": "Helsinki",
+        "url": "https://lipas.fi/liikuntapaikat/514394",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.8791,
+          60.1823
+        ]
+      },
+      "properties": {
+        "lipas_id": "514395",
+        "nimi": "Seurasaaren talviuintipaikka (Seurasaaren uimarit)",
+        "kunta": "Helsinki",
+        "url": "https://lipas.fi/liikuntapaikat/514395",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.9121,
+          60.1792
+        ]
+      },
+      "properties": {
+        "lipas_id": "514396",
+        "nimi": "Soutustadion / Talviuintipaikka (SMARK)",
+        "kunta": "Helsinki",
+        "url": "https://lipas.fi/liikuntapaikat/514396",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.0402,
+          60.1858
+        ]
+      },
+      "properties": {
+        "lipas_id": "514397",
+        "nimi": "Tuorinniemen talviuintipaikka (Herttoniemen hylkeet)",
+        "kunta": "Helsinki",
+        "url": "https://lipas.fi/liikuntapaikat/514397",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.9533,
+          60.1535
+        ]
+      },
+      "properties": {
+        "lipas_id": "514398",
+        "nimi": "Uunisaaren talviuintipaikka (Uunisaaren talviuintiseura)",
+        "kunta": "Helsinki",
+        "url": "https://lipas.fi/liikuntapaikat/514398",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.1183,
+          60.2148
+        ]
+      },
+      "properties": {
+        "lipas_id": "609970",
+        "nimi": "Vartiokylän talviuintipaikka (Vartiokylän ranta- ja venekerho)",
+        "kunta": "Helsinki",
+        "url": "https://lipas.fi/liikuntapaikat/609970",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.8532,
+          60.1607
+        ]
+      },
+      "properties": {
+        "lipas_id": "98571",
+        "nimi": "Vaskiniemen talviuintipaikka (Suomen Saunaseura)",
+        "kunta": "Helsinki",
+        "url": "https://lipas.fi/liikuntapaikat/98571",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.8902,
+          60.1468
+        ]
+      },
+      "properties": {
+        "lipas_id": "98539",
+        "nimi": "Veijarivuoren talviuintipaikka (Humaus ry)",
+        "kunta": "Helsinki",
+        "url": "https://lipas.fi/liikuntapaikat/98539",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.1529,
+          61.0213
+        ]
+      },
+      "properties": {
+        "lipas_id": "518212",
+        "nimi": "Teuronjoen talviuintipaikka",
+        "kunta": "Hollola",
+        "url": "https://lipas.fi/liikuntapaikat/518212",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.5036,
+          60.9912
+        ]
+      },
+      "properties": {
+        "lipas_id": "513535",
+        "nimi": "Vähä-Tiilijärven talviuintipaikka",
+        "kunta": "Hollola",
+        "url": "https://lipas.fi/liikuntapaikat/513535",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.6939,
+          60.5304
+        ]
+      },
+      "properties": {
+        "lipas_id": "611913",
+        "nimi": "Kiljavan leirikeskuksen talviuintipaikka",
+        "kunta": "Hyvinkää",
+        "url": "https://lipas.fi/liikuntapaikat/611913",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.8328,
+          60.6306
+        ]
+      },
+      "properties": {
+        "lipas_id": "606341",
+        "nimi": "Sveitsin uimalan hyppyaltaan avanto",
+        "kunta": "Hyvinkää",
+        "url": "https://lipas.fi/liikuntapaikat/606341",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.761,
+          60.6305
+        ]
+      },
+      "properties": {
+        "lipas_id": "607701",
+        "nimi": "Usminjärven talviuintipaikka",
+        "kunta": "Hyvinkää",
+        "url": "https://lipas.fi/liikuntapaikat/607701",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.168,
+          61.6841
+        ]
+      },
+      "properties": {
+        "lipas_id": "529919",
+        "nimi": "Kauhtuan talviuintipaikka",
+        "kunta": "Hämeenkyrö",
+        "url": "https://lipas.fi/liikuntapaikat/529919",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.4177,
+          60.9942
+        ]
+      },
+      "properties": {
+        "lipas_id": "518198",
+        "nimi": "Ahveniston talviuintipaikka",
+        "kunta": "Hämeenlinna",
+        "url": "https://lipas.fi/liikuntapaikat/518198",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.4635,
+          61.0292
+        ]
+      },
+      "properties": {
+        "lipas_id": "529920",
+        "nimi": "Aulangonjärven talviuintipaikka",
+        "kunta": "Hämeenlinna",
+        "url": "https://lipas.fi/liikuntapaikat/529920",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.5581,
+          61.1704
+        ]
+      },
+      "properties": {
+        "lipas_id": "529921",
+        "nimi": "Hauhon talviuintipaikka",
+        "kunta": "Hämeenlinna",
+        "url": "https://lipas.fi/liikuntapaikat/529921",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.141,
+          61.0808
+        ]
+      },
+      "properties": {
+        "lipas_id": "605641",
+        "nimi": "Iittalan talviuintipaikka",
+        "kunta": "Hämeenlinna",
+        "url": "https://lipas.fi/liikuntapaikat/605641",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.3814,
+          60.9668
+        ]
+      },
+      "properties": {
+        "lipas_id": "611914",
+        "nimi": "Tervaniemen talviuintipaikka",
+        "kunta": "Hämeenlinna",
+        "url": "https://lipas.fi/liikuntapaikat/611914",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.3812,
+          65.3304
+        ]
+      },
+      "properties": {
+        "lipas_id": "525279",
+        "nimi": "Vihkosaaren avantouintipaikka",
+        "kunta": "Ii",
+        "url": "https://lipas.fi/liikuntapaikat/525279",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1745,
+          63.562
+        ]
+      },
+      "properties": {
+        "lipas_id": "516984",
+        "nimi": "Pursiseuran rannan avantouintipaikka",
+        "kunta": "Iisalmi",
+        "url": "https://lipas.fi/liikuntapaikat/516984",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.2747,
+          60.9208
+        ]
+      },
+      "properties": {
+        "lipas_id": "513601",
+        "nimi": "Veteraanimajan avantouintipaikka",
+        "kunta": "Iitti",
+        "url": "https://lipas.fi/liikuntapaikat/513601",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.5787,
+          62.7402
+        ]
+      },
+      "properties": {
+        "lipas_id": "612313",
+        "nimi": "Herralan Kyläsaunan talviuintipaikka",
+        "kunta": "Ilmajoki",
+        "url": "https://lipas.fi/liikuntapaikat/612313",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.2044,
+          62.7256
+        ]
+      },
+      "properties": {
+        "lipas_id": "612314",
+        "nimi": "Seurakunnan leirikeskuksen talviuintipaikka",
+        "kunta": "Ilmajoki",
+        "url": "https://lipas.fi/liikuntapaikat/612314",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.7807,
+          61.1869
+        ]
+      },
+      "properties": {
+        "lipas_id": "98535",
+        "nimi": "Imatran Talviuimareiden avanto",
+        "kunta": "Imatra",
+        "url": "https://lipas.fi/liikuntapaikat/98535",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.4581,
+          68.3465
+        ]
+      },
+      "properties": {
+        "lipas_id": "518340",
+        "nimi": "Kiilopään Kuurakaltio",
+        "kunta": "Inari",
+        "url": "https://lipas.fi/liikuntapaikat/518340",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.0078,
+          60.0416
+        ]
+      },
+      "properties": {
+        "lipas_id": "98538",
+        "nimi": "Sataman talviuintipaikka",
+        "kunta": "Inkoo",
+        "url": "https://lipas.fi/liikuntapaikat/98538",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.002,
+          62.1681
+        ]
+      },
+      "properties": {
+        "lipas_id": "612315",
+        "nimi": "Kangasjärven leirintäalueen talviuintipaikka",
+        "kunta": "Isojoki",
+        "url": "https://lipas.fi/liikuntapaikat/612315",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.627,
+          60.9211
+        ]
+      },
+      "properties": {
+        "lipas_id": "517522",
+        "nimi": "Liinalammen avantouintipaikka",
+        "kunta": "Janakkala",
+        "url": "https://lipas.fi/liikuntapaikat/517522",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.6182,
+          60.8022
+        ]
+      },
+      "properties": {
+        "lipas_id": "603893",
+        "nimi": "Suruttoman avantouintipaikka",
+        "kunta": "Janakkala",
+        "url": "https://lipas.fi/liikuntapaikat/603893",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.7647,
+          62.5806
+        ]
+      },
+      "properties": {
+        "lipas_id": "521040",
+        "nimi": "Joensuun Jääkarhut ry:n avantouintikeskus",
+        "kunta": "Joensuu",
+        "url": "https://lipas.fi/liikuntapaikat/521040",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.8094,
+          62.5471
+        ]
+      },
+      "properties": {
+        "lipas_id": "518344",
+        "nimi": "Pyhäselän Avantouimarit ry:n talviuintipaikka",
+        "kunta": "Joensuu",
+        "url": "https://lipas.fi/liikuntapaikat/518344",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.7776,
+          62.1802
+        ]
+      },
+      "properties": {
+        "lipas_id": "529961",
+        "nimi": "Kolpan majan talviuintipaikka",
+        "kunta": "Joroinen",
+        "url": "https://lipas.fi/liikuntapaikat/529961",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.7094,
+          63.0395
+        ]
+      },
+      "properties": {
+        "lipas_id": "612198",
+        "nimi": "Koli Freetimen talviuintipaikka",
+        "kunta": "Juuka",
+        "url": "https://lipas.fi/liikuntapaikat/612198",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.5384,
+          61.7704
+        ]
+      },
+      "properties": {
+        "lipas_id": "612322",
+        "nimi": "Heimolan talviuintipaikka",
+        "kunta": "Juupajoki",
+        "url": "https://lipas.fi/liikuntapaikat/612322",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.6744,
+          62.2416
+        ]
+      },
+      "properties": {
+        "lipas_id": "528658",
+        "nimi": "Köhniön avantouintipaikka",
+        "kunta": "Jyväskylä",
+        "url": "https://lipas.fi/liikuntapaikat/528658",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.7255,
+          62.2974
+        ]
+      },
+      "properties": {
+        "lipas_id": "528659",
+        "nimi": "Ollilan avantouintipaikka",
+        "kunta": "Jyväskylä",
+        "url": "https://lipas.fi/liikuntapaikat/528659",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.6062,
+          62.375
+        ]
+      },
+      "properties": {
+        "lipas_id": "612475",
+        "nimi": "Ränssin Kievarin talviuintipaikka",
+        "kunta": "Jyväskylä",
+        "url": "https://lipas.fi/liikuntapaikat/612475",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.7616,
+          62.2157
+        ]
+      },
+      "properties": {
+        "lipas_id": "528660",
+        "nimi": "Tikan avantouintipaikka",
+        "kunta": "Jyväskylä",
+        "url": "https://lipas.fi/liikuntapaikat/528660",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.7421,
+          62.2576
+        ]
+      },
+      "properties": {
+        "lipas_id": "617250",
+        "nimi": "Tuomiojärven talviuintipaikka",
+        "kunta": "Jyväskylä",
+        "url": "https://lipas.fi/liikuntapaikat/617250",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.8901,
+          62.2447
+        ]
+      },
+      "properties": {
+        "lipas_id": "516509",
+        "nimi": "Uimalanniemen avantouintipaikka",
+        "kunta": "Jyväskylä",
+        "url": "https://lipas.fi/liikuntapaikat/516509",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.8357,
+          61.856
+        ]
+      },
+      "properties": {
+        "lipas_id": "517915",
+        "nimi": "Hallin talviuintipaikka",
+        "kunta": "Jämsä",
+        "url": "https://lipas.fi/liikuntapaikat/517915",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.215,
+          61.8759
+        ]
+      },
+      "properties": {
+        "lipas_id": "517916",
+        "nimi": "Särkijärven talviuintipaikka",
+        "kunta": "Jämsä",
+        "url": "https://lipas.fi/liikuntapaikat/517916",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.1655,
+          61.9193
+        ]
+      },
+      "properties": {
+        "lipas_id": "517914",
+        "nimi": "Uimahallin talviuintipaikka",
+        "kunta": "Jämsä",
+        "url": "https://lipas.fi/liikuntapaikat/517914",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.0636,
+          60.4548
+        ]
+      },
+      "properties": {
+        "lipas_id": "612333",
+        "nimi": "Vanhankylänniemen kartanon talviuintipaikka",
+        "kunta": "Järvenpää",
+        "url": "https://lipas.fi/liikuntapaikat/612333",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.3067,
+          60.3862
+        ]
+      },
+      "properties": {
+        "lipas_id": "612367",
+        "nimi": "Ala-Lemun kartanon talviuintipaikka",
+        "kunta": "Kaarina",
+        "url": "https://lipas.fi/liikuntapaikat/612367",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.3779,
+          60.3957
+        ]
+      },
+      "properties": {
+        "lipas_id": "611976",
+        "nimi": "Hovirinnan talviuintipaikka",
+        "kunta": "Kaarina",
+        "url": "https://lipas.fi/liikuntapaikat/611976",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.4479,
+          60.3531
+        ]
+      },
+      "properties": {
+        "lipas_id": "518015",
+        "nimi": "Pöylinrannan talviuintipaikka",
+        "kunta": "Kaarina",
+        "url": "https://lipas.fi/liikuntapaikat/518015",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.3239,
+          60.3689
+        ]
+      },
+      "properties": {
+        "lipas_id": "612307",
+        "nimi": "Villa Wolaxin talviuintipaikka",
+        "kunta": "Kaarina",
+        "url": "https://lipas.fi/liikuntapaikat/612307",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.7547,
+          64.2244
+        ]
+      },
+      "properties": {
+        "lipas_id": "518953",
+        "nimi": "Kajaanin kylmäkaraisukeskus",
+        "kunta": "Kajaani",
+        "url": "https://lipas.fi/liikuntapaikat/518953",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.047,
+          64.2165
+        ]
+      },
+      "properties": {
+        "lipas_id": "519050",
+        "nimi": "Esalankankaan talviuintipaikka",
+        "kunta": "Kalajoki",
+        "url": "https://lipas.fi/liikuntapaikat/519050",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.0837,
+          61.4676
+        ]
+      },
+      "properties": {
+        "lipas_id": "519030",
+        "nimi": "Vesaniemen talviuintipaikka",
+        "kunta": "Kangasala",
+        "url": "https://lipas.fi/liikuntapaikat/519030",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.6444,
+          61.9848
+        ]
+      },
+      "properties": {
+        "lipas_id": "612334",
+        "nimi": "Kangasniemen talviuintipaikka",
+        "kunta": "Kangasniemi",
+        "url": "https://lipas.fi/liikuntapaikat/612334",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.391,
+          61.765
+        ]
+      },
+      "properties": {
+        "lipas_id": "612337",
+        "nimi": "Hakoniemen leirikeskuksen talviuintipaikka",
+        "kunta": "Kankaanpää",
+        "url": "https://lipas.fi/liikuntapaikat/612337",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.39,
+          61.8
+        ]
+      },
+      "properties": {
+        "lipas_id": "612338",
+        "nimi": "Rivieran talviuintipaikka",
+        "kunta": "Kankaanpää",
+        "url": "https://lipas.fi/liikuntapaikat/612338",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.1747,
+          63.0134
+        ]
+      },
+      "properties": {
+        "lipas_id": "612339",
+        "nimi": "Piispalan talviuintipaikka",
+        "kunta": "Kannonkoski",
+        "url": "https://lipas.fi/liikuntapaikat/612339",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.7846,
+          62.8711
+        ]
+      },
+      "properties": {
+        "lipas_id": "612342",
+        "nimi": "Lossinrannan talviuintipaikka",
+        "kunta": "Karstula",
+        "url": "https://lipas.fi/liikuntapaikat/612342",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.2204,
+          62.3844
+        ]
+      },
+      "properties": {
+        "lipas_id": "518707",
+        "nimi": "Vierasvenesataman talviuintipaikka",
+        "kunta": "Kaskinen",
+        "url": "https://lipas.fi/liikuntapaikat/518707",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.9632,
+          63.2763
+        ]
+      },
+      "properties": {
+        "lipas_id": "518569",
+        "nimi": "Haaruksen majan avantouintipaikka",
+        "kunta": "Kauhava",
+        "url": "https://lipas.fi/liikuntapaikat/518569",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.1422,
+          63.2093
+        ]
+      },
+      "properties": {
+        "lipas_id": "612420",
+        "nimi": "Kortesjärven talviuintipaikka",
+        "kunta": "Kauhava",
+        "url": "https://lipas.fi/liikuntapaikat/612420",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.1253,
+          63.0642
+        ]
+      },
+      "properties": {
+        "lipas_id": "518568",
+        "nimi": "Ojutjärven leirikeskuksen avantouintipaikka",
+        "kunta": "Kauhava",
+        "url": "https://lipas.fi/liikuntapaikat/518568",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7213,
+          63.5912
+        ]
+      },
+      "properties": {
+        "lipas_id": "612343",
+        "nimi": "Tastulan Lomakylän talviuintipaikka",
+        "kunta": "Kaustinen",
+        "url": "https://lipas.fi/liikuntapaikat/612343",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.3563,
+          63.1795
+        ]
+      },
+      "properties": {
+        "lipas_id": "513773",
+        "nimi": "Avantouintipaikka",
+        "kunta": "Keitele",
+        "url": "https://lipas.fi/liikuntapaikat/513773",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.5543,
+          65.7287
+        ]
+      },
+      "properties": {
+        "lipas_id": "98537",
+        "nimi": "Kemin talviuintipaikka",
+        "kunta": "Kemi",
+        "url": "https://lipas.fi/liikuntapaikat/98537",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.5511,
+          65.7326
+        ]
+      },
+      "properties": {
+        "lipas_id": "609444",
+        "nimi": "Satamakonttorin talviuintipaikka",
+        "kunta": "Kemi",
+        "url": "https://lipas.fi/liikuntapaikat/609444",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.4274,
+          66.7087
+        ]
+      },
+      "properties": {
+        "lipas_id": "517511",
+        "nimi": "Uimahallin avantouintipaikka",
+        "kunta": "Kemijärvi",
+        "url": "https://lipas.fi/liikuntapaikat/517511",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.535,
+          65.7987
+        ]
+      },
+      "properties": {
+        "lipas_id": "609914",
+        "nimi": "Talviuintipaikka",
+        "kunta": "Keminmaa",
+        "url": "https://lipas.fi/liikuntapaikat/609914",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.5975,
+          60.2238
+        ]
+      },
+      "properties": {
+        "lipas_id": "612378",
+        "nimi": "Ekniemen talviuintipaikka",
+        "kunta": "Kemiönsaari",
+        "url": "https://lipas.fi/liikuntapaikat/612378",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.4789,
+          60.0663
+        ]
+      },
+      "properties": {
+        "lipas_id": "609113",
+        "nimi": "Labbnäsin talviuintipaikka",
+        "kunta": "Kemiönsaari",
+        "url": "https://lipas.fi/liikuntapaikat/609113",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.4334,
+          60.0323
+        ]
+      },
+      "properties": {
+        "lipas_id": "612000",
+        "nimi": "Söderlångvikin talviuintipaikka",
+        "kunta": "Kemiönsaari",
+        "url": "https://lipas.fi/liikuntapaikat/612000",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.5334,
+          64.939
+        ]
+      },
+      "properties": {
+        "lipas_id": "513828",
+        "nimi": "Kalliomontun talviuintipaikka",
+        "kunta": "Kempele",
+        "url": "https://lipas.fi/liikuntapaikat/513828",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.0929,
+          60.4079
+        ]
+      },
+      "properties": {
+        "lipas_id": "614657",
+        "nimi": "Keravan maauimalan talviuintipaikka",
+        "kunta": "Kerava",
+        "url": "https://lipas.fi/liikuntapaikat/614657",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.7137,
+          62.2522
+        ]
+      },
+      "properties": {
+        "lipas_id": "513861",
+        "nimi": "Lapinsalmen avantouintipaikka",
+        "kunta": "Keuruu",
+        "url": "https://lipas.fi/liikuntapaikat/513861",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.4683,
+          62.2353
+        ]
+      },
+      "properties": {
+        "lipas_id": "612001",
+        "nimi": "Niemelänjärven avantouintipaikka",
+        "kunta": "Keuruu",
+        "url": "https://lipas.fi/liikuntapaikat/612001",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.4267,
+          60.2754
+        ]
+      },
+      "properties": {
+        "lipas_id": "513115",
+        "nimi": "Lamminjärven talviuintipaikka",
+        "kunta": "Kirkkonummi",
+        "url": "https://lipas.fi/liikuntapaikat/513115",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.423,
+          60.0999
+        ]
+      },
+      "properties": {
+        "lipas_id": "513116",
+        "nimi": "Syväjärven talviuintipaikka",
+        "kunta": "Kirkkonummi",
+        "url": "https://lipas.fi/liikuntapaikat/513116",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.8281,
+          61.902
+        ]
+      },
+      "properties": {
+        "lipas_id": "529924",
+        "nimi": "Hellaniemen talviuintipaikka",
+        "kunta": "Kitee",
+        "url": "https://lipas.fi/liikuntapaikat/529924",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9109,
+          62.0961
+        ]
+      },
+      "properties": {
+        "lipas_id": "612002",
+        "nimi": "Lastun saunan talviuintipaikka",
+        "kunta": "Kitee",
+        "url": "https://lipas.fi/liikuntapaikat/612002",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.3109,
+          62.0972
+        ]
+      },
+      "properties": {
+        "lipas_id": "529925",
+        "nimi": "Rantapirtin talviuintipaikka",
+        "kunta": "Kitee",
+        "url": "https://lipas.fi/liikuntapaikat/529925",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.8922,
+          67.6707
+        ]
+      },
+      "properties": {
+        "lipas_id": "612346",
+        "nimi": "Kittilän talviuintipaikka",
+        "kunta": "Kittilä",
+        "url": "https://lipas.fi/liikuntapaikat/612346",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.7903,
+          67.8027
+        ]
+      },
+      "properties": {
+        "lipas_id": "612344",
+        "nimi": "Saunabaarin talviuintipaikka",
+        "kunta": "Kittilä",
+        "url": "https://lipas.fi/liikuntapaikat/612344",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.8636,
+          67.8654
+        ]
+      },
+      "properties": {
+        "lipas_id": "612345",
+        "nimi": "Tonttulan talviuintipaikka",
+        "kunta": "Kittilä",
+        "url": "https://lipas.fi/liikuntapaikat/612345",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.623,
+          63.6592
+        ]
+      },
+      "properties": {
+        "lipas_id": "610536",
+        "nimi": "Kiuruveden talviuintipaikka",
+        "kunta": "Kiuruvesi",
+        "url": "https://lipas.fi/liikuntapaikat/610536",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.2703,
+          61.2222
+        ]
+      },
+      "properties": {
+        "lipas_id": "517605",
+        "nimi": "Pitkäjärven talviuintipaikka",
+        "kunta": "Kokemäki",
+        "url": "https://lipas.fi/liikuntapaikat/517605",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.0075,
+          63.8258
+        ]
+      },
+      "properties": {
+        "lipas_id": "517463",
+        "nimi": "Palman talviuintipaikka",
+        "kunta": "Kokkola",
+        "url": "https://lipas.fi/liikuntapaikat/517463",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.1325,
+          63.8452
+        ]
+      },
+      "properties": {
+        "lipas_id": "529926",
+        "nimi": "VesiVeijarin talviuintiallas",
+        "kunta": "Kokkola",
+        "url": "https://lipas.fi/liikuntapaikat/529926",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.3443,
+          62.6249
+        ]
+      },
+      "properties": {
+        "lipas_id": "618026",
+        "nimi": "Häyrylän avantouintipaikka",
+        "kunta": "Konnevesi",
+        "url": "https://lipas.fi/liikuntapaikat/618026",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.7993,
+          62.7441
+        ]
+      },
+      "properties": {
+        "lipas_id": "612349",
+        "nimi": "Kontiolahden Avantouimarien talviuintipaikka",
+        "kunta": "Kontiolahti",
+        "url": "https://lipas.fi/liikuntapaikat/612349",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.1381,
+          60.6161
+        ]
+      },
+      "properties": {
+        "lipas_id": "513942",
+        "nimi": "Liipolanjärven talviuintipaikka",
+        "kunta": "Koski Tl",
+        "url": "https://lipas.fi/liikuntapaikat/513942",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.021,
+          60.5254
+        ]
+      },
+      "properties": {
+        "lipas_id": "518384",
+        "nimi": "Luovin leirikeskuksen avantouintipaikka",
+        "kunta": "Kotka",
+        "url": "https://lipas.fi/liikuntapaikat/518384",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.9512,
+          60.4586
+        ]
+      },
+      "properties": {
+        "lipas_id": "614288",
+        "nimi": "Marina Cafe Laituri / kylmävesiuinti",
+        "kunta": "Kotka",
+        "url": "https://lipas.fi/liikuntapaikat/614288",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.7726,
+          60.7845
+        ]
+      },
+      "properties": {
+        "lipas_id": "513955",
+        "nimi": "Kymijoen talviuintipaikka",
+        "kunta": "Kouvola",
+        "url": "https://lipas.fi/liikuntapaikat/513955",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.7614,
+          60.8916
+        ]
+      },
+      "properties": {
+        "lipas_id": "529660",
+        "nimi": "Tykkimäen Saunan talviuintipaikka",
+        "kunta": "Kouvola",
+        "url": "https://lipas.fi/liikuntapaikat/529660",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.8056,
+          60.9411
+        ]
+      },
+      "properties": {
+        "lipas_id": "101027",
+        "nimi": "Valkealan Likolammen talviuintipaikka",
+        "kunta": "Kouvola",
+        "url": "https://lipas.fi/liikuntapaikat/101027",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.3798,
+          62.2543
+        ]
+      },
+      "properties": {
+        "lipas_id": "612350",
+        "nimi": "Meriuimalan talviuintipaikka",
+        "kunta": "Kristiinankaupunki",
+        "url": "https://lipas.fi/liikuntapaikat/612350",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.5208,
+          64.1313
+        ]
+      },
+      "properties": {
+        "lipas_id": "513968",
+        "nimi": "Ruukinrannan talviuintipaikka",
+        "kunta": "Kuhmo",
+        "url": "https://lipas.fi/liikuntapaikat/513968",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.0781,
+          63.2028
+        ]
+      },
+      "properties": {
+        "lipas_id": "516983",
+        "nimi": "Kankaisen talviuintipaikka",
+        "kunta": "Kuopio",
+        "url": "https://lipas.fi/liikuntapaikat/516983",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.6501,
+          62.8298
+        ]
+      },
+      "properties": {
+        "lipas_id": "513978",
+        "nimi": "Kirveslahden talviuimapaikka",
+        "kunta": "Kuopio",
+        "url": "https://lipas.fi/liikuntapaikat/513978",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.6998,
+          62.8856
+        ]
+      },
+      "properties": {
+        "lipas_id": "513977",
+        "nimi": "Väinölänniemen talviuintipaikka",
+        "kunta": "Kuopio",
+        "url": "https://lipas.fi/liikuntapaikat/513977",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.4828,
+          62.8399
+        ]
+      },
+      "properties": {
+        "lipas_id": "516889",
+        "nimi": "Ruonan Rinkirannan talviuintipaikka",
+        "kunta": "Kuortane",
+        "url": "https://lipas.fi/liikuntapaikat/516889",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.4086,
+          62.8628
+        ]
+      },
+      "properties": {
+        "lipas_id": "513994",
+        "nimi": "Salmen talviuintipaikka",
+        "kunta": "Kuortane",
+        "url": "https://lipas.fi/liikuntapaikat/513994",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.4543,
+          62.6081
+        ]
+      },
+      "properties": {
+        "lipas_id": "522701",
+        "nimi": "Ikarin avantouintipaikka",
+        "kunta": "Kurikka",
+        "url": "https://lipas.fi/liikuntapaikat/522701",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.3417,
+          60.5515
+        ]
+      },
+      "properties": {
+        "lipas_id": "610038",
+        "nimi": "Klipunkarin talviuintipaikka",
+        "kunta": "Kustavi",
+        "url": "https://lipas.fi/liikuntapaikat/610038",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.1607,
+          66.0022
+        ]
+      },
+      "properties": {
+        "lipas_id": "612351",
+        "nimi": "Petäjälammen talviuintipaikka",
+        "kunta": "Kuusamo",
+        "url": "https://lipas.fi/liikuntapaikat/612351",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.1347,
+          66.1725
+        ]
+      },
+      "properties": {
+        "lipas_id": "612352",
+        "nimi": "Rukatontun talviuintipaikka",
+        "kunta": "Kuusamo",
+        "url": "https://lipas.fi/liikuntapaikat/612352",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.603,
+          63.0444
+        ]
+      },
+      "properties": {
+        "lipas_id": "612356",
+        "nimi": "Kalliorannan talviuintipaikka",
+        "kunta": "Kyyjärvi",
+        "url": "https://lipas.fi/liikuntapaikat/612356",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.1493,
+          60.8925
+        ]
+      },
+      "properties": {
+        "lipas_id": "516817",
+        "nimi": "Kalliopirtin avantouintipaikka",
+        "kunta": "Kärkölä",
+        "url": "https://lipas.fi/liikuntapaikat/516817",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.6432,
+          61.0143
+        ]
+      },
+      "properties": {
+        "lipas_id": "514020",
+        "nimi": "Mukkulan talviuintipaikka",
+        "kunta": "Lahti",
+        "url": "https://lipas.fi/liikuntapaikat/514020",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.6146,
+          60.9943
+        ]
+      },
+      "properties": {
+        "lipas_id": "611843",
+        "nimi": "Myllysaaren talviuinti",
+        "kunta": "Lahti",
+        "url": "https://lipas.fi/liikuntapaikat/611843",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.6373,
+          60.979
+        ]
+      },
+      "properties": {
+        "lipas_id": "514014",
+        "nimi": "Mytäjäisten talviuintipaikka",
+        "kunta": "Lahti",
+        "url": "https://lipas.fi/liikuntapaikat/514014",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.6918,
+          60.9798
+        ]
+      },
+      "properties": {
+        "lipas_id": "514011",
+        "nimi": "Möysän talviuintipaikka",
+        "kunta": "Lahti",
+        "url": "https://lipas.fi/liikuntapaikat/514011",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.7425,
+          60.9924
+        ]
+      },
+      "properties": {
+        "lipas_id": "516584",
+        "nimi": "Mustajärven talviuintipaikka",
+        "kunta": "Laitila",
+        "url": "https://lipas.fi/liikuntapaikat/516584",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.571,
+          60.876
+        ]
+      },
+      "properties": {
+        "lipas_id": "516585",
+        "nimi": "Särkijärven talviuintipaikka",
+        "kunta": "Laitila",
+        "url": "https://lipas.fi/liikuntapaikat/516585",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6448,
+          63.2491
+        ]
+      },
+      "properties": {
+        "lipas_id": "609587",
+        "nimi": "Talviuinti Aquarius INN",
+        "kunta": "Lappajärvi",
+        "url": "https://lipas.fi/liikuntapaikat/609587",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.5658,
+          63.1932
+        ]
+      },
+      "properties": {
+        "lipas_id": "516581",
+        "nimi": "Tarvolan talviuintipaikka",
+        "kunta": "Lappajärvi",
+        "url": "https://lipas.fi/liikuntapaikat/516581",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.46,
+          61.1217
+        ]
+      },
+      "properties": {
+        "lipas_id": "516356",
+        "nimi": "Ahvenlammen talviuintipaikka",
+        "kunta": "Lappeenranta",
+        "url": "https://lipas.fi/liikuntapaikat/516356",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.1986,
+          61.0689
+        ]
+      },
+      "properties": {
+        "lipas_id": "516344",
+        "nimi": "Myllysaaren saunan avantouintipaikka",
+        "kunta": "Lappeenranta",
+        "url": "https://lipas.fi/liikuntapaikat/516344",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.1987,
+          61.0682
+        ]
+      },
+      "properties": {
+        "lipas_id": "516343",
+        "nimi": "Myllysaaren uimalan avantouintipaikka",
+        "kunta": "Lappeenranta",
+        "url": "https://lipas.fi/liikuntapaikat/516343",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.44,
+          63.0269
+        ]
+      },
+      "properties": {
+        "lipas_id": "614505",
+        "nimi": "Rantapuiston talviuintipaikka",
+        "kunta": "Lapua",
+        "url": "https://lipas.fi/liikuntapaikat/614505",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.9744,
+          62.9635
+        ]
+      },
+      "properties": {
+        "lipas_id": "602082",
+        "nimi": "Simpsiön hiihtomajan talviuintipaikka",
+        "kunta": "Lapua",
+        "url": "https://lipas.fi/liikuntapaikat/602082",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1991,
+          62.2644
+        ]
+      },
+      "properties": {
+        "lipas_id": "617765",
+        "nimi": "Kuilunpolun talviuintipaikka",
+        "kunta": "Laukaa",
+        "url": "https://lipas.fi/liikuntapaikat/617765",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.9622,
+          62.4112
+        ]
+      },
+      "properties": {
+        "lipas_id": "518387",
+        "nimi": "Laukaan sataman talviuintipaikka",
+        "kunta": "Laukaa",
+        "url": "https://lipas.fi/liikuntapaikat/518387",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.6613,
+          61.0147
+        ]
+      },
+      "properties": {
+        "lipas_id": "516182",
+        "nimi": "Kotalahden avantouintipaikka",
+        "kunta": "Lemi",
+        "url": "https://lipas.fi/liikuntapaikat/516182",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.743,
+          61.3255
+        ]
+      },
+      "properties": {
+        "lipas_id": "516677",
+        "nimi": "Lempoisten talviuintipaikka",
+        "kunta": "Lempäälä",
+        "url": "https://lipas.fi/liikuntapaikat/516677",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.8003,
+          61.3936
+        ]
+      },
+      "properties": {
+        "lipas_id": "612197",
+        "nimi": "Rantalan talviuintipaikka",
+        "kunta": "Lempäälä",
+        "url": "https://lipas.fi/liikuntapaikat/612197",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.7733,
+          62.4882
+        ]
+      },
+      "properties": {
+        "lipas_id": "524421",
+        "nimi": "Kalmalahden talviuintipaikka",
+        "kunta": "Leppävirta",
+        "url": "https://lipas.fi/liikuntapaikat/524421",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.6711,
+          62.449
+        ]
+      },
+      "properties": {
+        "lipas_id": "524420",
+        "nimi": "Sorsakosken talviuintipaikka",
+        "kunta": "Leppävirta",
+        "url": "https://lipas.fi/liikuntapaikat/524420",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.668,
+          63.5274
+        ]
+      },
+      "properties": {
+        "lipas_id": "612357",
+        "nimi": "Lestijärven kirkonkylän talviuintipaikka",
+        "kunta": "Lestijärvi",
+        "url": "https://lipas.fi/liikuntapaikat/612357",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.0335,
+          63.3237
+        ]
+      },
+      "properties": {
+        "lipas_id": "516511",
+        "nimi": "Urheilupuiston uimalan talviuintipaikka",
+        "kunta": "Lieksa",
+        "url": "https://lipas.fi/liikuntapaikat/516511",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.3895,
+          60.4582
+        ]
+      },
+      "properties": {
+        "lipas_id": "514106",
+        "nimi": "Villa Järvelä / Järvelän avanto",
+        "kunta": "Lieto",
+        "url": "https://lipas.fi/liikuntapaikat/514106",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.3446,
+          64.8075
+        ]
+      },
+      "properties": {
+        "lipas_id": "612359",
+        "nimi": "Rantakylän talviuintipaikka",
+        "kunta": "Liminka",
+        "url": "https://lipas.fi/liikuntapaikat/612359",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.3883,
+          62.5269
+        ]
+      },
+      "properties": {
+        "lipas_id": "612360",
+        "nimi": "Makasiininrannan talviuintipaikka",
+        "kunta": "Liperi",
+        "url": "https://lipas.fi/liikuntapaikat/612360",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.0304,
+          60.2438
+        ]
+      },
+      "properties": {
+        "lipas_id": "98536",
+        "nimi": "Haikarin avantouintipaikka ja yleinen sauna",
+        "kunta": "Lohja",
+        "url": "https://lipas.fi/liikuntapaikat/98536",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.0426,
+          60.3242
+        ]
+      },
+      "properties": {
+        "lipas_id": "510481",
+        "nimi": "Kisakallion talviuintipaikka",
+        "kunta": "Lohja",
+        "url": "https://lipas.fi/liikuntapaikat/510481",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.2061,
+          60.2994
+        ]
+      },
+      "properties": {
+        "lipas_id": "612200",
+        "nimi": "Nälköönlammen talviuintipaikka",
+        "kunta": "Lohja",
+        "url": "https://lipas.fi/liikuntapaikat/612200",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.0582,
+          60.2672
+        ]
+      },
+      "properties": {
+        "lipas_id": "612199",
+        "nimi": "Roution talviuintipaikka",
+        "kunta": "Lohja",
+        "url": "https://lipas.fi/liikuntapaikat/612199",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.8573,
+          60.7981
+        ]
+      },
+      "properties": {
+        "lipas_id": "514134",
+        "nimi": "Pappisten talviuintipaikka",
+        "kunta": "Loimaa",
+        "url": "https://lipas.fi/liikuntapaikat/514134",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.1223,
+          60.7501
+        ]
+      },
+      "properties": {
+        "lipas_id": "518382",
+        "nimi": "Räyskälän talviuintipaikka",
+        "kunta": "Loppi",
+        "url": "https://lipas.fi/liikuntapaikat/518382",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.2384,
+          60.444
+        ]
+      },
+      "properties": {
+        "lipas_id": "514138",
+        "nimi": "Plagenin talviuintipaikka",
+        "kunta": "Loviisa",
+        "url": "https://lipas.fi/liikuntapaikat/514138",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.8325,
+          61.8363
+        ]
+      },
+      "properties": {
+        "lipas_id": "514143",
+        "nimi": "Tammijärven talviuintipaikka",
+        "kunta": "Luhanka",
+        "url": "https://lipas.fi/liikuntapaikat/514143",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.9513,
+          60.0965
+        ]
+      },
+      "properties": {
+        "lipas_id": "516680",
+        "nimi": "Lilla holmenin talviuintipaikka",
+        "kunta": "Maarianhamina - Mariehamn",
+        "url": "https://lipas.fi/liikuntapaikat/516680",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.9744,
+          60.5752
+        ]
+      },
+      "properties": {
+        "lipas_id": "514157",
+        "nimi": "Palaisten talviuintipaikka",
+        "kunta": "Marttila",
+        "url": "https://lipas.fi/liikuntapaikat/514157",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.118,
+          60.5516
+        ]
+      },
+      "properties": {
+        "lipas_id": "612363",
+        "nimi": "Saunaparonin talviuintipaikka / Maskun Jääkarhut ry",
+        "kunta": "Masku",
+        "url": "https://lipas.fi/liikuntapaikat/612363",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4679,
+          61.8485
+        ]
+      },
+      "properties": {
+        "lipas_id": "515813",
+        "nimi": "Merrycampingin avantouintipaikka",
+        "kunta": "Merikarvia",
+        "url": "https://lipas.fi/liikuntapaikat/515813",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.684,
+          60.6815
+        ]
+      },
+      "properties": {
+        "lipas_id": "516653",
+        "nimi": "Myllylammen talviuintipaikka, Kiiston maja",
+        "kunta": "Miehikkälä",
+        "url": "https://lipas.fi/liikuntapaikat/516653",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1964,
+          62.0168
+        ]
+      },
+      "properties": {
+        "lipas_id": "612201",
+        "nimi": "Haukivuoren sataman talviuintipaikka",
+        "kunta": "Mikkeli",
+        "url": "https://lipas.fi/liikuntapaikat/612201",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.2705,
+          61.667
+        ]
+      },
+      "properties": {
+        "lipas_id": "514169",
+        "nimi": "Laajalammen talviuintipaikka",
+        "kunta": "Mikkeli",
+        "url": "https://lipas.fi/liikuntapaikat/514169",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.2077,
+          61.6649
+        ]
+      },
+      "properties": {
+        "lipas_id": "514187",
+        "nimi": "Orijärven avantouintipaikka",
+        "kunta": "Mikkeli",
+        "url": "https://lipas.fi/liikuntapaikat/514187",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.0647,
+          61.6511
+        ]
+      },
+      "properties": {
+        "lipas_id": "514165",
+        "nimi": "Otavan talviuintipaikka",
+        "kunta": "Mikkeli",
+        "url": "https://lipas.fi/liikuntapaikat/514165",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.2528,
+          61.689
+        ]
+      },
+      "properties": {
+        "lipas_id": "514162",
+        "nimi": "Pankalammen talviuintipaikka",
+        "kunta": "Mikkeli",
+        "url": "https://lipas.fi/liikuntapaikat/514162",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.2641,
+          61.5008
+        ]
+      },
+      "properties": {
+        "lipas_id": "529929",
+        "nimi": "Ristiinan avantouintipaikka",
+        "kunta": "Mikkeli",
+        "url": "https://lipas.fi/liikuntapaikat/529929",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.3117,
+          61.6824
+        ]
+      },
+      "properties": {
+        "lipas_id": "514186",
+        "nimi": "Ritvalan avantouintipaikka",
+        "kunta": "Mikkeli",
+        "url": "https://lipas.fi/liikuntapaikat/514186",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.4275,
+          61.3508
+        ]
+      },
+      "properties": {
+        "lipas_id": "612202",
+        "nimi": "Suomenniemen talviuintipaikka",
+        "kunta": "Mikkeli",
+        "url": "https://lipas.fi/liikuntapaikat/612202",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.0104,
+          64.8425
+        ]
+      },
+      "properties": {
+        "lipas_id": "612364",
+        "nimi": "Montan leirintäalueen talviuintipaikka",
+        "kunta": "Muhos",
+        "url": "https://lipas.fi/liikuntapaikat/612364",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.8091,
+          62.4066
+        ]
+      },
+      "properties": {
+        "lipas_id": "612366",
+        "nimi": "Sinervän leirintäalueen talviuintipaikka",
+        "kunta": "Multia",
+        "url": "https://lipas.fi/liikuntapaikat/612366",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.6837,
+          62.1233
+        ]
+      },
+      "properties": {
+        "lipas_id": "514221",
+        "nimi": "Uimolan avantouintipaikka",
+        "kunta": "Muurame",
+        "url": "https://lipas.fi/liikuntapaikat/514221",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.3886,
+          60.598
+        ]
+      },
+      "properties": {
+        "lipas_id": "603458",
+        "nimi": "Katrinranta",
+        "kunta": "Mäntsälä",
+        "url": "https://lipas.fi/liikuntapaikat/603458",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.6427,
+          62.031
+        ]
+      },
+      "properties": {
+        "lipas_id": "601095",
+        "nimi": "Myllyrannan talviuintipaikka",
+        "kunta": "Mänttä-Vilppula",
+        "url": "https://lipas.fi/liikuntapaikat/601095",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.4957,
+          62.0145
+        ]
+      },
+      "properties": {
+        "lipas_id": "514245",
+        "nimi": "Vilppulan sataman talviuintipaikka",
+        "kunta": "Mänttä-Vilppula",
+        "url": "https://lipas.fi/liikuntapaikat/514245",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.473,
+          61.4997
+        ]
+      },
+      "properties": {
+        "lipas_id": "514432",
+        "nimi": "Kisarannan talviuintipaikka",
+        "kunta": "Mäntyharju",
+        "url": "https://lipas.fi/liikuntapaikat/514432",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.8561,
+          61.4285
+        ]
+      },
+      "properties": {
+        "lipas_id": "515426",
+        "nimi": "Mäntyharjun avantouintipaikka",
+        "kunta": "Mäntyharju",
+        "url": "https://lipas.fi/liikuntapaikat/515426",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.015,
+          60.4727
+        ]
+      },
+      "properties": {
+        "lipas_id": "511690",
+        "nimi": "Nunnalahden talviuintipaikka",
+        "kunta": "Naantali",
+        "url": "https://lipas.fi/liikuntapaikat/511690",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.0267,
+          60.4831
+        ]
+      },
+      "properties": {
+        "lipas_id": "511691",
+        "nimi": "Taimon talviuintipaikka",
+        "kunta": "Naantali",
+        "url": "https://lipas.fi/liikuntapaikat/511691",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.9226,
+          61.3326
+        ]
+      },
+      "properties": {
+        "lipas_id": "612380",
+        "nimi": "Nakkilan Verstaan talviuintipaikka",
+        "kunta": "Nakkila",
+        "url": "https://lipas.fi/liikuntapaikat/612380",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.8499,
+          63.8789
+        ]
+      },
+      "properties": {
+        "lipas_id": "612381",
+        "nimi": "Vinnurvan talviuintipaikka",
+        "kunta": "Nivala",
+        "url": "https://lipas.fi/liikuntapaikat/612381",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.4562,
+          61.4968
+        ]
+      },
+      "properties": {
+        "lipas_id": "519606",
+        "nimi": "Alisniemen avantouintipaikka",
+        "kunta": "Nokia",
+        "url": "https://lipas.fi/liikuntapaikat/519606",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.5225,
+          61.4588
+        ]
+      },
+      "properties": {
+        "lipas_id": "521126",
+        "nimi": "Halkoniemen sauna",
+        "kunta": "Nokia",
+        "url": "https://lipas.fi/liikuntapaikat/521126",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.2016,
+          60.6471
+        ]
+      },
+      "properties": {
+        "lipas_id": "515235",
+        "nimi": "Falkinkosken talviuintipaikka",
+        "kunta": "Nousiainen",
+        "url": "https://lipas.fi/liikuntapaikat/515235",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.8133,
+          63.6843
+        ]
+      },
+      "properties": {
+        "lipas_id": "612383",
+        "nimi": "Lokkisaaren talviuintipaikka",
+        "kunta": "Nurmes",
+        "url": "https://lipas.fi/liikuntapaikat/612383",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.1329,
+          63.5415
+        ]
+      },
+      "properties": {
+        "lipas_id": "612382",
+        "nimi": "Sataman talviuintipaikka",
+        "kunta": "Nurmes",
+        "url": "https://lipas.fi/liikuntapaikat/612382",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.7213,
+          60.3944
+        ]
+      },
+      "properties": {
+        "lipas_id": "514323",
+        "nimi": "Valkjärven Tiiran avantouintipaikka",
+        "kunta": "Nurmijärvi",
+        "url": "https://lipas.fi/liikuntapaikat/514323",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.5036,
+          60.7757
+        ]
+      },
+      "properties": {
+        "lipas_id": "515147",
+        "nimi": "Salusjärven leirikeskuksen talviuintipaikka",
+        "kunta": "Orimattila",
+        "url": "https://lipas.fi/liikuntapaikat/515147",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.7103,
+          60.902
+        ]
+      },
+      "properties": {
+        "lipas_id": "612210",
+        "nimi": "Myllykylän Lähteentuvan talviuintipaikka",
+        "kunta": "Oripää",
+        "url": "https://lipas.fi/liikuntapaikat/612210",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.3616,
+          61.6715
+        ]
+      },
+      "properties": {
+        "lipas_id": "607638",
+        "nimi": "Kirkkolahden talviuintipaikka",
+        "kunta": "Orivesi",
+        "url": "https://lipas.fi/liikuntapaikat/607638",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.3413,
+          61.6283
+        ]
+      },
+      "properties": {
+        "lipas_id": "612211",
+        "nimi": "Säynäniemen leirintäalueen talviuintipaikka",
+        "kunta": "Orivesi",
+        "url": "https://lipas.fi/liikuntapaikat/612211",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.9139,
+          64.3019
+        ]
+      },
+      "properties": {
+        "lipas_id": "615345",
+        "nimi": "Venerannan talviuintipaikka ja sauna",
+        "kunta": "Oulainen",
+        "url": "https://lipas.fi/liikuntapaikat/615345",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.4885,
+          65.0227
+        ]
+      },
+      "properties": {
+        "lipas_id": "521225",
+        "nimi": "Tuiran talviuintipaikka",
+        "kunta": "Oulu",
+        "url": "https://lipas.fi/liikuntapaikat/521225",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.921,
+          62.7421
+        ]
+      },
+      "properties": {
+        "lipas_id": "612384",
+        "nimi": "Kolmikannan leirikeskuksen talviuintipaikka",
+        "kunta": "Outokumpu",
+        "url": "https://lipas.fi/liikuntapaikat/612384",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.691,
+          60.4783
+        ]
+      },
+      "properties": {
+        "lipas_id": "513266",
+        "nimi": "Oinilan maauimalan talviuintipaikka",
+        "kunta": "Paimio",
+        "url": "https://lipas.fi/liikuntapaikat/513266",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.046,
+          62.0403
+        ]
+      },
+      "properties": {
+        "lipas_id": "518386",
+        "nimi": "Käenkosken talviuintipaikka",
+        "kunta": "Parkano",
+        "url": "https://lipas.fi/liikuntapaikat/518386",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.2229,
+          67.0413
+        ]
+      },
+      "properties": {
+        "lipas_id": "612398",
+        "nimi": "Kairosmajan rantasaunan talviuintipaikka",
+        "kunta": "Pelkosenniemi",
+        "url": "https://lipas.fi/liikuntapaikat/612398",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.1162,
+          66.8058
+        ]
+      },
+      "properties": {
+        "lipas_id": "612212",
+        "nimi": "Valkeajärven talviuintipaikka",
+        "kunta": "Pello",
+        "url": "https://lipas.fi/liikuntapaikat/612212",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.163,
+          62.2627
+        ]
+      },
+      "properties": {
+        "lipas_id": "516512",
+        "nimi": "Kirkonkylän rantauimalan talviuintipaikka",
+        "kunta": "Petäjävesi",
+        "url": "https://lipas.fi/liikuntapaikat/516512",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1319,
+          62.3074
+        ]
+      },
+      "properties": {
+        "lipas_id": "514450",
+        "nimi": "Pieksänjärven talviuintipaikka",
+        "kunta": "Pieksämäki",
+        "url": "https://lipas.fi/liikuntapaikat/514450",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.5907,
+          63.368
+        ]
+      },
+      "properties": {
+        "lipas_id": "511482",
+        "nimi": "Kumpulan talviuintipaikka",
+        "kunta": "Pihtipudas",
+        "url": "https://lipas.fi/liikuntapaikat/511482",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6799,
+          61.4752
+        ]
+      },
+      "properties": {
+        "lipas_id": "514461",
+        "nimi": "Loukonlahden avantouintipaikka",
+        "kunta": "Pirkkala",
+        "url": "https://lipas.fi/liikuntapaikat/514461",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7019,
+          61.4803
+        ]
+      },
+      "properties": {
+        "lipas_id": "612214",
+        "nimi": "Pereensaaren saunan talviuintipaikka",
+        "kunta": "Pirkkala",
+        "url": "https://lipas.fi/liikuntapaikat/612214",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.5508,
+          61.4477
+        ]
+      },
+      "properties": {
+        "lipas_id": "528898",
+        "nimi": "Reipin talviuintipaikka",
+        "kunta": "Pirkkala",
+        "url": "https://lipas.fi/liikuntapaikat/528898",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8639,
+          61.5936
+        ]
+      },
+      "properties": {
+        "lipas_id": "529930",
+        "nimi": "Noormarkun talviuintipaikka",
+        "kunta": "Pori",
+        "url": "https://lipas.fi/liikuntapaikat/529930",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.7666,
+          61.4724
+        ]
+      },
+      "properties": {
+        "lipas_id": "517287",
+        "nimi": "Porin maauimalan talviuintipaikka",
+        "kunta": "Pori",
+        "url": "https://lipas.fi/liikuntapaikat/517287",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.3983,
+          60.4512
+        ]
+      },
+      "properties": {
+        "lipas_id": "514206",
+        "nimi": "Hietasen avantouintipaikka",
+        "kunta": "Pornainen",
+        "url": "https://lipas.fi/liikuntapaikat/514206",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.6025,
+          60.3028
+        ]
+      },
+      "properties": {
+        "lipas_id": "612216",
+        "nimi": "Elämyspoukaman talviuintipaikka",
+        "kunta": "Porvoo",
+        "url": "https://lipas.fi/liikuntapaikat/612216",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.647,
+          60.383
+        ]
+      },
+      "properties": {
+        "lipas_id": "512470",
+        "nimi": "Kokonniemen talviuintipaikka",
+        "kunta": "Porvoo",
+        "url": "https://lipas.fi/liikuntapaikat/512470",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.2904,
+          66.1088
+        ]
+      },
+      "properties": {
+        "lipas_id": "612399",
+        "nimi": "Kirikeskuksen talviuintipaikka",
+        "kunta": "Posio",
+        "url": "https://lipas.fi/liikuntapaikat/612399",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.9759,
+          65.369
+        ]
+      },
+      "properties": {
+        "lipas_id": "602767",
+        "nimi": "Pietarilan avantouintipaikka",
+        "kunta": "Pudasjärvi",
+        "url": "https://lipas.fi/liikuntapaikat/602767",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.257,
+          61.0563
+        ]
+      },
+      "properties": {
+        "lipas_id": "513964",
+        "nimi": "Kivirannan talviuintipaikka, sauna pe 16-20",
+        "kunta": "Punkalaidun",
+        "url": "https://lipas.fi/liikuntapaikat/513964",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.9375,
+          64.6811
+        ]
+      },
+      "properties": {
+        "lipas_id": "612400",
+        "nimi": "Lake Resort Paljakan avantouintipaikka",
+        "kunta": "Puolanka",
+        "url": "https://lipas.fi/liikuntapaikat/612400",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.1805,
+          61.5197
+        ]
+      },
+      "properties": {
+        "lipas_id": "612401",
+        "nimi": "Veeranrannan talviuintipaikka",
+        "kunta": "Puumala",
+        "url": "https://lipas.fi/liikuntapaikat/612401",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.2331,
+          64.4442
+        ]
+      },
+      "properties": {
+        "lipas_id": "98519",
+        "nimi": "Rautiperän avantouintipaikka",
+        "kunta": "Pyhäjoki",
+        "url": "https://lipas.fi/liikuntapaikat/98519",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.9931,
+          63.6797
+        ]
+      },
+      "properties": {
+        "lipas_id": "612402",
+        "nimi": "Lossinrannan talviuintipaikka",
+        "kunta": "Pyhäjärvi",
+        "url": "https://lipas.fi/liikuntapaikat/612402",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.3367,
+          64.1048
+        ]
+      },
+      "properties": {
+        "lipas_id": "513874",
+        "nimi": "Museon talviuintipaikka",
+        "kunta": "Pyhäntä",
+        "url": "https://lipas.fi/liikuntapaikat/513874",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.4742,
+          61.3532
+        ]
+      },
+      "properties": {
+        "lipas_id": "612404",
+        "nimi": "Aitoon Kankahuven talviuintipaikka",
+        "kunta": "Pälkäne",
+        "url": "https://lipas.fi/liikuntapaikat/612404",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.2664,
+          61.3325
+        ]
+      },
+      "properties": {
+        "lipas_id": "612405",
+        "nimi": "Kostianvirran talviuintipaikka",
+        "kunta": "Pälkäne",
+        "url": "https://lipas.fi/liikuntapaikat/612405",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.6467,
+          61.3711
+        ]
+      },
+      "properties": {
+        "lipas_id": "612403",
+        "nimi": "Vohlisaaren talviuintipaikka",
+        "kunta": "Pälkäne",
+        "url": "https://lipas.fi/liikuntapaikat/612403",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.9178,
+          60.7369
+        ]
+      },
+      "properties": {
+        "lipas_id": "612245",
+        "nimi": "Kakarlammen talviuintipaikka",
+        "kunta": "Pöytyä",
+        "url": "https://lipas.fi/liikuntapaikat/612245",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.4059,
+          60.9126
+        ]
+      },
+      "properties": {
+        "lipas_id": "612217",
+        "nimi": "Kalikan talviuintipaikka",
+        "kunta": "Pöytyä",
+        "url": "https://lipas.fi/liikuntapaikat/612217",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.7659,
+          60.7033
+        ]
+      },
+      "properties": {
+        "lipas_id": "612218",
+        "nimi": "Kyrön maauimalan talviuintipaikka",
+        "kunta": "Pöytyä",
+        "url": "https://lipas.fi/liikuntapaikat/612218",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.4697,
+          60.8203
+        ]
+      },
+      "properties": {
+        "lipas_id": "612244",
+        "nimi": "Lystmettän talviuintipaikka",
+        "kunta": "Pöytyä",
+        "url": "https://lipas.fi/liikuntapaikat/612244",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.3496,
+          60.8957
+        ]
+      },
+      "properties": {
+        "lipas_id": "529935",
+        "nimi": "Valasrannan talviuintipaikka",
+        "kunta": "Pöytyä",
+        "url": "https://lipas.fi/liikuntapaikat/529935",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.4615,
+          64.6891
+        ]
+      },
+      "properties": {
+        "lipas_id": "513323",
+        "nimi": "Pikkulahden talviuintipaikka",
+        "kunta": "Raahe",
+        "url": "https://lipas.fi/liikuntapaikat/513323",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.4293,
+          59.9769
+        ]
+      },
+      "properties": {
+        "lipas_id": "513284",
+        "nimi": "Stallörenin avantouintipaikka",
+        "kunta": "Raasepori",
+        "url": "https://lipas.fi/liikuntapaikat/513284",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.1165,
+          60.4612
+        ]
+      },
+      "properties": {
+        "lipas_id": "612413",
+        "nimi": "Hahdenniemen talviuintipaikka",
+        "kunta": "Raisio",
+        "url": "https://lipas.fi/liikuntapaikat/612413",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.479,
+          61.1421
+        ]
+      },
+      "properties": {
+        "lipas_id": "612416",
+        "nimi": "Kisarannan saunan talviuintipaikka",
+        "kunta": "Rauma",
+        "url": "https://lipas.fi/liikuntapaikat/612416",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8887,
+          61.0561
+        ]
+      },
+      "properties": {
+        "lipas_id": "612417",
+        "nimi": "Narvijärven talviuintipaikka",
+        "kunta": "Rauma",
+        "url": "https://lipas.fi/liikuntapaikat/612417",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.8188,
+          62.6236
+        ]
+      },
+      "properties": {
+        "lipas_id": "512726",
+        "nimi": "Rautalammin talviuintipaikka",
+        "kunta": "Rautalampi",
+        "url": "https://lipas.fi/liikuntapaikat/512726",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.7447,
+          66.5018
+        ]
+      },
+      "properties": {
+        "lipas_id": "612433",
+        "nimi": "Koskipuiston talviuintipaikka",
+        "kunta": "Rovaniemi",
+        "url": "https://lipas.fi/liikuntapaikat/612433",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.7435,
+          66.5202
+        ]
+      },
+      "properties": {
+        "lipas_id": "612440",
+        "nimi": "Roiskeen talviuintipaikka",
+        "kunta": "Rovaniemi",
+        "url": "https://lipas.fi/liikuntapaikat/612440",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.7884,
+          66.5114
+        ]
+      },
+      "properties": {
+        "lipas_id": "612437",
+        "nimi": "WNTR Saunan talviuintipaikka",
+        "kunta": "Rovaniemi",
+        "url": "https://lipas.fi/liikuntapaikat/612437",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.8231,
+          61.2725
+        ]
+      },
+      "properties": {
+        "lipas_id": "612454",
+        "nimi": "Hirsirannan talviuintipaikka",
+        "kunta": "Ruokolahti",
+        "url": "https://lipas.fi/liikuntapaikat/612454",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.8024,
+          61.2976
+        ]
+      },
+      "properties": {
+        "lipas_id": "612459",
+        "nimi": "Kuuselan rannan talviuintipaikka",
+        "kunta": "Ruokolahti",
+        "url": "https://lipas.fi/liikuntapaikat/612459",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.0824,
+          61.989
+        ]
+      },
+      "properties": {
+        "lipas_id": "612462",
+        "nimi": "Pihlapirtin talviuintipaikka",
+        "kunta": "Ruovesi",
+        "url": "https://lipas.fi/liikuntapaikat/612462",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.2913,
+          60.5713
+        ]
+      },
+      "properties": {
+        "lipas_id": "516520",
+        "nimi": "Nummilammen talviuintipaikka",
+        "kunta": "Rusko",
+        "url": "https://lipas.fi/liikuntapaikat/516520",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.6271,
+          62.3315
+        ]
+      },
+      "properties": {
+        "lipas_id": "516616",
+        "nimi": "Paksuniemen talviuintipaikka",
+        "kunta": "Rääkkylä",
+        "url": "https://lipas.fi/liikuntapaikat/516616",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.2701,
+          62.704
+        ]
+      },
+      "properties": {
+        "lipas_id": "511365",
+        "nimi": "Kunnantuvan talviuintipaikka",
+        "kunta": "Saarijärvi",
+        "url": "https://lipas.fi/liikuntapaikat/511365",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.6899,
+          66.8454
+        ]
+      },
+      "properties": {
+        "lipas_id": "611774",
+        "nimi": "Ruuhijärven talviuintipaikka",
+        "kunta": "Salla",
+        "url": "https://lipas.fi/liikuntapaikat/611774",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.5947,
+          60.4323
+        ]
+      },
+      "properties": {
+        "lipas_id": "510764",
+        "nimi": "Härjänvatsan talviuintipaikka",
+        "kunta": "Salo",
+        "url": "https://lipas.fi/liikuntapaikat/510764",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.9455,
+          60.3186
+        ]
+      },
+      "properties": {
+        "lipas_id": "510765",
+        "nimi": "Kokkilan talviuintipaikka",
+        "kunta": "Salo",
+        "url": "https://lipas.fi/liikuntapaikat/510765",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.0497,
+          60.4453
+        ]
+      },
+      "properties": {
+        "lipas_id": "510768",
+        "nimi": "Märynummen talviuintipaikka",
+        "kunta": "Salo",
+        "url": "https://lipas.fi/liikuntapaikat/510768",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.2984,
+          60.2556
+        ]
+      },
+      "properties": {
+        "lipas_id": "510770",
+        "nimi": "Naarjärven talviuintipaikka",
+        "kunta": "Salo",
+        "url": "https://lipas.fi/liikuntapaikat/510770",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.2468,
+          60.5858
+        ]
+      },
+      "properties": {
+        "lipas_id": "510773",
+        "nimi": "Nummijärven talviuintipaikka",
+        "kunta": "Salo",
+        "url": "https://lipas.fi/liikuntapaikat/510773",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.3852,
+          60.4275
+        ]
+      },
+      "properties": {
+        "lipas_id": "510774",
+        "nimi": "Varvojärven talviuintipaikka",
+        "kunta": "Salo",
+        "url": "https://lipas.fi/liikuntapaikat/510774",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.6085,
+          61.4259
+        ]
+      },
+      "properties": {
+        "lipas_id": "529931",
+        "nimi": "Rajalahden rantasauna / talviuintipaikka",
+        "kunta": "Sastamala",
+        "url": "https://lipas.fi/liikuntapaikat/529931",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.9334,
+          61.3406
+        ]
+      },
+      "properties": {
+        "lipas_id": "518381",
+        "nimi": "Vammalan rantasauna / talviuintipaikka",
+        "kunta": "Sastamala",
+        "url": "https://lipas.fi/liikuntapaikat/518381",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.5812,
+          60.276
+        ]
+      },
+      "properties": {
+        "lipas_id": "511822",
+        "nimi": "Kalliorannan talviuintipaikka",
+        "kunta": "Sauvo",
+        "url": "https://lipas.fi/liikuntapaikat/511822",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.3863,
+          61.7515
+        ]
+      },
+      "properties": {
+        "lipas_id": "511670",
+        "nimi": "Punkaharjun avantouintipaikka",
+        "kunta": "Savonlinna",
+        "url": "https://lipas.fi/liikuntapaikat/511670",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.8386,
+          62.7769
+        ]
+      },
+      "properties": {
+        "lipas_id": "511598",
+        "nimi": "Sahanlammen talviuintipaikka",
+        "kunta": "Seinäjoki",
+        "url": "https://lipas.fi/liikuntapaikat/511598",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.9122,
+          62.7961
+        ]
+      },
+      "properties": {
+        "lipas_id": "511613",
+        "nimi": "Tanelinrannan talviuintipaikka",
+        "kunta": "Seinäjoki",
+        "url": "https://lipas.fi/liikuntapaikat/511613",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.0475,
+          62.7694
+        ]
+      },
+      "properties": {
+        "lipas_id": "511628",
+        "nimi": "Venekosken talviuintipaikka",
+        "kunta": "Seinäjoki",
+        "url": "https://lipas.fi/liikuntapaikat/511628",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8386,
+          61.8873
+        ]
+      },
+      "properties": {
+        "lipas_id": "612472",
+        "nimi": "Eteläpään talviuintipaikka",
+        "kunta": "Siikainen",
+        "url": "https://lipas.fi/liikuntapaikat/612472",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.0729,
+          64.6681
+        ]
+      },
+      "properties": {
+        "lipas_id": "510982",
+        "nimi": "Hietamaan talviuintipaikka",
+        "kunta": "Siikajoki",
+        "url": "https://lipas.fi/liikuntapaikat/510982",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.2198,
+          64.3659
+        ]
+      },
+      "properties": {
+        "lipas_id": "613891",
+        "nimi": "Kangasjärven avanto",
+        "kunta": "Siikalatva",
+        "url": "https://lipas.fi/liikuntapaikat/613891",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.2202,
+          64.3659
+        ]
+      },
+      "properties": {
+        "lipas_id": "612273",
+        "nimi": "Kangasjärven talviuintipaikka",
+        "kunta": "Siikalatva",
+        "url": "https://lipas.fi/liikuntapaikat/612273",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.6502,
+          64.5172
+        ]
+      },
+      "properties": {
+        "lipas_id": "510940",
+        "nimi": "Keinonkankaan talviuintipaikka",
+        "kunta": "Siikalatva",
+        "url": "https://lipas.fi/liikuntapaikat/510940",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.9316,
+          64.2014
+        ]
+      },
+      "properties": {
+        "lipas_id": "613890",
+        "nimi": "Paskokankaan avanto",
+        "kunta": "Siikalatva",
+        "url": "https://lipas.fi/liikuntapaikat/613890",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.9317,
+          64.2015
+        ]
+      },
+      "properties": {
+        "lipas_id": "510950",
+        "nimi": "Paskokankaan talviuintipaikka",
+        "kunta": "Siikalatva",
+        "url": "https://lipas.fi/liikuntapaikat/510950",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.6709,
+          63.0731
+        ]
+      },
+      "properties": {
+        "lipas_id": "612288",
+        "nimi": "Avantosauna Lauteet",
+        "kunta": "Siilinjärvi",
+        "url": "https://lipas.fi/liikuntapaikat/612288",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.6809,
+          63.065
+        ]
+      },
+      "properties": {
+        "lipas_id": "529932",
+        "nimi": "Kanavatien talviuintipaikka",
+        "kunta": "Siilinjärvi",
+        "url": "https://lipas.fi/liikuntapaikat/529932",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.6718,
+          63.0732
+        ]
+      },
+      "properties": {
+        "lipas_id": "510888",
+        "nimi": "Siilinlahden talviuintipaikka",
+        "kunta": "Siilinjärvi",
+        "url": "https://lipas.fi/liikuntapaikat/510888",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.6801,
+          62.9829
+        ]
+      },
+      "properties": {
+        "lipas_id": "510889",
+        "nimi": "Simpan talviuintipaikka",
+        "kunta": "Siilinjärvi",
+        "url": "https://lipas.fi/liikuntapaikat/510889",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.9011,
+          65.6495
+        ]
+      },
+      "properties": {
+        "lipas_id": "617315",
+        "nimi": "Simoniemen avantouintipaikka",
+        "kunta": "Simo",
+        "url": "https://lipas.fi/liikuntapaikat/617315",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.2946,
+          60.2559
+        ]
+      },
+      "properties": {
+        "lipas_id": "610048",
+        "nimi": "Gumbostrandin talviuintipaikka",
+        "kunta": "Sipoo",
+        "url": "https://lipas.fi/liikuntapaikat/610048",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.3443,
+          60.3055
+        ]
+      },
+      "properties": {
+        "lipas_id": "510815",
+        "nimi": "Taasjärven talviuintipaikka",
+        "kunta": "Sipoo",
+        "url": "https://lipas.fi/liikuntapaikat/510815",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.3007,
+          60.0809
+        ]
+      },
+      "properties": {
+        "lipas_id": "510758",
+        "nimi": "Störsvikin talviuintipaikka",
+        "kunta": "Siuntio",
+        "url": "https://lipas.fi/liikuntapaikat/510758",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.6268,
+          67.5078
+        ]
+      },
+      "properties": {
+        "lipas_id": "612354",
+        "nimi": "Keppi-Villen rannan avanto",
+        "kunta": "Sodankylä",
+        "url": "https://lipas.fi/liikuntapaikat/612354",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.7014,
+          67.4338
+        ]
+      },
+      "properties": {
+        "lipas_id": "510703",
+        "nimi": "Kommatin talviuimapaikka",
+        "kunta": "Sodankylä",
+        "url": "https://lipas.fi/liikuntapaikat/510703",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.5227,
+          63.6881
+        ]
+      },
+      "properties": {
+        "lipas_id": "612355",
+        "nimi": "Kangaslammin avantouintipaikka",
+        "kunta": "Sonkajärvi",
+        "url": "https://lipas.fi/liikuntapaikat/612355",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.3931,
+          64.1317
+        ]
+      },
+      "properties": {
+        "lipas_id": "98542",
+        "nimi": "Sotkamon kunnan avantouintipaikka",
+        "kunta": "Sotkamo",
+        "url": "https://lipas.fi/liikuntapaikat/98542",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.9122,
+          64.8856
+        ]
+      },
+      "properties": {
+        "lipas_id": "98518",
+        "nimi": "Jalonuoman talviuintipaikka",
+        "kunta": "Suomussalmi",
+        "url": "https://lipas.fi/liikuntapaikat/98518",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.1268,
+          62.6193
+        ]
+      },
+      "properties": {
+        "lipas_id": "529852",
+        "nimi": "Soitunlahden avantouintipaikka",
+        "kunta": "Suonenjoki",
+        "url": "https://lipas.fi/liikuntapaikat/529852",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.6941,
+          61.4977
+        ]
+      },
+      "properties": {
+        "lipas_id": "510370",
+        "nimi": "Sysmän leirintäalueen talviuintipaikka",
+        "kunta": "Sysmä",
+        "url": "https://lipas.fi/liikuntapaikat/510370",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.3213,
+          61.0462
+        ]
+      },
+      "properties": {
+        "lipas_id": "510348",
+        "nimi": "Katismaan talviuintipaikka",
+        "kunta": "Säkylä",
+        "url": "https://lipas.fi/liikuntapaikat/510348",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.2478,
+          65.5802
+        ]
+      },
+      "properties": {
+        "lipas_id": "609500",
+        "nimi": "Siikalammen talviuintipaikka",
+        "kunta": "Taivalkoski",
+        "url": "https://lipas.fi/liikuntapaikat/609500",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7901,
+          60.7228
+        ]
+      },
+      "properties": {
+        "lipas_id": "612473",
+        "nimi": "Eerikkilän talviuintipaikka",
+        "kunta": "Tammela",
+        "url": "https://lipas.fi/liikuntapaikat/612473",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.8938,
+          61.4758
+        ]
+      },
+      "properties": {
+        "lipas_id": "510088",
+        "nimi": "Kaukajärven talviuintipaikka",
+        "kunta": "Tampere",
+        "url": "https://lipas.fi/liikuntapaikat/510088",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.8042,
+          61.5151
+        ]
+      },
+      "properties": {
+        "lipas_id": "510089",
+        "nimi": "Kaupinojan talviuintipaikka",
+        "kunta": "Tampere",
+        "url": "https://lipas.fi/liikuntapaikat/510089",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7557,
+          61.5046
+        ]
+      },
+      "properties": {
+        "lipas_id": "98524",
+        "nimi": "Mältinrannan talviuintipaikka",
+        "kunta": "Tampere",
+        "url": "https://lipas.fi/liikuntapaikat/98524",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7466,
+          61.4486
+        ]
+      },
+      "properties": {
+        "lipas_id": "510090",
+        "nimi": "Peltolammin talviuintipaikka",
+        "kunta": "Tampere",
+        "url": "https://lipas.fi/liikuntapaikat/510090",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7865,
+          61.5154
+        ]
+      },
+      "properties": {
+        "lipas_id": "510087",
+        "nimi": "Rauhanniemen talviuintipaikka",
+        "kunta": "Tampere",
+        "url": "https://lipas.fi/liikuntapaikat/510087",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.8927,
+          61.4723
+        ]
+      },
+      "properties": {
+        "lipas_id": "510086",
+        "nimi": "Riihiniemen talviuintipaikka",
+        "kunta": "Tampere",
+        "url": "https://lipas.fi/liikuntapaikat/510086",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.8352,
+          61.4425
+        ]
+      },
+      "properties": {
+        "lipas_id": "510091",
+        "nimi": "Suolijärven talviuintipaikka",
+        "kunta": "Tampere",
+        "url": "https://lipas.fi/liikuntapaikat/510091",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7057,
+          61.5365
+        ]
+      },
+      "properties": {
+        "lipas_id": "510085",
+        "nimi": "Suomensaaren talviuintipaikka",
+        "kunta": "Tampere",
+        "url": "https://lipas.fi/liikuntapaikat/510085",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6396,
+          61.5113
+        ]
+      },
+      "properties": {
+        "lipas_id": "510092",
+        "nimi": "Tohlopin talviuintipaikka",
+        "kunta": "Tampere",
+        "url": "https://lipas.fi/liikuntapaikat/510092",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.828,
+          62.4278
+        ]
+      },
+      "properties": {
+        "lipas_id": "612474",
+        "nimi": "Parran talviuintipaikka",
+        "kunta": "Teuva",
+        "url": "https://lipas.fi/liikuntapaikat/612474",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.5698,
+          62.2168
+        ]
+      },
+      "properties": {
+        "lipas_id": "612476",
+        "nimi": "Harkkolammen talviuintipaikka",
+        "kunta": "Tohmajärvi",
+        "url": "https://lipas.fi/liikuntapaikat/612476",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.089,
+          62.1039
+        ]
+      },
+      "properties": {
+        "lipas_id": "525037",
+        "nimi": "Uimalan avantouintipaikka",
+        "kunta": "Toivakka",
+        "url": "https://lipas.fi/liikuntapaikat/525037",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.1522,
+          65.8434
+        ]
+      },
+      "properties": {
+        "lipas_id": "518379",
+        "nimi": "Tornion avantouintipaikka",
+        "kunta": "Tornio",
+        "url": "https://lipas.fi/liikuntapaikat/518379",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.2595,
+          60.4143
+        ]
+      },
+      "properties": {
+        "lipas_id": "514516",
+        "nimi": "Ispoisten talviuintipaikka",
+        "kunta": "Turku",
+        "url": "https://lipas.fi/liikuntapaikat/514516",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.0925,
+          60.4213
+        ]
+      },
+      "properties": {
+        "lipas_id": "514517",
+        "nimi": "Saaronniemen talviuintipaikka",
+        "kunta": "Turku",
+        "url": "https://lipas.fi/liikuntapaikat/514517",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.1413,
+          60.431
+        ]
+      },
+      "properties": {
+        "lipas_id": "529936",
+        "nimi": "Saukkorannan talviuintipaikka",
+        "kunta": "Turku",
+        "url": "https://lipas.fi/liikuntapaikat/529936",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.9632,
+          60.55
+        ]
+      },
+      "properties": {
+        "lipas_id": "612369",
+        "nimi": "Jokelan Koululammen talviuintipaikka",
+        "kunta": "Tuusula",
+        "url": "https://lipas.fi/liikuntapaikat/612369",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.1034,
+          60.5341
+        ]
+      },
+      "properties": {
+        "lipas_id": "612368",
+        "nimi": "Kellokosken talviuintipaikka",
+        "kunta": "Tuusula",
+        "url": "https://lipas.fi/liikuntapaikat/612368",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.9889,
+          60.4299
+        ]
+      },
+      "properties": {
+        "lipas_id": "608018",
+        "nimi": "Rusutjärven talviuintipaikka",
+        "kunta": "Tuusula",
+        "url": "https://lipas.fi/liikuntapaikat/608018",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.0298,
+          60.3913
+        ]
+      },
+      "properties": {
+        "lipas_id": "612372",
+        "nimi": "Urheilukeskuksen talviuintipaikka",
+        "kunta": "Tuusula",
+        "url": "https://lipas.fi/liikuntapaikat/612372",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.7991,
+          64.7845
+        ]
+      },
+      "properties": {
+        "lipas_id": "618148",
+        "nimi": "Rauhionojan talviuintipaikka",
+        "kunta": "Tyrnävä",
+        "url": "https://lipas.fi/liikuntapaikat/618148",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.447,
+          61.0834
+        ]
+      },
+      "properties": {
+        "lipas_id": "516558",
+        "nimi": "Urjalankylän talviuintipaikka, Kauniston ranta",
+        "kunta": "Urjala",
+        "url": "https://lipas.fi/liikuntapaikat/516558",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.3362,
+          60.884
+        ]
+      },
+      "properties": {
+        "lipas_id": "529937",
+        "nimi": "Haimion talviuintipaikka",
+        "kunta": "Uusikaupunki",
+        "url": "https://lipas.fi/liikuntapaikat/529937",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.6654,
+          60.7823
+        ]
+      },
+      "properties": {
+        "lipas_id": "529938",
+        "nimi": "Kaukjärven talviuintipaikka",
+        "kunta": "Uusikaupunki",
+        "url": "https://lipas.fi/liikuntapaikat/529938",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.3357,
+          60.8823
+        ]
+      },
+      "properties": {
+        "lipas_id": "518378",
+        "nimi": "Metsälehdon sauna",
+        "kunta": "Uusikaupunki",
+        "url": "https://lipas.fi/liikuntapaikat/518378",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.3947,
+          60.8092
+        ]
+      },
+      "properties": {
+        "lipas_id": "612386",
+        "nimi": "Santtion talviuintipaikka",
+        "kunta": "Uusikaupunki",
+        "url": "https://lipas.fi/liikuntapaikat/612386",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.8269,
+          64.5528
+        ]
+      },
+      "properties": {
+        "lipas_id": "609353",
+        "nimi": "Uiton avantouintipaikka",
+        "kunta": "Vaala",
+        "url": "https://lipas.fi/liikuntapaikat/609353",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.5935,
+          63.0953
+        ]
+      },
+      "properties": {
+        "lipas_id": "98531",
+        "nimi": "Hietasaaren talviuimala",
+        "kunta": "Vaasa",
+        "url": "https://lipas.fi/liikuntapaikat/98531",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.6008,
+          63.0956
+        ]
+      },
+      "properties": {
+        "lipas_id": "612387",
+        "nimi": "Sisäsataman avantouintipaikka",
+        "kunta": "Vaasa",
+        "url": "https://lipas.fi/liikuntapaikat/612387",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.0426,
+          61.2671
+        ]
+      },
+      "properties": {
+        "lipas_id": "514909",
+        "nimi": "Apian talviuintipaikka",
+        "kunta": "Valkeakoski",
+        "url": "https://lipas.fi/liikuntapaikat/514909",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.1141,
+          60.3134
+        ]
+      },
+      "properties": {
+        "lipas_id": "516654",
+        "nimi": "Kuusijärven talviuimapaikka",
+        "kunta": "Vantaa",
+        "url": "https://lipas.fi/liikuntapaikat/516654",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.8811,
+          60.27
+        ]
+      },
+      "properties": {
+        "lipas_id": "528545",
+        "nimi": "Vetokannaksen talviuimapaikka",
+        "kunta": "Vantaa",
+        "url": "https://lipas.fi/liikuntapaikat/528545",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.8893,
+          62.3104
+        ]
+      },
+      "properties": {
+        "lipas_id": "518385",
+        "nimi": "Varkauden avantouintipaikka",
+        "kunta": "Varkaus",
+        "url": "https://lipas.fi/liikuntapaikat/518385",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.6194,
+          60.706
+        ]
+      },
+      "properties": {
+        "lipas_id": "612478",
+        "nimi": "Hietajärven talviuintipaikka",
+        "kunta": "Vehmaa",
+        "url": "https://lipas.fi/liikuntapaikat/612478",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.688,
+          60.621
+        ]
+      },
+      "properties": {
+        "lipas_id": "614745",
+        "nimi": "Rautilan talviuintipaikka",
+        "kunta": "Vehmaa",
+        "url": "https://lipas.fi/liikuntapaikat/614745",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.4228,
+          62.9292
+        ]
+      },
+      "properties": {
+        "lipas_id": "612479",
+        "nimi": "Kirkonkylän talviuintipaikka",
+        "kunta": "Vesanto",
+        "url": "https://lipas.fi/liikuntapaikat/612479",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.5937,
+          61.3122
+        ]
+      },
+      "properties": {
+        "lipas_id": "612482",
+        "nimi": "Lammasniemen talvisauna",
+        "kunta": "Vesilahti",
+        "url": "https://lipas.fi/liikuntapaikat/612482",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.0108,
+          63.7409
+        ]
+      },
+      "properties": {
+        "lipas_id": "514668",
+        "nimi": "Sotkun talviuintipaikka",
+        "kunta": "Vieremä",
+        "url": "https://lipas.fi/liikuntapaikat/514668",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.4096,
+          60.3646
+        ]
+      },
+      "properties": {
+        "lipas_id": "529939",
+        "nimi": "Ojakkalan talviuintipaikka",
+        "kunta": "Vihti",
+        "url": "https://lipas.fi/liikuntapaikat/529939",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.4877,
+          60.3981
+        ]
+      },
+      "properties": {
+        "lipas_id": "612392",
+        "nimi": "Otalammen rantasaunan talviuintipaikka",
+        "kunta": "Vihti",
+        "url": "https://lipas.fi/liikuntapaikat/612392",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.3921,
+          60.2911
+        ]
+      },
+      "properties": {
+        "lipas_id": "516562",
+        "nimi": "Palojärven talviuintipaikka",
+        "kunta": "Vihti",
+        "url": "https://lipas.fi/liikuntapaikat/516562",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.4301,
+          60.482
+        ]
+      },
+      "properties": {
+        "lipas_id": "516580",
+        "nimi": "Vihdin Pirtin talviuintipaikka",
+        "kunta": "Vihti",
+        "url": "https://lipas.fi/liikuntapaikat/516580",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.8312,
+          63.0904
+        ]
+      },
+      "properties": {
+        "lipas_id": "98517",
+        "nimi": "Lummeniemen talviuintipaikka",
+        "kunta": "Viitasaari",
+        "url": "https://lipas.fi/liikuntapaikat/98517",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7563,
+          63.2044
+        ]
+      },
+      "properties": {
+        "lipas_id": "529900",
+        "nimi": "Vieresniemen avantouintipaikka",
+        "kunta": "Vimpeli",
+        "url": "https://lipas.fi/liikuntapaikat/529900",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.4792,
+          60.5068
+        ]
+      },
+      "properties": {
+        "lipas_id": "529902",
+        "nimi": "Klamilan talviuintipaikka",
+        "kunta": "Virolahti",
+        "url": "https://lipas.fi/liikuntapaikat/529902",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7542,
+          62.2386
+        ]
+      },
+      "properties": {
+        "lipas_id": "516649",
+        "nimi": "Laivarannan talviuintipaikka",
+        "kunta": "Virrat",
+        "url": "https://lipas.fi/liikuntapaikat/516649",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.3608,
+          63.3058
+        ]
+      },
+      "properties": {
+        "lipas_id": "612484",
+        "nimi": "Oravaisten talviuintipaikka",
+        "kunta": "Vöyri",
+        "url": "https://lipas.fi/liikuntapaikat/612484",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.5834,
+          64.0742
+        ]
+      },
+      "properties": {
+        "lipas_id": "612406",
+        "nimi": "Hamarin talviuintipaikka",
+        "kunta": "Ylivieska",
+        "url": "https://lipas.fi/liikuntapaikat/612406",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.5619,
+          64.143
+        ]
+      },
+      "properties": {
+        "lipas_id": "529690",
+        "nimi": "Kekan avantouintipaikka",
+        "kunta": "Ylivieska",
+        "url": "https://lipas.fi/liikuntapaikat/529690",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6006,
+          61.5577
+        ]
+      },
+      "properties": {
+        "lipas_id": "516614",
+        "nimi": "Räikän talviuintipaikka",
+        "kunta": "Ylöjärvi",
+        "url": "https://lipas.fi/liikuntapaikat/516614",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.5955,
+          61.5822
+        ]
+      },
+      "properties": {
+        "lipas_id": "612407",
+        "nimi": "Ylöjärven avantouimarit ry:n talviuintipaikka",
+        "kunta": "Ylöjärvi",
+        "url": "https://lipas.fi/liikuntapaikat/612407",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.2091,
+          60.7509
+        ]
+      },
+      "properties": {
+        "lipas_id": "514644",
+        "nimi": "Piilikankaan talviuintipaikka",
+        "kunta": "Ypäjä",
+        "url": "https://lipas.fi/liikuntapaikat/514644",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.0474,
+          62.5538
+        ]
+      },
+      "properties": {
+        "lipas_id": "514643",
+        "nimi": "Mustikkavuoren talviuintipaikka",
+        "kunta": "Ähtäri",
+        "url": "https://lipas.fi/liikuntapaikat/514643",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.7311,
+          62.6078
+        ]
+      },
+      "properties": {
+        "lipas_id": "524248",
+        "nimi": "Häränvirran talviuintipaikka",
+        "kunta": "Äänekoski",
+        "url": "https://lipas.fi/liikuntapaikat/524248",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.883,
+          62.5616
+        ]
+      },
+      "properties": {
+        "lipas_id": "514631",
+        "nimi": "Suojärven talviuintipaikka",
+        "kunta": "Äänekoski",
+        "url": "https://lipas.fi/liikuntapaikat/514631",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,1575 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Talviuintipaikat.fi</title>
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+
+  <style>
+    :root{
+      --leaflet-blue:#3388ff;
+      --bg:#0b1020;
+      --panel:#0f1730;
+      --panel2:#111c3a;
+      --text:#eaf0ff;
+      --muted:#a9b7e6;
+      --border:rgba(255,255,255,.12);
+      --shadow: 0 12px 30px rgba(0,0,0,.35);
+      --radius:16px;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background:var(--bg);
+      color:var(--text);
+    }
+
+    .app{
+      display:grid;
+      grid-template-columns: 380px 1fr;
+      height:100vh;
+      width:100vw;
+      overflow:hidden;
+    }
+
+    /* DESKTOP sidebar */
+    .sidebar{
+      display:flex;
+      flex-direction:column;
+      background:linear-gradient(180deg, var(--panel) 0%, var(--panel2) 100%);
+      border-right:1px solid var(--border);
+      min-width: 320px;
+      overflow:hidden;
+    }
+
+    .sidebarHeader{
+      position:sticky;
+      top:0;
+      z-index:20;
+      background:linear-gradient(180deg, rgba(15,23,48,.98) 0%, rgba(17,28,58,.92) 100%);
+      backdrop-filter: blur(8px);
+      border-bottom:1px solid var(--border);
+      padding:12px 12px 10px;
+    }
+
+    .brandRow{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:10px;
+      margin-bottom:8px;
+    }
+    .brand .title{
+      font-weight:1100;
+      letter-spacing:.2px;
+      font-size:18px;
+      line-height:1.1;
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+    .brand .subtitle{
+      font-size:12px;
+      color:var(--muted);
+      margin-top:4px;
+      font-weight:800;
+    }
+
+    .btn{
+      appearance:none;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.06);
+      color:var(--text);
+      padding:10px 12px;
+      border-radius:14px;
+      cursor:pointer;
+      font-weight:950;
+      font-size:13px;
+      line-height:1;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      transition: transform .08s ease, background .15s ease, border-color .15s ease;
+      user-select:none;
+      white-space:nowrap;
+    }
+    .btn:hover{ background:rgba(255,255,255,.1); border-color:rgba(255,255,255,.18); }
+    .btn:active{ transform: translateY(1px); }
+
+    .btnPrimary{
+      border-color: rgba(51,136,255,.55);
+      background: rgba(51,136,255,.18);
+    }
+    .btnPrimary:hover{ background: rgba(51,136,255,.28); }
+
+    .actionsGrid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+      margin-top:8px;
+    }
+    .btnWide{ grid-column: 1 / -1; }
+
+    .searchRow{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      margin-top:10px;
+    }
+    .search{
+      flex:1;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid var(--border);
+      background:rgba(0,0,0,.18);
+    }
+    .search input{
+      width:100%;
+      border:0;
+      outline:0;
+      background:transparent;
+      color:var(--text);
+      font-size:14px;
+      font-weight:850;
+    }
+    .search input::placeholder{ color:rgba(234,240,255,.55); }
+
+    /* Filters */
+    .filtersBlock{
+      margin-top:10px;
+      border:1px solid var(--border);
+      border-radius:14px;
+      background:rgba(0,0,0,.14);
+      padding:10px 10px 12px;
+    }
+    .filtersHeader{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      margin-bottom:10px;
+    }
+    .filtersHeader .h{
+      font-weight:1100;
+      font-size:14px;
+      letter-spacing:.2px;
+    }
+    .filtersHeader .hint{
+      font-size:12px;
+      font-weight:950;
+      color:var(--muted);
+    }
+    .filtersGrid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:10px;
+    }
+    .field label{
+      display:block;
+      font-size:12px;
+      font-weight:950;
+      color:var(--muted);
+      margin-bottom:6px;
+    }
+    select{
+      width:100%;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.06);
+      color:var(--text);
+      padding:10px 10px;
+      border-radius:12px;
+      outline:none;
+      font-weight:950;
+      font-size:13px;
+    }
+
+    .sidebar.hasSelection .filtersHeader{ display:none; }
+    .sidebar.hasSelection .filtersBlock{
+      padding:8px;
+      margin-top:8px;
+    }
+    .sidebar.hasSelection .field label{
+      font-size:11px;
+      margin-bottom:4px;
+    }
+    .sidebar.hasSelection select{
+      padding:8px 8px;
+      font-size:12px;
+      border-radius:10px;
+    }
+
+    @media (min-width: 921px){
+      .filtersGrid{ grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .selectedWrap{
+      flex:1;
+      overflow:auto;
+      padding:12px 12px 14px;
+    }
+
+    .selectedEmpty{
+      border:1px dashed rgba(255,255,255,.18);
+      border-radius:14px;
+      padding:12px;
+      color:var(--muted);
+      font-size:13px;
+      font-weight:850;
+      line-height:1.35;
+      background:rgba(0,0,0,.10);
+    }
+
+    .card{
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      background:rgba(255,255,255,.05);
+      box-shadow: 0 10px 22px rgba(0,0,0,.22);
+      padding:12px;
+    }
+    .cardTitle{
+      font-weight:1200;
+      font-size:18px;
+      line-height:1.2;
+    }
+    .cardSub{
+      margin-top:6px;
+      color:var(--muted);
+      font-size:12px;
+      font-weight:900;
+      line-height:1.3;
+    }
+
+    .thumb{
+      margin-top:12px;
+      border:1px solid var(--border);
+      border-radius:14px;
+      overflow:hidden;
+      background:rgba(0,0,0,.18);
+    }
+    .thumb img{
+      width:100%;
+      display:block;
+      max-height:220px;
+      object-fit:cover;
+    }
+    .thumbCaption{
+      padding:8px 10px;
+      font-size:12px;
+      font-weight:900;
+      color:var(--muted);
+      word-break: break-all;
+    }
+
+    .kv{
+      display:grid;
+      grid-template-columns: 120px 1fr;
+      gap:8px 10px;
+      margin-top:12px;
+      font-size:13px;
+    }
+    .k{ color:var(--muted); font-weight:950; }
+    .v{ color:var(--text); font-weight:950; }
+
+    .detailActions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:14px;
+    }
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 12px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.06);
+      font-weight:1100;
+      font-size:13px;
+      color:var(--text);
+      cursor:pointer;
+      user-select:none;
+      text-decoration:none;
+    }
+    .chipPrimary{
+      border-color: rgba(51,136,255,.55);
+      background: rgba(51,136,255,.20);
+    }
+
+    /* Popup CTA */
+    .popupCard{ min-width: 240px; }
+    .popupTitle{
+      font-weight:1200;
+      font-size:14px;
+      margin:0 0 6px 0;
+    }
+    .popupMeta{
+      font-size:12px;
+      font-weight:900;
+      color: rgba(40,50,90,.85);
+      background: rgba(51,136,255,.10);
+      border:1px solid rgba(51,136,255,.25);
+      border-radius: 12px;
+      padding:6px 8px;
+      margin:0 0 10px 0;
+    }
+    .popupCTA{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:100%;
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid rgba(0,0,0,.08);
+      background: var(--leaflet-blue);
+      color:#fff !important;
+      font-weight:1200;
+      font-size:13px;
+      cursor:pointer;
+      box-shadow: 0 10px 18px rgba(51,136,255,.30);
+      transition: transform .08s ease, filter .15s ease;
+      user-select:none;
+      text-decoration:none !important;
+    }
+    .popupCTA:hover{ filter: brightness(1.05); }
+    .popupCTA:active{ transform: translateY(1px); }
+
+    #map{ height:100%; width:100%; }
+
+    /* Modal */
+    .modalOverlay{
+      position:fixed;
+      inset:0;
+      background: rgba(0,0,0,.55);
+      display:none;
+      align-items:center;
+      justify-content:center;
+      z-index: 7000;
+      padding: 18px;
+    }
+    .modalOverlay.open{ display:flex; }
+
+    .modal{
+      width: min(640px, 96vw);
+      max-height: min(92vh, 820px);
+      overflow:auto;
+      border-radius: 18px;
+      border:1px solid var(--border);
+      background: linear-gradient(180deg, rgba(15,23,48,.98) 0%, rgba(17,28,58,.95) 100%);
+      box-shadow: 0 18px 50px rgba(0,0,0,.45);
+      padding: 14px;
+    }
+    .modalHeader{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:10px;
+    }
+    .modalTitle{
+      font-weight:1200;
+      font-size:16px;
+      margin:0;
+    }
+    .modalHint{
+      margin-top:4px;
+      color:var(--muted);
+      font-size:12px;
+      font-weight:850;
+      line-height:1.35;
+    }
+
+    .modalGrid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+      margin-top:10px;
+    }
+    .modalGrid .full{ grid-column: 1 / -1; }
+
+    .modal input, .modal textarea{
+      width:100%;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.06);
+      color:var(--text);
+      padding:10px 10px;
+      border-radius:12px;
+      outline:none;
+      font-weight:850;
+      font-size:13px;
+    }
+    .modal textarea{ min-height:90px; resize:vertical; }
+
+    .pillRow{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      margin-top:10px;
+      flex-wrap:wrap;
+    }
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:rgba(0,0,0,.18);
+      font-size:12px;
+      font-weight:950;
+      color:var(--muted);
+      width: fit-content;
+    }
+    .pill b{ color: var(--text); }
+
+    .modalActions{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:12px;
+    }
+
+    /* Pin helper + mini */
+    .pinHelper{
+      position:fixed;
+      left:50%;
+      transform: translateX(-50%);
+      top:12px;
+      z-index: 7600;
+      display:none;
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid rgba(51,136,255,.45);
+      background: rgba(15,23,48,.92);
+      color: var(--text);
+      font-weight:950;
+      font-size:13px;
+      box-shadow: 0 12px 24px rgba(0,0,0,.35);
+      backdrop-filter: blur(6px);
+      max-width: min(720px, 92vw);
+      text-align:center;
+    }
+    .pinHelper.open{ display:block; }
+
+    .pinMini{
+      position:fixed;
+      left:50%;
+      transform: translateX(-50%);
+      bottom:12px;
+      z-index: 7600;
+      display:none;
+      padding:10px 12px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(15,23,48,.92);
+      color: var(--text);
+      box-shadow: 0 18px 40px rgba(0,0,0,.45);
+      backdrop-filter: blur(6px);
+      max-width: min(760px, 94vw);
+      width: fit-content;
+    }
+    .pinMini.open{ display:flex; align-items:center; gap:10px; }
+    .pinMini .msg{
+      font-weight:1000;
+      font-size:13px;
+      color: var(--text);
+      white-space:nowrap;
+    }
+    .pinMini .small{
+      padding:9px 10px;
+      border-radius:12px;
+      font-size:13px;
+    }
+
+    /* ============================
+       MOBILE: Map-first + floating controls + bottom sheet
+       ============================ */
+    .mobileControls{
+      display:none;
+    }
+
+    .mobileSheet{
+      display:none;
+    }
+
+    @media (max-width: 920px){
+      .app{ grid-template-columns: 1fr; }
+      .sidebar{ display:none; } /* hide desktop sidebar entirely */
+      #map{ height:100vh; width:100vw; }
+
+      /* Floating controls */
+      .mobileControls{
+        display:block;
+        position:fixed;
+        left:10px;
+        right:10px;
+        top:10px;
+        z-index: 6500;
+        border:1px solid var(--border);
+        border-radius: 18px;
+        background: linear-gradient(180deg, rgba(15,23,48,.92) 0%, rgba(17,28,58,.86) 100%);
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(8px);
+        padding:10px;
+        max-height: 48vh;      /* leave map visible */
+        overflow:auto;
+      }
+
+      .mobileTopRow{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        gap:10px;
+        margin-bottom:8px;
+      }
+      .mobileBrand{
+        font-weight:1100;
+        font-size:16px;
+        line-height:1.1;
+      }
+      .mobileHint{
+        color: var(--muted);
+        font-size:11px;
+        font-weight:850;
+        margin-top:2px;
+      }
+
+      .mobileActions{
+        display:flex;
+        gap:10px;
+        flex-wrap:wrap;
+        margin-top:8px;
+      }
+      .mobileActions .btn{
+        flex:1;
+        min-width: 130px;
+      }
+      .mobileActions .btnWide{
+        width:100%;
+        flex: 1 0 100%;
+      }
+
+      /* compact filters on mobile: labels hidden, 3 columns */
+      .mobileControls .filtersHeader{ display:none; }
+      .mobileControls .field label{ display:none; }
+      .mobileControls .filtersBlock{
+        margin-top:8px;
+        padding:10px;
+      }
+      .mobileControls .filtersGrid{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:8px;
+      }
+      .mobileControls select{
+        padding:10px 8px;
+        font-size:12px;
+        border-radius:12px;
+      }
+
+      /* Bottom sheet */
+      .mobileSheet{
+        display:block;
+        position:fixed;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index: 6400;
+        transform: translateY(105%);
+        transition: transform .18s ease;
+        padding: 10px 10px calc(14px + env(safe-area-inset-bottom));
+      }
+      .mobileSheet.open{
+        transform: translateY(0);
+      }
+
+      .sheetCard{
+        border:1px solid rgba(255,255,255,.14);
+        border-radius: 20px;
+        background: linear-gradient(180deg, rgba(15,23,48,.96) 0%, rgba(17,28,58,.92) 100%);
+        box-shadow: 0 22px 60px rgba(0,0,0,.55);
+        overflow:hidden;
+      }
+
+      .sheetHandle{
+        display:flex;
+        justify-content:center;
+        padding:10px 0 6px;
+        cursor:pointer;
+        user-select:none;
+      }
+      .sheetHandleBar{
+        width: 54px;
+        height: 5px;
+        border-radius: 999px;
+        background: rgba(255,255,255,.22);
+      }
+
+      .sheetBody{
+        padding: 0 12px 12px;
+        max-height: 38vh;     /* collapsed height */
+        overflow:auto;
+      }
+      .mobileSheet.expanded .sheetBody{
+        max-height: 78vh;     /* expanded height */
+      }
+
+      .sheetHeader{
+        display:flex;
+        align-items:flex-start;
+        justify-content:space-between;
+        gap:10px;
+      }
+      .sheetTitle{
+        font-weight:1200;
+        font-size:16px;
+        line-height:1.2;
+      }
+      .sheetSub{
+        margin-top:6px;
+        color:var(--muted);
+        font-size:12px;
+        font-weight:900;
+        line-height:1.3;
+      }
+
+      .sheetCloseBtn{
+        padding:9px 10px;
+        border-radius: 12px;
+        font-weight:1100;
+      }
+
+      .sheetKv{
+        display:grid;
+        grid-template-columns: 120px 1fr;
+        gap:8px 10px;
+        margin-top:12px;
+        font-size:13px;
+      }
+
+      .sheetActions{
+        display:flex;
+        flex-wrap:wrap;
+        gap:10px;
+        margin-top:12px;
+      }
+
+      /* When sheet open, make controls a bit smaller to show map */
+      body.sheet-open .mobileControls{
+        max-height: 36vh;
+        opacity: .98;
+      }
+
+      .pinHelper{ top: 8px; }
+      .pinMini{ bottom: 10px; }
+      .pinMini .msg{ white-space:normal; }
+      .modalGrid{ grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <!-- Desktop sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebarHeader">
+        <div class="brandRow">
+          <div class="brand">
+            <div class="title">❄️ Talviuintipaikat.fi</div>
+            <div class="subtitle">Klikkaa markeria → tiedot päivittyy heti</div>
+          </div>
+        </div>
+
+        <div class="actionsGrid">
+          <button class="btn btnPrimary" id="btnNear">📍 Näytä lähelläni</button>
+          <button class="btn" id="btnClear" title="Nollaa haku ja filtterit">↩︎ Nollaa</button>
+          <button class="btn btnPrimary btnWide" id="btnAdd">＋ Vinkkaa puuttuva talviuintipaikka</button>
+        </div>
+
+        <div class="searchRow">
+          <div class="search" role="search">
+            🔎
+            <input id="searchInput" type="text" placeholder="Hae nimellä / kunnalla…" autocomplete="off" />
+          </div>
+        </div>
+
+        <div class="filtersBlock" aria-label="Filtterit">
+          <div class="filtersHeader">
+            <div class="h">Filtterit</div>
+            <div class="hint">beta</div>
+          </div>
+          <div class="filtersGrid">
+            <div class="field">
+              <label for="filterSauna">Sauna</label>
+              <select id="filterSauna">
+                <option value="all">Kaikki</option>
+                <option value="yes">Kyllä</option>
+                <option value="no">Ei</option>
+                <option value="unknown">Ei tietoa</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="filterChanging">Pukuhuone</label>
+              <select id="filterChanging">
+                <option value="all">Kaikki</option>
+                <option value="yes">Kyllä</option>
+                <option value="no">Ei</option>
+                <option value="unknown">Ei tietoa</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="filterPricing">Hinnoittelu</label>
+              <select id="filterPricing">
+                <option value="all">Kaikki</option>
+                <option value="free">Ilmainen</option>
+                <option value="paid">Maksullinen</option>
+                <option value="unknown">Ei tietoa</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="selectedWrap">
+        <div id="selectedEmpty" class="selectedEmpty">
+          Valitse paikka kartalta (tai hae nimellä), niin näet lisätiedot tässä.
+        </div>
+
+        <div id="selectedCard" class="card" style="display:none;">
+          <div class="cardTitle" id="detailTitle">—</div>
+          <div class="cardSub" id="detailSubtitle"></div>
+
+          <div id="detailThumb" class="thumb" style="display:none;">
+            <img id="detailImg" alt="Kuva kohteesta" />
+            <div class="thumbCaption" id="detailImgCaption">Kuva</div>
+          </div>
+
+          <div class="kv" id="detailKv"></div>
+
+          <div class="detailActions">
+            <a class="chip chipPrimary" id="detailGoogle" target="_blank" rel="noopener">Avaa kohteen sijainti</a>
+            <a class="chip" id="detailLink" target="_blank" rel="noopener" style="display:none;">Avaa kohteen sivu</a>
+          </div>
+
+          <div style="margin-top:12px;">
+            <button class="btn" id="btnCloseSelection">Sulje valinta</button>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main style="position:relative;">
+      <div id="map"></div>
+    </main>
+  </div>
+
+  <!-- MOBILE floating controls (same IDs reused; we will “mirror” values via JS) -->
+  <div class="mobileControls" id="mobileControls">
+    <div class="mobileTopRow">
+      <div>
+        <div class="mobileBrand">❄️ Talviuintipaikat.fi</div>
+        <div class="mobileHint">Klikkaa markeria → tiedot päivittyy heti</div>
+      </div>
+    </div>
+
+    <div class="mobileActions">
+      <button class="btn btnPrimary" id="mBtnNear">📍 Lähelläni</button>
+      <button class="btn" id="mBtnClear">↩︎ Nollaa</button>
+      <button class="btn btnPrimary btnWide" id="mBtnAdd">＋ Vinkkaa puuttuva paikka</button>
+    </div>
+
+    <div class="searchRow">
+      <div class="search" role="search">
+        🔎
+        <input id="mSearchInput" type="text" placeholder="Hae nimellä / kunnalla…" autocomplete="off" />
+      </div>
+    </div>
+
+    <div class="filtersBlock" aria-label="Filtterit">
+      <div class="filtersGrid">
+        <div class="field">
+          <label>Sauna</label>
+          <select id="mFilterSauna">
+            <option value="all">Sauna</option>
+            <option value="yes">Sauna ✓</option>
+            <option value="no">Sauna ✕</option>
+            <option value="unknown">Sauna ?</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Pukuhuone</label>
+          <select id="mFilterChanging">
+            <option value="all">Pukuhuone</option>
+            <option value="yes">Puku ✓</option>
+            <option value="no">Puku ✕</option>
+            <option value="unknown">Puku ?</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Hinnoittelu</label>
+          <select id="mFilterPricing">
+            <option value="all">Hinta</option>
+            <option value="free">Ilmainen</option>
+            <option value="paid">Maksull.</option>
+            <option value="unknown">Hinta ?</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOBILE bottom sheet -->
+  <div class="mobileSheet" id="mobileSheet">
+    <div class="sheetCard">
+      <div class="sheetHandle" id="sheetHandle">
+        <div class="sheetHandleBar"></div>
+      </div>
+
+      <div class="sheetBody">
+        <div class="sheetHeader">
+          <div style="flex:1;">
+            <div class="sheetTitle" id="msTitle">—</div>
+            <div class="sheetSub" id="msSubtitle"></div>
+          </div>
+          <button class="btn sheetCloseBtn" id="msClose">Sulje</button>
+        </div>
+
+        <div id="msThumb" class="thumb" style="display:none;">
+          <img id="msImg" alt="Kuva kohteesta" />
+          <div class="thumbCaption" id="msImgCaption">Kuva</div>
+        </div>
+
+        <div class="sheetKv" id="msKv"></div>
+
+        <div class="sheetActions">
+          <a class="chip chipPrimary" id="msGoogle" target="_blank" rel="noopener">Avaa kohteen sijainti</a>
+          <a class="chip" id="msLink" target="_blank" rel="noopener" style="display:none;">Avaa kohteen sivu</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- helper banner -->
+  <div class="pinHelper" id="pinHelper">📌 Klikkaa karttaa ja aseta pinni ehdotetulle paikalle</div>
+
+  <!-- mini during pin pick -->
+  <div class="pinMini" id="pinMini">
+    <div class="msg">📌 Klikkaa karttaa ja aseta pinni</div>
+    <button class="btn small" id="btnCancelPin">Peruuta</button>
+  </div>
+
+  <!-- Modal -->
+  <div class="modalOverlay" id="addModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-label="Vinkkaa puuttuva talviuintipaikka">
+      <div class="modalHeader">
+        <div>
+          <div class="modalTitle">Vinkkaa puuttuva talviuintipaikka</div>
+          <div class="modalHint">
+            1) Paina <b>Lisää kohde kartalle</b> ja klikkaa karttaa.<br>
+            2) Täytä tiedot ja lähetä vinkki.
+          </div>
+        </div>
+        <button class="btn" id="btnCloseModal" title="Sulje">✕</button>
+      </div>
+
+      <div class="pillRow">
+        <div class="pill" id="pinStatus">📌 Pinni: <b>ei asetettu</b></div>
+        <button class="btn btnPrimary" id="btnPickOnMap">📌 Lisää kohde kartalle</button>
+      </div>
+
+      <div class="modalGrid">
+        <div class="full">
+          <input id="newName" placeholder="Paikan nimi (pakollinen)" />
+        </div>
+        <div>
+          <input id="newMunicipality" placeholder="Paikkakunta (valinnainen)" />
+        </div>
+        <div>
+          <input id="newAddress" placeholder="Osoite (Google Maps -haku) (valinnainen)" />
+        </div>
+        <div class="full">
+          <input id="newWebsite" placeholder="Kohteen sivu (URL, valinnainen)" />
+        </div>
+        <div class="full">
+          <input id="newImageUrl" placeholder="Kuvan URL (valinnainen) — esim. https://..." />
+        </div>
+        <div class="full">
+          <textarea id="newNotes" placeholder="Lisätiedot (sauna, pukuhuone, hinnat, ohjeet…)" ></textarea>
+        </div>
+      </div>
+
+      <div class="modalActions">
+        <button class="btn btnPrimary" id="btnSubmitHint">Lähetä vinkki</button>
+        <button class="btn" id="btnCancelAdd">Peruuta</button>
+      </div>
+    </div>
+  </div>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+
+  <script>
+    const $ = (id) => document.getElementById(id);
+
+    function norm(s){
+      return (s ?? "")
+        .toString()
+        .trim()
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+    }
+    function pick(props, keys){
+      for(const k of keys){
+        if(props && props[k] !== undefined && props[k] !== null && props[k] !== "") return props[k];
+      }
+      return "";
+    }
+    function safeText(s){ return (s ?? "").toString().trim(); }
+
+    function asYesNoUnknown(v){
+      const x = norm(v);
+      if(["yes","kylla","kyl","true","1"].includes(x)) return "yes";
+      if(["no","ei","false","0"].includes(x)) return "no";
+      if(x === "" || x === "unknown" || x === "ei tietoa") return "unknown";
+      return "unknown";
+    }
+
+    function pricingBucket(props){
+      const paid = asYesNoUnknown(pick(props, ["maksullinen","paid","fee","maksu","maksullisuus"]));
+      if(paid === "yes") return "paid";
+      if(paid === "no") return "free";
+      return "unknown";
+    }
+
+    function featureLabel(feature){
+      const props = feature.properties || {};
+      const name = safeText(pick(props, ["name","nimi","Nimi","Name","title"])) || "Nimetön paikka";
+      const addr = safeText(pick(props, ["address","osoite","Address","street","paikka","location"])) || "";
+      return { name, addr };
+    }
+
+    function getMunicipality(props){
+      return safeText(pick(props, ["kunta","paikkakunta","municipality","city","kaupunki","Kunta","Paikkakunta","Municipality","City"]));
+    }
+
+    function getWebsite(props){
+      const link = safeText(pick(props, ["url","link","website","verkkosivu","www","URL","Website"]));
+      if(!link) return "";
+      return link.startsWith("http") ? link : ("https://" + link);
+    }
+
+    function getImage(props){
+      return safeText(pick(props, ["image","image_url","photo","photo_url","kuva","Kuva","img","Img","Image"]));
+    }
+
+    function mapsLink(lat,lng){
+      const q = encodeURIComponent(`${lat},${lng}`);
+      return `https://www.google.com/maps?q=${q}`;
+    }
+
+    function getTestImageOverride(placeName){
+      const n = norm(placeName);
+      if(n.includes("aurinkolahd") || n.includes("aurinkolahti") || n.includes("aurinkolah")){
+        return "aurinkolahti.png";
+      }
+      return "";
+    }
+
+    function withCacheBust(url){
+      if(!url) return "";
+      const sep = url.includes("?") ? "&" : "?";
+      return url + sep + "v=" + Date.now();
+    }
+
+    function isMobile(){
+      return window.matchMedia && window.matchMedia("(max-width: 920px)").matches;
+    }
+
+    // sheet state
+    function openSheet(){
+      $("mobileSheet").classList.add("open");
+      document.body.classList.add("sheet-open");
+      $("mobileControls").style.display = "block";
+    }
+    function closeSheet(){
+      $("mobileSheet").classList.remove("open");
+      $("mobileSheet").classList.remove("expanded");
+      document.body.classList.remove("sheet-open");
+    }
+    function toggleSheetExpanded(){
+      $("mobileSheet").classList.toggle("expanded");
+    }
+
+    // sync mobile controls -> desktop controls (so we only filter once)
+    function syncMobileToDesktop(){
+      $("searchInput").value = $("mSearchInput").value;
+      $("filterSauna").value = $("mFilterSauna").value;
+      $("filterChanging").value = $("mFilterChanging").value;
+      $("filterPricing").value = $("mFilterPricing").value;
+    }
+    function syncDesktopToMobile(){
+      $("mSearchInput").value = $("searchInput").value;
+      $("mFilterSauna").value = $("filterSauna").value;
+      $("mFilterChanging").value = $("filterChanging").value;
+      $("mFilterPricing").value = $("filterPricing").value;
+    }
+
+    let map;
+    let allFeatures = [];
+    let filteredFeatures = [];
+    let markersById = new Map();
+    let activeId = null;
+
+    // add modal state
+    let addMode = false;
+    let pinPickMode = false;
+    let addMarker = null;
+    let addLatLng = null;
+
+    function setSelectionMode(on){
+      const sidebar = $("sidebar");
+      if(!sidebar) return;
+      if(on) sidebar.classList.add("hasSelection");
+      else sidebar.classList.remove("hasSelection");
+    }
+
+    function openAddModal(){
+      $("addModal").classList.add("open");
+      $("addModal").setAttribute("aria-hidden", "false");
+      addMode = true;
+      pinPickMode = false;
+      updatePinStatus();
+      hidePinHelper();
+      hidePinMini();
+    }
+
+    function closeAddModal(){
+      $("addModal").classList.remove("open");
+      $("addModal").setAttribute("aria-hidden", "true");
+      addMode = false;
+      pinPickMode = false;
+
+      hidePinHelper();
+      hidePinMini();
+
+      if(addMarker){
+        map.removeLayer(addMarker);
+        addMarker = null;
+      }
+      addLatLng = null;
+
+      $("newName").value = "";
+      $("newMunicipality").value = "";
+      $("newAddress").value = "";
+      $("newWebsite").value = "";
+      $("newImageUrl").value = "";
+      $("newNotes").value = "";
+
+      updatePinStatus();
+    }
+
+    function showPinHelper(){ $("pinHelper").classList.add("open"); }
+    function hidePinHelper(){ $("pinHelper").classList.remove("open"); }
+
+    function showPinMini(){ $("pinMini").classList.add("open"); }
+    function hidePinMini(){ $("pinMini").classList.remove("open"); }
+
+    function updatePinStatus(){
+      if(addLatLng){
+        $("pinStatus").innerHTML = `📌 Pinni: <b>${addLatLng.lat.toFixed(5)}, ${addLatLng.lng.toFixed(5)}</b>`;
+      } else {
+        $("pinStatus").innerHTML = `📌 Pinni: <b>ei asetettu</b>`;
+      }
+    }
+
+    function startPickPin(){
+      // hide modal so map is usable
+      $("addModal").classList.remove("open");
+      pinPickMode = true;
+      showPinHelper();
+      showPinMini();
+    }
+
+    function cancelPickPin(){
+      pinPickMode = false;
+      hidePinHelper();
+      hidePinMini();
+      $("addModal").classList.add("open");
+    }
+
+    function finishPickPin(){
+      pinPickMode = false;
+      hidePinHelper();
+      hidePinMini();
+      $("addModal").classList.add("open");
+      updatePinStatus();
+    }
+
+    function initMap(){
+      map = L.map('map', { zoomControl: true }).setView([64.5, 26.0], 5);
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; OpenStreetMap'
+      }).addTo(map);
+
+      map.on('click', (e) => {
+        if(!addMode || !pinPickMode) return;
+        setAddPin(e.latlng);
+        finishPickPin();
+      });
+    }
+
+    async function loadGeoJSON(){
+      const res = await fetch("talviuintipaikat_enriched.geojson", { cache: "no-store" });
+      if(!res.ok) throw new Error("GeoJSON ei latautunut: " + res.status);
+      const gj = await res.json();
+
+      allFeatures = (gj.features || []).map((f, idx) => {
+        const props = f.properties || {};
+        const name = safeText(pick(props, ["name","nimi","Nimi","Name","title"]));
+        const id = safeText(pick(props, ["id","ID","uuid","UID"])) || `p_${idx}_${norm(name).slice(0,24)}`;
+        f.__id = id;
+        return f;
+      });
+
+      filteredFeatures = [...allFeatures];
+    }
+
+    function rebuildMarkers(){
+      markersById.clear();
+
+      if(window.__markerGroup){
+        window.__markerGroup.remove();
+      }
+      window.__markerGroup = L.layerGroup().addTo(map);
+
+      filteredFeatures.forEach(feature => {
+        const coords = feature.geometry?.coordinates;
+        if(!coords) return;
+
+        const lng = coords[0], lat = coords[1];
+        const props = feature.properties || {};
+        const name = safeText(pick(props, ["name","nimi","Nimi","Name","title"])) || "Nimetön paikka";
+
+        const m = L.marker([lat,lng]);
+        markersById.set(feature.__id, m);
+
+        const muni = getMunicipality(props);
+        const muniText = muni ? `📍 ${muni}` : "📍 Paikkakunta ei tiedossa";
+        const website = getWebsite(props);
+
+        const card = document.createElement("div");
+        card.className = "popupCard";
+
+        const t = document.createElement("div");
+        t.className = "popupTitle";
+        t.textContent = name;
+
+        const meta = document.createElement("div");
+        meta.className = "popupMeta";
+        meta.textContent = muniText;
+
+        card.appendChild(t);
+        card.appendChild(meta);
+
+        if(website){
+          const a = document.createElement("a");
+          a.className = "popupCTA";
+          a.href = website;
+          a.target = "_blank";
+          a.rel = "noopener";
+          a.textContent = "Avaa kohteen sivu";
+          card.appendChild(a);
+        }
+
+        m.bindPopup(card, { closeButton:true });
+
+        m.on("click", () => {
+          openDetail(feature.__id, { flyTo:false });
+        });
+
+        m.addTo(window.__markerGroup);
+      });
+
+      if(activeId && markersById.get(activeId)){
+        markersById.get(activeId).openPopup();
+      }
+    }
+
+    function applyFilters(){
+      // if on mobile, read mobile controls into desktop values then filter once
+      if(isMobile()){
+        syncMobileToDesktop();
+      }
+
+      const q = norm($("searchInput").value);
+      const sauna = $("filterSauna").value;
+      const changing = $("filterChanging").value;
+      const pricing = $("filterPricing").value;
+
+      filteredFeatures = allFeatures.filter(f => {
+        const props = f.properties || {};
+        const { name, addr } = featureLabel(f);
+        const muni = getMunicipality(props);
+
+        if(q){
+          const hay = norm(name + " " + addr + " " + (muni || ""));
+          if(!hay.includes(q)) return false;
+        }
+
+        if(sauna !== "all"){
+          const v = asYesNoUnknown(pick(props, ["sauna","Sauna"]));
+          if(v !== sauna) return false;
+        }
+
+        if(changing !== "all"){
+          const v = asYesNoUnknown(pick(props, ["pukuhuone","changing_room","changing","Pukuhuone"]));
+          if(v !== changing) return false;
+        }
+
+        if(pricing !== "all"){
+          const v = pricingBucket(props);
+          if(v !== pricing) return false;
+        }
+
+        return true;
+      });
+
+      rebuildMarkers();
+
+      // keep mobile UI in sync (e.g. when clearing from desktop buttons)
+      if(isMobile()){
+        syncDesktopToMobile();
+      }
+    }
+
+    function renderKvInto(containerEl, kvPairs){
+      containerEl.innerHTML = "";
+      kvPairs.forEach(([k,v]) => {
+        const kk = document.createElement("div");
+        kk.className = "k";
+        kk.textContent = k;
+
+        const vv = document.createElement("div");
+        vv.className = "v";
+        vv.textContent = v;
+
+        containerEl.appendChild(kk);
+        containerEl.appendChild(vv);
+      });
+    }
+
+    function openDetail(id, opts={flyTo:true}){
+      const feature = allFeatures.find(f => f.__id === id);
+      if(!feature) return;
+
+      activeId = id;
+
+      const props = feature.properties || {};
+      const { name, addr } = featureLabel(feature);
+
+      const muni = getMunicipality(props);
+      const subtitleParts = [];
+      if(addr) subtitleParts.push(addr);
+      if(muni) subtitleParts.push(muni);
+      const subtitleText = subtitleParts.length ? subtitleParts.join(" • ") : "";
+
+      const sauna = asYesNoUnknown(pick(props, ["sauna","Sauna"]));
+      const changing = asYesNoUnknown(pick(props, ["pukuhuone","changing_room","changing","Pukuhuone"]));
+      const pricing = pricingBucket(props);
+
+      const kv = [
+        ["Paikkakunta", muni || "Ei tietoa"],
+        ["Sauna", sauna === "yes" ? "Kyllä" : sauna === "no" ? "Ei" : "Ei tietoa"],
+        ["Pukuhuone", changing === "yes" ? "Kyllä" : changing === "no" ? "Ei" : "Ei tietoa"],
+        ["Hinnoittelu", pricing === "paid" ? "Maksullinen" : pricing === "free" ? "Ilmainen" : "Ei tietoa"],
+      ];
+
+      const coords = feature.geometry?.coordinates || null;
+      const lng = coords ? coords[0] : null;
+      const lat = coords ? coords[1] : null;
+
+      const website = getWebsite(props);
+
+      // image
+      let img = getImage(props);
+      if(!img) img = getTestImageOverride(name);
+
+      // Desktop detail (if visible)
+      if($("detailTitle")){
+        $("detailTitle").textContent = name;
+        $("detailSubtitle").textContent = subtitleText;
+        renderKvInto($("detailKv"), kv);
+
+        if(lat != null && lng != null){
+          $("detailGoogle").href = mapsLink(lat,lng);
+          $("detailGoogle").style.display = "inline-flex";
+        } else {
+          $("detailGoogle").style.display = "none";
+        }
+
+        if(website){
+          $("detailLink").style.display = "inline-flex";
+          $("detailLink").href = website;
+        } else {
+          $("detailLink").style.display = "none";
+        }
+
+        const imgEl = $("detailImg");
+        const captionEl = $("detailImgCaption");
+        if(img){
+          $("detailThumb").style.display = "block";
+          const finalSrc = withCacheBust(img);
+          imgEl.src = finalSrc;
+          captionEl.textContent = "Kuva kohteesta";
+          imgEl.onerror = () => { captionEl.textContent = "Kuva ei latautunut: " + finalSrc; };
+        } else {
+          $("detailThumb").style.display = "none";
+          imgEl.removeAttribute("src");
+        }
+
+        $("selectedEmpty").style.display = "none";
+        $("selectedCard").style.display = "block";
+        setSelectionMode(true);
+      }
+
+      // Mobile sheet
+      if(isMobile()){
+        $("msTitle").textContent = name;
+        $("msSubtitle").textContent = subtitleText;
+        renderKvInto($("msKv"), kv);
+
+        if(lat != null && lng != null){
+          $("msGoogle").href = mapsLink(lat,lng);
+          $("msGoogle").style.display = "inline-flex";
+        } else {
+          $("msGoogle").style.display = "none";
+        }
+
+        if(website){
+          $("msLink").style.display = "inline-flex";
+          $("msLink").href = website;
+        } else {
+          $("msLink").style.display = "none";
+        }
+
+        const imgEl2 = $("msImg");
+        const captionEl2 = $("msImgCaption");
+        if(img){
+          $("msThumb").style.display = "block";
+          const finalSrc2 = withCacheBust(img);
+          imgEl2.src = finalSrc2;
+          captionEl2.textContent = "Kuva kohteesta";
+          imgEl2.onerror = () => { captionEl2.textContent = "Kuva ei latautunut: " + finalSrc2; };
+        } else {
+          $("msThumb").style.display = "none";
+          imgEl2.removeAttribute("src");
+        }
+
+        openSheet();
+      }
+
+      const marker = markersById.get(id);
+      if(marker) marker.openPopup();
+
+      if(opts.flyTo && lat != null && lng != null){
+        map.flyTo([lat,lng], Math.max(map.getZoom(), 12), { duration: 0.8 });
+      }
+    }
+
+    function clearSelection(){
+      activeId = null;
+      if($("selectedCard")){
+        $("selectedCard").style.display = "none";
+        $("selectedEmpty").style.display = "block";
+      }
+      setSelectionMode(false);
+      closeSheet();
+    }
+
+    function nearMe(){
+      if(!navigator.geolocation){
+        alert("Paikannus ei ole käytettävissä.");
+        return;
+      }
+      navigator.geolocation.getCurrentPosition(
+        (pos) => {
+          const { latitude, longitude } = pos.coords;
+          map.flyTo([latitude, longitude], 13, { duration: 0.9 });
+
+          L.circle([latitude, longitude], {
+            radius: Math.min(200, pos.coords.accuracy || 100),
+            color: "#fff",
+            weight: 1,
+            opacity: 0.6,
+            fillOpacity: 0.08
+          }).addTo(map);
+        },
+        () => alert("Paikannus epäonnistui."),
+        { enableHighAccuracy: true, timeout: 8000 }
+      );
+    }
+
+    function setAddPin(latlng){
+      addLatLng = latlng;
+      if(!addMarker){
+        addMarker = L.marker(latlng, { draggable:true }).addTo(map);
+        addMarker.on("dragend", () => {
+          addLatLng = addMarker.getLatLng();
+          updatePinStatus();
+        });
+      } else {
+        addMarker.setLatLng(latlng);
+      }
+      updatePinStatus();
+    }
+
+    async function submitHint(){
+      const name = safeText($("newName").value);
+      if(!name){ alert("Anna paikan nimi."); return; }
+      if(!addLatLng){ alert("Lisää kohde kartalle (paina 'Lisää kohde kartalle')."); return; }
+
+      const payload = {
+        name,
+        municipality: safeText($("newMunicipality").value),
+        address: safeText($("newAddress").value),
+        website: safeText($("newWebsite").value),
+        image_url: safeText($("newImageUrl").value),
+        notes: safeText($("newNotes").value),
+        lat: addLatLng.lat,
+        lng: addLatLng.lng,
+        created_at: new Date().toISOString()
+      };
+
+      try{
+        const formData = new FormData();
+        formData.append("form-name", "talviuintipaikka-vinkki");
+        Object.entries(payload).forEach(([k,v]) => formData.append(k, v));
+
+        await fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams([...formData]).toString()
+        });
+
+        alert("Kiitos! Vinkki vastaanotettu.");
+        closeAddModal();
+      }catch(e){
+        console.log("Vinkki (local fallback):", payload);
+        alert("Kiitos! (Localhost) Vinkki tulostettu consoleen.");
+        closeAddModal();
+      }
+    }
+
+    function resetAll(){
+      $("searchInput").value = "";
+      $("filterSauna").value = "all";
+      $("filterChanging").value = "all";
+      $("filterPricing").value = "all";
+
+      if($("mSearchInput")){
+        syncDesktopToMobile();
+      }
+
+      clearSelection();
+      applyFilters();
+    }
+
+    function bindUI(){
+      // Desktop
+      $("btnNear").addEventListener("click", nearMe);
+      $("btnClear").addEventListener("click", resetAll);
+      $("btnAdd").addEventListener("click", openAddModal);
+
+      $("searchInput").addEventListener("input", applyFilters);
+      $("filterSauna").addEventListener("change", applyFilters);
+      $("filterChanging").addEventListener("change", applyFilters);
+      $("filterPricing").addEventListener("change", applyFilters);
+
+      $("btnCloseSelection").addEventListener("click", clearSelection);
+
+      // Mobile controls
+      $("mBtnNear").addEventListener("click", nearMe);
+      $("mBtnClear").addEventListener("click", resetAll);
+      $("mBtnAdd").addEventListener("click", openAddModal);
+
+      $("mSearchInput").addEventListener("input", applyFilters);
+      $("mFilterSauna").addEventListener("change", applyFilters);
+      $("mFilterChanging").addEventListener("change", applyFilters);
+      $("mFilterPricing").addEventListener("change", applyFilters);
+
+      // Sheet
+      $("msClose").addEventListener("click", clearSelection);
+      $("sheetHandle").addEventListener("click", toggleSheetExpanded);
+
+      // Modal
+      $("btnCloseModal").addEventListener("click", closeAddModal);
+      $("btnCancelAdd").addEventListener("click", closeAddModal);
+      $("btnSubmitHint").addEventListener("click", submitHint);
+
+      $("btnPickOnMap").addEventListener("click", startPickPin);
+      $("btnCancelPin").addEventListener("click", cancelPickPin);
+
+      window.addEventListener("keydown", (e) => {
+        if(e.key === "Escape"){
+          if($("addModal").classList.contains("open")) closeAddModal();
+          else clearSelection();
+        }
+      });
+
+      window.addEventListener("resize", () => {
+        // keep values aligned when rotating phone etc.
+        if(isMobile()) syncDesktopToMobile();
+      });
+    }
+
+    (async function boot(){
+      initMap();
+      bindUI();
+      try{
+        await loadGeoJSON();
+        // make sure mobile starts in sync
+        syncDesktopToMobile();
+        applyFilters();
+      }catch(e){
+        console.error(e);
+        alert("Virhe: data ei latautunut (talviuintipaikat_enriched.geojson).");
+      }
+    })();
+  </script>
+
+  <form name="talviuintipaikka-vinkki" netlify netlify-honeypot="bot-field" hidden>
+    <input name="bot-field" />
+    <input name="name" />
+    <input name="municipality" />
+    <input name="address" />
+    <input name="website" />
+    <input name="image_url" />
+    <textarea name="notes"></textarea>
+    <input name="lat" />
+    <input name="lng" />
+    <input name="created_at" />
+  </form>
+</body>
+</html>
