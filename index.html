@@ -1211,7 +1211,10 @@
           card.appendChild(a);
         }
 
-        m.bindPopup(card, { closeButton:true });
+        if(!isMobile()){
+  m.bindPopup(card, { closeButton:true });
+}
+
 
         m.on("click", () => {
           openDetail(feature.__id, { flyTo:false });
@@ -1399,7 +1402,8 @@
       }
 
       const marker = markersById.get(id);
-      if(marker) marker.openPopup();
+if(marker && !isMobile()) marker.openPopup();
+
 
       if(opts.flyTo && lat != null && lng != null){
         map.flyTo([lat,lng], Math.max(map.getZoom(), 12), { duration: 0.8 });
