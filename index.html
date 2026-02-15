@@ -1034,10 +1034,12 @@
       $("mobileSheet").classList.add("open");
       document.body.classList.add("sheet-open");
       $("mobileControls").style.display = "block";
+      $("mobileControls").classList.add("collapsed");
     }
     function closeSheet(){
       $("mobileSheet").classList.remove("open");
       $("mobileSheet").classList.remove("expanded");
+      $("mobileControls").classList.remove("collapsed");
       document.body.classList.remove("sheet-open");
     }
     function toggleSheetExpanded(){
