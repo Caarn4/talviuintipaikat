@@ -500,6 +500,17 @@
     .mobileControls{
       display:none;
     }
+      /* MobileControls: collapsible */
+      .mobileControls.collapsed{
+        max-height: 56px;
+        overflow: hidden;
+      }
+
+      .mobileControls.collapsed .searchRow,
+      .mobileControls.collapsed .filtersBlock,
+      .mobileControls.collapsed .mobileActions{
+        display:none;
+      }
 
     .mobileSheet{
       display:none;
@@ -788,11 +799,16 @@
   <!-- MOBILE floating controls (same IDs reused; we will “mirror” values via JS) -->
   <div class="mobileControls" id="mobileControls">
     <div class="mobileTopRow">
-      <div>
-        <div class="mobileBrand">❄️ Talviuintipaikat.fi</div>
-        <div class="mobileHint">Klikkaa markeria → tiedot päivittyy heti</div>
-      </div>
-    </div>
+  <div>
+    <div class="mobileBrand">❄️ Talviuintipaikat.fi</div>
+    <div class="mobileHint">Klikkaa markeria → tiedot päivittyy heti</div>
+  </div>
+
+  <button class="btn" id="mToggleControls" title="Piilota/avaa hakupaneeli">
+    ☰
+  </button>
+</div>
+
 
     <div class="mobileActions">
       <button class="btn btnPrimary" id="mBtnNear">📍 Lähelläni</button>
@@ -1526,10 +1542,15 @@ if(marker && !isMobile()) marker.openPopup();
       $("mBtnClear").addEventListener("click", resetAll);
       $("mBtnAdd").addEventListener("click", openAddModal);
 
+      $("mToggleControls").addEventListener("click", () => {
+        $("mobileControls").classList.toggle("collapsed");
+      });
+
       $("mSearchInput").addEventListener("input", applyFilters);
       $("mFilterSauna").addEventListener("change", applyFilters);
       $("mFilterChanging").addEventListener("change", applyFilters);
       $("mFilterPricing").addEventListener("change", applyFilters);
+
 
       // Sheet
       $("msClose").addEventListener("click", clearSelection);
