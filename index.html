@@ -1548,7 +1548,17 @@ if(marker && !isMobile()) marker.openPopup();
         $("mobileControls").classList.toggle("collapsed");
       });
 
-      $("mSearchInput").addEventListener("input", applyFilters);
+      $("mSearchInput").addEventListener("input", applyFilters);      $("mSearchInput").addEventListener("input", applyFilters);
+
+      $("mSearchInput").addEventListener("focus", () => {
+        $("mobileControls").classList.remove("collapsed");
+      });
+
+      $("mSearchInput").addEventListener("click", () => {
+        $("mobileControls").classList.remove("collapsed");
+      });
+
+      $("mFilterSauna").addEventListener("change", applyFilters);
       $("mFilterSauna").addEventListener("change", applyFilters);
       $("mFilterChanging").addEventListener("change", applyFilters);
       $("mFilterPricing").addEventListener("change", applyFilters);
