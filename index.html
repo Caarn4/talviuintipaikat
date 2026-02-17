@@ -1550,16 +1550,17 @@ if(marker && !isMobile()) marker.openPopup();
 
       $("mSearchInput").addEventListener("input", applyFilters);
 
-      $("mSearchInput").addEventListener("focus", () => {
-  // jos detail (bottom sheet) on auki, suljetaan se jotta haku-UI saa tilaa
-  if ($("mobileSheet").classList.contains("open")) closeSheet();
-  $("mobileControls").classList.remove("collapsed");
-});
+            $("mSearchInput").addEventListener("focus", () => {
+        alert("mSearchInput focus");
+        if ($("mobileSheet").classList.contains("open")) closeSheet();
+        $("mobileControls").classList.remove("collapsed");
+      });
 
-$("mSearchInput").addEventListener("click", () => {
-  if ($("mobileSheet").classList.contains("open")) closeSheet();
-  $("mobileControls").classList.remove("collapsed");
-});
+      $("mSearchInput").addEventListener("click", () => {
+        alert("mSearchInput click");
+        if ($("mobileSheet").classList.contains("open")) closeSheet();
+        $("mobileControls").classList.remove("collapsed");
+      });
 
       $("mFilterSauna").addEventListener("change", applyFilters);
       $("mFilterChanging").addEventListener("change", applyFilters);
