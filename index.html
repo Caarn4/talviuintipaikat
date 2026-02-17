@@ -500,22 +500,7 @@
     .mobileControls{
       display:none;
     }
-      /* MobileControls: collapsible */
-      .mobileControls.collapsed{
-        max-height: 56px;
-        overflow: hidden;
-      }
-
-      .mobileControls.collapsed .searchRow,
-      .mobileControls.collapsed .filtersBlock,
-      .mobileControls.collapsed .mobileActions{
-        display:none;
-      }
-
-    .mobileSheet{
-      display:none;
-    }
-
+    
     @media (max-width: 920px){
       .app{ grid-template-columns: 1fr; }
       .sidebar{ display:none; } /* hide desktop sidebar entirely */
@@ -537,6 +522,34 @@
         padding:10px;
         max-height: 48vh;      /* leave map visible */
         overflow:auto;
+      }
+      /* Collapsed state: compact (search stays visible, Near stays visible) */
+      .mobileControls.collapsed{
+        max-height: 150px;
+        overflow: hidden;
+      }
+
+      /* Expanded state: normal */
+      .mobileControls:not(.collapsed){
+        max-height: 48vh;
+        overflow: auto;
+      }
+
+      /* Hide heavy parts when collapsed */
+      .mobileControls.collapsed .filtersBlock{
+        display:none;
+      }
+
+      .mobileControls.collapsed .mobileActions .btn{
+        display:none;
+      }
+
+      .mobileControls.collapsed #mBtnNear{
+        display:inline-flex;
+      }
+
+      .mobileControls.collapsed .searchRow{
+        display:flex;
       }
 
       .mobileTopRow{
