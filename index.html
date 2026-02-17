@@ -1563,17 +1563,14 @@ if(marker && !isMobile()) marker.openPopup();
 
       $("mSearchInput").addEventListener("input", applyFilters);
 
-            $("mSearchInput").addEventListener("focus", () => {
-        alert("mSearchInput focus");
-        if ($("mobileSheet").classList.contains("open")) closeSheet();
-        $("mobileControls").classList.remove("collapsed");
-      });
+            const onMobileSearchActivate = () => {
+  if ($("mobileSheet").classList.contains("open")) closeSheet();
+  $("mobileControls").classList.remove("collapsed");
+};
 
-      $("mSearchInput").addEventListener("click", () => {
-        alert("mSearchInput click");
-        if ($("mobileSheet").classList.contains("open")) closeSheet();
-        $("mobileControls").classList.remove("collapsed");
-      });
+// iOS: focus on luotettavin, click voi tulla tuplana -> pidetään vain focus
+$("mSearchInput").addEventListener("focus", onMobileSearchActivate);
+
 
       $("mFilterSauna").addEventListener("change", applyFilters);
       $("mFilterChanging").addEventListener("change", applyFilters);
