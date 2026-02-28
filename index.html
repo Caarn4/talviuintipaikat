@@ -1,884 +1,740 @@
 <!doctype html>
 <html lang="fi">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Talviuintipaikat.fi❄️</title>
 
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
 
   <style>
-    :root {
-      --leaflet-blue: #3388ff;
-      --bg: #0b1020;
-      --panel: #0f1730;
-      --panel2: #111c3a;
-      --text: #eaf0ff;
-      --muted: #a9b7e6;
-      --border: rgba(255, 255, 255, .12);
-      --shadow: 0 12px 30px rgba(0, 0, 0, .35);
-      --radius: 16px;
+    :root{
+      --leaflet-blue:#3388ff;
+      --bg:#0b1020;
+      --panel:#0f1730;
+      --panel2:#111c3a;
+      --text:#eaf0ff;
+      --muted:#a9b7e6;
+      --border:rgba(255,255,255,.12);
+      --shadow: 0 12px 30px rgba(0,0,0,.35);
+      --radius:16px;
     }
 
-    * {
-      box-sizing: border-box
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background:var(--bg);
+      color:var(--text);
     }
 
-    body {
-      margin: 0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-      background: var(--bg);
-      color: var(--text);
-    }
-
-    .app {
-      display: grid;
+    .app{
+      display:grid;
       grid-template-columns: 380px 1fr;
-      height: 100vh;
-      width: 100vw;
-      overflow: hidden;
+      height:100vh;
+      width:100vw;
+      overflow:hidden;
     }
 
     /* DESKTOP sidebar */
-    .sidebar {
-      display: flex;
-      flex-direction: column;
-      background: linear-gradient(180deg, var(--panel) 0%, var(--panel2) 100%);
-      border-right: 1px solid var(--border);
+    .sidebar{
+      display:flex;
+      flex-direction:column;
+      background:linear-gradient(180deg, var(--panel) 0%, var(--panel2) 100%);
+      border-right:1px solid var(--border);
       min-width: 320px;
-      overflow: hidden;
+      overflow:hidden;
     }
 
-    .sidebarHeader {
-      position: sticky;
-      top: 0;
-      z-index: 20;
-      background: linear-gradient(180deg, rgba(15, 23, 48, .98) 0%, rgba(17, 28, 58, .92) 100%);
+    .sidebarHeader{
+      position:sticky;
+      top:0;
+      z-index:20;
+      background:linear-gradient(180deg, rgba(15,23,48,.98) 0%, rgba(17,28,58,.92) 100%);
       backdrop-filter: blur(8px);
-      border-bottom: 1px solid var(--border);
-      padding: 12px 12px 10px;
+      border-bottom:1px solid var(--border);
+      padding:12px 12px 10px;
     }
 
-    .brandRow {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 10px;
-      margin-bottom: 8px;
+    .brandRow{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:10px;
+      margin-bottom:8px;
+    }
+    .brand .title{
+      font-weight:1100;
+      letter-spacing:.2px;
+      font-size:18px;
+      line-height:1.1;
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+    .brand .subtitle{
+      font-size:12px;
+      color:var(--muted);
+      margin-top:4px;
+      font-weight:800;
     }
 
-    .brand .title {
-      font-weight: 1100;
-      letter-spacing: .2px;
-      font-size: 18px;
-      line-height: 1.1;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .brand .subtitle {
-      font-size: 12px;
-      color: var(--muted);
-      margin-top: 4px;
-      font-weight: 800;
-    }
-
-    .btn {
-      appearance: none;
-      border: 1px solid var(--border);
-      background: rgba(255, 255, 255, .06);
-      color: var(--text);
-      padding: 10px 12px;
-      border-radius: 14px;
-      cursor: pointer;
-      font-weight: 950;
-      font-size: 13px;
-      line-height: 1;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
+    .btn{
+      appearance:none;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.06);
+      color:var(--text);
+      padding:10px 12px;
+      border-radius:14px;
+      cursor:pointer;
+      font-weight:950;
+      font-size:13px;
+      line-height:1;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
       transition: transform .08s ease, background .15s ease, border-color .15s ease;
-      user-select: none;
-      white-space: nowrap;
+      user-select:none;
+      white-space:nowrap;
     }
+    .btn:hover{ background:rgba(255,255,255,.1); border-color:rgba(255,255,255,.18); }
+    .btn:active{ transform: translateY(1px); }
 
-    .btn:hover {
-      background: rgba(255, 255, 255, .1);
-      border-color: rgba(255, 255, 255, .18);
+    .btnPrimary{
+      border-color: rgba(51,136,255,.55);
+      background: rgba(51,136,255,.18);
     }
+    .btnPrimary:hover{ background: rgba(51,136,255,.28); }
 
-    .btn:active {
-      transform: translateY(1px);
-    }
-
-    .btnPrimary {
-      border-color: rgba(51, 136, 255, .55);
-      background: rgba(51, 136, 255, .18);
-    }
-
-    .btnPrimary:hover {
-      background: rgba(51, 136, 255, .28);
-    }
-
-    .actionsGrid {
-      display: grid;
+    .actionsGrid{
+      display:grid;
       grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin-top: 8px;
+      gap:10px;
+      margin-top:8px;
     }
+    .btnWide{ grid-column: 1 / -1; }
 
-    .btnWide {
-      grid-column: 1 / -1;
+    .searchRow{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      margin-top:10px;
     }
-
-    .searchRow {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-      margin-top: 10px;
+    .search{
+      flex:1;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid var(--border);
+      background:rgba(0,0,0,.18);
     }
-
-    .search {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 10px 12px;
-      border-radius: 14px;
-      border: 1px solid var(--border);
-      background: rgba(0, 0, 0, .18);
+    .search input{
+      width:100%;
+      border:0;
+      outline:0;
+      background:transparent;
+      color:var(--text);
+      font-size:14px;
+      font-weight:850;
     }
-
-    .search input {
-      width: 100%;
-      border: 0;
-      outline: 0;
-      background: transparent;
-      color: var(--text);
-      font-size: 14px;
-      font-weight: 850;
-    }
-
-    .search input::placeholder {
-      color: rgba(234, 240, 255, .55);
-    }
+    .search input::placeholder{ color:rgba(234,240,255,.55); }
 
     /* Filters */
-    .filtersBlock {
-      margin-top: 10px;
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      background: rgba(0, 0, 0, .14);
-      padding: 10px 10px 12px;
+    .filtersBlock{
+      margin-top:10px;
+      border:1px solid var(--border);
+      border-radius:14px;
+      background:rgba(0,0,0,.14);
+      padding:10px 10px 12px;
+    }
+    .filtersHeader{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      margin-bottom:10px;
+    }
+    .filtersHeader .h{
+      font-weight:1100;
+      font-size:14px;
+      letter-spacing:.2px;
+    }
+    .filtersHeader .hint{
+      font-size:12px;
+      font-weight:950;
+      color:var(--muted);
+    }
+    .filtersGrid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:10px;
+    }
+    .field label{
+      display:block;
+      font-size:12px;
+      font-weight:950;
+      color:var(--muted);
+      margin-bottom:6px;
+    }
+    select{
+      width:100%;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.06);
+      color:var(--text);
+      padding:10px 10px;
+      border-radius:12px;
+      outline:none;
+      font-weight:950;
+      font-size:13px;
     }
 
-    .filtersHeader {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 10px;
+    .sidebar.hasSelection .filtersHeader{ display:none; }
+    .sidebar.hasSelection .filtersBlock{
+      padding:8px;
+      margin-top:8px;
+    }
+    .sidebar.hasSelection .field label{
+      font-size:11px;
+      margin-bottom:4px;
+    }
+    .sidebar.hasSelection select{
+      padding:8px 8px;
+      font-size:12px;
+      border-radius:10px;
     }
 
-    .filtersHeader .h {
-      font-weight: 1100;
-      font-size: 14px;
-      letter-spacing: .2px;
+    @media (min-width: 921px){
+      .filtersGrid{ grid-template-columns: repeat(3, 1fr); }
     }
 
-    .filtersHeader .hint {
-      font-size: 12px;
-      font-weight: 950;
-      color: var(--muted);
+    .selectedWrap{
+      flex:1;
+      overflow:auto;
+      padding:12px 12px 14px;
     }
 
-    .filtersGrid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 10px;
+    .selectedEmpty{
+      border:1px dashed rgba(255,255,255,.18);
+      border-radius:14px;
+      padding:12px;
+      color:var(--muted);
+      font-size:13px;
+      font-weight:850;
+      line-height:1.35;
+      background:rgba(0,0,0,.10);
     }
 
-    .field label {
-      display: block;
-      font-size: 12px;
-      font-weight: 950;
-      color: var(--muted);
-      margin-bottom: 6px;
-    }
-
-    select {
-      width: 100%;
-      border: 1px solid var(--border);
-      background: rgba(255, 255, 255, .06);
-      color: var(--text);
-      padding: 10px 10px;
-      border-radius: 12px;
-      outline: none;
-      font-weight: 950;
-      font-size: 13px;
-    }
-
-    .sidebar.hasSelection .filtersHeader {
-      display: none;
-    }
-
-    .sidebar.hasSelection .filtersBlock {
-      padding: 8px;
-      margin-top: 8px;
-    }
-
-    .sidebar.hasSelection .field label {
-      font-size: 11px;
-      margin-bottom: 4px;
-    }
-
-    .sidebar.hasSelection select {
-      padding: 8px 8px;
-      font-size: 12px;
-      border-radius: 10px;
-    }
-
-    @media (min-width: 921px) {
-      .filtersGrid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-
-    .selectedWrap {
-      flex: 1;
-      overflow: auto;
-      padding: 12px 12px 14px;
-    }
-
-    .selectedEmpty {
-      border: 1px dashed rgba(255, 255, 255, .18);
-      border-radius: 14px;
-      padding: 12px;
-      color: var(--muted);
-      font-size: 13px;
-      font-weight: 850;
-      line-height: 1.35;
-      background: rgba(0, 0, 0, .10);
-    }
-
-    .card {
-      border: 1px solid var(--border);
+    .card{
+      border:1px solid var(--border);
       border-radius: var(--radius);
-      background: rgba(255, 255, 255, .05);
-      box-shadow: 0 10px 22px rgba(0, 0, 0, .22);
-      padding: 12px;
+      background:rgba(255,255,255,.05);
+      box-shadow: 0 10px 22px rgba(0,0,0,.22);
+      padding:12px;
+    }
+    .cardTitle{
+      font-weight:1200;
+      font-size:18px;
+      line-height:1.2;
+    }
+    .cardSub{
+      margin-top:6px;
+      color:var(--muted);
+      font-size:12px;
+      font-weight:900;
+      line-height:1.3;
     }
 
-    .cardTitle {
-      font-weight: 1200;
-      font-size: 18px;
-      line-height: 1.2;
+    .thumb{
+      margin-top:12px;
+      border:1px solid var(--border);
+      border-radius:14px;
+      overflow:hidden;
+      background:rgba(0,0,0,.18);
     }
-
-    .cardSub {
-      margin-top: 6px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 900;
-      line-height: 1.3;
+    .thumb img{
+      width:100%;
+      display:block;
+      max-height:220px;
+      object-fit:cover;
     }
-
-    .thumb {
-      margin-top: 12px;
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      overflow: hidden;
-      background: rgba(0, 0, 0, .18);
-    }
-
-    .thumb img {
-      width: 100%;
-      display: block;
-      max-height: 220px;
-      object-fit: cover;
-    }
-
-    .thumbCaption {
-      padding: 8px 10px;
-      font-size: 12px;
-      font-weight: 900;
-      color: var(--muted);
+    .thumbCaption{
+      padding:8px 10px;
+      font-size:12px;
+      font-weight:900;
+      color:var(--muted);
       word-break: break-all;
     }
 
-    .kv {
-      display: grid;
+    .kv{
+      display:grid;
       grid-template-columns: 120px 1fr;
-      gap: 8px 10px;
-      margin-top: 12px;
-      font-size: 13px;
+      gap:8px 10px;
+      margin-top:12px;
+      font-size:13px;
     }
+    .k{ color:var(--muted); font-weight:950; }
+    .v{ color:var(--text); font-weight:950; }
 
-    .k {
-      color: var(--muted);
-      font-weight: 950;
+    .detailActions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:14px;
     }
-
-    .v {
-      color: var(--text);
-      font-weight: 950;
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 12px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.06);
+      font-weight:1100;
+      font-size:13px;
+      color:var(--text);
+      cursor:pointer;
+      user-select:none;
+      text-decoration:none;
     }
-
-    .detailActions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 14px;
-    }
-
-    .chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 10px 12px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: rgba(255, 255, 255, .06);
-      font-weight: 1100;
-      font-size: 13px;
-      color: var(--text);
-      cursor: pointer;
-      user-select: none;
-      text-decoration: none;
-    }
-
-    .chipPrimary {
-      border-color: rgba(51, 136, 255, .55);
-      background: rgba(51, 136, 255, .20);
+    .chipPrimary{
+      border-color: rgba(51,136,255,.55);
+      background: rgba(51,136,255,.20);
     }
 
     /* Popup CTA */
-    .popupCard {
-      min-width: 240px;
+    .popupCard{ min-width: 240px; }
+    .popupTitle{
+      font-weight:1200;
+      font-size:14px;
+      margin:0 0 6px 0;
     }
-
-    .popupTitle {
-      font-weight: 1200;
-      font-size: 14px;
-      margin: 0 0 6px 0;
-    }
-
-    .popupMeta {
-      font-size: 12px;
-      font-weight: 900;
-      color: rgba(40, 50, 90, .85);
-      background: rgba(51, 136, 255, .10);
-      border: 1px solid rgba(51, 136, 255, .25);
+    .popupMeta{
+      font-size:12px;
+      font-weight:900;
+      color: rgba(40,50,90,.85);
+      background: rgba(51,136,255,.10);
+      border:1px solid rgba(51,136,255,.25);
       border-radius: 12px;
-      padding: 6px 8px;
-      margin: 0 0 10px 0;
+      padding:6px 8px;
+      margin:0 0 10px 0;
     }
-
-    .popupCTA {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      padding: 10px 12px;
-      border-radius: 12px;
-      border: 1px solid rgba(0, 0, 0, .08);
+    .popupCTA{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:100%;
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid rgba(0,0,0,.08);
       background: var(--leaflet-blue);
-      color: #fff !important;
-      font-weight: 1200;
-      font-size: 13px;
-      cursor: pointer;
-      box-shadow: 0 10px 18px rgba(51, 136, 255, .30);
+      color:#fff !important;
+      font-weight:1200;
+      font-size:13px;
+      cursor:pointer;
+      box-shadow: 0 10px 18px rgba(51,136,255,.30);
       transition: transform .08s ease, filter .15s ease;
-      user-select: none;
-      text-decoration: none !important;
+      user-select:none;
+      text-decoration:none !important;
     }
+    .popupCTA:hover{ filter: brightness(1.05); }
+    .popupCTA:active{ transform: translateY(1px); }
 
-    .popupCTA:hover {
-      filter: brightness(1.05);
-    }
-
-    .popupCTA:active {
-      transform: translateY(1px);
-    }
-
-    #map {
-      height: 100%;
-      width: 100%;
-    }
+    #map{ height:100%; width:100%; }
 
     /* Modal */
-    .modalOverlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, .55);
-      display: none;
-      align-items: center;
-      justify-content: center;
+    .modalOverlay{
+      position:fixed;
+      inset:0;
+      background: rgba(0,0,0,.55);
+      display:none;
+      align-items:center;
+      justify-content:center;
       z-index: 7000;
       padding: 18px;
     }
+    .modalOverlay.open{ display:flex; }
 
-    .modalOverlay.open {
-      display: flex;
-    }
-
-    .modal {
+    .modal{
       width: min(640px, 96vw);
       max-height: min(92vh, 820px);
-      overflow: auto;
+      overflow:auto;
       border-radius: 18px;
-      border: 1px solid var(--border);
-      background: linear-gradient(180deg, rgba(15, 23, 48, .98) 0%, rgba(17, 28, 58, .95) 100%);
-      box-shadow: 0 18px 50px rgba(0, 0, 0, .45);
+      border:1px solid var(--border);
+      background: linear-gradient(180deg, rgba(15,23,48,.98) 0%, rgba(17,28,58,.95) 100%);
+      box-shadow: 0 18px 50px rgba(0,0,0,.45);
       padding: 14px;
     }
-
-    .modalHeader {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 12px;
-      margin-bottom: 10px;
+    .modalHeader{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:10px;
+    }
+    .modalTitle{
+      font-weight:1200;
+      font-size:16px;
+      margin:0;
+    }
+    .modalHint{
+      margin-top:4px;
+      color:var(--muted);
+      font-size:12px;
+      font-weight:850;
+      line-height:1.35;
     }
 
-    .modalTitle {
-      font-weight: 1200;
-      font-size: 16px;
-      margin: 0;
-    }
-
-    .modalHint {
-      margin-top: 4px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 850;
-      line-height: 1.35;
-    }
-
-    .modalGrid {
-      display: grid;
+    .modalGrid{
+      display:grid;
       grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin-top: 10px;
+      gap:10px;
+      margin-top:10px;
     }
+    .modalGrid .full{ grid-column: 1 / -1; }
 
-    .modalGrid .full {
-      grid-column: 1 / -1;
+    .modal input, .modal textarea{
+      width:100%;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.06);
+      color:var(--text);
+      padding:10px 10px;
+      border-radius:12px;
+      outline:none;
+      font-weight:850;
+      font-size:13px;
     }
+    .modal textarea{ min-height:90px; resize:vertical; }
 
-    .modal input,
-    .modal textarea {
-      width: 100%;
-      border: 1px solid var(--border);
-      background: rgba(255, 255, 255, .06);
-      color: var(--text);
-      padding: 10px 10px;
-      border-radius: 12px;
-      outline: none;
-      font-weight: 850;
-      font-size: 13px;
+    .pillRow{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      margin-top:10px;
+      flex-wrap:wrap;
     }
-
-    .modal textarea {
-      min-height: 90px;
-      resize: vertical;
-    }
-
-    .pillRow {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      margin-top: 10px;
-      flex-wrap: wrap;
-    }
-
-    .pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 10px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: rgba(0, 0, 0, .18);
-      font-size: 12px;
-      font-weight: 950;
-      color: var(--muted);
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:rgba(0,0,0,.18);
+      font-size:12px;
+      font-weight:950;
+      color:var(--muted);
       width: fit-content;
     }
+    .pill b{ color: var(--text); }
 
-    .pill b {
-      color: var(--text);
-    }
-
-    .modalActions {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-top: 12px;
+    .modalActions{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:12px;
     }
 
     /* Pin helper + mini */
-    .pinHelper {
-      position: fixed;
-      left: 50%;
+    .pinHelper{
+      position:fixed;
+      left:50%;
       transform: translateX(-50%);
-      top: 12px;
+      top:12px;
       z-index: 7600;
-      display: none;
-      padding: 10px 12px;
-      border-radius: 14px;
-      border: 1px solid rgba(51, 136, 255, .45);
-      background: rgba(15, 23, 48, .92);
+      display:none;
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid rgba(51,136,255,.45);
+      background: rgba(15,23,48,.92);
       color: var(--text);
-      font-weight: 950;
-      font-size: 13px;
-      box-shadow: 0 12px 24px rgba(0, 0, 0, .35);
+      font-weight:950;
+      font-size:13px;
+      box-shadow: 0 12px 24px rgba(0,0,0,.35);
       backdrop-filter: blur(6px);
       max-width: min(720px, 92vw);
-      text-align: center;
+      text-align:center;
     }
+    .pinHelper.open{ display:block; }
 
-    .pinHelper.open {
-      display: block;
-    }
-
-    .pinMini {
-      position: fixed;
-      left: 50%;
+    .pinMini{
+      position:fixed;
+      left:50%;
       transform: translateX(-50%);
-      bottom: 12px;
+      bottom:12px;
       z-index: 7600;
-      display: none;
-      padding: 10px 12px;
-      border-radius: 16px;
-      border: 1px solid rgba(255, 255, 255, .14);
-      background: rgba(15, 23, 48, .92);
+      display:none;
+      padding:10px 12px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(15,23,48,.92);
       color: var(--text);
-      box-shadow: 0 18px 40px rgba(0, 0, 0, .45);
+      box-shadow: 0 18px 40px rgba(0,0,0,.45);
       backdrop-filter: blur(6px);
       max-width: min(760px, 94vw);
       width: fit-content;
     }
-
-    .pinMini.open {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .pinMini .msg {
-      font-weight: 1000;
-      font-size: 13px;
+    .pinMini.open{ display:flex; align-items:center; gap:10px; }
+    .pinMini .msg{
+      font-weight:1000;
+      font-size:13px;
       color: var(--text);
-      white-space: nowrap;
+      white-space:nowrap;
     }
-
-    .pinMini .small {
-      padding: 9px 10px;
-      border-radius: 12px;
-      font-size: 13px;
+    .pinMini .small{
+      padding:9px 10px;
+      border-radius:12px;
+      font-size:13px;
     }
 
     /* ============================
        MOBILE: Map-first + floating controls + bottom sheet
        ============================ */
-    .mobileControls {
-      display: none;
-    }
+    .mobileControls{ display:none; }
 
-    @media (max-width: 920px) {
-      .app {
-        grid-template-columns: 1fr;
-      }
-
-      .sidebar {
-        display: none;
-      }
-
-      /* hide desktop sidebar entirely */
-      #map {
-        height: 100vh;
-        width: 100vw;
-      }
-
-      /* ============================
-   Mobile tweaks:
-   - Near button inline with search (collapsed)
-   - Prevent iOS Safari input auto-zoom
-   ============================ */
-
-      /* iOS Safari: prevent auto-zoom on input focus */
-      .mobileControls .search input {
-        font-size: 16px;
-      }
-
-      /* Make sure search row is a row */
-      .mobileControls .searchRow {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-      }
-
-      /* Near button: default (expanded) keeps normal size */
-      .mobileControls #mBtnNear {
-        flex: 0 0 auto;
-      }
-
-      /* Collapsed: Near button becomes small icon button */
-      .mobileControls.collapsed #mBtnNear {
-        width: 44px;
-        min-width: 44px;
-        padding: 10px 0;
-        border-radius: 14px;
-        justify-content: center;
-        font-size: 0;
-        /* hide text */
-      }
-
-      /* show only icon in collapsed */
-      .mobileControls.collapsed #mBtnNear::before {
-        content: "📍";
-        font-size: 16px;
-      }
-
-      /* Search container fills remaining space */
-      .mobileControls .searchRow .search {
-        flex: 1;
-      }
+    @media (max-width: 920px){
+      .app{ grid-template-columns: 1fr; }
+      .sidebar{ display:none; }
+      #map{ height:100vh; width:100vw; }
 
       /* Floating controls */
-      .mobileControls {
-        display: block;
-        position: fixed;
-        left: 10px;
-        right: 10px;
-        top: 10px;
+      .mobileControls{
+        display:block;
+        position:fixed;
+        left:10px;
+        right:10px;
+        top:10px;
         z-index: 6500;
-        border: 1px solid var(--border);
+        border:1px solid var(--border);
         border-radius: 18px;
-        background: linear-gradient(180deg, rgba(15, 23, 48, .92) 0%, rgba(17, 28, 58, .86) 100%);
+        background: linear-gradient(180deg, rgba(15,23,48,.92) 0%, rgba(17,28,58,.86) 100%);
         box-shadow: var(--shadow);
         backdrop-filter: blur(8px);
-        padding: 10px;
+        padding:10px;
         max-height: 48vh;
-        /* leave map visible */
-        overflow: auto;
+        overflow:auto;
       }
 
-      /* Collapsed state: compact (search stays visible, Near stays visible) */
-      .mobileControls.collapsed {
-        max-height: 150px;
+      /* Collapsed state: compact */
+      .mobileControls.collapsed{
+        max-height: 130px;
         overflow: hidden;
       }
 
-      /* Expanded state: normal */
-      .mobileControls:not(.collapsed) {
-        max-height: 48vh;
-        overflow: auto;
-      }
-
       /* Hide heavy parts when collapsed */
-      .mobileControls.collapsed .filtersBlock {
-        display: none;
+      .mobileControls.collapsed .filtersBlock{ display:none; }
+      .mobileControls.collapsed .mobileActions .btn{ display:none; }
+
+      .mobileTopRow{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        gap:10px;
+        margin-bottom:8px;
+      }
+      .mobileBrand{
+        font-weight:1100;
+        font-size:16px;
+        line-height:1.1;
       }
 
-      .mobileControls.collapsed .mobileActions .btn {
-        display: none;
+      .mobileActions{
+        display:flex;
+        gap:10px;
+        flex-wrap:wrap;
+        margin-top:8px;
       }
-
-
-      .mobileControls.collapsed .searchRow {
-        display: flex;
-      }
-
-      .mobileTopRow {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 10px;
-        margin-bottom: 8px;
-      }
-
-      .mobileBrand {
-        font-weight: 1100;
-        font-size: 16px;
-        line-height: 1.1;
-      }
-
-      .mobileHint {
-        color: var(--muted);
-        font-size: 11px;
-        font-weight: 850;
-        margin-top: 2px;
-      }
-
-      .mobileActions {
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-        margin-top: 8px;
-      }
-
-      .mobileActions .btn {
-        flex: 1;
+      .mobileActions .btn{
+        flex:1;
         min-width: 130px;
       }
-
-      .mobileActions .btnWide {
-        width: 100%;
+      .mobileActions .btnWide{
+        width:100%;
         flex: 1 0 100%;
       }
 
-      /* compact filters on mobile: labels hidden, 3 columns */
-      .mobileControls .filtersHeader {
-        display: none;
+      /* Search row as a row */
+      .mobileControls .searchRow{
+        display:flex;
+        gap:10px;
+        align-items:center;
+        margin-top:10px;
+      }
+      .mobileControls .searchRow .search{ flex:1; }
+
+      /* iOS Safari: prevent auto-zoom */
+      .mobileControls .search input{
+        font-size: 16px;
       }
 
-      .mobileControls .field label {
-        display: none;
+      /* Near button small when collapsed */
+      .mobileControls #mBtnNear{ flex:0 0 auto; }
+      .mobileControls.collapsed #mBtnNear{
+        width:44px;
+        min-width:44px;
+        padding:10px 0;
+        border-radius:14px;
+        justify-content:center;
+        font-size:0; /* hide text */
+      }
+      .mobileControls.collapsed #mBtnNear::before{
+        content:"📍";
+        font-size:16px;
       }
 
-      .mobileControls .filtersBlock {
-        margin-top: 8px;
-        padding: 10px;
+      /* compact filters on mobile */
+      .mobileControls .filtersHeader{ display:none; }
+      .mobileControls .field label{ display:none; }
+      .mobileControls .filtersBlock{
+        margin-top:8px;
+        padding:10px;
       }
-
-      .mobileControls .filtersGrid {
+      .mobileControls .filtersGrid{
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 8px;
+        gap:8px;
+      }
+      .mobileControls select{
+        padding:10px 8px;
+        font-size:12px;
+        border-radius:12px;
       }
 
-      .mobileControls select {
-        padding: 10px 8px;
-        font-size: 12px;
-        border-radius: 12px;
+      /* LAUNCH MODE: Filters coming soon (disable selects + show toast on tap) */
+      .mobileControls .filtersBlock{
+        opacity:.45;
+      }
+      .mobileControls .filtersBlock select{
+        pointer-events:none; /* prevents iOS picker */
+      }
+
+      /* Toast */
+      .toast{
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 16px;
+        z-index: 9000;
+        padding: 10px 12px;
+        border-radius: 14px;
+        border: 1px solid rgba(255,255,255,.14);
+        background: rgba(15,23,48,.92);
+        color: var(--text);
+        font-weight: 900;
+        font-size: 13px;
+        box-shadow: 0 18px 40px rgba(0,0,0,.35);
+        backdrop-filter: blur(8px);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .18s ease, transform .18s ease;
+      }
+      .toast.show{
+        opacity: 1;
+        transform: translateX(-50%) translateY(-4px);
       }
 
       /* Bottom sheet */
-      .mobileSheet {
-        display: block;
-        position: fixed;
-        left: 0;
-        right: 0;
-        bottom: 0;
+      .mobileSheet{
+        display:block;
+        position:fixed;
+        left:0;
+        right:0;
+        bottom:0;
         z-index: 6400;
         transform: translateY(105%);
         transition: transform .18s ease;
         padding: 10px 10px calc(14px + env(safe-area-inset-bottom));
       }
+      .mobileSheet.open{ transform: translateY(0); }
 
-      .mobileSheet.open {
-        transform: translateY(0);
-      }
-
-      .sheetCard {
-        border: 1px solid rgba(255, 255, 255, .14);
+      .sheetCard{
+        border:1px solid rgba(255,255,255,.14);
         border-radius: 20px;
-        background: linear-gradient(180deg, rgba(15, 23, 48, .96) 0%, rgba(17, 28, 58, .92) 100%);
-        box-shadow: 0 22px 60px rgba(0, 0, 0, .55);
-        overflow: hidden;
+        background: linear-gradient(180deg, rgba(15,23,48,.96) 0%, rgba(17,28,58,.92) 100%);
+        box-shadow: 0 22px 60px rgba(0,0,0,.55);
+        overflow:hidden;
       }
 
-      .sheetHandle {
-        display: flex;
-        justify-content: center;
-        padding: 10px 0 6px;
-        cursor: pointer;
-        user-select: none;
+      .sheetHandle{
+        display:flex;
+        justify-content:center;
+        padding:10px 0 6px;
+        cursor:pointer;
+        user-select:none;
       }
-
-      .sheetHandleBar {
+      .sheetHandleBar{
         width: 54px;
         height: 5px;
         border-radius: 999px;
-        background: rgba(255, 255, 255, .22);
+        background: rgba(255,255,255,.22);
       }
 
-      .sheetBody {
+      .sheetBody{
         padding: 0 12px 12px;
         max-height: 38vh;
-        /* collapsed height */
-        overflow: auto;
+        overflow:auto;
       }
-
-      .mobileSheet.expanded .sheetBody {
+      .mobileSheet.expanded .sheetBody{
         max-height: 78vh;
-        /* expanded height */
       }
 
-      .sheetHeader {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 10px;
+      .sheetHeader{
+        display:flex;
+        align-items:flex-start;
+        justify-content:space-between;
+        gap:10px;
+      }
+      .sheetTitle{
+        font-weight:1200;
+        font-size:16px;
+        line-height:1.2;
+      }
+      .sheetSub{
+        margin-top:6px;
+        color:var(--muted);
+        font-size:12px;
+        font-weight:900;
+        line-height:1.3;
       }
 
-      .sheetTitle {
-        font-weight: 1200;
-        font-size: 16px;
-        line-height: 1.2;
-      }
-
-      .sheetSub {
-        margin-top: 6px;
-        color: var(--muted);
-        font-size: 12px;
-        font-weight: 900;
-        line-height: 1.3;
-      }
-
-      .sheetCloseBtn {
-        padding: 9px 10px;
+      .sheetCloseBtn{
+        padding:9px 10px;
         border-radius: 12px;
-        font-weight: 1100;
+        font-weight:1100;
       }
 
-      .sheetKv {
-        display: grid;
+      .sheetKv{
+        display:grid;
         grid-template-columns: 120px 1fr;
-        gap: 8px 10px;
-        margin-top: 12px;
-        font-size: 13px;
+        gap:8px 10px;
+        margin-top:12px;
+        font-size:13px;
       }
 
-      .sheetActions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 12px;
+      .sheetActions{
+        display:flex;
+        flex-wrap:wrap;
+        gap:10px;
+        margin-top:12px;
       }
 
-      /* When sheet open, make controls a bit smaller to show map */
-      body.sheet-open .mobileControls {
+      /* When sheet open, make controls smaller */
+      body.sheet-open .mobileControls{
         max-height: 36vh;
         opacity: .98;
       }
 
-      .pinHelper {
-        top: 8px;
-      }
-
-      .pinMini {
-        bottom: 10px;
-      }
-
-      .pinMini .msg {
-        white-space: normal;
-      }
-
-      .modalGrid {
-        grid-template-columns: 1fr;
-      }
+      .pinHelper{ top: 8px; }
+      .pinMini{ bottom: 10px; }
+      .pinMini .msg{ white-space:normal; }
+      .modalGrid{ grid-template-columns: 1fr; }
     }
-
-    /* =========================
-   MOBILE UI V2 – STEP 1
-   Fullscreen map on mobile
-========================= */
   </style>
 </head>
 
@@ -890,7 +746,7 @@
         <div class="brandRow">
           <div class="brand">
             <div class="title">❄️ Talviuintipaikat.fi</div>
-            <div class="subtitle">Klikkaa markeria → tiedot päivittyy heti</div>
+            <div class="subtitle">Valitse paikka kartalta tai hae nimellä</div>
           </div>
         </div>
 
@@ -979,19 +835,12 @@
     </main>
   </div>
 
-  <!-- MOBILE floating controls (same IDs reused; we will “mirror” values via JS) -->
-  <div class="mobileControls collapsed" id="mobileControls">
+  <!-- MOBILE floating controls -->
+  <div class="mobileControls" id="mobileControls">
     <div class="mobileTopRow">
-      <div>
-        <div class="mobileBrand">❄️ Talviuintipaikat.fi</div>
-        <div class="mobileHint">Klikkaa markeria → tiedot päivittyy heti</div>
-      </div>
-
-      <button class="btn" id="mToggleControls" title="Piilota/avaa hakupaneeli">
-        ☰
-      </button>
+      <div class="mobileBrand">❄️ Talviuintipaikat.fi</div>
+      <button class="btn" id="mToggleControls" title="Piilota/avaa hakupaneeli">☰</button>
     </div>
-
 
     <div class="mobileActions">
       <button class="btn" id="mBtnClear">↩︎ Nollaa</button>
@@ -1007,7 +856,7 @@
       </div>
     </div>
 
-    <div class="filtersBlock" aria-label="Filtterit">
+    <div class="filtersBlock" aria-label="Filtterit (tulossa)">
       <div class="filtersGrid">
         <div class="field">
           <label>Sauna</label>
@@ -1041,6 +890,9 @@
       </div>
     </div>
   </div>
+
+  <!-- Toast (mobile) -->
+  <div class="toast" id="toast">🔧 Ominaisuus kehitteillä – julkaistaan myöhemmin</div>
 
   <!-- MOBILE bottom sheet -->
   <div class="mobileSheet" id="mobileSheet">
@@ -1118,7 +970,7 @@
           <input id="newImageUrl" placeholder="Kuvan URL (valinnainen) — esim. https://..." />
         </div>
         <div class="full">
-          <textarea id="newNotes" placeholder="Lisätiedot (sauna, pukuhuone, hinnat, ohjeet…)"></textarea>
+          <textarea id="newNotes" placeholder="Lisätiedot (sauna, pukuhuone, hinnat, ohjeet…)" ></textarea>
         </div>
       </div>
 
@@ -1129,13 +981,16 @@
     </div>
   </div>
 
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
 
   <script>
     const $ = (id) => document.getElementById(id);
 
-    function norm(s) {
+    function norm(s){
       return (s ?? "")
         .toString()
         .trim()
@@ -1143,98 +998,100 @@
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "");
     }
-    function pick(props, keys) {
-      for (const k of keys) {
-        if (props && props[k] !== undefined && props[k] !== null && props[k] !== "") return props[k];
+    function pick(props, keys){
+      for(const k of keys){
+        if(props && props[k] !== undefined && props[k] !== null && props[k] !== "") return props[k];
       }
       return "";
     }
-    function safeText(s) { return (s ?? "").toString().trim(); }
+    function safeText(s){ return (s ?? "").toString().trim(); }
 
-    function asYesNoUnknown(v) {
+    function asYesNoUnknown(v){
       const x = norm(v);
-      if (["yes", "kylla", "kyl", "true", "1"].includes(x)) return "yes";
-      if (["no", "ei", "false", "0"].includes(x)) return "no";
-      if (x === "" || x === "unknown" || x === "ei tietoa") return "unknown";
+      if(["yes","kylla","kyl","true","1"].includes(x)) return "yes";
+      if(["no","ei","false","0"].includes(x)) return "no";
+      if(x === "" || x === "unknown" || x === "ei tietoa") return "unknown";
       return "unknown";
     }
 
-    function pricingBucket(props) {
-      const paid = asYesNoUnknown(pick(props, ["maksullinen", "paid", "fee", "maksu", "maksullisuus"]));
-      if (paid === "yes") return "paid";
-      if (paid === "no") return "free";
+    function pricingBucket(props){
+      const paid = asYesNoUnknown(pick(props, ["maksullinen","paid","fee","maksu","maksullisuus"]));
+      if(paid === "yes") return "paid";
+      if(paid === "no") return "free";
       return "unknown";
     }
 
-    function featureLabel(feature) {
+    function featureLabel(feature){
       const props = feature.properties || {};
-      const name = safeText(pick(props, ["name", "nimi", "Nimi", "Name", "title"])) || "Nimetön paikka";
-      const addr = safeText(pick(props, ["address", "osoite", "Address", "street", "paikka", "location"])) || "";
+      const name = safeText(pick(props, ["name","nimi","Nimi","Name","title"])) || "Nimetön paikka";
+      const addr = safeText(pick(props, ["address","osoite","Address","street","paikka","location"])) || "";
       return { name, addr };
     }
 
-    function getMunicipality(props) {
-      return safeText(pick(props, ["kunta", "paikkakunta", "municipality", "city", "kaupunki", "Kunta", "Paikkakunta", "Municipality", "City"]));
+    function getMunicipality(props){
+      return safeText(pick(props, ["kunta","paikkakunta","municipality","city","kaupunki","Kunta","Paikkakunta","Municipality","City"]));
     }
 
-    function getWebsite(props) {
-      const link = safeText(pick(props, ["url", "link", "website", "verkkosivu", "www", "URL", "Website"]));
-      if (!link) return "";
+    function getWebsite(props){
+      const link = safeText(pick(props, ["url","link","website","verkkosivu","www","URL","Website"]));
+      if(!link) return "";
       return link.startsWith("http") ? link : ("https://" + link);
     }
 
-    function getImage(props) {
-      return safeText(pick(props, ["image", "image_url", "photo", "photo_url", "kuva", "Kuva", "img", "Img", "Image"]));
+    function getImage(props){
+      return safeText(pick(props, ["image","image_url","photo","photo_url","kuva","Kuva","img","Img","Image"]));
     }
 
-    function mapsLink(lat, lng) {
+    function mapsLink(lat,lng){
       const q = encodeURIComponent(`${lat},${lng}`);
       return `https://www.google.com/maps?q=${q}`;
     }
 
-    function getTestImageOverride(placeName) {
-      const n = norm(placeName);
-      if (n.includes("aurinkolahd") || n.includes("aurinkolahti") || n.includes("aurinkolah")) {
-        return "aurinkolahti.png";
-      }
-      return "";
-    }
-
-    function withCacheBust(url) {
-      if (!url) return "";
+    function withCacheBust(url){
+      if(!url) return "";
       const sep = url.includes("?") ? "&" : "?";
       return url + sep + "v=" + Date.now();
     }
 
-    function isMobile() {
+    function isMobile(){
       return window.matchMedia && window.matchMedia("(max-width: 920px)").matches;
     }
 
+    // toast
+    function showToast(msg){
+      const t = $("toast");
+      if(!t) return;
+      t.textContent = msg;
+      t.classList.add("show");
+      clearTimeout(window.__toastTimer);
+      window.__toastTimer = setTimeout(() => t.classList.remove("show"), 1700);
+    }
+
     // sheet state
-    function openSheet() {
+    function openSheet(){
       $("mobileSheet").classList.add("open");
       document.body.classList.add("sheet-open");
       $("mobileControls").style.display = "block";
       $("mobileControls").classList.add("collapsed");
     }
-    function closeSheet() {
+    function closeSheet(){
       $("mobileSheet").classList.remove("open");
       $("mobileSheet").classList.remove("expanded");
       $("mobileControls").classList.remove("collapsed");
       document.body.classList.remove("sheet-open");
     }
-    function toggleSheetExpanded() {
+    function toggleSheetExpanded(){
       $("mobileSheet").classList.toggle("expanded");
     }
 
     // sync mobile controls -> desktop controls (so we only filter once)
-    function syncMobileToDesktop() {
+    function syncMobileToDesktop(){
       $("searchInput").value = $("mSearchInput").value;
       $("filterSauna").value = $("mFilterSauna").value;
       $("filterChanging").value = $("mFilterChanging").value;
       $("filterPricing").value = $("mFilterPricing").value;
     }
-    function syncDesktopToMobile() {
+    function syncDesktopToMobile(){
       $("mSearchInput").value = $("searchInput").value;
       $("mFilterSauna").value = $("filterSauna").value;
       $("mFilterChanging").value = $("filterChanging").value;
@@ -1253,14 +1110,14 @@
     let addMarker = null;
     let addLatLng = null;
 
-    function setSelectionMode(on) {
+    function setSelectionMode(on){
       const sidebar = $("sidebar");
-      if (!sidebar) return;
-      if (on) sidebar.classList.add("hasSelection");
+      if(!sidebar) return;
+      if(on) sidebar.classList.add("hasSelection");
       else sidebar.classList.remove("hasSelection");
     }
 
-    function openAddModal() {
+    function openAddModal(){
       $("addModal").classList.add("open");
       $("addModal").setAttribute("aria-hidden", "false");
       addMode = true;
@@ -1270,7 +1127,7 @@
       hidePinMini();
     }
 
-    function closeAddModal() {
+    function closeAddModal(){
       $("addModal").classList.remove("open");
       $("addModal").setAttribute("aria-hidden", "true");
       addMode = false;
@@ -1279,7 +1136,7 @@
       hidePinHelper();
       hidePinMini();
 
-      if (addMarker) {
+      if(addMarker){
         map.removeLayer(addMarker);
         addMarker = null;
       }
@@ -1295,36 +1152,35 @@
       updatePinStatus();
     }
 
-    function showPinHelper() { $("pinHelper").classList.add("open"); }
-    function hidePinHelper() { $("pinHelper").classList.remove("open"); }
+    function showPinHelper(){ $("pinHelper").classList.add("open"); }
+    function hidePinHelper(){ $("pinHelper").classList.remove("open"); }
 
-    function showPinMini() { $("pinMini").classList.add("open"); }
-    function hidePinMini() { $("pinMini").classList.remove("open"); }
+    function showPinMini(){ $("pinMini").classList.add("open"); }
+    function hidePinMini(){ $("pinMini").classList.remove("open"); }
 
-    function updatePinStatus() {
-      if (addLatLng) {
+    function updatePinStatus(){
+      if(addLatLng){
         $("pinStatus").innerHTML = `📌 Pinni: <b>${addLatLng.lat.toFixed(5)}, ${addLatLng.lng.toFixed(5)}</b>`;
       } else {
         $("pinStatus").innerHTML = `📌 Pinni: <b>ei asetettu</b>`;
       }
     }
 
-    function startPickPin() {
-      // hide modal so map is usable
+    function startPickPin(){
       $("addModal").classList.remove("open");
       pinPickMode = true;
       showPinHelper();
       showPinMini();
     }
 
-    function cancelPickPin() {
+    function cancelPickPin(){
       pinPickMode = false;
       hidePinHelper();
       hidePinMini();
       $("addModal").classList.add("open");
     }
 
-    function finishPickPin() {
+    function finishPickPin(){
       pinPickMode = false;
       hidePinHelper();
       hidePinMini();
@@ -1332,7 +1188,7 @@
       updatePinStatus();
     }
 
-    function initMap() {
+    function initMap(){
       map = L.map('map', { zoomControl: true }).setView([64.5, 26.0], 5);
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -1341,21 +1197,21 @@
       }).addTo(map);
 
       map.on('click', (e) => {
-        if (!addMode || !pinPickMode) return;
+        if(!addMode || !pinPickMode) return;
         setAddPin(e.latlng);
         finishPickPin();
       });
     }
 
-    async function loadGeoJSON() {
+    async function loadGeoJSON(){
       const res = await fetch("talviuintipaikat_enriched.geojson", { cache: "no-store" });
-      if (!res.ok) throw new Error("GeoJSON ei latautunut: " + res.status);
+      if(!res.ok) throw new Error("GeoJSON ei latautunut: " + res.status);
       const gj = await res.json();
 
       allFeatures = (gj.features || []).map((f, idx) => {
         const props = f.properties || {};
-        const name = safeText(pick(props, ["name", "nimi", "Nimi", "Name", "title"]));
-        const id = safeText(pick(props, ["id", "ID", "uuid", "UID"])) || `p_${idx}_${norm(name).slice(0, 24)}`;
+        const name = safeText(pick(props, ["name","nimi","Nimi","Name","title"]));
+        const id = safeText(pick(props, ["id","ID","uuid","UID","lipas_id"])) || `p_${idx}_${norm(name).slice(0,24)}`;
         f.__id = id;
         return f;
       });
@@ -1363,23 +1219,23 @@
       filteredFeatures = [...allFeatures];
     }
 
-    function rebuildMarkers() {
+    function rebuildMarkers(){
       markersById.clear();
 
-      if (window.__markerGroup) {
+      if(window.__markerGroup){
         window.__markerGroup.remove();
       }
       window.__markerGroup = L.layerGroup().addTo(map);
 
       filteredFeatures.forEach(feature => {
         const coords = feature.geometry?.coordinates;
-        if (!coords) return;
+        if(!coords) return;
 
         const lng = coords[0], lat = coords[1];
         const props = feature.properties || {};
-        const name = safeText(pick(props, ["name", "nimi", "Nimi", "Name", "title"])) || "Nimetön paikka";
+        const name = safeText(pick(props, ["name","nimi","Nimi","Name","title"])) || "Nimetön paikka";
 
-        const m = L.marker([lat, lng]);
+        const m = L.marker([lat,lng]);
         markersById.set(feature.__id, m);
 
         const muni = getMunicipality(props);
@@ -1400,7 +1256,7 @@
         card.appendChild(t);
         card.appendChild(meta);
 
-        if (website) {
+        if(website){
           const a = document.createElement("a");
           a.className = "popupCTA";
           a.href = website;
@@ -1410,26 +1266,24 @@
           card.appendChild(a);
         }
 
-        if (!isMobile()) {
-          m.bindPopup(card, { closeButton: true });
+        if(!isMobile()){
+          m.bindPopup(card, { closeButton:true });
         }
 
-
         m.on("click", () => {
-          openDetail(feature.__id, { flyTo: false });
+          openDetail(feature.__id, { flyTo:false });
         });
 
         m.addTo(window.__markerGroup);
       });
 
-      if (activeId && markersById.get(activeId)) {
-        markersById.get(activeId).openPopup();
+      if(activeId && markersById.get(activeId)){
+        if(!isMobile()) markersById.get(activeId).openPopup();
       }
     }
 
-    function applyFilters() {
-      // if on mobile, read mobile controls into desktop values then filter once
-      if (isMobile()) {
+    function applyFilters(){
+      if(isMobile()){
         syncMobileToDesktop();
       }
 
@@ -1443,24 +1297,24 @@
         const { name, addr } = featureLabel(f);
         const muni = getMunicipality(props);
 
-        if (q) {
+        if(q){
           const hay = norm(name + " " + addr + " " + (muni || ""));
-          if (!hay.includes(q)) return false;
+          if(!hay.includes(q)) return false;
         }
 
-        if (sauna !== "all") {
-          const v = asYesNoUnknown(pick(props, ["sauna", "Sauna"]));
-          if (v !== sauna) return false;
+        if(sauna !== "all"){
+          const v = asYesNoUnknown(pick(props, ["sauna","Sauna"]));
+          if(v !== sauna) return false;
         }
 
-        if (changing !== "all") {
-          const v = asYesNoUnknown(pick(props, ["pukuhuone", "changing_room", "changing", "Pukuhuone"]));
-          if (v !== changing) return false;
+        if(changing !== "all"){
+          const v = asYesNoUnknown(pick(props, ["pukuhuone","changing_room","changing","Pukuhuone"]));
+          if(v !== changing) return false;
         }
 
-        if (pricing !== "all") {
+        if(pricing !== "all"){
           const v = pricingBucket(props);
-          if (v !== pricing) return false;
+          if(v !== pricing) return false;
         }
 
         return true;
@@ -1468,15 +1322,14 @@
 
       rebuildMarkers();
 
-      // keep mobile UI in sync (e.g. when clearing from desktop buttons)
-      if (isMobile()) {
+      if(isMobile()){
         syncDesktopToMobile();
       }
     }
 
-    function renderKvInto(containerEl, kvPairs) {
+    function renderKvInto(containerEl, kvPairs){
       containerEl.innerHTML = "";
-      kvPairs.forEach(([k, v]) => {
+      kvPairs.forEach(([k,v]) => {
         const kk = document.createElement("div");
         kk.className = "k";
         kk.textContent = k;
@@ -1490,9 +1343,9 @@
       });
     }
 
-    function openDetail(id, opts = { flyTo: true }) {
+    function openDetail(id, opts={flyTo:true}){
       const feature = allFeatures.find(f => f.__id === id);
-      if (!feature) return;
+      if(!feature) return;
 
       activeId = id;
 
@@ -1501,12 +1354,12 @@
 
       const muni = getMunicipality(props);
       const subtitleParts = [];
-      if (addr) subtitleParts.push(addr);
-      if (muni) subtitleParts.push(muni);
+      if(addr) subtitleParts.push(addr);
+      if(muni) subtitleParts.push(muni);
       const subtitleText = subtitleParts.length ? subtitleParts.join(" • ") : "";
 
-      const sauna = asYesNoUnknown(pick(props, ["sauna", "Sauna"]));
-      const changing = asYesNoUnknown(pick(props, ["pukuhuone", "changing_room", "changing", "Pukuhuone"]));
+      const sauna = asYesNoUnknown(pick(props, ["sauna","Sauna"]));
+      const changing = asYesNoUnknown(pick(props, ["pukuhuone","changing_room","changing","Pukuhuone"]));
       const pricing = pricingBucket(props);
 
       const kv = [
@@ -1521,25 +1374,22 @@
       const lat = coords ? coords[1] : null;
 
       const website = getWebsite(props);
+      const img = getImage(props);
 
-      // image
-      let img = getImage(props);
-      if (!img) img = getTestImageOverride(name);
-
-      // Desktop detail (if visible)
-      if ($("detailTitle")) {
+      // Desktop detail
+      if($("detailTitle")){
         $("detailTitle").textContent = name;
         $("detailSubtitle").textContent = subtitleText;
         renderKvInto($("detailKv"), kv);
 
-        if (lat != null && lng != null) {
-          $("detailGoogle").href = mapsLink(lat, lng);
+        if(lat != null && lng != null){
+          $("detailGoogle").href = mapsLink(lat,lng);
           $("detailGoogle").style.display = "inline-flex";
         } else {
           $("detailGoogle").style.display = "none";
         }
 
-        if (website) {
+        if(website){
           $("detailLink").style.display = "inline-flex";
           $("detailLink").href = website;
         } else {
@@ -1548,12 +1398,12 @@
 
         const imgEl = $("detailImg");
         const captionEl = $("detailImgCaption");
-        if (img) {
+        if(img){
           $("detailThumb").style.display = "block";
           const finalSrc = withCacheBust(img);
           imgEl.src = finalSrc;
           captionEl.textContent = "Kuva kohteesta";
-          imgEl.onerror = () => { captionEl.textContent = "Kuva ei latautunut: " + finalSrc; };
+          imgEl.onerror = () => { captionEl.textContent = "Kuva ei latautunut"; };
         } else {
           $("detailThumb").style.display = "none";
           imgEl.removeAttribute("src");
@@ -1565,19 +1415,19 @@
       }
 
       // Mobile sheet
-      if (isMobile()) {
+      if(isMobile()){
         $("msTitle").textContent = name;
         $("msSubtitle").textContent = subtitleText;
         renderKvInto($("msKv"), kv);
 
-        if (lat != null && lng != null) {
-          $("msGoogle").href = mapsLink(lat, lng);
+        if(lat != null && lng != null){
+          $("msGoogle").href = mapsLink(lat,lng);
           $("msGoogle").style.display = "inline-flex";
         } else {
           $("msGoogle").style.display = "none";
         }
 
-        if (website) {
+        if(website){
           $("msLink").style.display = "inline-flex";
           $("msLink").href = website;
         } else {
@@ -1586,12 +1436,12 @@
 
         const imgEl2 = $("msImg");
         const captionEl2 = $("msImgCaption");
-        if (img) {
+        if(img){
           $("msThumb").style.display = "block";
           const finalSrc2 = withCacheBust(img);
           imgEl2.src = finalSrc2;
           captionEl2.textContent = "Kuva kohteesta";
-          imgEl2.onerror = () => { captionEl2.textContent = "Kuva ei latautunut: " + finalSrc2; };
+          imgEl2.onerror = () => { captionEl2.textContent = "Kuva ei latautunut"; };
         } else {
           $("msThumb").style.display = "none";
           imgEl2.removeAttribute("src");
@@ -1601,17 +1451,16 @@
       }
 
       const marker = markersById.get(id);
-      if (marker && !isMobile()) marker.openPopup();
+      if(marker && !isMobile()) marker.openPopup();
 
-
-      if (opts.flyTo && lat != null && lng != null) {
-        map.flyTo([lat, lng], Math.max(map.getZoom(), 12), { duration: 0.8 });
+      if(opts.flyTo && lat != null && lng != null){
+        map.flyTo([lat,lng], Math.max(map.getZoom(), 12), { duration: 0.8 });
       }
     }
 
-    function clearSelection() {
+    function clearSelection(){
       activeId = null;
-      if ($("selectedCard")) {
+      if($("selectedCard")){
         $("selectedCard").style.display = "none";
         $("selectedEmpty").style.display = "block";
       }
@@ -1619,8 +1468,8 @@
       closeSheet();
     }
 
-    function nearMe() {
-      if (!navigator.geolocation) {
+    function nearMe(){
+      if(!navigator.geolocation){
         alert("Paikannus ei ole käytettävissä.");
         return;
       }
@@ -1642,10 +1491,10 @@
       );
     }
 
-    function setAddPin(latlng) {
+    function setAddPin(latlng){
       addLatLng = latlng;
-      if (!addMarker) {
-        addMarker = L.marker(latlng, { draggable: true }).addTo(map);
+      if(!addMarker){
+        addMarker = L.marker(latlng, { draggable:true }).addTo(map);
         addMarker.on("dragend", () => {
           addLatLng = addMarker.getLatLng();
           updatePinStatus();
@@ -1656,10 +1505,10 @@
       updatePinStatus();
     }
 
-    async function submitHint() {
+    async function submitHint(){
       const name = safeText($("newName").value);
-      if (!name) { alert("Anna paikan nimi."); return; }
-      if (!addLatLng) { alert("Lisää kohde kartalle (paina 'Lisää kohde kartalle')."); return; }
+      if(!name){ alert("Anna paikan nimi."); return; }
+      if(!addLatLng){ alert("Lisää kohde kartalle (paina 'Lisää kohde kartalle')."); return; }
 
       const payload = {
         name,
@@ -1673,10 +1522,10 @@
         created_at: new Date().toISOString()
       };
 
-      try {
+      try{
         const formData = new FormData();
         formData.append("form-name", "talviuintipaikka-vinkki");
-        Object.entries(payload).forEach(([k, v]) => formData.append(k, v));
+        Object.entries(payload).forEach(([k,v]) => formData.append(k, v));
 
         await fetch("/", {
           method: "POST",
@@ -1686,20 +1535,20 @@
 
         alert("Kiitos! Vinkki vastaanotettu.");
         closeAddModal();
-      } catch (e) {
+      }catch(e){
         console.log("Vinkki (local fallback):", payload);
         alert("Kiitos! (Localhost) Vinkki tulostettu consoleen.");
         closeAddModal();
       }
     }
 
-    function resetAll() {
+    function resetAll(){
       $("searchInput").value = "";
       $("filterSauna").value = "all";
       $("filterChanging").value = "all";
       $("filterPricing").value = "all";
 
-      if ($("mSearchInput")) {
+      if($("mSearchInput")){
         syncDesktopToMobile();
       }
 
@@ -1707,7 +1556,7 @@
       applyFilters();
     }
 
-    function bindUI() {
+    function bindUI(){
       // Desktop
       $("btnNear").addEventListener("click", nearMe);
       $("btnClear").addEventListener("click", resetAll);
@@ -1720,7 +1569,7 @@
 
       $("btnCloseSelection").addEventListener("click", clearSelection);
 
-      // Mobile controls
+      // Mobile
       $("mBtnNear").addEventListener("click", nearMe);
       $("mBtnClear").addEventListener("click", resetAll);
       $("mBtnAdd").addEventListener("click", openAddModal);
@@ -1729,21 +1578,21 @@
         $("mobileControls").classList.toggle("collapsed");
       });
 
-      $("mSearchInput").addEventListener("input", applyFilters);
-
       const onMobileSearchActivate = () => {
         if ($("mobileSheet").classList.contains("open")) closeSheet();
         $("mobileControls").classList.remove("collapsed");
       };
 
-      // iOS: focus on luotettavin, click voi tulla tuplana -> pidetään vain focus
+      $("mSearchInput").addEventListener("input", applyFilters);
       $("mSearchInput").addEventListener("focus", onMobileSearchActivate);
 
-
-      $("mFilterSauna").addEventListener("change", applyFilters);
-      $("mFilterChanging").addEventListener("change", applyFilters);
-      $("mFilterPricing").addEventListener("change", applyFilters);
-
+      // “filters coming soon” toast
+      const filtersBlock = $("mobileControls")?.querySelector(".filtersBlock");
+      if(filtersBlock){
+        filtersBlock.addEventListener("click", () => {
+          showToast("🔧 Ominaisuus kehitteillä – julkaistaan myöhemmin");
+        });
+      }
 
       // Sheet
       $("msClose").addEventListener("click", clearSelection);
@@ -1758,27 +1607,31 @@
       $("btnCancelPin").addEventListener("click", cancelPickPin);
 
       window.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") {
-          if ($("addModal").classList.contains("open")) closeAddModal();
+        if(e.key === "Escape"){
+          if($("addModal").classList.contains("open")) closeAddModal();
           else clearSelection();
         }
       });
 
       window.addEventListener("resize", () => {
-        // keep values aligned when rotating phone etc.
-        if (isMobile()) syncDesktopToMobile();
+        if(isMobile()) syncDesktopToMobile();
       });
     }
 
-    (async function boot() {
+    (async function boot(){
       initMap();
       bindUI();
-      try {
+
+      // Start collapsed on mobile for launch
+      if(isMobile()){
+        $("mobileControls").classList.add("collapsed");
+      }
+
+      try{
         await loadGeoJSON();
-        // make sure mobile starts in sync
         syncDesktopToMobile();
         applyFilters();
-      } catch (e) {
+      }catch(e){
         console.error(e);
         alert("Virhe: data ei latautunut (talviuintipaikat_enriched.geojson).");
       }
@@ -1798,5 +1651,4 @@
     <input name="created_at" />
   </form>
 </body>
-
 </html>
