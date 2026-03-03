@@ -82,17 +82,8 @@
     .brand .subtitle {
       font-size: 12px;
       color: var(--muted);
-      margin-top: 4px;
-      font-weight: 800;
-    }
-
-    /* NEW: Tagline (desktop + mobile) */
-    .tagline {
       margin-top: 6px;
-      font-size: 12px;
-      color: rgba(234, 240, 255, .78);
-      font-weight: 850;
-      line-height: 1.25;
+      font-weight: 800;
     }
 
     .btn {
@@ -230,64 +221,39 @@
       font-size: 13px;
     }
 
-    /* NEW: desktop filter beta notice */
-    .filter-beta-note {
-      margin-top: 10px;
-      padding: 10px;
-      font-size: 13px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, .10);
-      border-radius: 12px;
-      color: #bfc7d5;
-      font-weight: 850;
-    }
-
-    /* NEW: Desktop "freeze" filters (grey + non-interactive) */
-    @media (min-width: 921px) {
-
-      /* Disable selects on desktop while beta */
-      #filterSauna,
-      #filterChanging,
-      #filterPricing {
-        pointer-events: none;
-        opacity: 0.55;
-        cursor: not-allowed;
-        filter: grayscale(0.15);
-      }
-
-      /* Label add-on */
-      .filtersBlock .field label::after {
-        content: " (tulossa pian)";
-        font-size: 11px;
-        color: rgba(169, 183, 230, .75);
-        font-weight: 900;
-      }
-    }
-
-    .sidebar.hasSelection .filtersHeader {
-      display: none;
-    }
-
-    .sidebar.hasSelection .filtersBlock {
-      padding: 8px;
-      margin-top: 8px;
-    }
-
-    .sidebar.hasSelection .field label {
-      font-size: 11px;
-      margin-bottom: 4px;
-    }
-
-    .sidebar.hasSelection select {
-      padding: 8px 8px;
-      font-size: 12px;
-      border-radius: 10px;
-    }
-
     @media (min-width: 921px) {
       .filtersGrid {
         grid-template-columns: repeat(3, 1fr);
       }
+    }
+
+    /* “Kehitteillä” info box (used both desktop + mobile) */
+    .devNotice {
+      margin-top: 10px;
+      border-radius: 14px;
+      border: 1px solid rgba(255, 255, 255, .14);
+      background: rgba(0, 0, 0, .18);
+      padding: 12px;
+      color: var(--text);
+      font-weight: 950;
+      line-height: 1.25;
+    }
+
+    .devNotice small {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-weight: 850;
+    }
+
+    /* Freeze look */
+    .filtersFrozen {
+      opacity: .55;
+    }
+
+    .filtersFrozen select {
+      pointer-events: none;
+      filter: grayscale(1);
     }
 
     .selectedWrap {
@@ -396,55 +362,6 @@
     .chipPrimary {
       border-color: rgba(51, 136, 255, .55);
       background: rgba(51, 136, 255, .20);
-    }
-
-    /* Popup CTA */
-    .popupCard {
-      min-width: 240px;
-    }
-
-    .popupTitle {
-      font-weight: 1200;
-      font-size: 14px;
-      margin: 0 0 6px 0;
-    }
-
-    .popupMeta {
-      font-size: 12px;
-      font-weight: 900;
-      color: rgba(40, 50, 90, .85);
-      background: rgba(51, 136, 255, .10);
-      border: 1px solid rgba(51, 136, 255, .25);
-      border-radius: 12px;
-      padding: 6px 8px;
-      margin: 0 0 10px 0;
-    }
-
-    .popupCTA {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      padding: 10px 12px;
-      border-radius: 12px;
-      border: 1px solid rgba(0, 0, 0, .08);
-      background: var(--leaflet-blue);
-      color: #fff !important;
-      font-weight: 1200;
-      font-size: 13px;
-      cursor: pointer;
-      box-shadow: 0 10px 18px rgba(51, 136, 255, .30);
-      transition: transform .08s ease, filter .15s ease;
-      user-select: none;
-      text-decoration: none !important;
-    }
-
-    .popupCTA:hover {
-      filter: brightness(1.05);
-    }
-
-    .popupCTA:active {
-      transform: translateY(1px);
     }
 
     #map {
@@ -647,39 +564,7 @@
         width: 100vw;
       }
 
-      /* iOS Safari: prevent auto-zoom on input focus */
-      .mobileControls .search input {
-        font-size: 16px;
-      }
-
-      .mobileControls .searchRow {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-      }
-
-      .mobileControls #mBtnNear {
-        flex: 0 0 auto;
-      }
-
-      .mobileControls.collapsed #mBtnNear {
-        width: 44px;
-        min-width: 44px;
-        padding: 10px 0;
-        border-radius: 14px;
-        justify-content: center;
-        font-size: 0;
-      }
-
-      .mobileControls.collapsed #mBtnNear::before {
-        content: "📍";
-        font-size: 16px;
-      }
-
-      .mobileControls .searchRow .search {
-        flex: 1;
-      }
-
+      /* Floating controls */
       .mobileControls {
         display: block;
         position: fixed;
@@ -697,26 +582,10 @@
         overflow: auto;
       }
 
+      /* Collapsed state */
       .mobileControls.collapsed {
         max-height: 150px;
         overflow: hidden;
-      }
-
-      .mobileControls:not(.collapsed) {
-        max-height: 48vh;
-        overflow: auto;
-      }
-
-      .mobileControls.collapsed .filtersBlock {
-        display: none;
-      }
-
-      .mobileControls.collapsed .mobileActions .btn {
-        display: none;
-      }
-
-      .mobileControls.collapsed .searchRow {
-        display: flex;
       }
 
       .mobileTopRow {
@@ -733,20 +602,11 @@
         line-height: 1.1;
       }
 
-      .mobileHint {
+      .mobileSub {
+        margin-top: 4px;
         color: var(--muted);
         font-size: 11px;
         font-weight: 850;
-        margin-top: 2px;
-      }
-
-      /* NEW: mobile tagline */
-      .mobileTagline {
-        margin-top: 6px;
-        font-size: 12px;
-        color: rgba(234, 240, 255, .78);
-        font-weight: 850;
-        line-height: 1.25;
       }
 
       .mobileActions {
@@ -766,28 +626,45 @@
         flex: 1 0 100%;
       }
 
-      .mobileControls .filtersHeader {
+      /* Search row stays visible */
+      .mobileControls .searchRow {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      .mobileControls .searchRow .search {
+        flex: 1;
+      }
+
+      /* iOS Safari: prevent auto-zoom */
+      .mobileControls .search input {
+        font-size: 16px;
+      }
+
+      /* Near button becomes icon when collapsed */
+      .mobileControls #mBtnNear {
+        flex: 0 0 auto;
+      }
+
+      .mobileControls.collapsed #mBtnNear {
+        width: 44px;
+        min-width: 44px;
+        padding: 10px 0;
+        border-radius: 14px;
+        justify-content: center;
+        font-size: 0;
+      }
+
+      .mobileControls.collapsed #mBtnNear::before {
+        content: "📍";
+        font-size: 16px;
+      }
+
+      /* Filters hidden when collapsed (this is the key requirement) */
+      .mobileControls.collapsed .filtersWrap {
         display: none;
-      }
-
-      .mobileControls .field label {
-        display: none;
-      }
-
-      .mobileControls .filtersBlock {
-        margin-top: 8px;
-        padding: 10px;
-      }
-
-      .mobileControls .filtersGrid {
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 8px;
-      }
-
-      .mobileControls select {
-        padding: 10px 8px;
-        font-size: 12px;
-        border-radius: 12px;
       }
 
       /* Bottom sheet */
@@ -882,6 +759,7 @@
         margin-top: 12px;
       }
 
+      /* When sheet open, make controls smaller */
       body.sheet-open .mobileControls {
         max-height: 36vh;
         opacity: .98;
@@ -903,43 +781,24 @@
         grid-template-columns: 1fr;
       }
 
-      /* Toast (mobile) */
-      .toast {
-        position: fixed;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 16px;
-        z-index: 9000;
-        padding: 10px 12px;
-        border-radius: 14px;
-        border: 1px solid rgba(255, 255, 255, .14);
-        background: rgba(15, 23, 48, .92);
-        color: var(--text);
-        font-weight: 900;
-        font-size: 13px;
-        box-shadow: 0 18px 40px rgba(0, 0, 0, .35);
-        backdrop-filter: blur(8px);
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity .18s ease, transform .18s ease;
+      /* Mobile filters layout: compact */
+      .mobileControls .filtersHeader {
+        display: none;
       }
 
-      .toast.show {
-        opacity: 1;
-        transform: translateX(-50%) translateY(-4px);
+      .mobileControls .field label {
+        display: none;
       }
 
-      /* Mobile filters: disabled look */
-      #mFilterSauna:disabled,
-      #mFilterChanging:disabled,
-      #mFilterPricing:disabled {
-        opacity: .55;
-        cursor: not-allowed;
+      .mobileControls .filtersGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8px;
       }
 
-      /* Himmeä koko filtteri-alue */
-      .mobileControls .filtersBlock {
-        opacity: .55;
+      .mobileControls select {
+        padding: 10px 8px;
+        font-size: 12px;
+        border-radius: 12px;
       }
     }
   </style>
@@ -953,9 +812,7 @@
         <div class="brandRow">
           <div class="brand">
             <div class="title">❄️ Talviuintipaikat.fi</div>
-            <!-- NEW: tagline -->
-            <div class="tagline">Suomen kattavin avantokarttapalvelu</div>
-            <div class="subtitle">Klikkaa markeria → tiedot päivittyy heti</div>
+            <div class="subtitle">Suomen kattavin avantokarttapalvelu</div>
           </div>
         </div>
 
@@ -977,6 +834,7 @@
             <div class="h">Filtterit</div>
             <div class="hint">beta</div>
           </div>
+
           <div class="filtersGrid">
             <div class="field">
               <label for="filterSauna">Sauna</label>
@@ -1009,8 +867,10 @@
             </div>
           </div>
 
-          <!-- NEW: visible beta note -->
-          <div class="filter-beta-note">🚧 Filtterit ovat kehitteillä – ominaisuus julkaistaan pian.</div>
+          <div class="devNotice">
+            🚧 Filtterit ovat kehitteillä – ominaisuus julkaistaan pian.
+            <small>Julkaisussa keskitytään nyt hakuun ja kartan käyttöön.</small>
+          </div>
         </div>
       </div>
 
@@ -1052,14 +912,9 @@
     <div class="mobileTopRow">
       <div>
         <div class="mobileBrand">❄️ Talviuintipaikat.fi</div>
-        <!-- NEW: mobile tagline -->
-        <div class="mobileTagline">Suomen kattavin avantokarttapalvelu</div>
-        <div class="mobileHint">Klikkaa markeria → tiedot päivittyy heti</div>
+        <div class="mobileSub">Suomen kattavin avantokarttapalvelu</div>
       </div>
-
-      <button class="btn" id="mToggleControls" title="Piilota/avaa hakupaneeli">
-        ☰
-      </button>
+      <button class="btn" id="mToggleControls" title="Piilota/avaa hakupaneeli">☰</button>
     </div>
 
     <div class="mobileActions">
@@ -1076,49 +931,50 @@
       </div>
     </div>
 
-    <div class="filtersBlock" aria-label="Filtterit">
-      <div class="filtersGrid">
-        <div class="field">
-          <label>Sauna</label>
-          <select id="mFilterSauna" disabled>
-            <option value="all">Sauna</option>
-            <option value="yes">Sauna ✓</option>
-            <option value="no">Sauna ✕</option>
-            <option value="unknown">Sauna ?</option>
-          </select>
+    <!-- Filters + dev notice (hidden when collapsed) -->
+    <div class="filtersWrap">
+      <div class="filtersBlock filtersFrozen" aria-label="Filtterit (tulossa)">
+        <div class="filtersGrid">
+          <div class="field">
+            <label>Sauna</label>
+            <select id="mFilterSauna" disabled>
+              <option value="all">Sauna</option>
+              <option value="yes">Sauna ✓</option>
+              <option value="no">Sauna ✕</option>
+              <option value="unknown">Sauna ?</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Pukuhuone</label>
+            <select id="mFilterChanging" disabled>
+              <option value="all">Pukuhuone</option>
+              <option value="yes">Puku ✓</option>
+              <option value="no">Puku ✕</option>
+              <option value="unknown">Puku ?</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Hinnoittelu</label>
+            <select id="mFilterPricing" disabled>
+              <option value="all">Hinta</option>
+              <option value="free">Ilmainen</option>
+              <option value="paid">Maksull.</option>
+              <option value="unknown">Hinta ?</option>
+            </select>
+          </div>
         </div>
 
-        <div class="field">
-          <label>Pukuhuone</label>
-          <select id="mFilterChanging" disabled>
-            <option value="all">Pukuhuone</option>
-            <option value="yes">Puku ✓</option>
-            <option value="no">Puku ✕</option>
-            <option value="unknown">Puku ?</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label>Hinnoittelu</label>
-          <select id="mFilterPricing" disabled>
-            <option value="all">Hinta</option>
-            <option value="free">Ilmainen</option>
-            <option value="paid">Maksull.</option>
-            <option value="unknown">Hinta ?</option>
-          </select>
+        <div class="devNotice">
+          🚧 Filtterit ovat kehitteillä – ominaisuus julkaistaan pian.
+          <small>Nyt voit hakea paikkoja nimellä tai kunnalla.</small>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Toast (mobile) -->
-  <div class="toast" id="toast">
-    🔧 Ominaisuus kehitteillä – julkaistaan myöhemmin
-  </div>
-
   <!-- MOBILE bottom sheet -->
-  <!-- Toast (mobile) -->
-  <div class="toast" id="toast">🔧 Ominaisuus kehitteillä – julkaistaan myöhemmin</div>
   <div class="mobileSheet" id="mobileSheet">
     <div class="sheetCard">
       <div class="sheetHandle" id="sheetHandle">
@@ -1268,14 +1124,6 @@
       return `https://www.google.com/maps?q=${q}`;
     }
 
-    function getTestImageOverride(placeName) {
-      const n = norm(placeName);
-      if (n.includes("aurinkolahd") || n.includes("aurinkolahti") || n.includes("aurinkolah")) {
-        return "aurinkolahti.png";
-      }
-      return "";
-    }
-
     function withCacheBust(url) {
       if (!url) return "";
       const sep = url.includes("?") ? "&" : "?";
@@ -1283,20 +1131,10 @@
     }
 
     function isMobile() {
-      // toast
-      function showToast(msg) {
-        const t = $("toast");
-        if (!t) return;
-        t.textContent = msg;
-        t.classList.add("show");
-        clearTimeout(window.__toastTimer);
-        window.__toastTimer = setTimeout(() => {
-          t.classList.remove("show");
-        }, 1700);
-      }
       return window.matchMedia && window.matchMedia("(max-width: 920px)").matches;
     }
 
+    // sheet state
     function openSheet() {
       $("mobileSheet").classList.add("open");
       document.body.classList.add("sheet-open");
@@ -1313,6 +1151,7 @@
       $("mobileSheet").classList.toggle("expanded");
     }
 
+    // sync mobile controls -> desktop controls (filters on mobile are disabled but we keep sync for future)
     function syncMobileToDesktop() {
       $("searchInput").value = $("mSearchInput").value;
       $("filterSauna").value = $("mFilterSauna").value;
@@ -1332,17 +1171,11 @@
     let markersById = new Map();
     let activeId = null;
 
+    // add modal state
     let addMode = false;
     let pinPickMode = false;
     let addMarker = null;
     let addLatLng = null;
-
-    function setSelectionMode(on) {
-      const sidebar = $("sidebar");
-      if (!sidebar) return;
-      if (on) sidebar.classList.add("hasSelection");
-      else sidebar.classList.remove("hasSelection");
-    }
 
     function openAddModal() {
       $("addModal").classList.add("open");
@@ -1438,7 +1271,7 @@
       allFeatures = (gj.features || []).map((f, idx) => {
         const props = f.properties || {};
         const name = safeText(pick(props, ["name", "nimi", "Nimi", "Name", "title"]));
-        const id = safeText(pick(props, ["id", "ID", "uuid", "UID"])) || `p_${idx}_${norm(name).slice(0, 24)}`;
+        const id = safeText(pick(props, ["id", "ID", "uuid", "UID", "lipas_id"])) || `p_${idx}_${norm(name).slice(0, 24)}`;
         f.__id = id;
         return f;
       });
@@ -1465,35 +1298,53 @@
         const m = L.marker([lat, lng]);
         markersById.set(feature.__id, m);
 
-        const muni = getMunicipality(props);
-        const muniText = muni ? `📍 ${muni}` : "📍 Paikkakunta ei tiedossa";
-        const website = getWebsite(props);
-
-        const card = document.createElement("div");
-        card.className = "popupCard";
-
-        const t = document.createElement("div");
-        t.className = "popupTitle";
-        t.textContent = name;
-
-        const meta = document.createElement("div");
-        meta.className = "popupMeta";
-        meta.textContent = muniText;
-
-        card.appendChild(t);
-        card.appendChild(meta);
-
-        if (website) {
-          const a = document.createElement("a");
-          a.className = "popupCTA";
-          a.href = website;
-          a.target = "_blank";
-          a.rel = "noopener";
-          a.textContent = "Avaa kohteen sivu";
-          card.appendChild(a);
-        }
-
+        // Desktop popup only
         if (!isMobile()) {
+          const muni = getMunicipality(props);
+          const muniText = muni ? `📍 ${muni}` : "📍 Paikkakunta ei tiedossa";
+          const website = getWebsite(props);
+
+          const card = document.createElement("div");
+          card.style.minWidth = "240px";
+
+          const t = document.createElement("div");
+          t.style.fontWeight = "1200";
+          t.style.fontSize = "14px";
+          t.style.marginBottom = "6px";
+          t.textContent = name;
+
+          const meta = document.createElement("div");
+          meta.style.fontSize = "12px";
+          meta.style.fontWeight = "900";
+          meta.style.borderRadius = "12px";
+          meta.style.padding = "6px 8px";
+          meta.style.marginBottom = "10px";
+          meta.style.background = "rgba(51,136,255,.10)";
+          meta.style.border = "1px solid rgba(51,136,255,.25)";
+          meta.textContent = muniText;
+
+          card.appendChild(t);
+          card.appendChild(meta);
+
+          if (website) {
+            const a = document.createElement("a");
+            a.href = website;
+            a.target = "_blank";
+            a.rel = "noopener";
+            a.textContent = "Avaa kohteen sivu";
+            a.style.display = "inline-flex";
+            a.style.alignItems = "center";
+            a.style.justifyContent = "center";
+            a.style.width = "100%";
+            a.style.padding = "10px 12px";
+            a.style.borderRadius = "12px";
+            a.style.background = "var(--leaflet-blue)";
+            a.style.color = "#fff";
+            a.style.fontWeight = "1200";
+            a.style.textDecoration = "none";
+            card.appendChild(a);
+          }
+
           m.bindPopup(card, { closeButton: true });
         }
 
@@ -1505,14 +1356,13 @@
       });
 
       if (activeId && markersById.get(activeId)) {
-        markersById.get(activeId).openPopup();
+        if (!isMobile()) markersById.get(activeId).openPopup();
       }
     }
 
     function applyFilters() {
-      if (isMobile()) {
-        syncMobileToDesktop();
-      }
+      // filters from mobile are disabled, but we keep search sync
+      if (isMobile()) syncMobileToDesktop();
 
       const q = norm($("searchInput").value);
       const sauna = $("filterSauna").value;
@@ -1549,9 +1399,7 @@
 
       rebuildMarkers();
 
-      if (isMobile()) {
-        syncDesktopToMobile();
-      }
+      if (isMobile()) syncDesktopToMobile();
     }
 
     function renderKvInto(containerEl, kvPairs) {
@@ -1601,10 +1449,9 @@
       const lat = coords ? coords[1] : null;
 
       const website = getWebsite(props);
+      const img = getImage(props);
 
-      let img = getImage(props);
-      if (!img) img = getTestImageOverride(name);
-
+      // Desktop detail
       if ($("detailTitle")) {
         $("detailTitle").textContent = name;
         $("detailSubtitle").textContent = subtitleText;
@@ -1631,7 +1478,7 @@
           const finalSrc = withCacheBust(img);
           imgEl.src = finalSrc;
           captionEl.textContent = "Kuva kohteesta";
-          imgEl.onerror = () => { captionEl.textContent = "Kuva ei latautunut: " + finalSrc; };
+          imgEl.onerror = () => { captionEl.textContent = "Kuva ei latautunut"; };
         } else {
           $("detailThumb").style.display = "none";
           imgEl.removeAttribute("src");
@@ -1639,9 +1486,9 @@
 
         $("selectedEmpty").style.display = "none";
         $("selectedCard").style.display = "block";
-        setSelectionMode(true);
       }
 
+      // Mobile sheet
       if (isMobile()) {
         $("msTitle").textContent = name;
         $("msSubtitle").textContent = subtitleText;
@@ -1668,7 +1515,7 @@
           const finalSrc2 = withCacheBust(img);
           imgEl2.src = finalSrc2;
           captionEl2.textContent = "Kuva kohteesta";
-          imgEl2.onerror = () => { captionEl2.textContent = "Kuva ei latautunut: " + finalSrc2; };
+          imgEl2.onerror = () => { captionEl2.textContent = "Kuva ei latautunut"; };
         } else {
           $("msThumb").style.display = "none";
           imgEl2.removeAttribute("src");
@@ -1687,11 +1534,6 @@
 
     function clearSelection() {
       activeId = null;
-      if ($("selectedCard")) {
-        $("selectedCard").style.display = "none";
-        $("selectedEmpty").style.display = "block";
-      }
-      setSelectionMode(false);
       closeSheet();
     }
 
@@ -1775,15 +1617,14 @@
       $("filterChanging").value = "all";
       $("filterPricing").value = "all";
 
-      if ($("mSearchInput")) {
-        syncDesktopToMobile();
-      }
+      if ($("mSearchInput")) syncDesktopToMobile();
 
       clearSelection();
       applyFilters();
     }
 
     function bindUI() {
+      // Desktop
       $("btnNear").addEventListener("click", nearMe);
       $("btnClear").addEventListener("click", resetAll);
       $("btnAdd").addEventListener("click", openAddModal);
@@ -1793,8 +1634,7 @@
       $("filterChanging").addEventListener("change", applyFilters);
       $("filterPricing").addEventListener("change", applyFilters);
 
-      $("btnCloseSelection").addEventListener("click", clearSelection);
-
+      // Mobile controls
       $("mBtnNear").addEventListener("click", nearMe);
       $("mBtnClear").addEventListener("click", resetAll);
       $("mBtnAdd").addEventListener("click", openAddModal);
@@ -1805,20 +1645,17 @@
 
       $("mSearchInput").addEventListener("input", applyFilters);
 
-      const onMobileSearchActivate = () => {
+      // Key requirement: show filters when user activates search
+      $("mSearchInput").addEventListener("focus", () => {
         if ($("mobileSheet").classList.contains("open")) closeSheet();
         $("mobileControls").classList.remove("collapsed");
-      };
+      });
 
-      $("mSearchInput").addEventListener("focus", onMobileSearchActivate);
-
-      $("mFilterSauna").addEventListener("change", applyFilters);
-      $("mFilterChanging").addEventListener("change", applyFilters);
-      $("mFilterPricing").addEventListener("change", applyFilters);
-
+      // Sheet
       $("msClose").addEventListener("click", clearSelection);
       $("sheetHandle").addEventListener("click", toggleSheetExpanded);
 
+      // Modal
       $("btnCloseModal").addEventListener("click", closeAddModal);
       $("btnCancelAdd").addEventListener("click", closeAddModal);
       $("btnSubmitHint").addEventListener("click", submitHint);
@@ -1836,18 +1673,15 @@
       window.addEventListener("resize", () => {
         if (isMobile()) syncDesktopToMobile();
       });
-      // Mobiili: filttereiden klikkaus näyttää toastin
-      const mobileFilters = $("mobileControls")?.querySelector(".filtersBlock");
-      if (mobileFilters) {
-        mobileFilters.addEventListener("click", () => {
-          showToast("🔧 Ominaisuus kehitteillä – julkaistaan myöhemmin");
-        });
-      }
     }
 
     (async function boot() {
       initMap();
       bindUI();
+
+      // start collapsed on mobile
+      if (isMobile()) $("mobileControls").classList.add("collapsed");
+
       try {
         await loadGeoJSON();
         syncDesktopToMobile();
