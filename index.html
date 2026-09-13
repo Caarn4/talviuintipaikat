@@ -1586,6 +1586,9 @@
     }
 
     async function submitHint() {
+      const submitButton = $("btnSubmitHint");
+      if (submitButton.disabled) return;
+
       const name = safeText($("newName").value);
       if (!name) { alert("Anna paikan nimi."); return; }
       if (!addLatLng) { alert("Lisää kohde kartalle (paina 'Lisää kohde kartalle')."); return; }
@@ -1602,23 +1605,26 @@
         created_at: new Date().toISOString()
       };
 
+      submitButton.disabled = true;
       try {
         const formData = new FormData();
         formData.append("form-name", "talviuintipaikka-vinkki");
         Object.entries(payload).forEach(([k, v]) => formData.append(k, v));
 
-        await fetch("/", {
+        const response = await fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: new URLSearchParams([...formData]).toString()
         });
 
+        if (!response.ok) throw new Error("HTTP " + response.status);
+
         alert("Kiitos! Vinkki vastaanotettu.");
         closeAddModal();
       } catch (e) {
-        console.log("Vinkki (local fallback):", payload);
-        alert("Kiitos! (Localhost) Vinkki tulostettu consoleen.");
-        closeAddModal();
+        alert("Vinkin lähetys epäonnistui. Tietoja ei tyhjennetty. Yritä uudelleen.");
+      } finally {
+        submitButton.disabled = false;
       }
     }
 
