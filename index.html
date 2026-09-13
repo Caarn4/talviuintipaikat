@@ -842,11 +842,11 @@
         <div class="searchRow">
           <div class="search" role="search">
             🔎
-            <input id="searchInput" type="text" placeholder="Hae nimellä / kunnalla…" autocomplete="off" />
+            <input id="searchInput" type="text" enterkeyhint="search" placeholder="Hae nimellä / kunnalla…" autocomplete="off" />
           </div>
         </div>
 
-        <div class="filtersBlock" aria-label="Filtterit">
+        <div class="filtersBlock filtersFrozen" aria-label="Filtterit (tulossa)">
           <div class="filtersHeader">
             <div class="h">Filtterit</div>
             <div class="hint">beta</div>
@@ -855,7 +855,7 @@
           <div class="filtersGrid">
             <div class="field">
               <label for="filterSauna">Sauna</label>
-              <select id="filterSauna">
+              <select id="filterSauna" disabled>
                 <option value="all">Kaikki</option>
                 <option value="yes">Kyllä</option>
                 <option value="no">Ei</option>
@@ -865,7 +865,7 @@
 
             <div class="field">
               <label for="filterChanging">Pukuhuone</label>
-              <select id="filterChanging">
+              <select id="filterChanging" disabled>
                 <option value="all">Kaikki</option>
                 <option value="yes">Kyllä</option>
                 <option value="no">Ei</option>
@@ -875,7 +875,7 @@
 
             <div class="field">
               <label for="filterPricing">Hinnoittelu</label>
-              <select id="filterPricing">
+              <select id="filterPricing" disabled>
                 <option value="all">Kaikki</option>
                 <option value="free">Ilmainen</option>
                 <option value="paid">Maksullinen</option>
@@ -944,7 +944,7 @@
 
       <div class="search" role="search">
         🔎
-        <input id="mSearchInput" type="text" placeholder="Hae nimellä / kunnalla…" autocomplete="off" />
+        <input id="mSearchInput" type="text" enterkeyhint="search" placeholder="Hae nimellä / kunnalla…" autocomplete="off" />
       </div>
     </div>
 
@@ -1395,7 +1395,13 @@
     }
 
     function applyFilters() {
-      // filters from mobile are disabled, but we keep search sync
+      // Keep frozen filters neutral, including values restored by the browser.
+      ["filterSauna", "filterChanging", "filterPricing",
+        "mFilterSauna", "mFilterChanging", "mFilterPricing"].forEach(id => {
+        $(id).value = "all";
+      });
+
+      // Keep the existing mobile search sync.
       if (isMobile()) syncMobileToDesktop();
 
       const q = norm($("searchInput").value);
@@ -1434,6 +1440,32 @@
       rebuildMarkers();
 
       if (isMobile()) syncDesktopToMobile();
+    }
+
+    function focusSearchResults(event) {
+      if (event.key !== "Enter" || event.isComposing || event.keyCode === 229) return;
+      event.preventDefault();
+      if (!norm(event.currentTarget.value)) return;
+
+      applyFilters();
+      const points = filteredFeatures.flatMap(feature => {
+        const coords = feature.geometry?.coordinates;
+        if (feature.geometry?.type !== "Point" || !Array.isArray(coords)) return [];
+        const [lng, lat] = coords;
+        if (!Number.isFinite(lat) || !Number.isFinite(lng) ||
+          Math.abs(lat) > 90 || Math.abs(lng) > 180) return [];
+        return [[lat, lng]];
+      });
+      if (!points.length) return;
+
+      const mobile = isMobile();
+      if (mobile) event.currentTarget.blur();
+      const topPadding = mobile ? $("mobileControls").getBoundingClientRect().bottom + 16 : 24;
+      map.fitBounds(L.latLngBounds(points), {
+        maxZoom: 13,
+        paddingTopLeft: [24, topPadding],
+        paddingBottomRight: [24, 24]
+      });
     }
 
     function renderKvInto(containerEl, kvPairs) {
@@ -1664,6 +1696,11 @@
 
       clearSelection();
       applyFilters();
+
+      if (isMobile()) {
+        map.stop();
+        map.setView([64.5, 26.0], 5, { animate: false });
+      }
     }
 
     function bindUI() {
@@ -1674,6 +1711,7 @@
       $("btnCloseSelection").addEventListener("click", clearSelection);
 
       $("searchInput").addEventListener("input", applyFilters);
+      $("searchInput").addEventListener("keydown", focusSearchResults);
       $("filterSauna").addEventListener("change", applyFilters);
       $("filterChanging").addEventListener("change", applyFilters);
       $("filterPricing").addEventListener("change", applyFilters);
@@ -1688,6 +1726,7 @@
       });
 
       $("mSearchInput").addEventListener("input", applyFilters);
+      $("mSearchInput").addEventListener("keydown", focusSearchResults);
 
       // Key requirement: show filters when user activates search
       $("mSearchInput").addEventListener("focus", () => {
