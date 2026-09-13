@@ -599,89 +599,96 @@
         overflow: auto;
       }
 
-      /* Collapsed state */
+      /* Keep primary actions visible in both panel states. */
       .mobileControls.collapsed {
-        max-height: 150px;
-        overflow: hidden;
+        overflow: auto;
+      }
+
+      .mobileControls #mBtnClear[hidden] {
+        display: none;
+      }
+
+      .mobileFilterStatus {
+        margin-top: 5px;
+        color: var(--muted);
+        font-size: 10px;
+        line-height: 1.3;
+        overflow-wrap: anywhere;
       }
 
       .mobileTopRow {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 10px;
-        margin-bottom: 8px;
+        gap: 8px;
+        margin-bottom: 6px;
+      }
+
+      .mobileTopRow > div {
+        min-width: 0;
       }
 
       .mobileBrand {
         font-weight: 1100;
         font-size: 16px;
         line-height: 1.1;
+        overflow-wrap: anywhere;
       }
 
       .mobileSub {
-        margin-top: 4px;
+        margin-top: 3px;
         color: var(--muted);
         font-size: 11px;
         font-weight: 850;
       }
 
+      .mobileControls #mToggleControls {
+        flex-shrink: 0;
+      }
+
       .mobileActions {
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-        margin-top: 8px;
+        display: grid;
+        grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+        gap: 6px;
+        margin-top: 6px;
       }
 
       .mobileActions .btn {
-        flex: 1;
-        min-width: 130px;
+        min-width: 0;
+        min-height: 40px;
+        padding: 7px 6px;
+        font-size: 12px;
+        line-height: 1.2;
+        white-space: normal;
+        overflow-wrap: anywhere;
       }
 
-      .mobileActions .btnWide {
-        width: 100%;
-        flex: 1 0 100%;
-      }
-
-      /* Search row stays visible */
       .mobileControls .searchRow {
         display: flex;
-        gap: 10px;
-        align-items: center;
-        margin-top: 10px;
+        gap: 6px;
+        align-items: stretch;
+        margin-top: 0;
       }
 
       .mobileControls .searchRow .search {
         flex: 1;
+        min-width: 0;
+        min-height: 40px;
+        padding: 7px 10px;
+        gap: 6px;
       }
 
-      /* iOS Safari: prevent auto-zoom */
-      .mobileControls .search input {
-        font-size: 16px;
-      }
-
-      /* Near button becomes icon when collapsed */
-      .mobileControls #mBtnNear {
+      .mobileControls #mBtnClear {
         flex: 0 0 auto;
+        min-height: 40px;
+        padding: 7px 9px;
+        font-size: 12px;
       }
 
-      .mobileControls.collapsed #mBtnNear {
-        width: 44px;
-        min-width: 44px;
-        padding: 10px 0;
-        border-radius: 14px;
-        justify-content: center;
-        font-size: 0;
-      }
-
-      .mobileControls.collapsed #mBtnNear::before {
-        content: "📍";
+      /* Preserve 16px text to avoid iOS input auto-zoom. */
+      .mobileControls .search input {
+        min-width: 0;
         font-size: 16px;
-      }
-
-      /* Filters hidden when collapsed (this is the key requirement) */
-      .mobileControls.collapsed .filtersWrap {
-        display: none;
       }
 
       /* Bottom sheet */
@@ -931,25 +938,28 @@
         <div class="mobileBrand">❄️ Talviuintipaikat.fi</div>
         <div class="mobileSub">Suomen kattavin avantokarttapalvelu</div>
       </div>
-      <button class="btn" id="mToggleControls" title="Piilota/avaa hakupaneeli">☰</button>
-    </div>
-
-    <div class="mobileActions">
-      <button class="btn" id="mBtnClear">↩︎ Nollaa</button>
-      <button class="btn btnPrimary btnWide" id="mBtnAdd">＋ Vinkkaa puuttuva paikka</button>
+      <button class="btn" id="mToggleControls" title="Valikko (tulossa)" aria-label="Valikko (tulossa)" disabled>☰</button>
     </div>
 
     <div class="searchRow">
-      <button class="btn btnPrimary" id="mBtnNear">📍 Lähelläni</button>
-
       <div class="search" role="search">
         🔎
         <input id="mSearchInput" type="text" enterkeyhint="search" placeholder="Hae nimellä / kunnalla…" autocomplete="off" />
       </div>
+      <button class="btn" id="mBtnClear" hidden>↩︎ Nollaa</button>
     </div>
 
-    <!-- Filters + dev notice (hidden when collapsed) -->
-    <div class="filtersWrap">
+    <div class="mobileActions">
+      <button class="btn btnPrimary" id="mBtnNear">📍 Lähelläni</button>
+      <button class="btn btnPrimary" id="mBtnAdd">＋ Vinkkaa puuttuva paikka</button>
+    </div>
+
+    <div class="mobileFilterStatus">
+      Suodattimet: Sauna, pukuhuone, hinnoittelu (kehitteillä)
+    </div>
+
+    <!-- Retained for existing filter synchronization. -->
+    <div class="filtersWrap" hidden>
       <div class="filtersBlock filtersFrozen" aria-label="Filtterit (tulossa)">
         <div class="filtersGrid">
           <div class="field">
@@ -983,10 +993,7 @@
           </div>
         </div>
 
-        <div class="devNotice">
-          🚧 Filtterit ovat kehitteillä – ominaisuus julkaistaan pian.
-          <small>Nyt voit hakea paikkoja nimellä tai kunnalla.</small>
-        </div>
+
       </div>
     </div>
   </div>
@@ -1158,12 +1165,14 @@
       document.body.classList.add("sheet-open");
       $("mobileControls").style.display = "block";
       $("mobileControls").classList.add("collapsed");
+      updateMobilePanelState();
     }
     function closeSheet() {
       $("mobileSheet").classList.remove("open");
       $("mobileSheet").classList.remove("expanded");
       $("mobileControls").classList.remove("collapsed");
       document.body.classList.remove("sheet-open");
+      updateMobilePanelState();
     }
     function toggleSheetExpanded() {
       $("mobileSheet").classList.toggle("expanded");
@@ -1176,11 +1185,16 @@
       $("filterChanging").value = $("mFilterChanging").value;
       $("filterPricing").value = $("mFilterPricing").value;
     }
+    function updateMobilePanelState() {
+      $("mBtnClear").hidden = !norm($("mSearchInput").value) && !activeId;
+    }
+
     function syncDesktopToMobile() {
       $("mSearchInput").value = $("searchInput").value;
       $("mFilterSauna").value = $("filterSauna").value;
       $("mFilterChanging").value = $("filterChanging").value;
       $("mFilterPricing").value = $("filterPricing").value;
+      updateMobilePanelState();
     }
 
     const MARKER_CAP = 100;
@@ -1489,6 +1503,7 @@
       if (!feature) return;
 
       activeId = id;
+      updateMobilePanelState();
 
       const props = feature.properties || {};
       const { name, addr } = featureLabel(feature);
@@ -1505,9 +1520,9 @@
 
       const kv = [
         ["Paikkakunta", muni || "Ei tietoa"],
-        ["Sauna", sauna === "yes" ? "Kyllä" : sauna === "no" ? "Ei" : "Ei tietoa"],
-        ["Pukuhuone", changing === "yes" ? "Kyllä" : changing === "no" ? "Ei" : "Ei tietoa"],
-        ["Hinnoittelu", pricing === "paid" ? "Maksullinen" : pricing === "free" ? "Ilmainen" : "Ei tietoa"],
+        ["Sauna", sauna === "yes" ? "Kyllä" : sauna === "no" ? "Ei" : "Ominaisuus kehitteillä"],
+        ["Pukuhuone", changing === "yes" ? "Kyllä" : changing === "no" ? "Ei" : "Ominaisuus kehitteillä"],
+        ["Hinnoittelu", pricing === "paid" ? "Maksullinen" : pricing === "free" ? "Ilmainen" : "Tarkasta kohteen sivuilta"],
       ];
 
       const coords = feature.geometry?.coordinates || null;
@@ -1723,6 +1738,7 @@
 
       $("mToggleControls").addEventListener("click", () => {
         $("mobileControls").classList.toggle("collapsed");
+        updateMobilePanelState();
       });
 
       $("mSearchInput").addEventListener("input", applyFilters);
@@ -1732,6 +1748,7 @@
       $("mSearchInput").addEventListener("focus", () => {
         if ($("mobileSheet").classList.contains("open")) closeSheet();
         $("mobileControls").classList.remove("collapsed");
+        updateMobilePanelState();
       });
 
       // Sheet
