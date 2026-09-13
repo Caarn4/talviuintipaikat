@@ -1542,6 +1542,9 @@
 
     function clearSelection() {
       activeId = null;
+      $("selectedCard").style.display = "none";
+      $("selectedEmpty").style.display = "block";
+      map.closePopup();
       closeSheet();
     }
 
@@ -1636,6 +1639,7 @@
       $("btnNear").addEventListener("click", nearMe);
       $("btnClear").addEventListener("click", resetAll);
       $("btnAdd").addEventListener("click", openAddModal);
+      $("btnCloseSelection").addEventListener("click", clearSelection);
 
       $("searchInput").addEventListener("input", applyFilters);
       $("filterSauna").addEventListener("change", applyFilters);
