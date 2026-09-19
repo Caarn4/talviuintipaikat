@@ -7791,6 +7791,305 @@
         "sauna": "",
         "huomio": ""
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.992496490478516,
+          63.823526300913144
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Hickarö Resort",
+        "kunta": "Kokkola",
+        "url": "https://www.hickaroresort.fi/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "",
+        "id": "user_submission_hickaro_resort",
+        "source": "user_submission"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.755998969078053,
+          63.71786177059489
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Strandis Smokehouse Village",
+        "kunta": "Luoto",
+        "url": "https://smokehousevillage.com/sv/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "",
+        "id": "user_submission_strandis_smokehouse_village",
+        "source": "user_submission"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.456611193616396,
+          61.131499544438206
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Marine Café & sauna (Satamarine)",
+        "kunta": "Rauma",
+        "url": "https://www.satamarine.fi/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "",
+        "id": "user_submission_satamarine",
+        "source": "user_submission"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.47217832509951,
+          61.14006896726945
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Marina Vista",
+        "kunta": "Rauma",
+        "url": "https://www.marinavista.fi/saunalautta",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "",
+        "id": "user_submission_marina_vista",
+        "source": "user_submission"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.704719305038456,
+          62.893384628776886
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Luoto Kuopio",
+        "kunta": "Kuopio",
+        "url": "https://www.luotokuopio.fi/fi/tilat-ja-palvelut",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "",
+        "id": "user_submission_luoto_kuopio",
+        "source": "user_submission"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.657705545425415,
+          62.87337398981873
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Kuopion Saana",
+        "kunta": "Kuopio",
+        "url": "https://www.kuopionsaana.fi/sauna-kylpyla/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "",
+        "id": "user_submission_kuopion_saana",
+        "source": "user_submission"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.651418685913086,
+          61.69170385648609
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Tahlo Underhill – rantasauna ja avanto",
+        "kunta": "Ylöjärvi",
+        "url": "https://tahloventures.com/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "",
+        "id": "user_submission_tahlo_underhill",
+        "source": "user_submission"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.52411796829916,
+          65.0185020306743
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Koivurannan saunalautta",
+        "kunta": "Oulu",
+        "url": "https://koivurannansaunalautta.fi/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "",
+        "id": "user_submission_koivurannan_saunalautta",
+        "source": "user_submission"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.44450044631957,
+          65.02840911602182
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Olosauna",
+        "kunta": "Oulu",
+        "url": "https://www.olosauna.fi/palvelut/sauna/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "",
+        "id": "user_submission_olosauna",
+        "source": "user_submission"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.0446869134903,
+          61.77933372407776
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Villa Vihta",
+        "kunta": "Ikaalinen",
+        "url": "https://saunafestivaalit.fi/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "",
+        "id": "user_submission_villa_vihta",
+        "source": "user_submission"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.924435,
+          60.780145
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Melliläjärven rantasauna ja avanto",
+        "kunta": "Loimaa",
+        "url": "https://www.loimaa.fi/vapaa-aika/loma-ajan-toiminta/mellilajarven-rantasauna/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "",
+        "id": "user_submission_mellilajarvi",
+        "source": "user_submission"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.75450134277344,
+          67.75596695254069
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Arctic Sauna World",
+        "kunta": "Muonio",
+        "url": "https://harriniva.fi/en/arctic-sauna-world/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "",
+        "id": "user_submission_arctic_sauna_world",
+        "source": "user_submission"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.295794764413294,
+          61.36216134916976
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Laivarannan talviuintipaikka",
+        "kunta": "Padasjoki",
+        "url": "https://www.padasjoki.fi/hyvinvointi-ja-kulttuuri/vapaa-aika-ja-liikunta/talviuintipaikka",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "",
+        "id": "user_submission_laivaranta_padasjoki",
+        "source": "user_submission"
+      }
     }
   ]
 }
