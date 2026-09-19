@@ -1566,7 +1566,7 @@
         $("detailTitle").textContent = name;
         $("detailSubtitle").textContent = subtitleText;
         $("detailSourceBadge").hidden = props.source !== "user_submission";
-        renderKvInto($("detailKv"), kv);
+        renderKvInto($("detailKv"), kv.slice(0, 1));
 
         if (lat != null && lng != null) {
           $("detailGoogle").href = mapsLink(lat, lng);
@@ -1604,7 +1604,7 @@
         $("msTitle").textContent = name;
         $("msSubtitle").textContent = subtitleText;
         $("msSourceBadge").hidden = props.source !== "user_submission";
-        renderKvInto($("msKv"), kv);
+        renderKvInto($("msKv"), kv.slice(0, 1));
 
         if (lat != null && lng != null) {
           $("msGoogle").href = mapsLink(lat, lng);
