@@ -313,6 +313,51 @@
       display: inline-block;
     }
 
+    .premiumTestBadge {
+      color: #e4cc91;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .premiumTestIntro {
+      font-size: 13px;
+      line-height: 1.5;
+      margin: 12px 0;
+    }
+
+    .premiumTestExtras {
+      margin-top: 16px;
+      font-size: 13px;
+    }
+
+    .premiumTestServices {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 8px;
+      margin: 10px 0 16px;
+    }
+
+    .premiumTestServices dd { margin: 0; color: var(--muted); }
+    .premiumTestServices dt { font-weight: 700; }
+
+    .premiumTestGallery {
+      min-height: 100px;
+      display: grid;
+      place-items: center;
+      padding: 12px;
+      border: 1px dashed var(--border);
+      border-radius: 12px;
+      color: var(--muted);
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    .leaflet-marker-icon.active-location-marker {
+      filter: drop-shadow(1px 0 0 white) drop-shadow(-1px 0 0 white)
+        drop-shadow(0 1px 0 white) drop-shadow(0 -1px 0 white);
+    }
+
     .thumb {
       margin-top: 12px;
       border: 1px solid var(--border);
@@ -584,6 +629,43 @@
     }
 
     @media (max-width: 920px) {
+      #msBasicPanorama:not([hidden]) {
+        display: block;
+        flex: 0 0 80px;
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 12px;
+      }
+
+      .sheetHeader > div:first-child {
+        min-width: 0;
+        overflow-wrap: anywhere;
+      }
+
+      #msPremiumGallery .hickaroMockGallery {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        scroll-snap-type: x proximity;
+        margin-top: 8px;
+        border-radius: 12px;
+      }
+
+      #msPremiumGallery .hickaroMockGallery img {
+        flex: 0 0 84%;
+        width: 84%;
+        min-width: 0;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 12px;
+        scroll-snap-align: start;
+      }
+
+      #msPremiumGallery .hickaroMockGallery img:first-child {
+        object-position: center 72%;
+      }
+
       .app {
         grid-template-columns: 1fr;
       }
@@ -758,6 +840,8 @@
       }
 
       .sheetHeader {
+        position: relative;
+        padding-right: 26px;
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
@@ -779,10 +863,20 @@
       }
 
       .sheetCloseBtn {
-        padding: 9px 10px;
-        border-radius: 12px;
+        position: absolute;
+        top: -6px;
+        right: -8px;
+        flex: 0 0 32px;
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        border-radius: 10px;
+        font-size: 24px;
+        line-height: 1;
         font-weight: 1100;
       }
+
+      .sheetKv[hidden] { display: none; }
 
       .sheetKv {
         display: grid;
@@ -930,9 +1024,11 @@
         </div>
 
         <div id="selectedCard" class="card" style="display:none;">
+          <div class="premiumTestBadge" id="detailPartnerBadge" hidden>★ Kumppanikohde</div>
           <div class="cardTitle" id="detailTitle">—</div>
           <div class="cardSub" id="detailSubtitle"></div>
           <span class="submissionBadge" id="detailSourceBadge" hidden>💡 Käyttäjien vinkkaama</span>
+          <p class="premiumTestIntro" id="detailPremiumIntro" hidden>Tutustu Kokkolan Hickarö Resortiin. Katso ajankohtaiset vierailutiedot kohteen verkkosivuilta.</p>
 
           <div id="detailThumb" class="thumb" style="display:none;">
             <img id="detailImg" alt="Kuva kohteesta" />
@@ -945,6 +1041,16 @@
             <a class="chip chipPrimary" id="detailGoogle" target="_blank" rel="noopener">Avaa kohteen sijainti</a>
             <a class="chip" id="detailLink" target="_blank" rel="noopener" style="display:none;">Avaa kohteen sivu</a>
           </div>
+        <div class="premiumTestExtras" id="detailPremiumExtras" hidden>
+          <strong>Palvelut</strong>
+          <dl class="premiumTestServices">
+            <dt>Sauna</dt><dd>Ei vahvistettu</dd>
+            <dt>Pukuhuone</dt><dd>Ei vahvistettu</dd>
+            <dt>Suihku</dt><dd>Ei vahvistettu</dd>
+          </dl>
+          <strong>Kuvagalleria</strong>
+          <div class="premiumTestGallery">Kuvagallerian paikka – kuvat lisätään myöhemmin</div>
+        </div>
 
           <div style="margin-top:12px;">
             <button class="btn" id="btnCloseSelection">Sulje valinta</button>
@@ -1035,12 +1141,23 @@
       <div class="sheetBody">
         <div class="sheetHeader">
           <div style="flex:1;">
-            <div class="sheetTitle" id="msTitle">—</div>
+            <div class="premiumTestBadge" id="msPartnerBadge" hidden>★ Kumppanikohde</div>
+          <div class="sheetTitle" id="msTitle">—</div>
             <div class="sheetSub" id="msSubtitle"></div>
             <span class="submissionBadge" id="msSourceBadge" hidden>💡 Käyttäjien vinkkaama</span>
           </div>
-          <button class="btn sheetCloseBtn" id="msClose">Sulje</button>
+          <img id="msBasicPanorama" src="assets/basic-location-panorama.png" alt="Talvinen avantouintimaisema, yleinen kuvituskuva" hidden />
+          <button class="btn sheetCloseBtn" id="msClose" aria-label="Sulje kohdekortti" title="Sulje kohdekortti">×</button>
         </div>
+
+        <div class="premiumTestExtras" id="msPremiumGallery" hidden>
+          <strong>Kuvagalleria</strong>
+          <div class="hickaroMockGallery" tabindex="0" role="region" aria-label="Mockup-kuvat, selaa sivusuunnassa">
+            <img src="assets/hickaro-pilot/avanto-mockup.jpg" alt="Mockup-kuva: talviuintiavanto ja tikkaat jäätyneellä järvellä" width="1440" height="1920" loading="lazy" />
+            <img src="assets/hickaro-pilot/laituri-mockup.jpg" alt="Mockup-kuva: luminen laituri ja avantotikkaat" width="640" height="359" loading="lazy" />
+          </div>
+        </div>
+          <p class="premiumTestIntro" id="msPremiumIntro" hidden>Tutustu Kokkolan Hickarö Resortiin. Katso ajankohtaiset vierailutiedot kohteen verkkosivuilta.</p>
 
         <div id="msThumb" class="thumb" style="display:none;">
           <img id="msImg" alt="Kuva kohteesta" />
@@ -1050,8 +1167,16 @@
         <div class="sheetKv" id="msKv"></div>
 
         <div class="sheetActions">
-          <a class="chip chipPrimary" id="msGoogle" target="_blank" rel="noopener">Avaa kohteen sijainti</a>
-          <a class="chip" id="msLink" target="_blank" rel="noopener" style="display:none;">Avaa kohteen sivu</a>
+          <a class="chip chipPrimary" id="msGoogle" target="_blank" rel="noopener">Reittiohjeet</a>
+          <a class="chip" id="msLink" target="_blank" rel="noopener" style="display:none;">Verkkosivu</a>
+        </div>
+        <div class="premiumTestExtras" id="msPremiumExtras" hidden>
+          <strong>Palvelut</strong>
+          <dl class="premiumTestServices">
+            <dt>Sauna</dt><dd>Ei vahvistettu</dd>
+            <dt>Pukuhuone</dt><dd>Ei vahvistettu</dd>
+            <dt>Suihku</dt><dd>Ei vahvistettu</dd>
+          </dl>
         </div>
       </div>
     </div>
@@ -1201,6 +1326,7 @@
       $("mobileControls").classList.remove("collapsed");
       document.body.classList.remove("sheet-open");
       updateMobilePanelState();
+      updateActiveMarker();
     }
     function toggleSheetExpanded() {
       $("mobileSheet").classList.toggle("expanded");
@@ -1341,6 +1467,15 @@
       filteredFeatures = [...allFeatures];
     }
 
+    function updateActiveMarker() {
+      const cardVisible = isMobile()
+        ? $("mobileSheet").classList.contains("open")
+        : $("selectedCard").style.display === "block";
+      markersById.forEach((marker, id) => {
+        marker.getElement()?.classList.toggle("active-location-marker", cardVisible && id === activeId);
+      });
+    }
+
     function rebuildMarkers() {
       markersById.clear();
 
@@ -1374,6 +1509,7 @@
 
         const m = L.marker([lat, lng]);
         markersById.set(feature.__id, m);
+        m.on("add", updateActiveMarker);
 
         // Desktop popup only
         if (!isMobile()) {
@@ -1561,6 +1697,18 @@
       const website = getWebsite(props);
       const img = getImage(props);
 
+      // Hickarö-only premium layout test; no shared premium data model.
+      const isHickaroTest = props.id === "user_submission_hickaro_resort";
+      for (const prefix of ["detail", "ms"]) {
+        for (const part of ["PartnerBadge", "PremiumIntro", "PremiumExtras"]) {
+          $(prefix + part).hidden = !isHickaroTest;
+        }
+      }
+
+      $("msPremiumGallery").hidden = !isHickaroTest;
+      $("msBasicPanorama").hidden = isHickaroTest;
+      $("msKv").hidden = true;
+
       // Desktop detail
       if ($("detailTitle")) {
         $("detailTitle").textContent = name;
@@ -1636,6 +1784,7 @@
         openSheet();
       }
 
+      updateActiveMarker();
       const marker = markersById.get(id);
       if (marker && !isMobile()) marker.openPopup();
 
