@@ -1186,7 +1186,7 @@
       $("filterPricing").value = $("mFilterPricing").value;
     }
     function updateMobilePanelState() {
-      $("mBtnClear").hidden = !norm($("mSearchInput").value) && !activeId;
+      $("mBtnClear").hidden = !norm($("mSearchInput").value) && !activeId && !mobileNearActive;
     }
 
     function syncDesktopToMobile() {
@@ -1203,6 +1203,7 @@
     let filteredFeatures = [];
     let markersById = new Map();
     let activeId = null;
+    let mobileNearActive = false;
 
     // add modal state
     let addMode = false;
@@ -1629,7 +1630,12 @@
       navigator.geolocation.getCurrentPosition(
         (pos) => {
           const { latitude, longitude } = pos.coords;
-          map.flyTo([latitude, longitude], 13, { duration: 0.9 });
+          const mobile = isMobile();
+          if (mobile) {
+            mobileNearActive = true;
+            updateMobilePanelState();
+          }
+          map.flyTo([latitude, longitude], mobile ? 12 : 13, { duration: 0.9 });
 
           L.circle([latitude, longitude], {
             radius: Math.min(200, pos.coords.accuracy || 100),
@@ -1702,6 +1708,7 @@
     }
 
     function resetAll() {
+      mobileNearActive = false;
       $("searchInput").value = "";
       $("filterSauna").value = "all";
       $("filterChanging").value = "all";
