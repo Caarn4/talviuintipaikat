@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
   <title>Talviuintipaikat.fi</title>
+  <meta name="description" content="">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
   <style>
     :root { --bg:#0b1020; --panel:#0f1730; --panel2:#111c3a; --text:#eaf0ff; --muted:#a9b7e6; --border:rgba(255,255,255,.12); --radius:16px; }
@@ -97,6 +98,13 @@
 <script>
   // Finnish UI package; replace this package when adding another language.
   const UI = {
+    seoTitle: heading => `${heading} | Talviuintipaikat.fi`,
+    seoDescription: (city, count) => {
+      const location = city.locative_fi
+        ? `Löydä talviuinti- ja avantouintipaikat ${city.locative_fi} kartalta ja listasta.`
+        : `Löydä talviuinti- ja avantouintipaikat kartalta ja listasta: ${city.name_fi}.`;
+      return `${location} Katso ${count} ${count === 1 ? 'kohde' : 'kohdetta'} ja avaa reittiohjeet tai kohteen verkkosivu.`;
+    },
     locale: 'fi', back: '← Takaisin pääkartalle',
     heading: city => city.locative_fi ? `Talviuintipaikat ${city.locative_fi}` : `Talviuintipaikat – ${city.name_fi}`,
     intro: city => `Löydä avantouinti- ja talviuintipaikat kartalta ja listasta: ${city.name_fi}.`,
@@ -132,7 +140,7 @@
       });
     }
     document.querySelector('h1').textContent = city ? UI.heading(city) : UI.initialHeading;
-    document.title = `${city ? UI.heading(city) : UI.initialHeading} | Talviuintipaikat.fi`;
+    document.title = UI.seoTitle(city ? UI.heading(city) : UI.initialHeading);
     document.getElementById('partner-city').textContent = city ? city['name_' + UI.locale] || city.name_fi : '';
   }
 
@@ -170,6 +178,8 @@
   }
   async function loadCity() {
     let features;
+    document.querySelector('meta[name="robots"]').content = 'noindex,nofollow';
+    document.querySelector('link[rel="canonical"]')?.remove();
     applyTexts('');
     // Rewrites keep the original browser URL: read its single path segment.
     const pathMatch = location.pathname.match(/^\/([^/.]+)\/?$/);
@@ -199,7 +209,13 @@
       applyTexts(cityMetadata(city));
       document.querySelector('.layout').hidden = false;
       features = data.features.filter(f => normalizeCity(municipality(f.properties || {})) === normalizeCity(city));
+      document.querySelector('meta[name="description"]').content = UI.seoDescription(cityMetadata(city), features.length);
       features.sort((a,b) => text(a.properties.nimi || a.properties.name).localeCompare(text(b.properties.nimi || b.properties.name), UI.locale));
+      const canonical = document.createElement('link');
+      canonical.rel = 'canonical';
+      canonical.href = `https://talviuintipaikat.fi/${encodeURIComponent(slugCity(cityMetadata(city).slug))}/`;
+      document.head.append(canonical);
+      document.querySelector('meta[name="robots"]').content = 'index,follow';
     } catch (error) {
       document.getElementById('count').textContent = UI.unavailable;
       document.getElementById('status').textContent = UI.loadError;
