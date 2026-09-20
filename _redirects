@@ -1,0 +1,4 @@
+# Preserve the previous prototype address without shadowing /helsinki/.
+/helsinki.html  /helsinki/  301
+# One-segment municipality routes. Existing static files take precedence (no !).
+/:city/  /municipality.html  200
