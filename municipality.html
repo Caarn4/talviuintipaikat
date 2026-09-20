@@ -93,14 +93,15 @@
   </div>
 </main>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="/municipalities.js"></script>
 <script>
   // Finnish UI package; replace this package when adding another language.
   const UI = {
     locale: 'fi', back: '← Takaisin pääkartalle',
-    heading: city => city === 'Helsinki' ? 'Talviuintipaikat Helsingissä' : `Talviuintipaikat – ${city}`,
-    intro: city => `Löydä avantouinti- ja talviuintipaikat kartalta ja listasta: ${city}.`,
-    listHeading: city => city === 'Helsinki' ? 'Kaikki talviuintipaikat Helsingissä' : `Kaikki talviuintipaikat – ${city}`,
-    mapHeading: city => `Kohteet kartalla – ${city}`, mapLabel: city => `Talviuintipaikkojen kartta: ${city}`,
+    heading: city => city.locative_fi ? `Talviuintipaikat ${city.locative_fi}` : `Talviuintipaikat – ${city.name_fi}`,
+    intro: city => `Löydä avantouinti- ja talviuintipaikat kartalta ja listasta: ${city.name_fi}.`,
+    listHeading: city => city.locative_fi ? `Kaikki talviuintipaikat ${city.locative_fi}` : `Kaikki talviuintipaikat – ${city.name_fi}`,
+    mapHeading: city => `Kohteet kartalla – ${city.name_fi}`, mapLabel: city => `Talviuintipaikkojen kartta: ${city.name_fi}`,
     loadingCount: 'Ladataan kohdemäärää…', loading: 'Ladataan kohteita…',
     count: n => `${n} ${n === 1 ? 'talviuintipaikka' : 'talviuintipaikkaa'}`,
     directions: 'Reittiohjeet', website: 'Verkkosivu', partner: '★ Kumppanikohde',
@@ -115,6 +116,10 @@
   };
   const normalizeCity = value => String(value ?? '').trim().normalize('NFC').toLocaleLowerCase(UI.locale);
   const slugCity = value => normalizeCity(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  function cityMetadata(name) {
+    return MUNICIPALITY_METADATA.find(city => normalizeCity(city.name_fi) === normalizeCity(name))
+      || { name_fi: name, name_en: name, slug: slugCity(name), locative_fi: '' };
+  }
   function applyTexts(city) {
     document.querySelectorAll('[data-text]').forEach(el => {
       const value = UI[el.dataset.text];
@@ -123,12 +128,12 @@
     for (const [data, attribute] of [['aria', 'aria-label'], ['title', 'title']]) {
       document.querySelectorAll(`[data-${data}]`).forEach(el => {
         const value = UI[el.dataset[data]];
-        el.setAttribute(attribute, typeof value === 'function' ? value(city || '') : value);
+        el.setAttribute(attribute, typeof value === 'function' ? (city ? value(city) : '') : value);
       });
     }
     document.querySelector('h1').textContent = city ? UI.heading(city) : UI.initialHeading;
     document.title = `${city ? UI.heading(city) : UI.initialHeading} | Talviuintipaikat.fi`;
-    document.getElementById('partner-city').textContent = city || '';
+    document.getElementById('partner-city').textContent = city ? city['name_' + UI.locale] || city.name_fi : '';
   }
 
   const text = value => String(value ?? '').trim();
@@ -184,14 +189,14 @@
       if (data.type !== 'FeatureCollection' || !Array.isArray(data.features)) throw new Error('Virheellinen aineisto');
       const cities = [...new Set(data.features.map(f => municipality(f.properties || {})).filter(Boolean))];
       const exact = cities.filter(city => normalizeCity(city) === normalizeCity(requested));
-      const matches = exact.length ? exact : cities.filter(city => slugCity(city) === slugCity(requested));
+      const matches = exact.length ? exact : cities.filter(city => slugCity(cityMetadata(city).slug) === slugCity(requested));
       if (matches.length !== 1) {
         document.getElementById('count').textContent = '';
         document.getElementById('status').textContent = UI.unknownCity;
         return;
       }
       const city = matches[0];
-      applyTexts(city);
+      applyTexts(cityMetadata(city));
       document.querySelector('.layout').hidden = false;
       features = data.features.filter(f => normalizeCity(municipality(f.properties || {})) === normalizeCity(city));
       features.sort((a,b) => text(a.properties.nimi || a.properties.name).localeCompare(text(b.properties.nimi || b.properties.name), UI.locale));
