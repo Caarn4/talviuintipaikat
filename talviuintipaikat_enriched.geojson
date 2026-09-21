@@ -9398,6 +9398,162 @@
         "id": "discovery_2026_09_21_opastiina_pienniemi",
         "source": "discovery_2026_09_21"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.7532527,
+          60.1498094
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Löylykontti Matinkylä",
+        "kunta": "Espoo",
+        "url": "https://www.loylykontti.fi/fi/saunas/espoo/matinkyla",
+        "maksullinen": "kyllä",
+        "kertapääsy": "kyllä",
+        "pukuhuone": "kyllä",
+        "sauna": "kyllä",
+        "huomio": "Palveluntarjoaja: Löylykontti Oy. Erillinen maksullinen palveluidentiteetti; liittyvä yleinen LIVE-kohde O020 Matinkylän talviuintipaikka. Kohdesivu ilmoittaa noin 120 m kävelymatkan viralliselle talviuintipaikalle. Master-ID: U045. WC: Bajamaja-WC.",
+        "id": "master_u045_loylykontti_matinkyla",
+        "source": "master_v2_2_pm_approved_2026_09_21",
+        "website": "https://www.loylykontti.fi/fi/saunas/espoo/matinkyla",
+        "website_source": "Löylykontti Oy:n virallinen kohdesivu",
+        "website_checked_at": "2026-09-21"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.6264852,
+          60.1536634
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Löylykontti Kivenlahti",
+        "kunta": "Espoo",
+        "url": "https://www.loylykontti.fi/fi/saunas/espoo/kivenlahti",
+        "maksullinen": "kyllä",
+        "kertapääsy": "kyllä",
+        "pukuhuone": "kyllä",
+        "sauna": "kyllä",
+        "huomio": "Palveluntarjoaja: Löylykontti Oy. Erillinen maksullinen palveluidentiteetti; liittyvä yleinen LIVE-kohde O015 Kivenlahden talviuintipaikka. Kohdesivu ilmoittaa noin 90 m kävelymatkan talviuintipaikalle. Master-ID: U046. WC: Bajamaja-WC.",
+        "id": "master_u046_loylykontti_kivenlahti",
+        "source": "master_v2_2_pm_approved_2026_09_21",
+        "website": "https://www.loylykontti.fi/fi/saunas/espoo/kivenlahti",
+        "website_source": "Löylykontti Oy:n virallinen kohdesivu",
+        "website_checked_at": "2026-09-21"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.749884,
+          60.246312
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Löylykontti Laaksolahti",
+        "kunta": "Espoo",
+        "url": "https://www.loylykontti.fi/fi/saunas/espoo/laaksolahti",
+        "maksullinen": "kyllä",
+        "kertapääsy": "kyllä",
+        "pukuhuone": "kyllä",
+        "sauna": "kyllä",
+        "huomio": "Palveluntarjoaja: Löylykontti Oy. Erillinen maksullinen palveluidentiteetti; liittyvä yleinen LIVE-kohde O018 Laaksolahden talviuintipaikka. Kohdesivu ilmoittaa noin 60 m kävelymatkan viralliselle talviuintipaikalle. Master-ID: U047. Suihku: kyllä. WC: kyllä.",
+        "id": "master_u047_loylykontti_laaksolahti",
+        "source": "master_v2_2_pm_approved_2026_09_21",
+        "website": "https://www.loylykontti.fi/fi/saunas/espoo/laaksolahti",
+        "website_source": "Löylykontti Oy:n virallinen kohdesivu",
+        "website_checked_at": "2026-09-21"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.9633132,
+          60.1823069
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Löylykontti Sörnäinen",
+        "kunta": "Helsinki",
+        "url": "https://www.loylykontti.fi/fi/saunas/helsinki/sornainen",
+        "maksullinen": "kyllä",
+        "kertapääsy": "kyllä",
+        "pukuhuone": "kyllä",
+        "sauna": "kyllä",
+        "huomio": "Palveluntarjoaja: Löylykontti Oy. Itsenäinen maksullinen palvelu- ja uintikokonaisuus; kaksi saunaa ja lämmitetyt portaat suoraan omaan ympärivuotiseen uintipaikkaan. Master-ID: U004. Suihku: kyllä. WC: kyllä.",
+        "id": "master_u004_loylykontti_sornainen",
+        "source": "master_v2_2_pm_approved_2026_09_21",
+        "website": "https://www.loylykontti.fi/fi/saunas/helsinki/sornainen",
+        "website_source": "Löylykontti Oy:n virallinen kohdesivu",
+        "website_checked_at": "2026-09-21"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.0363281,
+          63.2917041
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Löylykontti Tahko",
+        "kunta": "Kuopio",
+        "url": "https://www.loylykontti.fi/fi/saunas/kuopio/tahko",
+        "maksullinen": "kyllä",
+        "kertapääsy": "kyllä",
+        "pukuhuone": "kyllä",
+        "sauna": "kyllä",
+        "huomio": "Palveluntarjoaja: Löylykontti Oy. Itsenäinen maksullinen palvelu- ja uintikokonaisuus; oma koko talven ylläpidettävä avanto ja lämmitetyt portaat. Master-ID: U005. Suihku: kyllä. WC: kyllä.",
+        "id": "master_u005_loylykontti_tahko",
+        "source": "master_v2_2_pm_approved_2026_09_21",
+        "website": "https://www.loylykontti.fi/fi/saunas/kuopio/tahko",
+        "website_source": "Löylykontti Oy:n virallinen kohdesivu",
+        "website_checked_at": "2026-09-21"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.488823,
+          65.0228537
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Löylykontti Tuira",
+        "kunta": "Oulu",
+        "url": "https://www.loylykontti.fi/fi/saunas/oulu/tuira",
+        "maksullinen": "kyllä",
+        "kertapääsy": "kyllä",
+        "pukuhuone": "kyllä",
+        "sauna": "kyllä",
+        "huomio": "Palveluntarjoaja: Löylykontti Oy. Erillinen maksullinen palveluidentiteetti samalla ranta-alueella; liittyvä yleinen LIVE-kohde O230 Tuiran talviuintipaikka. Palvelupisteet ovat noin 23 m päässä toisistaan. Master-ID: U048. Suihku: kyllä. WC: kyllä.",
+        "id": "master_u048_loylykontti_tuira",
+        "source": "master_v2_2_pm_approved_2026_09_21",
+        "website": "https://www.loylykontti.fi/fi/saunas/oulu/tuira",
+        "website_source": "Löylykontti Oy:n virallinen kohdesivu",
+        "website_checked_at": "2026-09-21"
+      }
     }
   ]
 }
