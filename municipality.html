@@ -112,7 +112,7 @@
     mapHeading: city => `Kohteet kartalla – ${city.name_fi}`, mapLabel: city => `Talviuintipaikkojen kartta: ${city.name_fi}`,
     loadingCount: 'Ladataan kohdemäärää…', loading: 'Ladataan kohteita…',
     count: n => `${n} ${n === 1 ? 'talviuintipaikka' : 'talviuintipaikkaa'}`,
-    directions: 'Reittiohjeet', website: 'Verkkosivu', partner: '★ Kumppanikohde',
+    directions: 'Reittiohjeet', website: 'Verkkosivu', lipasSource: 'Tiedot LIPASissa', partner: '★ Kumppanikohde',
     logo: 'Logo / kuva', test: 'TESTI', partnerName: 'Kumppanikohteen nimi',
     partnerDescription: 'Paikka kumppanin lyhyelle esittelylle.', partnerTest: 'Kumppanikortin asettelutesti',
     testHint: 'Asettelutesti, ei oikea kohde', badge: '💡 Käyttäjien vinkkaama', unnamed: 'Nimetön paikka',
@@ -148,17 +148,29 @@
   function municipality(props) {
     return text(props.kunta || props.paikkakunta || props.municipality || props.city);
   }
+  function validWebLink(value) {
+    const raw = String(value ?? '').trim();
+    if (!raw || /\s/.test(raw)) return '';
+    try {
+      const url = new URL(/^[a-z][a-z\d+.-]*:/i.test(raw) ? raw : 'https://' + raw);
+      if (['http:', 'https:'].includes(url.protocol) && url.hostname && !url.username && !url.password) return url.href;
+    } catch { /* Invalid links are not shown. */ }
+    return '';
+  }
+  function isLipasLink(value) {
+    const host = new URL(value).hostname.toLowerCase();
+    return host === 'lipas.fi' || host.endsWith('.lipas.fi') || host === 'lipas.jyu.fi' || host.endsWith('.lipas.jyu.fi');
+  }
   function website(props) {
-    for (const value of [props.website, props.url]) {
-      const raw = String(value ?? '').trim();
-      if (!raw || /\s/.test(raw)) continue;
-      try {
-        const url = new URL(/^[a-z][a-z\d+.-]*:/i.test(raw) ? raw : 'https://' + raw);
-        if (['http:', 'https:'].includes(url.protocol) && url.hostname && !url.username && !url.password) return url.href;
-      } catch { /* Try the fallback URL. */ }
+    const primary = validWebLink(props.website);
+    if (primary) return primary;
+    for (const value of [props.url, props.link, props.verkkosivu, props.www]) {
+      const fallback = validWebLink(value);
+      if (fallback && !isLipasLink(fallback)) return fallback;
     }
     return '';
   }
+
   function position(feature) {
     const coords = feature.geometry?.coordinates;
     if (feature.geometry?.type !== 'Point' || !Array.isArray(coords)) return null;
@@ -240,6 +252,8 @@
       if (point) actions.append(link(UI.directions, 'https://www.google.com/maps?q=' + encodeURIComponent(point.join(',')), true));
       const url = website(props);
       if (url) actions.append(link(UI.website, url));
+      const sourceLink = validWebLink(props.lipas_url);
+      if (sourceLink) actions.append(link(UI.lipasSource, sourceLink));
       card.append(actions); locations.append(card);
     }
     try {

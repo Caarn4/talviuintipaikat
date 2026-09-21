@@ -19,7 +19,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516617"
       }
     },
     {
@@ -40,7 +41,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/529917"
       }
     },
     {
@@ -61,7 +63,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612275"
       }
     },
     {
@@ -83,7 +86,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.alavieska.fi/liikunta/ulkoilu-ja-retkeily"
+        "website": "https://www.alavieska.fi/liikunta/ulkoilu-ja-retkeily",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/517994"
       }
     },
     {
@@ -105,7 +111,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.alavieska.fi/liikunta/ulkoilu-ja-retkeily"
+        "website": "https://www.alavieska.fi/liikunta/ulkoilu-ja-retkeily",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/517995"
       }
     },
     {
@@ -126,7 +135,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/512889"
       }
     },
     {
@@ -147,7 +157,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/602906"
       }
     },
     {
@@ -169,7 +180,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.alavus.fi/fi/vapaa-aika/liikunta/kesaliikunta/uimarannat.html"
+        "website": "https://www.alavus.fi/fi/vapaa-aika/liikunta/kesaliikunta/uimarannat.html",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/512900"
       }
     },
     {
@@ -190,7 +204,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/98525"
       }
     },
     {
@@ -212,7 +227,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://askolanhiisi.fi/"
+        "website": "https://askolanhiisi.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612276"
       }
     },
     {
@@ -234,7 +252,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.laplandhotels.com/fi/hotellit-ja-kohteet/kilpisjarvi"
+        "website": "https://www.laplandhotels.com/fi/hotellit-ja-kohteet/kilpisjarvi",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612277"
       }
     },
     {
@@ -255,7 +276,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/615814"
       }
     },
     {
@@ -276,7 +298,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516600"
       }
     },
     {
@@ -297,7 +320,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516547"
       }
     },
     {
@@ -318,7 +342,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516657"
       }
     },
     {
@@ -339,7 +364,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516597"
       }
     },
     {
@@ -360,7 +386,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/98522"
       }
     },
     {
@@ -381,7 +408,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516559"
       }
     },
     {
@@ -403,7 +431,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://laguuniin.fi/"
+        "website": "https://laguuniin.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/609137"
       }
     },
     {
@@ -424,7 +455,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516592"
       }
     },
     {
@@ -445,7 +477,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516596"
       }
     },
     {
@@ -466,7 +499,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/609204"
       }
     },
     {
@@ -487,7 +521,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/606466"
       }
     },
     {
@@ -509,7 +544,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.visitpyhajarviseutu.fi/company/kiperin-uimaranta-ja-sauna/"
+        "website": "https://www.visitpyhajarviseutu.fi/company/kiperin-uimaranta-ja-sauna/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/529934"
       }
     },
     {
@@ -531,7 +569,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://laitakarinmerihelmi.fi/"
+        "website": "https://laitakarinmerihelmi.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612279"
       }
     },
     {
@@ -553,7 +594,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://luviantalviuimarit.fi/"
+        "website": "https://luviantalviuimarit.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612278"
       }
     },
     {
@@ -575,7 +619,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.evijarvi.fi/vapaa-aika-ja-nuoriso/vapaalla-evijarvella/uimarannat-ja-avantouinti"
+        "website": "https://www.evijarvi.fi/vapaa-aika-ja-nuoriso/vapaalla-evijarvella/uimarannat-ja-avantouinti",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612281"
       }
     },
     {
@@ -596,7 +643,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/518745"
       }
     },
     {
@@ -618,7 +666,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.haapajarvi.fi/palvelukanava/f3e1072d-65d7-4c56-a483-f30278873e4a"
+        "website": "https://www.haapajarvi.fi/palvelukanava/f3e1072d-65d7-4c56-a483-f30278873e4a",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/512583"
       }
     },
     {
@@ -640,7 +691,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://halsuanhelmi.fi/"
+        "website": "https://halsuanhelmi.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/512621"
       }
     },
     {
@@ -662,7 +716,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.rampsi.fi/saunat"
+        "website": "https://www.rampsi.fi/saunat",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/529918"
       }
     },
     {
@@ -683,7 +740,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612282"
       }
     },
     {
@@ -705,7 +763,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://hanko.fi/asuminen-ja-ymparisto/ymparisto-ja-luonto/puistot-ja-virkistysalueet/uimarannat/avantouinti/"
+        "website": "https://hanko.fi/asuminen-ja-ymparisto/ymparisto-ja-luonto/puistot-ja-virkistysalueet/uimarannat/avantouinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/512711"
       }
     },
     {
@@ -726,7 +787,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/530026"
       }
     },
     {
@@ -748,7 +810,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://hattula.fi/palvelut/vapaa-aika/liikunta/talviliikunta/talviuinti/"
+        "website": "https://hattula.fi/palvelut/vapaa-aika/liikunta/talviliikunta/talviuinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612309"
       }
     },
     {
@@ -770,7 +835,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.rinva.fi/inra-maja/"
+        "website": "https://www.rinva.fi/inra-maja/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/513518"
       }
     },
     {
@@ -792,7 +860,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.hausjarvi.fi/vapaa-aika-ja-matkailu/ulkoilu-ja-luontokohteet/valkjarven-leirialue/"
+        "website": "https://www.hausjarvi.fi/vapaa-aika-ja-matkailu/ulkoilu-ja-luontokohteet/valkjarven-leirialue/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/513514"
       }
     },
     {
@@ -814,7 +885,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.hausjarvi.fi/vapaa-aika-ja-matkailu/ulkoilu-ja-luontokohteet/avantouinti/"
+        "website": "https://www.hausjarvi.fi/vapaa-aika-ja-matkailu/ulkoilu-ja-luontokohteet/avantouinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/513508"
       }
     },
     {
@@ -836,7 +910,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.heinola.fi/hyvinvointi-ja-vapaa-aika/liikunta-ja-ulkoilu/ulkoliikunta/uimarannat-ja-talviuinti/"
+        "website": "https://www.heinola.fi/hyvinvointi-ja-vapaa-aika/liikunta-ja-ulkoilu/ulkoliikunta/uimarannat-ja-talviuinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/513521"
       }
     },
     {
@@ -857,7 +934,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/518301"
       }
     },
     {
@@ -878,7 +956,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/611910"
       }
     },
     {
@@ -900,7 +979,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.allaspool.fi/"
+        "website": "https://www.allaspool.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/605720"
       }
     },
     {
@@ -921,7 +1003,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/609503"
       }
     },
     {
@@ -943,7 +1026,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://saunat.fi/kohde/villa-furuvik-rantasauna"
+        "website": "https://saunat.fi/kohde/villa-furuvik-rantasauna",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/605737"
       }
     },
     {
@@ -964,7 +1050,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/609502"
       }
     },
     {
@@ -985,7 +1072,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/98516"
       }
     },
     {
@@ -1006,7 +1094,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/609928"
       }
     },
     {
@@ -1028,7 +1117,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.loylyhelsinki.fi/en"
+        "website": "https://www.loylyhelsinki.fi/en",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/605721"
       }
     },
     {
@@ -1049,7 +1141,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514391"
       }
     },
     {
@@ -1070,7 +1163,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514392"
       }
     },
     {
@@ -1091,7 +1185,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/98530"
       }
     },
     {
@@ -1113,7 +1208,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.kuhat.com/talviuinti/"
+        "website": "https://www.kuhat.com/talviuinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514393"
       }
     },
     {
@@ -1134,7 +1232,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/513811"
       }
     },
     {
@@ -1155,7 +1254,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514394"
       }
     },
     {
@@ -1177,7 +1277,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "http://seurasaarenuimarit.fi"
+        "website": "http://seurasaarenuimarit.fi",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514395"
       }
     },
     {
@@ -1198,7 +1301,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514396"
       }
     },
     {
@@ -1219,7 +1323,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514397"
       }
     },
     {
@@ -1240,7 +1345,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514398"
       }
     },
     {
@@ -1261,7 +1367,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/609970"
       }
     },
     {
@@ -1282,7 +1389,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/98571"
       }
     },
     {
@@ -1303,7 +1411,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/98539"
       }
     },
     {
@@ -1324,7 +1433,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/518212"
       }
     },
     {
@@ -1346,7 +1456,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.hollolanavantouimarit.net/"
+        "website": "https://www.hollolanavantouimarit.net/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/513535"
       }
     },
     {
@@ -1368,7 +1481,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://nurmijarvenlatu.fi/toiminta/talviuinti/"
+        "website": "https://nurmijarvenlatu.fi/toiminta/talviuinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/611913"
       }
     },
     {
@@ -1389,7 +1505,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/606341"
       }
     },
     {
@@ -1411,7 +1528,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.hyvinkaa.fi/kulttuuri-ja-vapaa-aika/liikunta/virkistys-ja-ulkoilu1/usmijarven-talviuintipaikka/"
+        "website": "https://www.hyvinkaa.fi/kulttuuri-ja-vapaa-aika/liikunta/virkistys-ja-ulkoilu1/usmijarven-talviuintipaikka/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/607701"
       }
     },
     {
@@ -1433,7 +1553,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.hameenkyrontalviuimarit.fi/"
+        "website": "https://www.hameenkyrontalviuimarit.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/529919"
       }
     },
     {
@@ -1454,7 +1577,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/518198"
       }
     },
     {
@@ -1476,7 +1600,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.hameenlinna.fi/hyvinvointi-ja-liikunta/liikunta-ja-ulkoilu/uimahallit-ja-rannat/"
+        "website": "https://www.hameenlinna.fi/hyvinvointi-ja-liikunta/liikunta-ja-ulkoilu/uimahallit-ja-rannat/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/529920"
       }
     },
     {
@@ -1498,7 +1625,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.hameenlinna.fi/hyvinvointi-ja-liikunta/liikunta-ja-ulkoilu/uimahallit-ja-rannat/"
+        "website": "https://www.hameenlinna.fi/hyvinvointi-ja-liikunta/liikunta-ja-ulkoilu/uimahallit-ja-rannat/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/529921"
       }
     },
     {
@@ -1519,7 +1649,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/605641"
       }
     },
     {
@@ -1540,7 +1671,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/611914"
       }
     },
     {
@@ -1562,7 +1694,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://ii.fi/liikunta-leikkipaikat-ja-luontokohteet"
+        "website": "https://ii.fi/liikunta-leikkipaikat-ja-luontokohteet",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/525279"
       }
     },
     {
@@ -1583,7 +1718,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516984"
       }
     },
     {
@@ -1605,7 +1741,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.iitti.fi/vapaa-aika-ja-hyvinvointi/ulkoilu-ja-luonto/avantouinti-ja-yleiset-saunat/"
+        "website": "https://www.iitti.fi/vapaa-aika-ja-hyvinvointi/ulkoilu-ja-luonto/avantouinti-ja-yleiset-saunat/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/513601"
       }
     },
     {
@@ -1627,7 +1766,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://kylmarinki.weebly.com/"
+        "website": "https://kylmarinki.weebly.com/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612313"
       }
     },
     {
@@ -1648,7 +1790,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612314"
       }
     },
     {
@@ -1670,7 +1813,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.imatrantalviuimarit.fi/"
+        "website": "https://www.imatrantalviuimarit.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/98535"
       }
     },
     {
@@ -1691,7 +1837,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/518340"
       }
     },
     {
@@ -1712,7 +1859,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/98538"
       }
     },
     {
@@ -1733,7 +1881,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612315"
       }
     },
     {
@@ -1755,7 +1904,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.janakkala.fi/vapaa-aika-ja-matkailu/liikunta/ulkoliikuntapaikat/talviuinti/"
+        "website": "https://www.janakkala.fi/vapaa-aika-ja-matkailu/liikunta/ulkoliikuntapaikat/talviuinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/517522"
       }
     },
     {
@@ -1777,7 +1929,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.suruton.fi/"
+        "website": "https://www.suruton.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/603893"
       }
     },
     {
@@ -1799,7 +1954,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.joensuunjaakarhut.fi/"
+        "website": "https://www.joensuunjaakarhut.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/521040"
       }
     },
     {
@@ -1821,7 +1979,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.paury.fi/"
+        "website": "https://www.paury.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/518344"
       }
     },
     {
@@ -1842,7 +2003,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/529961"
       }
     },
     {
@@ -1863,7 +2025,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612198"
       }
     },
     {
@@ -1885,7 +2048,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.karjalanliitto.fi/karjalan-liitto/jasenyhteisot/karjalaseurat/juupajoen-karjala-seura-ry.html"
+        "website": "https://www.karjalanliitto.fi/karjalan-liitto/jasenyhteisot/karjalaseurat/juupajoen-karjala-seura-ry.html",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612322"
       }
     },
     {
@@ -1907,7 +2073,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.jklavanto.net/"
+        "website": "https://www.jklavanto.net/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/528658"
       }
     },
     {
@@ -1928,7 +2097,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/528659"
       }
     },
     {
@@ -1950,7 +2120,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.ranssinkievari.fi/"
+        "website": "https://www.ranssinkievari.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612475"
       }
     },
     {
@@ -1972,7 +2145,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.jklavanto.net/"
+        "website": "https://www.jklavanto.net/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/528660"
       }
     },
     {
@@ -1994,7 +2170,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.jklavanto.net/"
+        "website": "https://www.jklavanto.net/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/617250"
       }
     },
     {
@@ -2015,7 +2194,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516509"
       }
     },
     {
@@ -2037,7 +2217,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://jamsa.fi/vapaa-aika/liikunta-ja-ulkoilu/avantouinti/"
+        "website": "https://jamsa.fi/vapaa-aika/liikunta-ja-ulkoilu/avantouinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/517915"
       }
     },
     {
@@ -2058,7 +2241,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/517916"
       }
     },
     {
@@ -2080,7 +2264,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://jamsa.fi/vapaa-aika/liikunta-ja-ulkoilu/avantouinti/"
+        "website": "https://jamsa.fi/vapaa-aika/liikunta-ja-ulkoilu/avantouinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/517914"
       }
     },
     {
@@ -2101,7 +2288,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612333"
       }
     },
     {
@@ -2122,7 +2310,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612367"
       }
     },
     {
@@ -2143,7 +2332,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/611976"
       }
     },
     {
@@ -2164,7 +2354,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/518015"
       }
     },
     {
@@ -2186,7 +2377,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.villawolax.fi/"
+        "website": "https://www.villawolax.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612307"
       }
     },
     {
@@ -2208,7 +2402,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.kajaaninavantouimarit.fi/"
+        "website": "https://www.kajaaninavantouimarit.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/518953"
       }
     },
     {
@@ -2229,7 +2426,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/519050"
       }
     },
     {
@@ -2250,7 +2448,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/519030"
       }
     },
     {
@@ -2271,7 +2470,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612334"
       }
     },
     {
@@ -2292,7 +2492,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612337"
       }
     },
     {
@@ -2314,7 +2515,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.kankaanpaa.fi/kulttuuri-liikunta-ja-nuoriso/liikunta/uimarannat/"
+        "website": "https://www.kankaanpaa.fi/kulttuuri-liikunta-ja-nuoriso/liikunta/uimarannat/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612338"
       }
     },
     {
@@ -2336,7 +2540,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.kannonkoski.fi/talviuinti"
+        "website": "https://www.kannonkoski.fi/talviuinti",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612339"
       }
     },
     {
@@ -2357,7 +2564,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612342"
       }
     },
     {
@@ -2378,7 +2586,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/518707"
       }
     },
     {
@@ -2399,7 +2608,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/518569"
       }
     },
     {
@@ -2421,7 +2631,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://kauhava.fi/vapaa_aika/liikunta/liikuntapaikat/avantouinti/"
+        "website": "https://kauhava.fi/vapaa_aika/liikunta/liikuntapaikat/avantouinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612420"
       }
     },
     {
@@ -2443,7 +2656,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://kauhava.fi/vapaa_aika/liikunta/liikuntapaikat/avantouinti/"
+        "website": "https://kauhava.fi/vapaa_aika/liikunta/liikuntapaikat/avantouinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/518568"
       }
     },
     {
@@ -2464,7 +2680,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612343"
       }
     },
     {
@@ -2485,7 +2702,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/513773"
       }
     },
     {
@@ -2507,7 +2725,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.kemi.fi/vapaa-aika-ja-kulttuuri/liikunta-ja-luonto/uimarannat/"
+        "website": "https://www.kemi.fi/vapaa-aika-ja-kulttuuri/liikunta-ja-luonto/uimarannat/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/98537"
       }
     },
     {
@@ -2528,7 +2749,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/609444"
       }
     },
     {
@@ -2550,7 +2772,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "http://www.kemijarvenlatu.fi/p/talviuinti.html"
+        "website": "http://www.kemijarvenlatu.fi/p/talviuinti.html",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/517511"
       }
     },
     {
@@ -2571,7 +2796,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/609914"
       }
     },
     {
@@ -2592,7 +2818,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612378"
       }
     },
     {
@@ -2613,7 +2840,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/609113"
       }
     },
     {
@@ -2634,7 +2862,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612000"
       }
     },
     {
@@ -2655,7 +2884,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/513828"
       }
     },
     {
@@ -2676,7 +2906,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/614657"
       }
     },
     {
@@ -2698,7 +2929,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://keuruu.fi/vapaa-aika-ja-matkailu/retkeily-ja-ulkoilu/uimarannat/"
+        "website": "https://keuruu.fi/vapaa-aika-ja-matkailu/retkeily-ja-ulkoilu/uimarannat/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/513861"
       }
     },
     {
@@ -2720,7 +2954,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://keuruu.fi/vapaa-aika-ja-matkailu/retkeily-ja-ulkoilu/uimarannat/"
+        "website": "https://keuruu.fi/vapaa-aika-ja-matkailu/retkeily-ja-ulkoilu/uimarannat/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612001"
       }
     },
     {
@@ -2742,7 +2979,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://kirkkonummi.fi/liikunta/ulkoilu-ja-virkistys/avantouintipaikat/"
+        "website": "https://kirkkonummi.fi/liikunta/ulkoilu-ja-virkistys/avantouintipaikat/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/513115"
       }
     },
     {
@@ -2764,7 +3004,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://kirkkonummi.fi/liikunta/ulkoilu-ja-virkistys/avantouintipaikat/"
+        "website": "https://kirkkonummi.fi/liikunta/ulkoilu-ja-virkistys/avantouintipaikat/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/513116"
       }
     },
     {
@@ -2786,7 +3029,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.kitee.fi/avantouintipaikat"
+        "website": "https://www.kitee.fi/avantouintipaikat",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/529924"
       }
     },
     {
@@ -2808,7 +3054,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.kitee.fi/avantouintipaikat"
+        "website": "https://www.kitee.fi/avantouintipaikat",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612002"
       }
     },
     {
@@ -2830,7 +3079,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.kylapari.fi/"
+        "website": "https://www.kylapari.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/529925"
       }
     },
     {
@@ -2851,7 +3103,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612346"
       }
     },
     {
@@ -2872,7 +3125,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612344"
       }
     },
     {
@@ -2893,7 +3147,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612345"
       }
     },
     {
@@ -2914,7 +3169,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/610536"
       }
     },
     {
@@ -2936,7 +3192,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.pitkajarvi.fi/"
+        "website": "https://www.pitkajarvi.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/517605"
       }
     },
     {
@@ -2958,7 +3217,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.ykspihlajanreima.fi/avantouinti/"
+        "website": "https://www.ykspihlajanreima.fi/avantouinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/517463"
       }
     },
     {
@@ -2980,7 +3242,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.kokkola.fi/vapaa-aika/liikunta/uintikeskus-vesiveijari/talviuinti/"
+        "website": "https://www.kokkola.fi/vapaa-aika/liikunta/uintikeskus-vesiveijari/talviuinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/529926"
       }
     },
     {
@@ -3002,7 +3267,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://konnevesi.fi/vapaa-aika-ja-kulttuuri/vapaa-aika/ulkoliikuntapaikat/"
+        "website": "https://konnevesi.fi/vapaa-aika-ja-kulttuuri/vapaa-aika/ulkoliikuntapaikat/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/618026"
       }
     },
     {
@@ -3023,7 +3291,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612349"
       }
     },
     {
@@ -3045,7 +3314,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://koski.fi/kunnan-uimaranta-ja-sauna/"
+        "website": "https://koski.fi/kunnan-uimaranta-ja-sauna/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/513942"
       }
     },
     {
@@ -3067,7 +3339,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.kotka.fi/asioi-ja-osallistu/tilavaraus/leirialueet/luovi/"
+        "website": "https://www.kotka.fi/asioi-ja-osallistu/tilavaraus/leirialueet/luovi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/518384"
       }
     },
     {
@@ -3088,7 +3363,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/614288"
       }
     },
     {
@@ -3109,7 +3385,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/513955"
       }
     },
     {
@@ -3131,7 +3408,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://tykkimaensauna.fi/"
+        "website": "https://tykkimaensauna.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/529660"
       }
     },
     {
@@ -3153,7 +3433,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.kouvola.fi/vapaa-aika/liikunta/liikuntapaikat/ulkoliikunta/uimarannat-ja-talviuintipaikat/"
+        "website": "https://www.kouvola.fi/vapaa-aika/liikunta/liikuntapaikat/ulkoliikunta/uimarannat-ja-talviuintipaikat/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/101027"
       }
     },
     {
@@ -3174,7 +3457,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612350"
       }
     },
     {
@@ -3195,7 +3479,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/513968"
       }
     },
     {
@@ -3216,7 +3501,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516983"
       }
     },
     {
@@ -3237,7 +3523,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/513978"
       }
     },
     {
@@ -3258,7 +3545,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/513977"
       }
     },
     {
@@ -3279,7 +3567,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516889"
       }
     },
     {
@@ -3300,7 +3589,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/513994"
       }
     },
     {
@@ -3321,7 +3611,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/522701"
       }
     },
     {
@@ -3343,7 +3634,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://kustavi.fi/hyvinvointi/uimarannat/"
+        "website": "https://kustavi.fi/hyvinvointi/uimarannat/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/610038"
       }
     },
     {
@@ -3364,7 +3658,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612351"
       }
     },
     {
@@ -3386,7 +3681,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://rukatonttu.fi/sauna/"
+        "website": "https://rukatonttu.fi/sauna/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612352"
       }
     },
     {
@@ -3407,7 +3705,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612356"
       }
     },
     {
@@ -3428,7 +3727,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516817"
       }
     },
     {
@@ -3450,7 +3750,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.lahdenavantouimarit.fi/"
+        "website": "https://www.lahdenavantouimarit.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514020"
       }
     },
     {
@@ -3472,7 +3775,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://lahtisail.fi/myllysaari/aktiviteetit/"
+        "website": "https://lahtisail.fi/myllysaari/aktiviteetit/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/611843"
       }
     },
     {
@@ -3493,7 +3799,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514014"
       }
     },
     {
@@ -3515,7 +3822,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.lahdenavantouimarit.fi/"
+        "website": "https://www.lahdenavantouimarit.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514011"
       }
     },
     {
@@ -3536,7 +3846,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516584"
       }
     },
     {
@@ -3557,7 +3868,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516585"
       }
     },
     {
@@ -3579,7 +3891,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://lappajarvi.fi/kulttuuri-ja-vapaa-aika/liikunta/"
+        "website": "https://lappajarvi.fi/kulttuuri-ja-vapaa-aika/liikunta/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/609587"
       }
     },
     {
@@ -3601,7 +3916,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://lappajarvi.fi/kulttuuri-ja-vapaa-aika/liikunta/"
+        "website": "https://lappajarvi.fi/kulttuuri-ja-vapaa-aika/liikunta/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516581"
       }
     },
     {
@@ -3622,7 +3940,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516356"
       }
     },
     {
@@ -3643,7 +3962,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516344"
       }
     },
     {
@@ -3664,7 +3984,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516343"
       }
     },
     {
@@ -3685,7 +4006,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/614505"
       }
     },
     {
@@ -3706,7 +4028,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/602082"
       }
     },
     {
@@ -3727,7 +4050,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/617765"
       }
     },
     {
@@ -3748,7 +4072,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/518387"
       }
     },
     {
@@ -3769,7 +4094,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516182"
       }
     },
     {
@@ -3791,7 +4117,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.lempaala.fi/hyvinvointi-ja-vapaa-aika/liikunta-ja-ulkoilu/liikuntapaikat/ulkoliikunta-ja-ulkoilu/uimarannat-saunat-ja-talviuinti/lempoisten-uimala-ja-avanto/"
+        "website": "https://www.lempaala.fi/hyvinvointi-ja-vapaa-aika/liikunta-ja-ulkoilu/liikuntapaikat/ulkoliikunta-ja-ulkoilu/uimarannat-saunat-ja-talviuinti/lempoisten-uimala-ja-avanto/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516677"
       }
     },
     {
@@ -3812,7 +4141,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612197"
       }
     },
     {
@@ -3833,7 +4163,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/524421"
       }
     },
     {
@@ -3854,7 +4185,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/524420"
       }
     },
     {
@@ -3875,7 +4207,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612357"
       }
     },
     {
@@ -3896,7 +4229,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516511"
       }
     },
     {
@@ -3917,7 +4251,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514106"
       }
     },
     {
@@ -3939,7 +4274,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.liminka.fi/kulttuuri-ja-vapaa-aika/liikuntapalvelut/ulkoliikuntapaikat/"
+        "website": "https://www.liminka.fi/kulttuuri-ja-vapaa-aika/liikuntapalvelut/ulkoliikuntapaikat/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612359"
       }
     },
     {
@@ -3960,7 +4298,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612360"
       }
     },
     {
@@ -3982,7 +4321,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.lohjanliikuntakeskus.fi/liikuntapaikat/haikarin-sauna/"
+        "website": "https://www.lohjanliikuntakeskus.fi/liikuntapaikat/haikarin-sauna/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/98536"
       }
     },
     {
@@ -4003,7 +4345,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/510481"
       }
     },
     {
@@ -4025,7 +4368,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.lohjanliikuntakeskus.fi/lohjan-liikuntakeskus-oy/yhteistyotahot/avanto-ja-talviuintimahdollisuudet-lohjalla/"
+        "website": "https://www.lohjanliikuntakeskus.fi/lohjan-liikuntakeskus-oy/yhteistyotahot/avanto-ja-talviuintimahdollisuudet-lohjalla/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612200"
       }
     },
     {
@@ -4047,7 +4393,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.lohjanliikuntakeskus.fi/lohjan-liikuntakeskus-oy/yhteistyotahot/avanto-ja-talviuintimahdollisuudet-lohjalla/"
+        "website": "https://www.lohjanliikuntakeskus.fi/lohjan-liikuntakeskus-oy/yhteistyotahot/avanto-ja-talviuintimahdollisuudet-lohjalla/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612199"
       }
     },
     {
@@ -4068,7 +4417,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514134"
       }
     },
     {
@@ -4090,7 +4440,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.rayskala.fi/palvelut/talviuinti-avantouinti/"
+        "website": "https://www.rayskala.fi/palvelut/talviuinti-avantouinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/518382"
       }
     },
     {
@@ -4111,7 +4464,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514138"
       }
     },
     {
@@ -4132,7 +4486,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514143"
       }
     },
     {
@@ -4154,7 +4509,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.mariehamn.ax/idrott-och-fritid/motion-och-friluftsliv/badplatser-och-sandstrander"
+        "website": "https://www.mariehamn.ax/idrott-och-fritid/motion-och-friluftsliv/badplatser-och-sandstrander",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516680"
       }
     },
     {
@@ -4175,7 +4533,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514157"
       }
     },
     {
@@ -4197,7 +4556,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.maskunjaakarhut.fi/"
+        "website": "https://www.maskunjaakarhut.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612363"
       }
     },
     {
@@ -4219,7 +4581,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://merikarvia.fi/vapaa-aika-ja-hyvinvointi/ulkoilu/ulkoliikuntapaikat/"
+        "website": "https://merikarvia.fi/vapaa-aika-ja-hyvinvointi/ulkoilu/ulkoliikuntapaikat/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/515813"
       }
     },
     {
@@ -4240,7 +4605,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516653"
       }
     },
     {
@@ -4261,7 +4627,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612201"
       }
     },
     {
@@ -4282,7 +4649,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514169"
       }
     },
     {
@@ -4303,7 +4671,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514187"
       }
     },
     {
@@ -4324,7 +4693,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514165"
       }
     },
     {
@@ -4345,7 +4715,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514162"
       }
     },
     {
@@ -4367,7 +4738,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://ristiinan-rinkka.webnode.fi/talviuinti/"
+        "website": "https://ristiinan-rinkka.webnode.fi/talviuinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/529929"
       }
     },
     {
@@ -4388,7 +4762,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514186"
       }
     },
     {
@@ -4409,7 +4784,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612202"
       }
     },
     {
@@ -4430,7 +4806,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612364"
       }
     },
     {
@@ -4451,7 +4828,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612366"
       }
     },
     {
@@ -4472,7 +4850,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514221"
       }
     },
     {
@@ -4494,7 +4873,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.mantsalanretki.fi/"
+        "website": "https://www.mantsalanretki.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/603458"
       }
     },
     {
@@ -4515,7 +4897,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/601095"
       }
     },
     {
@@ -4536,7 +4919,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514245"
       }
     },
     {
@@ -4557,7 +4941,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514432"
       }
     },
     {
@@ -4578,7 +4963,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/515426"
       }
     },
     {
@@ -4600,7 +4986,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.naantali.fi/fi/asuminen-ja-ymparisto/luonto-ja-ymparisto/ulkoilukohteet/uimapaikat/nunnalahden-uimaranta"
+        "website": "https://www.naantali.fi/fi/asuminen-ja-ymparisto/luonto-ja-ymparisto/ulkoilukohteet/uimapaikat/nunnalahden-uimaranta",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/511690"
       }
     },
     {
@@ -4622,7 +5011,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.naantali.fi/fi/asuminen-ja-ymparisto/luonto-ja-ymparisto/ulkoilukohteet/uimapaikat/taimon-uimapaikka"
+        "website": "https://www.naantali.fi/fi/asuminen-ja-ymparisto/luonto-ja-ymparisto/ulkoilukohteet/uimapaikat/taimon-uimapaikka",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/511691"
       }
     },
     {
@@ -4643,7 +5035,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612380"
       }
     },
     {
@@ -4665,7 +5058,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://liikunta.nivala.fi/nivalan-liikuntapaikat/ulkoalueet/vinnurvan-avantouintipaikka/"
+        "website": "https://liikunta.nivala.fi/nivalan-liikuntapaikat/ulkoalueet/vinnurvan-avantouintipaikka/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612381"
       }
     },
     {
@@ -4687,7 +5083,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.alisniemi.com/"
+        "website": "https://www.alisniemi.com/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/519606"
       }
     },
     {
@@ -4709,7 +5108,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.nokiantalviuimarit.net/"
+        "website": "https://www.nokiantalviuimarit.net/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/521126"
       }
     },
     {
@@ -4731,7 +5133,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://nousiainen.fi/vapaa-aika-ja-hyvinvointi/liikunta/tilat-ja-alueet/"
+        "website": "https://nousiainen.fi/vapaa-aika-ja-hyvinvointi/liikunta/tilat-ja-alueet/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/515235"
       }
     },
     {
@@ -4752,7 +5157,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612383"
       }
     },
     {
@@ -4773,7 +5179,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612382"
       }
     },
     {
@@ -4794,7 +5201,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514323"
       }
     },
     {
@@ -4815,7 +5223,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/515147"
       }
     },
     {
@@ -4836,7 +5245,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612210"
       }
     },
     {
@@ -4857,7 +5267,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/607638"
       }
     },
     {
@@ -4878,7 +5289,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612211"
       }
     },
     {
@@ -4899,7 +5311,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/615345"
       }
     },
     {
@@ -4921,7 +5334,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.ouka.fi/ulkoliikuntapaikat/talviuinti"
+        "website": "https://www.ouka.fi/ulkoliikuntapaikat/talviuinti",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/521225"
       }
     },
     {
@@ -4943,7 +5359,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://visitoutokumpu.fi/liikunta/"
+        "website": "https://visitoutokumpu.fi/liikunta/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612384"
       }
     },
     {
@@ -4964,7 +5383,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/513266"
       }
     },
     {
@@ -4986,7 +5406,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.parkanonurheilijat.fi/"
+        "website": "https://www.parkanonurheilijat.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/518386"
       }
     },
     {
@@ -5008,7 +5431,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://kansanraamattuseura.fi/lomakeskukset/kairosmaja/"
+        "website": "https://kansanraamattuseura.fi/lomakeskukset/kairosmaja/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612398"
       }
     },
     {
@@ -5030,7 +5456,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.pello.fi/kulttuuri-ja-vapaa-aika/liikuntapaikat/talviuinti"
+        "website": "https://www.pello.fi/kulttuuri-ja-vapaa-aika/liikuntapaikat/talviuinti",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612212"
       }
     },
     {
@@ -5052,7 +5481,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.petajavedenseurayhtyma.fi/#avantouinti"
+        "website": "https://www.petajavedenseurayhtyma.fi/#avantouinti",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516512"
       }
     },
     {
@@ -5073,7 +5505,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514450"
       }
     },
     {
@@ -5095,7 +5528,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://pihtipudas.fi/vapaa-aika-ja-hyvinvointi/liikunta-ja-ulkoilu/avantouinti/"
+        "website": "https://pihtipudas.fi/vapaa-aika-ja-hyvinvointi/liikunta-ja-ulkoilu/avantouinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/511482"
       }
     },
     {
@@ -5117,7 +5553,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.pirkkala.fi/liikunta/ulkoliikunta/uinti/"
+        "website": "https://www.pirkkala.fi/liikunta/ulkoliikunta/uinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514461"
       }
     },
     {
@@ -5139,7 +5578,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://pereensaarensauna.fi/"
+        "website": "https://pereensaarensauna.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612214"
       }
     },
     {
@@ -5161,7 +5603,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.pirkkala.fi/liikunta/ulkoliikunta/uinti/"
+        "website": "https://www.pirkkala.fi/liikunta/ulkoliikunta/uinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/528898"
       }
     },
     {
@@ -5182,7 +5627,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/529930"
       }
     },
     {
@@ -5203,7 +5649,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/517287"
       }
     },
     {
@@ -5224,7 +5671,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514206"
       }
     },
     {
@@ -5245,7 +5693,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612216"
       }
     },
     {
@@ -5266,7 +5715,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/512470"
       }
     },
     {
@@ -5287,7 +5737,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612399"
       }
     },
     {
@@ -5308,7 +5759,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/602767"
       }
     },
     {
@@ -5329,7 +5781,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/513964"
       }
     },
     {
@@ -5350,7 +5803,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612400"
       }
     },
     {
@@ -5372,7 +5826,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://puumala.fi/avantouintisaunat-ja-seniorisaunat/"
+        "website": "https://puumala.fi/avantouintisaunat-ja-seniorisaunat/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612401"
       }
     },
     {
@@ -5394,7 +5851,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.pyhajoki.fi/rautiperan-ulkoilualue"
+        "website": "https://www.pyhajoki.fi/rautiperan-ulkoilualue",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/98519"
       }
     },
     {
@@ -5416,7 +5876,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.pyhajarvi.fi/fi/avantouintipaikka"
+        "website": "https://www.pyhajarvi.fi/fi/avantouintipaikka",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612402"
       }
     },
     {
@@ -5437,7 +5900,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/513874"
       }
     },
     {
@@ -5458,7 +5922,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612404"
       }
     },
     {
@@ -5479,7 +5944,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612405"
       }
     },
     {
@@ -5500,7 +5966,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612403"
       }
     },
     {
@@ -5522,7 +5989,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.poytya.fi/voi-hyvin/liikunta/talviuintipaikat/"
+        "website": "https://www.poytya.fi/voi-hyvin/liikunta/talviuintipaikat/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612245"
       }
     },
     {
@@ -5544,7 +6014,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.poytya.fi/voi-hyvin/liikunta/talviuintipaikat/"
+        "website": "https://www.poytya.fi/voi-hyvin/liikunta/talviuintipaikat/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612217"
       }
     },
     {
@@ -5565,7 +6038,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612218"
       }
     },
     {
@@ -5586,7 +6060,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612244"
       }
     },
     {
@@ -5607,7 +6082,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/529935"
       }
     },
     {
@@ -5628,7 +6104,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/513323"
       }
     },
     {
@@ -5649,7 +6126,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/513284"
       }
     },
     {
@@ -5670,7 +6148,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612413"
       }
     },
     {
@@ -5692,7 +6171,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "http://raumantalviuimarit.net/"
+        "website": "http://raumantalviuimarit.net/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612416"
       }
     },
     {
@@ -5713,7 +6195,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612417"
       }
     },
     {
@@ -5734,7 +6217,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/512726"
       }
     },
     {
@@ -5756,7 +6240,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://ounasvaaranlatu.fi/jaostot/talviuinti/"
+        "website": "https://ounasvaaranlatu.fi/jaostot/talviuinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612433"
       }
     },
     {
@@ -5778,7 +6265,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://roiskeelle.fi/"
+        "website": "https://roiskeelle.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612440"
       }
     },
     {
@@ -5800,7 +6290,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.laplandhotels.com/fi/hotellit-ja-kohteet/rovaniemi/lapland-hotels-ounasvaara-chalets/wntr-sauna"
+        "website": "https://www.laplandhotels.com/fi/hotellit-ja-kohteet/rovaniemi/lapland-hotels-ounasvaara-chalets/wntr-sauna",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612437"
       }
     },
     {
@@ -5822,7 +6315,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.hirsiranta.fi/avantouinti/"
+        "website": "https://www.hirsiranta.fi/avantouinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612454"
       }
     },
     {
@@ -5843,7 +6339,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612459"
       }
     },
     {
@@ -5865,7 +6362,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.ruovedenkanoottipurjehtijat.fi/pihlapirtin-talviuinti/"
+        "website": "https://www.ruovedenkanoottipurjehtijat.fi/pihlapirtin-talviuinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612462"
       }
     },
     {
@@ -5886,7 +6386,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516520"
       }
     },
     {
@@ -5907,7 +6408,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516616"
       }
     },
     {
@@ -5928,7 +6430,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/511365"
       }
     },
     {
@@ -5949,7 +6452,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/611774"
       }
     },
     {
@@ -5971,7 +6475,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://salo.fi/vapaa-aika-ja-matkailu/liikunta/ulkoliikuntapaikat/uimarannat/talviuinti/"
+        "website": "https://salo.fi/vapaa-aika-ja-matkailu/liikunta/ulkoliikuntapaikat/uimarannat/talviuinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/510764"
       }
     },
     {
@@ -5992,7 +6499,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/510765"
       }
     },
     {
@@ -6014,7 +6522,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://salo.fi/vapaa-aika-ja-matkailu/liikunta/ulkoliikuntapaikat/uimarannat/talviuinti/"
+        "website": "https://salo.fi/vapaa-aika-ja-matkailu/liikunta/ulkoliikuntapaikat/uimarannat/talviuinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/510768"
       }
     },
     {
@@ -6036,7 +6547,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://salo.fi/vapaa-aika-ja-matkailu/liikunta/ulkoliikuntapaikat/uimarannat/talviuinti/"
+        "website": "https://salo.fi/vapaa-aika-ja-matkailu/liikunta/ulkoliikuntapaikat/uimarannat/talviuinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/510770"
       }
     },
     {
@@ -6058,7 +6572,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://salo.fi/vapaa-aika-ja-matkailu/liikunta/ulkoliikuntapaikat/uimarannat/talviuinti/"
+        "website": "https://salo.fi/vapaa-aika-ja-matkailu/liikunta/ulkoliikuntapaikat/uimarannat/talviuinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/510773"
       }
     },
     {
@@ -6079,7 +6596,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/510774"
       }
     },
     {
@@ -6100,7 +6618,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/529931"
       }
     },
     {
@@ -6121,7 +6640,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/518381"
       }
     },
     {
@@ -6142,7 +6662,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/511822"
       }
     },
     {
@@ -6164,7 +6685,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.savonlinna.fi/asukas/liikunta-ja-ulkoilu/punkaharjun-liikuntapalvelut/liikuntapaikat/"
+        "website": "https://www.savonlinna.fi/asukas/liikunta-ja-ulkoilu/punkaharjun-liikuntapalvelut/liikuntapaikat/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/511670"
       }
     },
     {
@@ -6185,7 +6709,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/511598"
       }
     },
     {
@@ -6206,7 +6731,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/511613"
       }
     },
     {
@@ -6227,7 +6753,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/511628"
       }
     },
     {
@@ -6248,7 +6775,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612472"
       }
     },
     {
@@ -6270,7 +6798,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.siikajoki.fi/talviuinti"
+        "website": "https://www.siikajoki.fi/talviuinti",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/510982"
       }
     },
     {
@@ -6291,7 +6822,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/613891"
       }
     },
     {
@@ -6312,7 +6844,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612273"
       }
     },
     {
@@ -6333,7 +6866,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/510940"
       }
     },
     {
@@ -6354,7 +6888,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/613890"
       }
     },
     {
@@ -6375,7 +6910,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/510950"
       }
     },
     {
@@ -6397,7 +6933,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://lauteetsauna.fi/"
+        "website": "https://lauteetsauna.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612288"
       }
     },
     {
@@ -6419,7 +6958,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.siilinlatu.fi/talviuinti/"
+        "website": "https://www.siilinlatu.fi/talviuinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/529932"
       }
     },
     {
@@ -6440,7 +6982,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/510888"
       }
     },
     {
@@ -6462,7 +7005,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://siilinjarvi.fi/hyvinvointi-ja-vapaa-aika/liikuntapalvelut/liikuntapaikat/uimarannat/"
+        "website": "https://siilinjarvi.fi/hyvinvointi-ja-vapaa-aika/liikuntapalvelut/liikuntapaikat/uimarannat/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/510889"
       }
     },
     {
@@ -6483,7 +7029,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/617315"
       }
     },
     {
@@ -6504,7 +7051,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/610048"
       }
     },
     {
@@ -6526,7 +7074,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.sipoo.fi/asiointikanava/taasjarven-talviuintipaikka/"
+        "website": "https://www.sipoo.fi/asiointikanava/taasjarven-talviuintipaikka/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/510815"
       }
     },
     {
@@ -6548,7 +7099,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.siuntio.fi/vapaa-aika-ja-liikunta/liikunta-ja-ulkoilu/uimarannat/"
+        "website": "https://www.siuntio.fi/vapaa-aika-ja-liikunta/liikunta-ja-ulkoilu/uimarannat/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/510758"
       }
     },
     {
@@ -6569,7 +7123,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612354"
       }
     },
     {
@@ -6590,7 +7145,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/510703"
       }
     },
     {
@@ -6611,7 +7167,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612355"
       }
     },
     {
@@ -6633,7 +7190,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.sotkamo.fi/vapaa-aika-ja-liikunta/liikuntapalvelut/liikuntapaikat/talviuintipaikka/"
+        "website": "https://www.sotkamo.fi/vapaa-aika-ja-liikunta/liikuntapalvelut/liikuntapaikat/talviuintipaikka/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/98542"
       }
     },
     {
@@ -6654,7 +7214,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/98518"
       }
     },
     {
@@ -6676,7 +7237,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://suonenjoenlatu.fi/toiminta/avantouinti/"
+        "website": "https://suonenjoenlatu.fi/toiminta/avantouinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/529852"
       }
     },
     {
@@ -6698,7 +7262,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://sysma.fi/avantouinti/"
+        "website": "https://sysma.fi/avantouinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/510370"
       }
     },
     {
@@ -6720,7 +7287,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://katismaansaari.fi/"
+        "website": "https://katismaansaari.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/510348"
       }
     },
     {
@@ -6741,7 +7311,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/609500"
       }
     },
     {
@@ -6762,7 +7333,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612473"
       }
     },
     {
@@ -6784,7 +7356,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.kaukajarvensauna.fi/"
+        "website": "https://www.kaukajarvensauna.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/510088"
       }
     },
     {
@@ -6805,7 +7380,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/510089"
       }
     },
     {
@@ -6827,7 +7403,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.tampere.fi/liikunta/liikuntapaikat/talviuintipaikat"
+        "website": "https://www.tampere.fi/liikunta/liikuntapaikat/talviuintipaikat",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/98524"
       }
     },
     {
@@ -6849,7 +7428,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.tampere.fi/liikunta/liikuntapaikat/talviuintipaikat"
+        "website": "https://www.tampere.fi/liikunta/liikuntapaikat/talviuintipaikat",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/510090"
       }
     },
     {
@@ -6871,7 +7453,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://rauhaniemi.net/"
+        "website": "https://rauhaniemi.net/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/510087"
       }
     },
     {
@@ -6893,7 +7478,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.tampere.fi/liikunta/liikuntapaikat/talviuintipaikat"
+        "website": "https://www.tampere.fi/liikunta/liikuntapaikat/talviuintipaikat",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/510086"
       }
     },
     {
@@ -6915,7 +7503,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://juttusauna.fi/suolijarven-sauna/"
+        "website": "https://juttusauna.fi/suolijarven-sauna/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/510091"
       }
     },
     {
@@ -6937,7 +7528,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://lielahdenkipina.fi/suomensaarensauna/"
+        "website": "https://lielahdenkipina.fi/suomensaarensauna/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/510085"
       }
     },
     {
@@ -6959,7 +7553,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://sites.google.com/view/tohlopinuimaseura"
+        "website": "https://sites.google.com/view/tohlopinuimaseura",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/510092"
       }
     },
     {
@@ -6980,7 +7577,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612474"
       }
     },
     {
@@ -7001,7 +7599,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612476"
       }
     },
     {
@@ -7022,7 +7621,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/525037"
       }
     },
     {
@@ -7043,7 +7643,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/518379"
       }
     },
     {
@@ -7065,7 +7666,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.turku.fi/liikunta/uimarannat-ja-talviuinti"
+        "website": "https://www.turku.fi/liikunta/uimarannat-ja-talviuinti",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514516"
       }
     },
     {
@@ -7087,7 +7691,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.turku.fi/toimipaikat/saaronniemen-talviuinti"
+        "website": "https://www.turku.fi/toimipaikat/saaronniemen-talviuinti",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514517"
       }
     },
     {
@@ -7109,7 +7716,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "http://saaronniemensaukot.fi/"
+        "website": "http://saaronniemensaukot.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/529936"
       }
     },
     {
@@ -7131,7 +7741,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://tuusula.fi/2025/10/20/talviuinti-kaynnistyy-viikonloppuna/"
+        "website": "https://tuusula.fi/2025/10/20/talviuinti-kaynnistyy-viikonloppuna/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612369"
       }
     },
     {
@@ -7152,7 +7765,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612368"
       }
     },
     {
@@ -7174,7 +7788,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.rusutjarviseura.fi/rusutjarven-uimaranta/"
+        "website": "https://www.rusutjarviseura.fi/rusutjarven-uimaranta/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/608018"
       }
     },
     {
@@ -7195,7 +7812,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612372"
       }
     },
     {
@@ -7216,7 +7834,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/618148"
       }
     },
     {
@@ -7237,7 +7856,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516558"
       }
     },
     {
@@ -7259,7 +7879,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://uusikaupunki.fi/fi/avantouinti"
+        "website": "https://uusikaupunki.fi/fi/avantouinti",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/529937"
       }
     },
     {
@@ -7281,7 +7904,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://uusikaupunki.fi/fi/avantouinti"
+        "website": "https://uusikaupunki.fi/fi/avantouinti",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/529938"
       }
     },
     {
@@ -7303,7 +7929,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://vakkasuomenlatu.suomenlatu.org/tietoa-yhdistyksesta/toimintapisteet/"
+        "website": "https://vakkasuomenlatu.suomenlatu.org/tietoa-yhdistyksesta/toimintapisteet/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/518378"
       }
     },
     {
@@ -7325,7 +7954,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://uusikaupunki.fi/fi/avantouinti"
+        "website": "https://uusikaupunki.fi/fi/avantouinti",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612386"
       }
     },
     {
@@ -7346,7 +7978,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/609353"
       }
     },
     {
@@ -7368,7 +8001,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.vaasanpingviinit.fi/"
+        "website": "https://www.vaasanpingviinit.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/98531"
       }
     },
     {
@@ -7389,7 +8025,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612387"
       }
     },
     {
@@ -7411,7 +8048,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://apianavantouimarit.fi/"
+        "website": "https://apianavantouimarit.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514909"
       }
     },
     {
@@ -7432,7 +8072,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516654"
       }
     },
     {
@@ -7453,7 +8094,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/528545"
       }
     },
     {
@@ -7474,7 +8116,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/518385"
       }
     },
     {
@@ -7496,7 +8139,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.vehmaa.fi/hyvinvointi-ja-vapaa-aika/saunat-ja-uimarannat/"
+        "website": "https://www.vehmaa.fi/hyvinvointi-ja-vapaa-aika/saunat-ja-uimarannat/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612478"
       }
     },
     {
@@ -7518,7 +8164,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://rautila.fi/index.php/rantasauna/"
+        "website": "https://rautila.fi/index.php/rantasauna/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/614745"
       }
     },
     {
@@ -7539,7 +8188,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612479"
       }
     },
     {
@@ -7560,7 +8210,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612482"
       }
     },
     {
@@ -7582,7 +8233,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://vierema.fi/vapaa-aika-ja-hyvinvointi/liikunta/liikuntapaikat/"
+        "website": "https://vierema.fi/vapaa-aika-ja-hyvinvointi/liikunta/liikuntapaikat/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514668"
       }
     },
     {
@@ -7604,7 +8258,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.vihti.fi/kulttuuri-ja-vapaa-aika/liikunta/liikuntatilatjapaikat/talviliikunta-alueet/talviuinti/"
+        "website": "https://www.vihti.fi/kulttuuri-ja-vapaa-aika/liikunta/liikuntatilatjapaikat/talviliikunta-alueet/talviuinti/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/529939"
       }
     },
     {
@@ -7626,7 +8283,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.otalampi.fi/"
+        "website": "https://www.otalampi.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612392"
       }
     },
     {
@@ -7647,7 +8307,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516562"
       }
     },
     {
@@ -7669,7 +8330,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.vihdinvaeltajat.fi/"
+        "website": "https://www.vihdinvaeltajat.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516580"
       }
     },
     {
@@ -7690,7 +8354,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/98517"
       }
     },
     {
@@ -7712,7 +8377,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.vimpeli.fi/matkailu/vieresniemi"
+        "website": "https://www.vimpeli.fi/matkailu/vieresniemi",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/529900"
       }
     },
     {
@@ -7733,7 +8401,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/529902"
       }
     },
     {
@@ -7755,7 +8424,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.virrat.fi/visit-virrat/aktiviteetit/avannot-saunat-ja-kylpytynnyrit/"
+        "website": "https://www.virrat.fi/visit-virrat/aktiviteetit/avannot-saunat-ja-kylpytynnyrit/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516649"
       }
     },
     {
@@ -7776,7 +8448,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612484"
       }
     },
     {
@@ -7797,7 +8470,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612406"
       }
     },
     {
@@ -7818,7 +8492,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/529690"
       }
     },
     {
@@ -7840,7 +8515,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.ylojarvi.fi/raikanpuisto/"
+        "website": "https://www.ylojarvi.fi/raikanpuisto/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/516614"
       }
     },
     {
@@ -7862,7 +8540,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.ylojarvenavantouimarit.fi/"
+        "website": "https://www.ylojarvenavantouimarit.fi/",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/612407"
       }
     },
     {
@@ -7883,7 +8564,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514644"
       }
     },
     {
@@ -7904,7 +8586,8 @@
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": ""
+        "huomio": "",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514643"
       }
     },
     {
@@ -7926,7 +8609,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.aanekoski.fi/kulttuuri-ja-liikunta/ulkoliikunta/avantouintipaikat-talviuinti"
+        "website": "https://www.aanekoski.fi/kulttuuri-ja-liikunta/ulkoliikunta/avantouintipaikat-talviuinti",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/524248"
       }
     },
     {
@@ -7948,7 +8634,10 @@
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.aanekoski.fi/kulttuuri-ja-liikunta/ulkoliikunta/avantouintipaikat-talviuinti"
+        "website": "https://www.aanekoski.fi/kulttuuri-ja-liikunta/ulkoliikunta/avantouintipaikat-talviuinti",
+        "website_source": "LIPAS www + sisältötarkistus",
+        "website_checked_at": "2026-09-19",
+        "lipas_url": "https://lipas.fi/liikuntapaikat/514631"
       }
     },
     {
@@ -8186,8 +8875,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          22.924435,
-          60.780145
+          22.887519126288737,
+          60.759119263778096
         ]
       },
       "properties": {
@@ -8248,6 +8937,466 @@
         "huomio": "",
         "id": "user_submission_laivaranta_padasjoki",
         "source": "user_submission"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1588872442357,
+          60.6237684423498
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Sjökullan talviuintipaikka",
+        "kunta": "Lapinjärvi",
+        "url": "https://lapinjarvi.fi/asuminen-ja-ymparisto/tontit-2/asuintontit/ingermaninkyla/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Palveluntarjoaja: Ei varmistunut helposti; lähde on Lapinjärven kunta",
+        "id": "discovery_2026_09_20_sjokulla_lapinjarvi",
+        "source": "discovery_2026_09_20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.1895549,
+          61.2956919
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Eemelin saunan talviuintipaikka",
+        "kunta": "Harjavalta",
+        "url": "https://merstolanasukasyhdistys.fi/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Palveluntarjoaja: Merstolan Asukasyhdistys ry",
+        "id": "discovery_2026_09_20_eemelin_sauna_harjavalta",
+        "source": "discovery_2026_09_20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.7715487,
+          62.5993228
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Saunakeidas",
+        "kunta": "Joensuu",
+        "url": "https://www.saunakeidas.fi/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Palveluntarjoaja: Avantosauna Kuura Oy / Saunakeidas",
+        "id": "discovery_2026_09_20_saunakeidas_joensuu",
+        "source": "discovery_2026_09_20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.935334,
+          62.68285
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Paiholan maisemasaunan avanto",
+        "kunta": "Kontiolahti",
+        "url": "https://paihola.fi/aktiviteetit/maisemasauna/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Palveluntarjoaja: Paihola",
+        "id": "discovery_2026_09_20_paiholan_maisemasauna",
+        "source": "discovery_2026_09_20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.3853357,
+          60.9179866
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Radalla Resortin rantasaunan avanto",
+        "kunta": "Iitti",
+        "url": "https://radallaresort.fi/kampanja/talvilomalle-radalla-resortiin/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Palveluntarjoaja: Radalla Resort",
+        "id": "discovery_2026_09_20_radalla_resort_rantasauna",
+        "source": "discovery_2026_09_20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.8541783,
+          62.5074602
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Mannisen Lomamökkien savusaunan avanto",
+        "kunta": "Rautalampi",
+        "url": "https://www.mannisenloma.com/fi/savusauna/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Palveluntarjoaja: Mannisen Lomamökit",
+        "id": "discovery_2026_09_20_mannisen_savusauna",
+        "source": "discovery_2026_09_20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.15386,
+          61.29727
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Hugon savusaunojen avanto",
+        "kunta": "Rautjärvi",
+        "url": "https://app.moder.fi/hugon-huvilat/5671?step=1",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Palveluntarjoaja: Hugon Huvilat / Hugon savusaunat",
+        "id": "discovery_2026_09_20_hugon_savusaunat",
+        "source": "discovery_2026_09_20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.0867467,
+          62.6064001
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Vanhamäen rantasaunan avanto",
+        "kunta": "Suonenjoki",
+        "url": "https://www.visitsavo.fi/fi_FI/nae-ja-koe/saunat",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Palveluntarjoaja: Vanhamäki",
+        "id": "discovery_2026_09_20_vanhamaki_rantasauna",
+        "source": "discovery_2026_09_20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.719872,
+          62.600924
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Törmälän rantasaunan avanto",
+        "kunta": "Rautalampi",
+        "url": "https://www.visitsavo.fi/fi_FI/nae-ja-koe/saunat",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Palveluntarjoaja: Törmälän Loma- ja kurssikeskus Oy",
+        "id": "discovery_2026_09_20_tormala_rantasauna",
+        "source": "discovery_2026_09_20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.2825678,
+          61.6754374
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Saunaravintola Kaihun avanto",
+        "kunta": "Mikkeli",
+        "url": "https://www.visitmikkeli.fi/palvelut/mikkelipuiston-saunaravintola-kaihu",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Palveluntarjoaja: Saunaravintola Kaihu / Osuuskauppa Suur-Savo",
+        "id": "discovery_2026_09_20_saunaravintola_kaihu",
+        "source": "discovery_2026_09_20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.3436755,
+          61.7013842
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Visulahden rantasaunojen avanto",
+        "kunta": "Mikkeli",
+        "url": "https://visulahtionline.bookingonline.fi/stable/tuote.jsp?id=39714&teema_id=2795&tuoteIx=5&tuote_myyja_yritys=10218",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Palveluntarjoaja: Visulahden Matkailukeskus",
+        "id": "discovery_2026_09_20_visulahden_rantasaunat",
+        "source": "discovery_2026_09_20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.605733,
+          62.114417
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Oravin rantasaunan avanto",
+        "kunta": "Savonlinna",
+        "url": "https://www.oravivillage.com/oravi/saunat/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Palveluntarjoaja: SaimaaHoliday Oravi",
+        "id": "discovery_2026_09_20_oravin_rantasauna",
+        "source": "discovery_2026_09_20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.7615846656634,
+          63.7943482295073
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Sju Broars Rökbastu",
+        "kunta": "Luoto",
+        "url": "https://visitjakobstad.fi/produkt/sju-broars-rokbastu/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Palveluntarjoaja: Euroll Oy / Sju Broars Rökbastu",
+        "id": "discovery_2026_09_20_sju_broars_rokbastu",
+        "source": "discovery_2026_09_20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.7487802,
+          61.671952
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Etuniemen avantosauna",
+        "kunta": "Hirvensalmi",
+        "url": "https://www.etuniemi.fi/sauna/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Palveluntarjoaja: SF-Caravan Sisä-Savo ry",
+        "id": "discovery_2026_09_20_etuniemen_avantosauna",
+        "source": "discovery_2026_09_20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.1473333,
+          61.5733889
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Sahanlahti Resortin avanto",
+        "kunta": "Puumala",
+        "url": "https://www.sahanlahtiresort.fi/yritystilaisuudet/loylyista-lisaarvoa",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Palveluntarjoaja: Sahanlahti Resort Oy",
+        "id": "discovery_2026_09_20_sahanlahti_resort",
+        "source": "discovery_2026_09_20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.941839,
+          67.780324
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Sammuntuvan saunojen avanto",
+        "kunta": "Kittilä",
+        "url": "https://sammuntupa.fi/fi_FI/sammuntuvan-saunat",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Palveluntarjoaja: Sammuntupa",
+        "id": "discovery_2026_09_20_sammuntupa_saunat",
+        "source": "discovery_2026_09_20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.229013,
+          61.499062
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Villa Kaidan Kunkun avanto",
+        "kunta": "Mikkeli",
+        "url": "https://kaidankiho.johku.com/fi_FI/kaidan-kiho-villas/villa-kaidan-kunkku-ylellinen-oma",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Palveluntarjoaja: Kaidan Kiho Villas / Esko Valkonen",
+        "id": "discovery_2026_09_20_villa_kaidan_kunkku",
+        "source": "discovery_2026_09_20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.0016667,
+          61.43
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Nestorinrannan rantasaunan avanto",
+        "kunta": "Puumala",
+        "url": "https://nestorinranta.fi/elamyksia/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Palveluntarjoaja: Nestorinranta",
+        "id": "discovery_2026_09_21_nestorinranta",
+        "source": "discovery_2026_09_21"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.154849,
+          61.453447
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Okkolan Lomamökkien avannot",
+        "kunta": "Puumala",
+        "url": "https://www.okkolanlomamokit.com/mokit/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Palveluntarjoaja: Okkolan Lomamökit / Paula Okkola. Luotolan ja Niemelän mökeillä avanto.",
+        "id": "discovery_2026_09_21_okkolan_lomamokit",
+        "source": "discovery_2026_09_21"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.899229,
+          61.537817
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "OpasTiinan Pienniemen avanto",
+        "kunta": "Puumala",
+        "url": "https://visitpuumala.fi/talven-touhuja/avantouintipaikat-puumalassa/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Palveluntarjoaja: Opas-Guide Tiina Leinonen / Spirit Guide Saimaa",
+        "id": "discovery_2026_09_21_opastiina_pienniemi",
+        "source": "discovery_2026_09_21"
       }
     }
   ]

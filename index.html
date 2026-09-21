@@ -1039,7 +1039,8 @@
 
           <div class="detailActions">
             <a class="chip chipPrimary" id="detailGoogle" target="_blank" rel="noopener">Avaa kohteen sijainti</a>
-            <a class="chip" id="detailLink" target="_blank" rel="noopener" style="display:none;">Avaa kohteen sivu</a>
+            <a class="chip" id="detailLink" target="_blank" rel="noopener" style="display:none;">Verkkosivu</a>
+          <a class="chip" id="detailLipas" target="_blank" rel="noopener" style="display:none;">Tiedot LIPASissa</a>
           </div>
         <div class="premiumTestExtras" id="detailPremiumExtras" hidden>
           <strong>Palvelut</strong>
@@ -1169,6 +1170,7 @@
         <div class="sheetActions">
           <a class="chip chipPrimary" id="msGoogle" target="_blank" rel="noopener">Reittiohjeet</a>
           <a class="chip" id="msLink" target="_blank" rel="noopener" style="display:none;">Verkkosivu</a>
+          <a class="chip" id="msLipas" target="_blank" rel="noopener" style="display:none;">Tiedot LIPASissa</a>
         </div>
         <div class="premiumTestExtras" id="msPremiumExtras" hidden>
           <strong>Palvelut</strong>
@@ -1287,14 +1289,25 @@
       return safeText(pick(props, ["kunta", "paikkakunta", "municipality", "city", "kaupunki", "Kunta", "Paikkakunta", "Municipality", "City"]));
     }
 
+    function validWebLink(value) {
+      const raw = String(value ?? '').trim();
+      if (!raw || /\s/.test(raw)) return '';
+      try {
+        const url = new URL(/^[a-z][a-z\d+.-]*:/i.test(raw) ? raw : 'https://' + raw);
+        if (['http:', 'https:'].includes(url.protocol) && url.hostname && !url.username && !url.password) return url.href;
+      } catch { /* Invalid links are not shown. */ }
+      return '';
+    }
+    function isLipasLink(value) {
+      const host = new URL(value).hostname.toLowerCase();
+      return host === 'lipas.fi' || host.endsWith('.lipas.fi') || host === 'lipas.jyu.fi' || host.endsWith('.lipas.jyu.fi');
+    }
     function getWebsite(props) {
-      for (const value of [props.website, props.url]) {
-        const raw = String(value ?? '').trim();
-        if (!raw || /\s/.test(raw)) continue;
-        try {
-          const url = new URL(/^[a-z][a-z\d+.-]*:/i.test(raw) ? raw : 'https://' + raw);
-          if (['http:', 'https:'].includes(url.protocol) && url.hostname && !url.username && !url.password) return url.href;
-        } catch { /* Try the fallback URL. */ }
+      const primary = validWebLink(props.website);
+      if (primary) return primary;
+      for (const value of [props.url, props.link, props.verkkosivu, props.www]) {
+        const fallback = validWebLink(value);
+        if (fallback && !isLipasLink(fallback)) return fallback;
       }
       return '';
     }
@@ -1550,7 +1563,7 @@
             a.href = website;
             a.target = "_blank";
             a.rel = "noopener";
-            a.textContent = "Avaa kohteen sivu";
+            a.textContent = "Verkkosivu";
             a.style.display = "inline-flex";
             a.style.alignItems = "center";
             a.style.justifyContent = "center";
@@ -1561,6 +1574,18 @@
             a.style.color = "#fff";
             a.style.fontWeight = "1200";
             a.style.textDecoration = "none";
+            card.appendChild(a);
+          }
+
+          const sourceLink = validWebLink(props.lipas_url);
+          if (sourceLink) {
+            const a = document.createElement("a");
+            a.href = sourceLink;
+            a.target = "_blank";
+            a.rel = "noopener";
+            a.textContent = "Tiedot LIPASissa";
+            a.style.display = "block";
+            a.style.marginTop = "8px";
             card.appendChild(a);
           }
 
@@ -1714,6 +1739,14 @@
       $("msPremiumGallery").hidden = !isHickaroTest;
       $("msBasicPanorama").hidden = isHickaroTest;
       $("msKv").hidden = true;
+
+      const lipasLink = validWebLink(props.lipas_url);
+      for (const prefix of ["detail", "ms"]) {
+        const link = $(prefix + "Lipas");
+        link.style.display = lipasLink ? "inline-flex" : "none";
+        if (lipasLink) link.href = lipasLink;
+        else link.removeAttribute("href");
+      }
 
       // Desktop detail
       if ($("detailTitle")) {
