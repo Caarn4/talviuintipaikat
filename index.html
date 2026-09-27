@@ -71,6 +71,20 @@
       margin-bottom: 8px;
     }
 
+    .mobileIdentity {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 0;
+    }
+
+    .brandLogo {
+      display: block;
+      width: 100px;
+      height: auto;
+      flex-shrink: 0;
+    }
+
     .brand .title {
       font-weight: 1100;
       letter-spacing: .2px;
@@ -726,21 +740,52 @@
         min-width: 0;
       }
 
+      .mobileIdentity {
+        flex: 1;
+        gap: 14px;
+      }
+
+      .mobileIdentity > div {
+        min-width: 0;
+        flex: 1;
+        text-align: center;
+      }
+
+      .mobileLogoBox {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 72px;
+        height: 72px;
+        padding: 4px;
+        flex-shrink: 0;
+        margin-left: 2px;
+      }
+
+      .mobileLogoBox .brandLogo {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transform: translateX(3px) scale(1.3);
+      }
+
       .mobileBrand {
-        font-weight: 1100;
-        font-size: 16px;
+        font-weight: 800;
+        font-size: 20px;
         line-height: 1.1;
-        overflow-wrap: anywhere;
+        white-space: nowrap;
       }
 
       .mobileSub {
-        margin-top: 3px;
+        margin-top: 2px;
         color: var(--muted);
         font-size: 11px;
         font-weight: 850;
       }
 
       .mobileControls #mToggleControls {
+        align-self: flex-start;
         flex-shrink: 0;
       }
 
@@ -1068,9 +1113,12 @@
   <!-- MOBILE floating controls -->
   <div class="mobileControls collapsed" id="mobileControls">
     <div class="mobileTopRow">
-      <div>
-        <div class="mobileBrand">❄️ Talviuintipaikat.fi</div>
-        <div class="mobileSub">Suomen kattavin avantokarttapalvelu</div>
+      <div class="mobileIdentity">
+        <span class="mobileLogoBox"><img class="brandLogo" src="assets/images/logo-v1-mobile.png" width="1254" height="1254" alt="" /></span>
+        <div>
+          <div class="mobileBrand">Talviuintipaikat.fi</div>
+          <div class="mobileSub">Suomen kattavin avantokarttapalvelu</div>
+        </div>
       </div>
       <button class="btn" id="mToggleControls" title="Valikko (tulossa)" aria-label="Valikko (tulossa)" disabled>☰</button>
     </div>
