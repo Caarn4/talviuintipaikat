@@ -1084,8 +1084,7 @@
 
           <div class="detailActions">
             <a class="chip chipPrimary" id="detailGoogle" target="_blank" rel="noopener">Avaa kohteen sijainti</a>
-            <a class="chip" id="detailLink" target="_blank" rel="noopener" style="display:none;">Verkkosivu</a>
-          <a class="chip" id="detailLipas" target="_blank" rel="noopener" style="display:none;">Tiedot LIPASissa</a>
+            <a class="chip" id="detailLink" target="_blank" rel="noopener" style="display:none;">🌐 Verkkosivut</a>
           </div>
         <div class="premiumTestExtras" id="detailPremiumExtras" hidden>
           <strong>Palvelut</strong>
@@ -1217,8 +1216,7 @@
 
         <div class="sheetActions">
           <a class="chip chipPrimary" id="msGoogle" target="_blank" rel="noopener">Reittiohjeet</a>
-          <a class="chip" id="msLink" target="_blank" rel="noopener" style="display:none;">Verkkosivu</a>
-          <a class="chip" id="msLipas" target="_blank" rel="noopener" style="display:none;">Tiedot LIPASissa</a>
+          <a class="chip" id="msLink" target="_blank" rel="noopener" style="display:none;">🌐 Verkkosivut</a>
         </div>
         <div class="premiumTestExtras" id="msPremiumExtras" hidden>
           <strong>Palvelut</strong>
@@ -1357,7 +1355,7 @@
         const fallback = validWebLink(value);
         if (fallback && !isLipasLink(fallback)) return fallback;
       }
-      return '';
+      return validWebLink(props.lipas_url);
     }
 
     function getImage(props) {
@@ -1611,7 +1609,7 @@
             a.href = website;
             a.target = "_blank";
             a.rel = "noopener";
-            a.textContent = "Verkkosivu";
+            a.textContent = "🌐 Verkkosivut";
             a.style.display = "inline-flex";
             a.style.alignItems = "center";
             a.style.justifyContent = "center";
@@ -1622,18 +1620,6 @@
             a.style.color = "#fff";
             a.style.fontWeight = "1200";
             a.style.textDecoration = "none";
-            card.appendChild(a);
-          }
-
-          const sourceLink = validWebLink(props.lipas_url);
-          if (sourceLink) {
-            const a = document.createElement("a");
-            a.href = sourceLink;
-            a.target = "_blank";
-            a.rel = "noopener";
-            a.textContent = "Tiedot LIPASissa";
-            a.style.display = "block";
-            a.style.marginTop = "8px";
             card.appendChild(a);
           }
 
@@ -1788,14 +1774,6 @@
       $("msBasicPanorama").hidden = isHickaroTest;
       $("msKv").hidden = true;
 
-      const lipasLink = validWebLink(props.lipas_url);
-      for (const prefix of ["detail", "ms"]) {
-        const link = $(prefix + "Lipas");
-        link.style.display = lipasLink ? "inline-flex" : "none";
-        if (lipasLink) link.href = lipasLink;
-        else link.removeAttribute("href");
-      }
-
       // Desktop detail
       if ($("detailTitle")) {
         $("detailTitle").textContent = name;
@@ -1815,6 +1793,7 @@
           $("detailLink").href = website;
         } else {
           $("detailLink").style.display = "none";
+          $("detailLink").removeAttribute("href");
         }
 
         const imgEl = $("detailImg");
@@ -1853,6 +1832,7 @@
           $("msLink").href = website;
         } else {
           $("msLink").style.display = "none";
+          $("msLink").removeAttribute("href");
         }
 
         const imgEl2 = $("msImg");
