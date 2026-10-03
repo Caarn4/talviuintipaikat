@@ -241,10 +241,11 @@
       const name = text(props.nimi || props.name) || UI.unnamed;
       const card = element('article', 'location-card basic-card');
       const copy = element('div', 'card-copy');
-      copy.append(element('h3', '', name), element('p', 'municipality', municipality(props)));
+      copy.append(element('h3', '', name));
       // Use only an explicit address field, never notes or a place name.
-      const address = [props.osoite, props.address].find(value => typeof value === 'string' && value.trim());
-      if (address) copy.append(element('p', 'address', address.trim()));
+      const address = typeof props.address === 'string' ? props.address.trim() : '';
+      if (address) copy.append(element('p', 'address', `📍 ${address}`));
+      copy.append(element('p', 'municipality', municipality(props)));
       if (props.source === 'user_submission') copy.append(element('span', 'badge', UI.badge));
       card.append(copy);
       const actions = element('div', 'actions');

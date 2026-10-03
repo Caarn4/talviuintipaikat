@@ -1071,6 +1071,7 @@
         <div id="selectedCard" class="card" style="display:none;">
           <div class="premiumTestBadge" id="detailPartnerBadge" hidden>★ Kumppanikohde</div>
           <div class="cardTitle" id="detailTitle">—</div>
+          <div class="cardSub" id="detailAddress" hidden></div>
           <div class="cardSub" id="detailSubtitle"></div>
           <span class="submissionBadge" id="detailSourceBadge" hidden>💡 Käyttäjien vinkkaama</span>
           <p class="premiumTestIntro" id="detailPremiumIntro" hidden>Tutustu Kokkolan Hickarö Resortiin. Katso ajankohtaiset vierailutiedot kohteen verkkosivuilta.</p>
@@ -1191,6 +1192,7 @@
           <div style="flex:1;">
             <div class="premiumTestBadge" id="msPartnerBadge" hidden>★ Kumppanikohde</div>
           <div class="sheetTitle" id="msTitle">—</div>
+            <div class="sheetSub" id="msAddress" hidden></div>
             <div class="sheetSub" id="msSubtitle"></div>
             <span class="submissionBadge" id="msSourceBadge" hidden>💡 Käyttäjien vinkkaama</span>
           </div>
@@ -1602,6 +1604,13 @@
           meta.textContent = muniText;
 
           card.appendChild(t);
+          if (safeText(props.address)) {
+            const address = document.createElement("div");
+            address.className = "location-address";
+            address.textContent = `📍 ${props.address}`;
+            address.style.marginBottom = "6px";
+            card.appendChild(address);
+          }
           card.appendChild(meta);
 
           if (website) {
@@ -1740,7 +1749,7 @@
 
       const muni = getMunicipality(props);
       const subtitleParts = [];
-      if (addr) subtitleParts.push(addr);
+
       if (muni) subtitleParts.push(muni);
       const subtitleText = subtitleParts.length ? subtitleParts.join(" • ") : "";
 
@@ -1777,6 +1786,8 @@
       // Desktop detail
       if ($("detailTitle")) {
         $("detailTitle").textContent = name;
+        $("detailAddress").textContent = props.address ? `📍 ${props.address}` : "";
+        $("detailAddress").hidden = !safeText(props.address);
         $("detailSubtitle").textContent = subtitleText;
         $("detailSourceBadge").hidden = props.source !== "user_submission";
         renderKvInto($("detailKv"), kv.slice(0, 1));
@@ -1816,6 +1827,8 @@
       // Mobile sheet
       if (isMobile()) {
         $("msTitle").textContent = name;
+        $("msAddress").textContent = props.address ? `📍 ${props.address}` : "";
+        $("msAddress").hidden = !safeText(props.address);
         $("msSubtitle").textContent = subtitleText;
         $("msSourceBadge").hidden = props.source !== "user_submission";
         renderKvInto($("msKv"), kv.slice(0, 1));
