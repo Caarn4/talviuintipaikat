@@ -9554,6 +9554,1644 @@
         "website_source": "Löylykontti Oy:n virallinen kohdesivu",
         "website_checked_at": "2026-09-21"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.9326,
+          66.5015249
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Aino Private Islandin avanto",
+        "kunta": "Rovaniemi",
+        "url": "https://ainoprivateislandhotel.com/services/finnish-sauna-experiences/finnish_sauna_and_ice_swimming/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: R004. Palveluntarjoaja: Aino Private Island Hotel. Osoite: Kuusamontie 900, 96900 Rovaniemi. Koordinaatin tyyppi: VIRALLISEN SIVUN KARTTAPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "R004",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://ainoprivateislandhotel.com/services/finnish-sauna-experiences/finnish_sauna_and_ice_swimming/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.8650966,
+          62.7751833
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Valkealammen saunan avantouintipaikka",
+        "kunta": "Alajärvi",
+        "url": "https://alajarvi.fi/kulttuuri-ja-vapaa-aika/liikunta/valkealampi/sauna/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U055. Palveluntarjoaja: Alajärven kaupunki. Osoite: Valkealammentie 200, 63510 Lehtimäki. Koordinaatin tyyppi: NIMETTY PALVELUPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U055",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://alajarvi.fi/kulttuuri-ja-vapaa-aika/liikunta/valkealampi/sauna/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.770736,
+          62.6127256
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Tuuri Resortsin avantouintipaikka",
+        "kunta": "Alavus",
+        "url": "https://www.tuuriresorts.fi/aktiviteetit-talvi",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U053. Palveluntarjoaja: Tuuri Resorts. Osoite: Riihontie 200, 63610 Tuuri. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U053",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.tuuriresorts.fi/aktiviteetit-talvi",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7292419,
+          68.3971012
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Hetan Kodan sauna ja avanto",
+        "kunta": "Enontekiö",
+        "url": "https://www.visitfinland.com/en/product/56b20a10-efc8-4f03-be0b-7f5f0fbf60b4/hetan-kota-lakeside-sauna-and-ice-swimming-experience/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U037. Palveluntarjoaja: HetanKota Oy. Osoite: Ounastie 583, 99400 Enontekiö. Koordinaatin tyyppi: TARKISTETTU PALVELU-/OSOITEPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U037",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.visitfinland.com/en/product/56b20a10-efc8-4f03-be0b-7f5f0fbf60b4/hetan-kota-lakeside-sauna-and-ice-swimming-experience/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.646681,
+          68.3860583
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Roima Rantasavun avanto",
+        "kunta": "Enontekiö",
+        "url": "https://roimarantasavu.fi/hankkeet/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U036. Palveluntarjoaja: Roima Rantasavu Oy. Osoite: Ounastie 401, Hetta. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U036",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://roimarantasavu.fi/hankkeet/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.968567,
+          60.2349488
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Grelsby Strandin talviuinti",
+        "kunta": "Finström",
+        "url": "https://grelsby.ax/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U058. Palveluntarjoaja: Grelsby Strand. Osoite: Stornäsvägen 40, 22410 Finström. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U058",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://grelsby.ax/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.9016667,
+          60.4216667
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Havsviddenin talviuinti",
+        "kunta": "Geta",
+        "url": "https://www.aland.com/artikel/vinterbad-en-uppfriskande-upplevelse",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U039. Palveluntarjoaja: Havsvidden. Osoite: Havsviddsvägen 90, 22340 Geta. Koordinaatin tyyppi: SATAMA-/PALVELUPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U039",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.aland.com/artikel/vinterbad-en-uppfriskande-upplevelse",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.5204386,
+          62.3299981
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Revontuli Resortin avannot",
+        "kunta": "Hankasalmi",
+        "url": "https://revontuli.fi/sauna/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U026. Palveluntarjoaja: Revontuli Resort. Osoite: Revontulentie 1, 41500 Hankasalmi. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U026",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://revontuli.fi/sauna/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.2914474,
+          60.9738021
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Inkalan Kartanon avanto",
+        "kunta": "Hattula",
+        "url": "https://www.inkalankartano.fi/majoitus-ja-sauna/ranta-ja-savusauna",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U073. Palveluntarjoaja: Inkalan Kartano Oy. Osoite: Inkalantie 91, 13500 Hämeenlinna (Hattula). Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U073",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.inkalankartano.fi/majoitus-ja-sauna/ranta-ja-savusauna",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.9632065,
+          60.1780294
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Kulttuurisauna",
+        "kunta": "Helsinki",
+        "url": "https://kulttuurisauna.fi/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U001. Palveluntarjoaja: Kulttuurisauna. Osoite: Hakaniemenranta 17. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U001",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://kulttuurisauna.fi/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.0617236,
+          60.1840529
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Laajarannan talviuintipaikka",
+        "kunta": "Helsinki",
+        "url": "https://www.laajasalo-degero.fi/talviuinti/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U002. Palveluntarjoaja: Laajasalo-Degerö Seura ry. Koordinaatin tyyppi: TARKISTETTU PALVELU-/OSOITEPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U002",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.laajasalo-degero.fi/talviuinti/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.9916474,
+          60.181076
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Laguuni Mustikkamaan talviuintipaikka",
+        "kunta": "Helsinki",
+        "url": "https://laguuniin.fi/talviuinti-avanto/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U061. Palveluntarjoaja: Laguuni. Osoite: Mustikkamaantie 8, Helsinki. Koordinaatin tyyppi: TARKISTETTU PALVELU-/OSOITEPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U061",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://laguuniin.fi/talviuinti-avanto/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.3679175,
+          60.9212302
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Koivistonlammin talviuinti",
+        "kunta": "Humppila",
+        "url": "https://www.humppila.fi/vapaa-aika-ja-matkailu/liikunta/liikuntapaikat/uimapaikat/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U013. Palveluntarjoaja: Humppilan kunta. Osoite: Kätöntie 9, 31640 Humppila. Koordinaatin tyyppi: TARKISTETTU PALVELU-/OSOITEPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U013",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.humppila.fi/vapaa-aika-ja-matkailu/liikunta/liikuntapaikat/uimapaikat/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.5490242,
+          60.9786668
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Kipinäniemen talviuinti",
+        "kunta": "Hämeenlinna",
+        "url": "https://www.pulahtajat.fi/?page_id=20",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U012. Palveluntarjoaja: Avantouinti- ja saunaseura Pulahtajat ry. Osoite: Kipinäniementie 42. Koordinaatin tyyppi: TARKISTETTU PALVELU-/OSOITEPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U012",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.pulahtajat.fi/?page_id=20",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.7745899,
+          62.1482353
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Juurikkasaaren talviuinti",
+        "kunta": "Jyväskylä",
+        "url": "https://www.juurikkasaari.fi/saunat-ja-aktiviteetit/saunamaailma-talvi/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U023. Palveluntarjoaja: Juurikkasaari. Osoite: Juurikantie 5, Säynätsalo. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U023",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.juurikkasaari.fi/saunat-ja-aktiviteetit/saunamaailma-talvi/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.6899625,
+          62.2619644
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Lampilan avantosaunat",
+        "kunta": "Jyväskylä",
+        "url": "https://saunalampila.fi/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U021. Palveluntarjoaja: Lampila. Osoite: Hikipolku 12, 40740 Jyväskylä. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U021",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://saunalampila.fi/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.7237519,
+          62.2673604
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Mankolan saunan avantouintipaikka",
+        "kunta": "Jyväskylä",
+        "url": "https://perinnesaunojat.fi/mankolan-sauna/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U070. Palveluntarjoaja: Jyvässeudun perinnesaunojat ry. Osoite: Valakankatu 9, 40200 Jyväskylä. Koordinaatin tyyppi: TARKISTETTU PALVELU-/OSOITEPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U070",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://perinnesaunojat.fi/mankolan-sauna/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.7609444,
+          62.2353889
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Sataman Viilu",
+        "kunta": "Jyväskylä",
+        "url": "https://satamanviilu.fi/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U022. Palveluntarjoaja: Sataman Viilu. Koordinaatin tyyppi: VIRALLISEN SIVUN KOORDINAATTI. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U022",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://satamanviilu.fi/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.2867677,
+          61.882383
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Himoksen Saunapihan avanto",
+        "kunta": "Jämsä",
+        "url": "https://himoslomat.fi/yrityksille-ja-ryhmille/saunat/saunapiha/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U031. Palveluntarjoaja: HimosLomat. Osoite: Säyryläntie 445, 42100 Jämsä. Koordinaatin tyyppi: PALVELUALUEPISTE. Piste on Himos Areenan/Saunapihan palvelualuepiste Patalahden rannalla eikä tarkka laituri- tai avantopiste.",
+        "id": "U031",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://himoslomat.fi/yrityksille-ja-ryhmille/saunat/saunapiha/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.0791708,
+          60.4540241
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "STEP-koulutuskeskuksen talviuintiranta",
+        "kunta": "Järvenpää",
+        "url": "https://jarvenpaanlatu.fi/toiminta/talviuinti/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U051. Palveluntarjoaja: Järvenpään Latu ry. Koordinaatin tyyppi: TARKISTETTU PALVELU-/OSOITEPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U051",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://jarvenpaanlatu.fi/toiminta/talviuinti/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.0822142,
+          60.4639772
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Tervanokan saunan talviuintipaikka",
+        "kunta": "Järvenpää",
+        "url": "https://www.tervanokansatama.com/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U052. Palveluntarjoaja: Tervanokan Satama. Osoite: Tervanokantie 10, Järvenpää. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U052",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.tervanokansatama.com/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.194485,
+          61.8216503
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Venesjärven Kootan Saunan avantouintipaikka",
+        "kunta": "Kankaanpää",
+        "url": "https://www.kankaanpaa.fi/kulttuuri-liikunta-ja-nuoriso/liikunta/uimarannat/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U056. Osoite: Sahanranta 19. Koordinaatin tyyppi: TARKISTETTU PALVELU-/OSOITEPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U056",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.kankaanpaa.fi/kulttuuri-liikunta-ja-nuoriso/liikunta/uimarannat/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.19885,
+          60.5350063
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Vattolan uimarannan avantouintipaikka",
+        "kunta": "Karkkila",
+        "url": "https://karkkila.fi/kulttuuri-vapaa-aika/liikunta/vesiliikunta/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U062. Palveluntarjoaja: Karkkilan kaupunki. Osoite: Pyhäjärvenraitti 1, Karkkila. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U062",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://karkkila.fi/kulttuuri-vapaa-aika/liikunta/vesiliikunta/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.5366553,
+          62.1382364
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Karvian Karavan avantouinti",
+        "kunta": "Karvia",
+        "url": "https://karviankaravan.fi/vuokraus/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U041. Palveluntarjoaja: Karvian Karavan. Koordinaatin tyyppi: TARKISTETTU PALVELU-/OSOITEPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U041",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://karviankaravan.fi/vuokraus/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.1083044,
+          62.314361
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Hiukkajärven avantouinti",
+        "kunta": "Kauhajoki",
+        "url": "https://kauhajoki.fi/hyvinvointi-ja-vapaa-aika/matkailu-ja-luonto/aktiviteetit-ja-palvelut-2/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U017. Palveluntarjoaja: Päntäneen metsästysseura. Osoite: Hiukkajärventie 220, 61980 Kauhajoki. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U017",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://kauhajoki.fi/hyvinvointi-ja-vapaa-aika/matkailu-ja-luonto/aktiviteetit-ja-palvelut-2/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.7231269,
+          63.1973417
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Ylihärmän reserviläisten avantosauna",
+        "kunta": "Kauhava",
+        "url": "https://kauhava.fi/vapaa_aika/liikunta/liikuntapaikat/avantouinti/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U074. Palveluntarjoaja: Ylihärmän reserviläiset ry. Osoite: Ekotie 275 B, 62300 Härmä. Koordinaatin tyyppi: TARKISTETTU PALVELU-/OSOITEPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U074",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://kauhava.fi/vapaa_aika/liikunta/liikuntapaikat/avantouinti/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.6559877,
+          62.2039524
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Keurusselkä Resortin avanto",
+        "kunta": "Keuruu",
+        "url": "https://www.keurusselkaresort.fi/talviloma-keurusselassa-2026/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U025. Palveluntarjoaja: Keurusselkä Resort. Osoite: Keurusseläntie 134, 42700 Keuruu. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U025",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.keurusselkaresort.fi/talviloma-keurusselassa-2026/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.5322148,
+          67.7106269
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Aakenuspirtin avanto",
+        "kunta": "Kittilä",
+        "url": "https://www.levi.fi/palvelut/aakenuspirtit/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: W2-024. Osoite: Aakenuksentie 1852, 99130 Kittilä. Koordinaatin tyyppi: OSOITEPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "W2-024",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.levi.fi/palvelut/aakenuspirtit/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.647205,
+          62.8672642
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Rauhalahden Jätkänkämpän avanto",
+        "kunta": "Kuopio",
+        "url": "https://www.rauhalahti.fi/jatkankamppa/perinne-ja-savusaunaillat/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U032. Palveluntarjoaja: Kylpylähotelli Rauhalahti. Osoite: Katiskaniementie 8, 70700 Kuopio. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U032",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.rauhalahti.fi/jatkankamppa/perinne-ja-savusaunaillat/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.6840283,
+          62.9549621
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Sorsasalon talviuintipaikka",
+        "kunta": "Kuopio",
+        "url": "https://www.kuopiontalviuimarit.com/l/syksyn-2026-info/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U033. Palveluntarjoaja: Kuopion Talviuimarit ry. Koordinaatin tyyppi: TARKISTETTU PALVELU-/OSOITEPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U033",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.kuopiontalviuimarit.com/l/syksyn-2026-info/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.7606281,
+          62.4873584
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Lamminjärven avantosauna",
+        "kunta": "Kurikka",
+        "url": "https://kurikka.fi/jalasjarven-lamminjarven-avantokausi-kaynnistyy-taas-lokakuun-alussa/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U018. Palveluntarjoaja: Kurikan kaupunki. Osoite: Kisatie 2, 61600 Jalasjärvi. Koordinaatin tyyppi: TARKISTETTU PALVELU-/OSOITEPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U018",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://kurikka.fi/jalasjarven-lamminjarven-avantokausi-kaynnistyy-taas-lokakuun-alussa/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9118393,
+          59.9210574
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Hotell Brudhällin talviuinti",
+        "kunta": "Kökar",
+        "url": "https://www.aland.com/artikel/vinterbad-en-uppfriskande-upplevelse",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U038. Palveluntarjoaja: Hotell Brudhäll. Osoite: Karlby, 22730 Kökar. Koordinaatin tyyppi: NIMETTY PALVELUPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U038",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.aland.com/artikel/vinterbad-en-uppfriskande-upplevelse",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.9763206,
+          62.4547219
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Tupaswillan avanto",
+        "kunta": "Laukaa",
+        "url": "https://www.tupaswilla.fi/sauna",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U027. Palveluntarjoaja: Tupaswilla. Osoite: Ränssintie 5, 41370 Kuusa. Koordinaatin tyyppi: TARKISTETTU PALVELU-/OSOITEPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U027",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.tupaswilla.fi/sauna",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.9343593,
+          62.4573002
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Varjolan tilan avanto",
+        "kunta": "Laukaa",
+        "url": "https://www.varjola.com/sauna/avoimet-saunaillat",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U030. Palveluntarjoaja: Varjola. Koordinaatin tyyppi: TARKISTETTU PALVELU-/OSOITEPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U030",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.varjola.com/sauna/avoimet-saunaillat",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.434259,
+          60.5684237
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Zoolandian savusauna",
+        "kunta": "Lieto",
+        "url": "https://zoolandia.fi/savusauna/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U006. Palveluntarjoaja: Zoolandia. Osoite: Eläintarhantie 51. Koordinaatin tyyppi: TARKISTETTU PALVELU-/OSOITEPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U006",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://zoolandia.fi/savusauna/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.4267844,
+          60.7078807
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Lopen kirkonkylän talviuinti",
+        "kunta": "Loppi",
+        "url": "https://www.suomi.fi/palvelut/palvelupiste/kirkonkylan-talviuintipaikka-loppijarvi-lopen-kunta/2154fcf2-ae01-4e93-93ea-3e75b011c130",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U015. Palveluntarjoaja: Lopen kunta. Osoite: Uimarannantie 34, 12700 Loppi. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U015",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.suomi.fi/palvelut/palvelupiste/kirkonkylan-talviuintipaikka-loppijarvi-lopen-kunta/2154fcf2-ae01-4e93-93ea-3e75b011c130",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.4717169,
+          60.5240017
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Strömfors Sauna",
+        "kunta": "Loviisa",
+        "url": "https://www.loviisa.fi/ihanaloviisa/kohdekortit/stromfors-sauna/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U010. Palveluntarjoaja: Strömfors Sauna. Osoite: Ruukintie 10 I, Ruotsinpyhtää. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U010",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.loviisa.fi/ihanaloviisa/kohdekortit/stromfors-sauna/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.286559,
+          61.6329685
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Kyyhkylän rantasauna ja talviuinti",
+        "kunta": "Mikkeli",
+        "url": "https://www.visitmikkeli.fi/en/teema/enjoy-a-true-finnish-sauna-experience-in-the-lake-saimaa-region",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: W2-025. Osoite: Kyyhkyläntie 9, 50700 Mikkeli. Koordinaatin tyyppi: NIMETTY PALVELUPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "W2-025",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.visitmikkeli.fi/en/teema/enjoy-a-true-finnish-sauna-experience-in-the-lake-saimaa-region",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.6311453,
+          62.1580375
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Haikusaunan avanto",
+        "kunta": "Muurame",
+        "url": "https://kivitasku.com/yleisosauna/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U024. Palveluntarjoaja: Kivitasku. Osoite: Kivitaskuntie 48, 40950 Muurame. Koordinaatin tyyppi: OSOITEPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U024",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://kivitasku.com/yleisosauna/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.816676,
+          60.729753
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Kivijärven rantasaunan talviuinti",
+        "kunta": "Mynämäki",
+        "url": "https://www.mynamaki.fi/vapaa-aika-ja-kulttuuri/liikunta/liikuntapaikat/uimarannat/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U009. Palveluntarjoaja: Mynämäen Talviuimarit ry. Osoite: Tekovahantie 10, 23100 Mynämäki. Koordinaatin tyyppi: UIMARANNAN PALVELUPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U009",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.mynamaki.fi/vapaa-aika-ja-kulttuuri/liikunta/liikuntapaikat/uimarannat/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.060101,
+          61.4102269
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Salomonkallion avantouintipaikka",
+        "kunta": "Nakkila",
+        "url": "https://nakkila.fi/matkailu/nae-ja-koe/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U082. Palveluntarjoaja: Salomonkallio. Osoite: Suomalaisentie 71, 29250 Nakkila. Koordinaatin tyyppi: NIMETTY PALVELUPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U082",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://nakkila.fi/matkailu/nae-ja-koe/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.3711562,
+          61.2776621
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Maakesken kylän avantouintipaikka",
+        "kunta": "Padasjoki",
+        "url": "https://maakeski.fi/avantouintipaikka-maakeskeen/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U084. Palveluntarjoaja: Maakesken kylä ry. Osoite: Uimarannantie 1, Maakeski. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U084",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://maakeski.fi/avantouintipaikka-maakeskeen/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.7446843,
+          63.2370103
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Oikopolun avantouintipaikka",
+        "kunta": "Pielavesi",
+        "url": "https://pielavesi.fi/vapaa-aika-ja-matkailu/liikunta-ja-ulkoilu/talviliikuntapaikat/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U059. Palveluntarjoaja: Pielaveden kunta. Osoite: Oikopolku 23, 72400 Pielavesi. Koordinaatin tyyppi: TIE-/PALVELUPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U059",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://pielavesi.fi/vapaa-aika-ja-matkailu/liikunta-ja-ulkoilu/talviliikuntapaikat/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.7900329,
+          61.4917166
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Rauha Sauna & Lounge",
+        "kunta": "Pori",
+        "url": "https://rauhasauna.fi/sauna-ja-lounge/tilat-ja-palvelut/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U043. Palveluntarjoaja: Rauha Sauna & Lounge. Osoite: Raatimiehenranta 1, 28100 Pori. Koordinaatin tyyppi: RANTA-/PALVELUPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U043",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://rauhasauna.fi/sauna-ja-lounge/tilat-ja-palvelut/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.2900798,
+          60.4731476
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Metsähovin tilan avanto",
+        "kunta": "Pornainen",
+        "url": "https://www.metsahovintila.fi/sauna-ja-kokous",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U011. Palveluntarjoaja: Metsähovin tila. Osoite: Tapiolantie 41, 07170 Pornainen. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U011",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.metsahovintila.fi/sauna-ja-kokous",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.4898513,
+          60.6704114
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Iilijärven avantouintipaikka",
+        "kunta": "Pukkila",
+        "url": "https://www.pukkila.fi/client/pukkila/userfiles/pukkilan-liikuntaesite-kausi-2026-2027-1786622270.pdf",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U064. Palveluntarjoaja: Pukkilan kunta. Osoite: Iilijärventie 2000, 07560 Pukkila. Koordinaatin tyyppi: NIMETTY PALVELUPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U064",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.pukkila.fi/client/pukkila/userfiles/pukkilan-liikuntaesite-kausi-2026-2027-1786622270.pdf",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.7996713,
+          64.9292728
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "B&B Aittorannan avantosauna",
+        "kunta": "Puolanka",
+        "url": "https://www.aittoranta.fi/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U075. Palveluntarjoaja: B&B Aittoranta. Osoite: Kouluntie 8, 89200 Puolanka. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U075",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.aittoranta.fi/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.7483421,
+          60.4922705
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Villa Järvelän talviuintipaikka (Pantsun talo)",
+        "kunta": "Pyhtää",
+        "url": "https://pyhtaa.fi/sites/default/files/inline-images/Toden%20toinen%20liikuntasanomat.pdf",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U068. Palveluntarjoaja: Pyhtään Yritys ry. Osoite: Kärsäjärventie 1, 49210 Pyhtää. Koordinaatin tyyppi: OSOITEPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U068",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://pyhtaa.fi/sites/default/files/inline-images/Toden%20toinen%20liikuntasanomat.pdf",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.475002,
+          60.8823211
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Pinetree Cottagesin talviuintilampi",
+        "kunta": "Pyhäranta",
+        "url": "https://visituusikaupunki.fi/fi/majoitu/pinetree-cottages",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U065. Palveluntarjoaja: Pinetree Cottages. Osoite: Hakajärvenpolku 27, 23600 Pyhäranta. Koordinaatin tyyppi: OSOITEPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U065",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://visituusikaupunki.fi/fi/majoitu/pinetree-cottages",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.5293547,
+          65.9276653
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Luplandin yksityinen sauna- ja avantouintielämys",
+        "kunta": "Ranua",
+        "url": "https://lupland.fi/fi/activities/sauna-ice-bath",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U057. Palveluntarjoaja: Lupland. Osoite: Pappilantie 1, 97700 Ranua. Koordinaatin tyyppi: VIRALLINEN TAPAAMISPISTE. Piste on virallinen tapaamispaikka; kuljetus erilliselle järvisaunalle sisältyy palveluun eikä piste kuvaa varsinaista avantoa.",
+        "id": "U057",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://lupland.fi/fi/activities/sauna-ice-bath",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.8831133,
+          60.087288
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Niksaaren talviuinti",
+        "kunta": "Salo",
+        "url": "https://salo.fi/vapaa-aika-ja-matkailu/liikunta/ulkoliikuntapaikat/uimarannat/talviuinti/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U044. Palveluntarjoaja: Temp ry. Osoite: Niksaarentie, 25640 Förby. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U044",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://salo.fi/vapaa-aika-ja-matkailu/liikunta/ulkoliikuntapaikat/uimarannat/talviuinti/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.9176962,
+          61.3492744
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Tervahovin avantosauna",
+        "kunta": "Sastamala",
+        "url": "https://kerhisgym.fi/avantosauna/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U077. Palveluntarjoaja: KerhisGym (jäsenvuorot) / Hovikallio Oy (Tervahovi). Osoite: Uittomiehenkatu 19, 38210 Sastamala. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U077",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://kerhisgym.fi/avantosauna/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.6980507,
+          62.9742924
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Kunnonpaikan savusaunan avanto",
+        "kunta": "Siilinjärvi",
+        "url": "https://www.huimausjameniereliitto.fi/tapahtumat/viikonloppu-kunnonpaikassa/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U081. Palveluntarjoaja: Kylpylähotelli Kunnonpaikka. Osoite: Jokiharjuntie 3, 70910 Vuorela. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U081",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.huimausjameniereliitto.fi/tapahtumat/viikonloppu-kunnonpaikassa/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.0675801,
+          62.8923423
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Alasen rannan avantouintipaikka",
+        "kunta": "Soini",
+        "url": "https://kunta.soini.fi/fi/hyvinvointi-ja-vapaa-aika/liikuntapalvelut/ulkoliikuntapaikat/uimarannat-ja-avannot",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U067. Palveluntarjoaja: Laasalan kyläyhdistys. Osoite: Alajärventie 841, Soini. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U067",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://kunta.soini.fi/fi/hyvinvointi-ja-vapaa-aika/liikuntapalvelut/ulkoliikuntapaikat/uimarannat-ja-avannot",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.550969,
+          65.4430582
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Hossan Lumon avanto",
+        "kunta": "Suomussalmi",
+        "url": "https://visitsuomussalmi.fi/avantouinti/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U080. Palveluntarjoaja: Hossan Lumo. Osoite: Lumontie 3, 89920 Ruhtinansalmi. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U080",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://visitsuomussalmi.fi/avantouinti/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.5575019,
+          65.4379775
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Loma-Hossan Rajakartanon avanto",
+        "kunta": "Suomussalmi",
+        "url": "https://hossa.fi/palvelut/loma-hossa/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U079. Palveluntarjoaja: Loma-Hossa. Osoite: Hossantie 273, 89920 Ruhtinansalmi. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U079",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://hossa.fi/palvelut/loma-hossa/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.5366303,
+          60.5633836
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Mansikkakarin avantouintipaikka",
+        "kunta": "Taivassalo",
+        "url": "https://www.taivassalo.fi/vapaa-aika/liikunta/ulkoliikuntapaikat",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U063. Palveluntarjoaja: Taivassalon kunta. Osoite: Mansikkakarintie, 23310 Taivassalo. Koordinaatin tyyppi: TIE-/PALVELUPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U063",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.taivassalo.fi/vapaa-aika/liikunta/ulkoliikuntapaikat",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7601491,
+          61.4949243
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Saunaravintola Kuuman talviuinti",
+        "kunta": "Tampere",
+        "url": "https://www.saunaravintolakuuma.fi/hiihtoloma-kuumassa-lampoa-makuja-ja-talven-parhaita-hetkia/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U042. Palveluntarjoaja: Saunaravintola Kuuma. Osoite: Laukontori 21, 33100 Tampere. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U042",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.saunaravintolakuuma.fi/hiihtoloma-kuumassa-lampoa-makuja-ja-talven-parhaita-hetkia/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.7588441,
+          62.9581511
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Tervonsalmen venesataman avantouintipaikka",
+        "kunta": "Tervo",
+        "url": "https://www.tervo.fi/avantouinti",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U054. Palveluntarjoaja: Tervon kunta. Osoite: Tervonsalmen venesatama, 72210 Tervo. Koordinaatin tyyppi: VIRALLISEN KUNTAKARTAN PISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U054",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.tervo.fi/avantouinti",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.4867882,
+          62.8062617
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Tuusniemen uimalan avantouintipaikka",
+        "kunta": "Tuusniemi",
+        "url": "https://www.tuusniemi.fi/documents/7646151/9294563/Avustusohjesa%CC%88a%CC%88nto%CC%88_2026_Tuusniemi%2B%281%29.pdf/7759859e-a514-4a8a-bb94-d41590f960fd",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U069. Palveluntarjoaja: Tuusniemen Raju. Osoite: Anaskintie 38, Tuusniemi. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U069",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.tuusniemi.fi/documents/7646151/9294563/Avustusohjesa%CC%88a%CC%88nto%CC%88_2026_Tuusniemi%2B%281%29.pdf/7759859e-a514-4a8a-bb94-d41590f960fd",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.0369884,
+          61.2695297
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "M/S Waltikan avantosauna",
+        "kunta": "Valkeakoski",
+        "url": "https://kerhisgym.fi/avantosauna/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U076. Palveluntarjoaja: Rantahotelli Waltikka / KerhisGym (jäsenvuorot). Osoite: Kirkonrannan vierasvenesatama, Hakalantie 4, 37600 Valkeakoski. Koordinaatin tyyppi: SATAMA-/PALVELUPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U076",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://kerhisgym.fi/avantosauna/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.0608366,
+          62.6553282
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Honkiniemen luontoleirikeskuksen avantouintipaikka",
+        "kunta": "Ähtäri",
+        "url": "https://luontoleirikeskus.fi/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U071. Palveluntarjoaja: Seinäjoen seurakunta / Honkiniemen luontoleirikeskus. Osoite: Honkiniementie 150, 63700 Ähtäri. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U071",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://luontoleirikeskus.fi/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.1793178,
+          62.5362628
+        ]
+      },
+      "properties": {
+        "lipas_id": "",
+        "nimi": "Saunaravintola Kiulun avanto",
+        "kunta": "Ähtäri",
+        "url": "https://www.ravintolakiulu.fi/ryhmat/",
+        "maksullinen": "",
+        "kertapääsy": "",
+        "pukuhuone": "",
+        "sauna": "",
+        "huomio": "Master-ID: U078. Palveluntarjoaja: Ravintola Kiulu Oy. Osoite: Karhunkierros 167, 63920 Ähtäri. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "id": "U078",
+        "source": "master_v2_6_pm_approved_2026_10_03",
+        "website": "https://www.ravintolakiulu.fi/ryhmat/",
+        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
+        "website_checked_at": "2026-10-03"
+      }
     }
   ]
 }
