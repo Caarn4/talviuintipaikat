@@ -67,7 +67,8 @@
     <p class="count" id="count" aria-live="polite" data-text="loadingCount"></p>
   </header>
   <p id="status" role="status" data-text="loading"></p>
-  <noscript>Kohdelista ja kartta tarvitsevat JavaScriptin. <a href="/index.html">Takaisin pääkartalle</a>.</noscript>
+  <!-- STATIC_CITY_CONTENT -->
+  <noscript>Kartta tarvitsee JavaScriptin. <a href="/">Takaisin pääkartalle</a>.</noscript>
   <div class="layout" hidden>
     <section class="list-panel" aria-labelledby="list-heading">
       <h2 id="list-heading" data-text="listHeading"></h2>
@@ -192,9 +193,11 @@
   }
   async function loadCity() {
     let features;
-    document.querySelector('meta[name="robots"]').content = 'noindex,nofollow';
-    document.querySelector('link[rel="canonical"]')?.remove();
-    applyTexts('');
+    const prerendered = document.getElementById('static-city-content');
+    if (!prerendered) {
+      document.querySelector('meta[name="robots"]').content = 'noindex,nofollow';
+      applyTexts('');
+    }
     // Rewrites keep the original browser URL: read its single path segment.
     const pathMatch = location.pathname.match(/^\/([^/.]+)\/?$/);
     let pathCity = '';
@@ -225,6 +228,7 @@
       features = data.features.filter(f => normalizeCity(municipality(f.properties || {})) === normalizeCity(city));
       document.querySelector('meta[name="description"]').content = UI.seoDescription(cityMetadata(city), features.length);
       features.sort((a,b) => text(a.properties.nimi || a.properties.name).localeCompare(text(b.properties.nimi || b.properties.name), UI.locale));
+      document.querySelector('link[rel="canonical"]')?.remove();
       const canonical = document.createElement('link');
       canonical.rel = 'canonical';
       canonical.href = `https://talviuintipaikat.fi/${encodeURIComponent(slugCity(cityMetadata(city).slug))}/`;
@@ -257,6 +261,7 @@
       if (url) actions.append(link(UI.website, url));
       card.append(actions); locations.append(card);
     }
+    document.getElementById('static-city-content')?.remove();
     try {
       if (!window.L) throw new Error('Leaflet ei latautunut');
       const map = L.map('map').setView([64.5, 26], 5);

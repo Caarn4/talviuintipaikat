@@ -1,0 +1,3 @@
+[build]
+  command = "node scripts/generate-sitemap.cjs && node scripts/generate-city-pages.cjs"
+  publish = "."
