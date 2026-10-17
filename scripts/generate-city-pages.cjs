@@ -34,6 +34,7 @@ for(const {route,html}of outputs){const dir=path.join(out,route);fs.mkdirSync(di
 const groupsForDirectory = [
  {title:'Suuret kaupungit', names:publicNames.slice(0,10)},
  {title:'Pohjois-Suomi', names:['Enontekiö','Inari','Kittilä','Kolari','Kuusamo','Muonio','Pelkosenniemi','Rovaniemi','Salla','Sodankylä']},
+ {title:'Länsi-Suomi ja Pohjanmaa', names:["Kalajoki", "Kemiönsaari", "Kokkola", "Kustavi", "Luoto", "Naantali", "Rauma", "Uusikaupunki", "Vaasa", "Ähtäri"]},
  {title:'Itä-Suomi ja Kainuu', names:['Puumala','Savonlinna','Sotkamo','Suomussalmi']}
 ];
 const listed=new Set();
