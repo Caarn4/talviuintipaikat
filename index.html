@@ -1567,7 +1567,7 @@
         window.__markerGroup.remove();
       }
       window.__markerGroup = L.markerClusterGroup({
-        maxClusterRadius: zoom => zoom <= 5 ? 100 : 28,
+        maxClusterRadius: 32,
         iconCreateFunction: (cluster) => {
           const count = cluster.getChildCount();
           const size = count < 10 ? 32 : count < 50 ? 36 : 40;
