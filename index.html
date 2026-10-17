@@ -1514,6 +1514,8 @@
         attribution: '&copy; OpenStreetMap'
       }).addTo(map);
 
+      map.on('zoomend', updateOverviewMarkerIcons);
+
       map.on('click', (e) => {
         if (!addMode || !pinPickMode) return;
         setAddPin(e.latlng);
@@ -1546,6 +1548,18 @@
       });
     }
 
+    // Keep the national overview visually consistent without hiding isolated places.
+    function overviewMarkerIcon() {
+      return L.divIcon({html: '<span>1</span>', className: 'swim-cluster',
+        iconSize: [32, 32], iconAnchor: [16, 16]});
+    }
+    function updateOverviewMarkerIcons() {
+      const overview = map.getZoom() <= 5;
+      markersById.forEach(marker => marker.setIcon(overview
+        ? overviewMarkerIcon() : new L.Icon.Default()));
+      updateActiveMarker();
+    }
+
     function rebuildMarkers() {
       markersById.clear();
 
@@ -1553,7 +1567,7 @@
         window.__markerGroup.remove();
       }
       window.__markerGroup = L.markerClusterGroup({
-        maxClusterRadius: 32,
+        maxClusterRadius: zoom => zoom <= 5 ? 100 : 28,
         iconCreateFunction: (cluster) => {
           const count = cluster.getChildCount();
           const size = count < 10 ? 32 : count < 50 ? 36 : 40;
@@ -1577,7 +1591,8 @@
         const props = feature.properties || {};
         const name = safeText(pick(props, ["name", "nimi", "Nimi", "Name", "title"])) || "Nimetön paikka";
 
-        const m = L.marker([lat, lng]);
+        const m = L.marker([lat, lng], {icon: map.getZoom() <= 5
+          ? overviewMarkerIcon() : new L.Icon.Default()});
         markersById.set(feature.__id, m);
         m.on("add", updateActiveMarker);
 
