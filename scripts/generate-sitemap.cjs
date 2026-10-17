@@ -34,7 +34,7 @@ for (const [key, name] of cities) {
   if (publicNames.some(n => normalize(n) === key)) included.push(slug);
 }
 included.sort();
-const urls = ['https://talviuintipaikat.fi/', ...included.map(s => `https://talviuintipaikat.fi/${s}/`)];
+const urls = ['https://talviuintipaikat.fi/', 'https://talviuintipaikat.fi/kunnat.html', ...included.map(s => `https://talviuintipaikat.fi/${s}/`)];
 if (new Set(urls).size !== urls.length) throw new Error('Duplicate sitemap URLs');
 const xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + urls.map(url => `  <url><loc>${url}</loc></url>`).join('\n') + '\n</urlset>\n';
 fs.writeFileSync(path.join(root, 'sitemap.xml'), xml);

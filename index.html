@@ -65,6 +65,8 @@
 
     .desktopBrandLogo { width:64px; height:64px; object-fit:contain; flex-shrink:0; }
     .brandRow .brand { flex:1; min-width:0; align-self:center; }
+    .cityPagesLink { display:block; margin:8px 0 2px; color:inherit; font-size:13px; text-align:center; }
+    body.sheet-open .mobileControls .cityPagesLink { display:none; }
     .brandRow {
       display: flex;
       align-items: flex-start;
@@ -1010,6 +1012,7 @@
           </div>
         </div>
 
+        <a class="cityPagesLink" href="/kunnat.html">Selaa kuntasivuja →</a>
         <div class="actionsGrid">
           <button class="btn btnPrimary" id="btnNear">📍 Näytä lähelläni</button>
           <button class="btn" id="btnClear" title="Nollaa haku ja filtterit">↩︎ Nollaa</button>
@@ -1140,6 +1143,8 @@
       <button class="btn btnPrimary" id="mBtnNear">📍 Lähelläni</button>
       <button class="btn btnPrimary" id="mBtnAdd">＋ Vinkkaa puuttuva paikka</button>
     </div>
+
+    <a class="cityPagesLink" href="/kunnat.html">Selaa kuntasivuja →</a>
 
     <!-- Filters are on hold; keep synchronization inputs hidden below. -->
 
