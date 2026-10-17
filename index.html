@@ -63,6 +63,8 @@
       padding: 12px 12px 10px;
     }
 
+    .desktopBrandLogo { width:64px; height:64px; object-fit:contain; flex-shrink:0; }
+    .brandRow .brand { flex:1; min-width:0; align-self:center; }
     .brandRow {
       display: flex;
       align-items: flex-start;
@@ -1001,8 +1003,9 @@
     <aside class="sidebar" id="sidebar">
       <div class="sidebarHeader">
         <div class="brandRow">
+          <img class="desktopBrandLogo" src="/assets/images/logo-v1-mobile.png" width="64" height="64" alt="" />
           <div class="brand">
-            <div class="title">❄️ Talviuintipaikat.fi</div>
+            <div class="title">Talviuintipaikat.fi</div>
             <div class="subtitle">Suomen kattavin avantokarttapalvelu</div>
           </div>
         </div>
