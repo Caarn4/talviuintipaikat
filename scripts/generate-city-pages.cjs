@@ -2,6 +2,7 @@
 // Usage: node scripts/generate-city-pages.cjs [output-directory]
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const root=path.resolve(__dirname,'..'),out=path.resolve(process.argv[2]||root);
+const publicNames=vm.runInNewContext(fs.readFileSync(path.join(root,'city-publication.js'),'utf8')+';PUBLIC_CITY_NAMES');
 const template=fs.readFileSync(path.join(root,'municipality.html'),'utf8');
 const metadata=vm.runInNewContext(fs.readFileSync(path.join(root,'municipalities.js'),'utf8')+';MUNICIPALITY_METADATA');
 const normalize=s=>String(s||'').trim().normalize('NFC').toLocaleLowerCase('fi');
@@ -24,8 +25,13 @@ for(const {name,features} of groups.values()){
  }).join('\n');
  let html=template.replace('<meta name="robots" content="noindex,nofollow">','<meta name="robots" content="index,follow">').replace('<title>Talviuintipaikat.fi</title>',`<title>${escape(heading)} | Talviuintipaikat.fi</title>`).replace('<meta name="description" content="">',`<meta name="description" content="${escape(description)}">\n  <link rel="canonical" href="https://talviuintipaikat.fi/${route}/">`);
  html=html.replace('data-text="back"></a>','data-text="back">← Takaisin pääkartalle</a>').replace('data-text="heading"></h1>',`data-text="heading">${escape(heading)}</h1>`).replace('data-text="intro"></p>',`data-text="intro">${escape(description)}</p>`).replace('data-text="loadingCount"></p>',`data-text="loadingCount">${features.length} talviuintipaikkaa</p>`).replace('<!-- STATIC_CITY_CONTENT -->',`<section id="static-city-content" aria-label="Kohdelista">${cards}</section>`);
- outputs.push({route,html,count:features.length});
+ const published=publicNames.some(n=>normalize(n)===normalize(name));
+ if(!published) html=html.replace('content="index,follow"','content="noindex,nofollow"');
+ outputs.push({route,html,count:features.length,published,name});
 }
 // Validate every route before writing any output.
 for(const {route,html}of outputs){const dir=path.join(out,route);fs.mkdirSync(dir,{recursive:true});fs.writeFileSync(path.join(dir,'index.html'),html);}
-console.log(JSON.stringify({cities:outputs.length,places:outputs.reduce((n,p)=>n+p.count,0),output:out}));
+const hidden=outputs.filter(p=>!p.published);
+const redirects=['# Generated publication gates; hidden city HTML remains preserved.', '/helsinki.html /helsinki/ 301', ...hidden.flatMap(p=>[`/${p.route} / 302!`, `/${p.route}/* / 302!`])];
+fs.writeFileSync(path.join(out,'_redirects'),redirects.join('\n')+'\n');
+console.log(JSON.stringify({published:outputs.filter(p=>p.published).length,hidden:hidden.length,waiting:publicNames.filter(n=>!outputs.some(p=>normalize(p.name)===normalize(n))),cities:outputs.length,places:outputs.reduce((n,p)=>n+p.count,0),output:out}));

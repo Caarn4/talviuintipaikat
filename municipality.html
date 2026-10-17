@@ -72,21 +72,6 @@
   <div class="layout" hidden>
     <section class="list-panel" aria-labelledby="list-heading">
       <h2 id="list-heading" data-text="listHeading"></h2>
-      <article class="location-card partner" data-aria="partnerTest">
-        <div class="partner-body">
-          <div class="logo-placeholder" aria-hidden="true" data-text="logo"></div>
-          <div class="card-copy">
-            <div><span class="partner-label" data-text="partner"></span><span class="test-label" data-title="testHint" data-text="test"></span></div>
-            <h3 data-text="partnerName"></h3>
-            <p class="municipality" id="partner-city"></p>
-            <p class="muted partner-description" data-text="partnerDescription"></p>
-          </div>
-        </div>
-        <div class="actions">
-          <button class="button primary" disabled data-text="directions"></button>
-          <button class="button" disabled data-text="website"></button>
-        </div>
-      </article>
       <div id="locations"></div>
     </section>
     <section class="map-panel" aria-labelledby="map-heading">
@@ -98,6 +83,7 @@
 </main>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script src="/municipalities.js"></script>
+<script src="/city-publication.js"></script>
 <script>
   // Finnish UI package; replace this package when adding another language.
   const UI = {
@@ -144,7 +130,7 @@
     }
     document.querySelector('h1').textContent = city ? UI.heading(city) : UI.initialHeading;
     document.title = UI.seoTitle(city ? UI.heading(city) : UI.initialHeading);
-    document.getElementById('partner-city').textContent = city ? city['name_' + UI.locale] || city.name_fi : '';
+
   }
 
   const text = value => String(value ?? '').trim();
@@ -223,6 +209,10 @@
         return;
       }
       const city = matches[0];
+      if (!PUBLIC_CITY_NAMES.some(name => normalizeCity(name) === normalizeCity(city))) {
+        location.replace("/");
+        return;
+      }
       applyTexts(cityMetadata(city));
       document.querySelector('.layout').hidden = false;
       features = data.features.filter(f => normalizeCity(municipality(f.properties || {})) === normalizeCity(city));

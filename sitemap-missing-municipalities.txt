@@ -1,5 +1,5 @@
 Municipalities in GeoJSON: 235
-Municipality URLs in sitemap: 235
+Municipality URLs in sitemap: 23
 Automatically generated slugs: 232
 Explicit metadata slugs: 3
 Municipalities without safe slug: 0

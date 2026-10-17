@@ -22,6 +22,7 @@ for (const [key, name] of cities) {
   if (matches.length > 1) throw new Error('Duplicate metadata: ' + name);
   slugs.set(key, matches[0]?.slug || fallbackSlug(name));
 }
+const publicNames = vm.runInNewContext(fs.readFileSync(path.join(root, 'city-publication.js'), 'utf8') + ';PUBLIC_CITY_NAMES');
 const included = [];
 let automatic = 0;
 for (const [key, name] of cities) {
@@ -30,7 +31,7 @@ for (const [key, name] of cities) {
   if (!meta?.slug) automatic++;
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug) || ['assets', 'municipality', 'index'].includes(slug)) throw new Error('Unsafe slug: ' + name);
   if ([...slugs.values()].filter(s => s === slug).length !== 1) throw new Error('Ambiguous slug: ' + slug);
-  included.push(slug);
+  if (publicNames.some(n => normalize(n) === key)) included.push(slug);
 }
 included.sort();
 const urls = ['https://talviuintipaikat.fi/', ...included.map(s => `https://talviuintipaikat.fi/${s}/`)];
