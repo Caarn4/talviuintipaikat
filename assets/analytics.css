@@ -1,9 +1,12 @@
-#analytics-settings{position:fixed;bottom:8px;left:8px;z-index:1100;background:#fff;color:#173247;border:1px solid #597788;border-radius:8px;padding:8px 12px;font:12px system-ui;cursor:pointer}
-#analytics-dialog{border:1px solid #7cc6d8;border-radius:16px;padding:24px;max-width:460px;width:calc(100% - 32px);max-height:85vh;overflow:auto;box-sizing:border-box;background:#fff;color:#173247;font:16px/1.5 system-ui}
-#analytics-dialog::backdrop{background:#102b3f80}
-#analytics-dialog h2{margin:0 0 12px;font-size:23px}
+#analytics-settings{position:fixed;bottom:max(8px,env(safe-area-inset-bottom));left:8px;z-index:1100;background:#fff;color:#173247;border:1px solid #b5c7d0;border-radius:6px;padding:7px 10px;font:12px system-ui;cursor:pointer}
+#analytics-dialog{position:fixed;bottom:max(12px,env(safe-area-inset-bottom));left:12px;z-index:1101;border:1px solid #d3e1e7;border-radius:12px;padding:16px;max-width:380px;width:calc(100% - 24px);max-height:calc(100dvh - 24px);overflow:auto;box-sizing:border-box;background:#fff;color:#173247;font:14px/1.45 system-ui;box-shadow:0 3px 16px #102b3f20}
+#analytics-dialog[hidden],#analytics-settings[hidden]{display:none}
+#analytics-dialog h2{margin:0 0 6px;font-size:16px;line-height:1.3}
+#analytics-dialog p{margin:0 0 12px}
 #analytics-dialog a{color:#17536b;text-decoration:underline}
-.analytics-actions{display:flex;gap:12px;flex-wrap:wrap}
-#analytics-dialog button{flex:1;min-width:135px;border:1px solid #426677;background:#eef6fa;color:#173247;border-radius:8px;padding:12px;font:inherit;cursor:pointer}
-#analytics-dialog button:focus-visible,#analytics-settings:focus-visible{outline:3px solid #17536b;outline-offset:3px}
+#analytics-dialog small{display:block;margin-top:9px;font-size:12px;color:#526673}
+.analytics-actions{display:flex;gap:10px}
+#analytics-dialog button{flex:1;min-width:0;min-height:44px;border:1px solid #849eab;background:#f3f7f9;color:#173247;border-radius:7px;padding:9px;font:inherit;cursor:pointer}
+#analytics-dialog button:focus-visible,#analytics-settings:focus-visible{outline:2px solid #17536b;outline-offset:3px}
 #analytics-status:empty{display:none}
+#analytics-dialog #analytics-status:not(:empty){margin:10px 0 0}

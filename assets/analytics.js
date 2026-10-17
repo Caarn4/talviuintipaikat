@@ -69,11 +69,14 @@
   }
   const settings = document.createElement('button');
   settings.type = 'button'; settings.id = 'analytics-settings'; settings.textContent = 'Evästeasetukset';
-  const dialog = document.createElement('dialog');
+  const dialog = document.createElement('section');
   dialog.id = 'analytics-dialog'; dialog.setAttribute('aria-labelledby', 'analytics-heading');
-  dialog.innerHTML = '<h2 id="analytics-heading">Sallitaanko kävijämittaus?</h2><p>Käytämme luvallasi Google Analyticsia kävijämäärien ja sivuston käytön mittaamiseen. Mittaus käyttää evästeitä ja lähettää käyttötietoja Googlelle. Palvelu toimii myös ilman mittausta.</p><p>Voit muuttaa valintaasi Evästeasetuksista. <a href="/analytiikan-tietosuoja.html">Lue analytiikan tietosuojatiedot</a>.</p><div class="analytics-actions"><button type="button" data-choice="no" autofocus>Ei kiitos</button><button type="button" data-choice="yes">Hyväksyn</button></div><p id="analytics-status" role="status"></p>';
+  dialog.innerHTML = '<h2 id="analytics-heading">Saammeko mitata kävijöitä?</h2><p>Google Analytics käyttää luvallasi evästeitä ja lähettää käyttötietoja Googlelle. Kartta toimii ilmankin. <a href="/analytiikan-tietosuoja.html">Tietosuoja</a></p><div class="analytics-actions"><button type="button" data-choice="no">Ei kiitos</button><button type="button" data-choice="yes">Hyväksyn</button></div><small>Voit muuttaa valintaa Evästeasetuksista.</small><p id="analytics-status" role="status"></p>';
+  dialog.hidden = true;
+  const showPanel = () => { dialog.hidden = false; settings.hidden = true; };
+  const hidePanel = () => { dialog.hidden = true; settings.hidden = false; };
   const status = dialog.querySelector('#analytics-status');
-  settings.onclick = () => { if (!dialog.open) dialog.showModal(); };
+  settings.onclick = () => { showPanel(); dialog.querySelector('button').focus(); };
   dialog.querySelectorAll('[data-choice]').forEach(button => {
     button.onclick = () => {
       const accepted = button.dataset.choice === 'yes';
@@ -89,18 +92,18 @@
         return;
       }
       if (accepted) start(c.expires); else stop();
-      dialog.close(); settings.focus();
+      hidePanel(); settings.focus();
     };
   });
   window.addEventListener('storage', event => {
     if (event.key !== key && event.key !== null) return;
     const c = read();
     if (c?.accepted) start(c.expires); else stop();
-    if (c && dialog.open) dialog.close();
+    if (c) hidePanel();
   });
   document.addEventListener('visibilitychange', checkExpiry);
   document.body.append(settings, dialog);
   const choice = read();
   if (choice?.accepted) start(choice.expires);
-  else { clearCookies(); if (!choice) dialog.showModal(); }
+  else { clearCookies(); if (!choice) showPanel(); }
 })();
