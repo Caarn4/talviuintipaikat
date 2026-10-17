@@ -1020,7 +1020,7 @@
           </div>
         </div>
 
-        <div class="filtersBlock filtersFrozen" aria-label="Filtterit (tulossa)">
+        <div class="filtersBlock filtersFrozen" hidden aria-label="Filtterit (odottaa)">
           <div class="filtersHeader">
             <div class="h">Filtterit</div>
             <div class="hint">beta</div>
@@ -1138,13 +1138,11 @@
       <button class="btn btnPrimary" id="mBtnAdd">＋ Vinkkaa puuttuva paikka</button>
     </div>
 
-    <div class="mobileFilterStatus">
-      Suodattimet: Sauna, pukuhuone, hinnoittelu (kehitteillä)
-    </div>
+    <!-- Filters are on hold; keep synchronization inputs hidden below. -->
 
     <!-- Retained for existing filter synchronization. -->
     <div class="filtersWrap" hidden>
-      <div class="filtersBlock filtersFrozen" aria-label="Filtterit (tulossa)">
+      <div class="filtersBlock filtersFrozen" hidden aria-label="Filtterit (odottaa)">
         <div class="filtersGrid">
           <div class="field">
             <label>Sauna</label>
@@ -2012,7 +2010,7 @@
       $("mSearchInput").addEventListener("input", applyFilters);
       $("mSearchInput").addEventListener("keydown", focusSearchResults);
 
-      // Key requirement: show filters when user activates search
+      // Expand search controls when the user activates search
       $("mSearchInput").addEventListener("focus", () => {
         if ($("mobileSheet").classList.contains("open")) closeSheet();
         $("mobileControls").classList.remove("collapsed");
