@@ -1128,7 +1128,7 @@
           <div class="mobileSub">Suomen kattavin avantokarttapalvelu</div>
         </div>
       </div>
-      <button class="btn" id="mToggleControls" title="Valikko (tulossa)" aria-label="Valikko (tulossa)" disabled>☰</button>
+      <button class="btn" id="mToggleControls" title="Valikko" aria-label="Avaa valikko" aria-expanded="false" aria-controls="mobileNavigation">☰</button>
     </div>
 
     <div class="searchRow">
@@ -1144,7 +1144,9 @@
       <button class="btn btnPrimary" id="mBtnAdd">＋ Vinkkaa puuttuva paikka</button>
     </div>
 
-    <a class="cityPagesLink" href="/kunnat.html">Selaa kuntasivuja →</a>
+    <nav id="mobileNavigation" aria-label="Sivuston valikko" hidden>
+      <a class="cityPagesLink" href="/kunnat.html">Kaupungit ja matkailukunnat →</a>
+    </nav>
 
     <!-- Filters are on hold; keep synchronization inputs hidden below. -->
 
@@ -2026,10 +2028,21 @@
       $("mBtnAdd").addEventListener("click", openAddModal);
 
       $("mToggleControls").addEventListener("click", () => {
-        $("mobileControls").classList.toggle("collapsed");
+        const menu = $("mobileNavigation");
+        menu.hidden = !menu.hidden;
+        $("mToggleControls").setAttribute("aria-expanded", String(!menu.hidden));
+        $("mToggleControls").setAttribute("aria-label", menu.hidden ? "Avaa valikko" : "Sulje valikko");
         updateMobilePanelState();
       });
 
+      document.addEventListener("keydown", event => {
+        if (event.key === "Escape" && !$("mobileNavigation").hidden) {
+          $("mobileNavigation").hidden = true;
+          $("mToggleControls").setAttribute("aria-expanded", "false");
+          $("mToggleControls").setAttribute("aria-label", "Avaa valikko");
+          $("mToggleControls").focus();
+        }
+      });
       $("mSearchInput").addEventListener("input", applyFilters);
       $("mSearchInput").addEventListener("keydown", focusSearchResults);
 

@@ -31,8 +31,20 @@ for(const {name,features} of groups.values()){
 }
 // Validate every route before writing any output.
 for(const {route,html}of outputs){const dir=path.join(out,route);fs.mkdirSync(dir,{recursive:true});fs.writeFileSync(path.join(dir,'index.html'),html);}
-const links=outputs.filter(p=>p.published).sort((a,b)=>a.name.localeCompare(b.name,'fi')).map(p=>`<li><a href="/${p.route}/">${escape(p.name)}</a> <span>${p.count} kohdetta</span></li>`).join('\n');
-fs.writeFileSync(path.join(out,'kunnat.html'),`<!doctype html><html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Talviuintipaikat kaupungeittain ja matkailukunnittain | Talviuintipaikat.fi</title><meta name="description" content="Selaa talviuintipaikkoja suurimmissa kaupungeissa ja valituissa matkailukunnissa. Kaikki kohteet löydät valtakunnalliselta kartalta."><link rel="canonical" href="https://talviuintipaikat.fi/kunnat.html"><style>body{margin:0;background:#102b3f;color:#fff;font:17px/1.6 system-ui}main{max-width:900px;margin:auto;padding:24px}a{color:#a6deed}a:focus-visible{outline:3px solid #fff;outline-offset:4px}h1{font-size:clamp(25px,5vw,36px)}ul{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;list-style:none;padding:0}li{padding:14px;border:1px solid #7cc6d8;border-radius:12px}li a{display:inline-block;padding:4px 0;font-weight:700}li span{display:block;font-size:14px}img{width:64px;height:64px;object-fit:contain}</style><link rel="stylesheet" href="/assets/analytics.css"><script defer src="/assets/analytics.js"></script></head><body><main><a href="/">← Takaisin pääkartalle</a><h1>Talviuintipaikat kunnittain</h1><p>Tutustu suurimpien kaupunkien ja valittujen matkailukuntien talviuintipaikkoihin. Kaikkien kuntien kohteet löydät <a href="/">valtakunnalliselta kartalta</a>.</p><ul>${links}</ul></main></body></html>`);
+const groupsForDirectory = [
+ {title:'Suuret kaupungit', names:publicNames.slice(0,10)},
+ {title:'Pohjois-Suomi', names:['Enontekiö','Inari','Kittilä','Kolari','Kuusamo','Muonio','Pelkosenniemi','Rovaniemi','Salla','Sodankylä']},
+ {title:'Itä-Suomi ja Kainuu', names:['Puumala','Savonlinna','Sotkamo','Suomussalmi']}
+];
+const listed=new Set();
+const sections=groupsForDirectory.map(group=>{
+ const pages=group.names.map(name=>outputs.find(p=>p.published&&p.name===name)).filter(Boolean);
+ const links=pages.map(p=>{if(listed.has(p.route))throw Error('Duplicate directory entry');listed.add(p.route);return `<li><a href="/${p.route}/"><span>${escape(p.name)}</span><span class="count">${p.count} ${p.count===1?'kohde':'kohdetta'} <span aria-hidden="true">→</span></span></a></li>`;}).join('\n');
+ return `<section><h2>${escape(group.title)}</h2><ul>${links}</ul></section>`;
+}).join('\n');
+if(listed.size!==outputs.filter(p=>p.published).length)throw Error('Directory coverage mismatch');
+const directoryTemplate=fs.readFileSync(path.join(root,'scripts/templates/city-directory.html'),'utf8');
+fs.writeFileSync(path.join(out,'kunnat.html'),directoryTemplate.replace('<!-- CITY_GROUPS -->',sections));
 const hidden=outputs.filter(p=>!p.published);
 const redirects=['# Generated publication gates; hidden city HTML remains preserved.', '/helsinki.html /helsinki/ 301', ...hidden.flatMap(p=>[`/${p.route} / 302!`, `/${p.route}/* / 302!`])];
 fs.writeFileSync(path.join(out,'_redirects'),redirects.join('\n')+'\n');
