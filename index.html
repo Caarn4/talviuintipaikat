@@ -65,8 +65,19 @@
 
     .desktopBrandLogo { width:64px; height:64px; object-fit:contain; flex-shrink:0; }
     .brandRow .brand { flex:1; min-width:0; align-self:center; }
-    .cityPagesLink { display:block; margin:8px 0 2px; color:inherit; font-size:13px; text-align:center; }
-    body.sheet-open .mobileControls .cityPagesLink { display:none; }
+    .cityPagesLink { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top:10px; padding:12px 14px; border:1px solid rgba(124,198,216,.4); border-radius:12px; background:rgba(124,198,216,.08); color:var(--text); font-size:14px; font-weight:700; text-decoration:none; }
+    .cityPagesLink:hover { background:rgba(124,198,216,.16); }
+    .cityPagesLink:focus-visible { outline:3px solid #7cc6d8; outline-offset:3px; }
+    #mobileNavigation { position:fixed; inset:0 0 0 auto; margin:0; width:min(88vw,380px); height:100dvh; max-height:100%; max-width:100%; padding:24px 20px; border:0; border-left:1px solid var(--border); background:linear-gradient(180deg,var(--panel),var(--panel2)); color:var(--text); box-shadow:var(--shadow); }
+    #mobileNavigation::backdrop { background:rgba(0,0,0,.45); }
+    .navigationHeading { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:24px; }
+    .navigationHeading strong { font-size:20px; }
+    .navigationHeading button { min-width:44px; min-height:44px; }
+    .navigationLinks { display:flex; flex-direction:column; gap:10px; }
+    .navigationLinks a { display:block; padding:16px; border:1px solid var(--border); border-radius:12px; text-decoration:none; color:var(--text); font-weight:700; }
+    .navigationLinks a:hover { background:rgba(124,198,216,.1); }
+    .navigationLinks a:focus-visible { outline:3px solid #7cc6d8; outline-offset:2px; }
+    .navigationLinks small { display:block; margin-top:5px; color:var(--muted); font-size:13px; font-weight:400; line-height:1.4; }
     .brandRow {
       display: flex;
       align-items: flex-start;
@@ -1000,6 +1011,14 @@
 </head>
 
 <body>
+  <dialog id="mobileNavigation" aria-label="Sivuston valikko">
+    <div class="navigationHeading"><strong>Talviuintipaikat.fi</strong><button class="btn" id="closeNavigation" aria-label="Sulje valikko" autofocus>✕</button></div>
+    <nav class="navigationLinks" aria-label="Sivuston sivut">
+      <a href="/" id="navigationMap">Kartta<small>Etsi talviuintipaikka koko Suomesta</small></a>
+      <a href="/kunnat.html">Tutustu kohteisiin alueittain<small>Kaupungit ja matkailukunnat</small></a>
+      <a href="/analytiikan-tietosuoja.html">Tietosuoja<small>Tietoa kävijämittauksesta</small></a>
+    </nav>
+  </dialog>
   <div class="app">
     <!-- Desktop sidebar -->
     <aside class="sidebar" id="sidebar">
@@ -1012,7 +1031,6 @@
           </div>
         </div>
 
-        <a class="cityPagesLink" href="/kunnat.html">Selaa kuntasivuja →</a>
         <div class="actionsGrid">
           <button class="btn btnPrimary" id="btnNear">📍 Näytä lähelläni</button>
           <button class="btn" id="btnClear" title="Nollaa haku ja filtterit">↩︎ Nollaa</button>
@@ -1025,6 +1043,8 @@
             <input id="searchInput" type="text" enterkeyhint="search" placeholder="Hae nimellä / kunnalla…" autocomplete="off" />
           </div>
         </div>
+
+        <a class="cityPagesLink" href="/kunnat.html"><span>Tutustu kohteisiin alueittain</span><span aria-hidden="true">→</span></a>
 
         <div class="filtersBlock filtersFrozen" hidden aria-label="Filtterit (odottaa)">
           <div class="filtersHeader">
@@ -1143,10 +1163,6 @@
       <button class="btn btnPrimary" id="mBtnNear">📍 Lähelläni</button>
       <button class="btn btnPrimary" id="mBtnAdd">＋ Vinkkaa puuttuva paikka</button>
     </div>
-
-    <nav id="mobileNavigation" aria-label="Sivuston valikko" hidden>
-      <a class="cityPagesLink" href="/kunnat.html">Kaupungit ja matkailukunnat →</a>
-    </nav>
 
     <!-- Filters are on hold; keep synchronization inputs hidden below. -->
 
@@ -2027,22 +2043,23 @@
       $("mBtnClear").addEventListener("click", resetAll);
       $("mBtnAdd").addEventListener("click", openAddModal);
 
+      const navigation = $("mobileNavigation");
       $("mToggleControls").addEventListener("click", () => {
-        const menu = $("mobileNavigation");
-        menu.hidden = !menu.hidden;
-        $("mToggleControls").setAttribute("aria-expanded", String(!menu.hidden));
-        $("mToggleControls").setAttribute("aria-label", menu.hidden ? "Avaa valikko" : "Sulje valikko");
-        updateMobilePanelState();
+        navigation.showModal();
+        $("mToggleControls").setAttribute("aria-expanded", "true");
+      });
+      $("closeNavigation").addEventListener("click", () => navigation.close());
+      $("navigationMap").addEventListener("click", event => { event.preventDefault(); navigation.close(); });
+      navigation.addEventListener("click", event => {
+        if (event.target !== navigation) return;
+        const rect = navigation.getBoundingClientRect();
+        if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) navigation.close();
+      });
+      navigation.addEventListener("close", () => {
+        $("mToggleControls").setAttribute("aria-expanded", "false");
+        $("mToggleControls").focus();
       });
 
-      document.addEventListener("keydown", event => {
-        if (event.key === "Escape" && !$("mobileNavigation").hidden) {
-          $("mobileNavigation").hidden = true;
-          $("mToggleControls").setAttribute("aria-expanded", "false");
-          $("mToggleControls").setAttribute("aria-label", "Avaa valikko");
-          $("mToggleControls").focus();
-        }
-      });
       $("mSearchInput").addEventListener("input", applyFilters);
       $("mSearchInput").addEventListener("keydown", focusSearchResults);
 
