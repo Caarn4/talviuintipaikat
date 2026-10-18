@@ -8,16 +8,26 @@
   #kartta .mobileSheet { display:block; position:absolute; }
 }
 
-/* The hero owns branding and primary actions; the map owns searching. */
+/* Branding stays in the hero; search and map actions stay on the map. */
 #kartta .mapSearchTitle { margin:0 0 14px; font-size:20px; line-height:1.3; }
-#kartta #btnNear, #kartta #btnAdd, #kartta .mobileActions { display:none; }
-#kartta .sidebarHeader { display:flex; flex-direction:column; }
-#kartta .sidebarHeader .actionsGrid { order:1; display:flex; margin-top:8px; }
-#kartta #btnClear { font-size:13px; padding:6px 10px; }
 @media(max-width:920px) {
   #kartta .mobileControls { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:8px; align-items:center; }
+  #kartta .mobileActions { grid-column:1 / -1; grid-row:2; }
   #kartta .mobileTopRow { grid-column:2; grid-row:1; margin:0; }
   #kartta .mobileControls > .searchRow { grid-column:1; grid-row:1; margin:0; min-width:0; }
   #kartta .mobileControls .search { min-width:0; }
   #kartta .mobileControls input { min-width:0; }
+}
+
+/* Larger brand mark, with room for the wordmark and navigation on small screens. */
+.tu-hero__logo img { width:88px; height:104px; flex-shrink:0; }
+.tu-hero__logo { gap:14px; min-width:0; }
+@media(max-width:900px) {
+  .tu-hero__bar { padding:16px; gap:12px; }
+  .tu-hero__logo { gap:10px; font-size:clamp(14px,4vw,20px); }
+  .tu-hero__logo img { width:72px; height:86px; }
+  .tu-hero__logo span { min-width:0; }
+  .tu-hero__logo small { font-size:11px; max-width:200px; }
+  .tu-hero__menu-btn { flex-shrink:0; }
+  .tu-hero__nav { top:118px; }
 }
