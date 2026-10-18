@@ -1,0 +1,10 @@
+/* Layout adapter only: supplied hero colors, copy and video policy stay intact. */
+#kartta { position:relative; height:100vh; height:100dvh; isolation:isolate; overflow:clip; }
+#kartta .app { width:100%; height:100%; }
+#kartta #map { width:100%; height:100%; }
+#kartta .mobileSheet { display:none; }
+.tu-hero__lang span { color:var(--tu-mist); opacity:.65; }
+@media(max-width:920px) {
+  #kartta .mobileControls { position:absolute; }
+  #kartta .mobileSheet { display:block; position:absolute; }
+}
