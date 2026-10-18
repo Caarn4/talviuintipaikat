@@ -20,12 +20,35 @@ const HERO_VIDEOS = [
     menuBtn.setAttribute('aria-expanded', open);
   });
 
-  // Toiminnot: vieritä kartalle ja kutsu sivuston omaa toimintoa.
-  // CODEX: yhdistä nämä kartan olemassa oleviin funktioihin (Näytä lähelläni / Vinkkaa paikka).
-  hero.querySelectorAll('[data-tu-action]').forEach((el) => {
-    el.addEventListener('click', () => {
-      const action = el.dataset.tuAction;
-      setTimeout(() => document.dispatchEvent(new CustomEvent('tu-hero:' + action)), 400);
+  // Dispatch only once the map occupies the viewport, never on a fixed timer.
+  const mapSection = document.getElementById('kartta');
+  let pendingAction = null;
+  function runPendingAction() {
+    if (!pendingAction || !mapSection) return;
+    const rect = mapSection.getBoundingClientRect();
+    if (Math.abs(rect.top) > 2 || rect.bottom < innerHeight - 2) return;
+    const action = pendingAction;
+    pendingAction = null;
+    document.dispatchEvent(new CustomEvent('tu-hero:' + action));
+  }
+  if (mapSection) {
+    new IntersectionObserver(runPendingAction, {threshold:[0,.5,.98,1]}).observe(mapSection);
+    window.addEventListener('scroll', runPendingAction, {passive:true});
+    document.addEventListener('scrollend', runPendingAction);
+    const cancelPendingAction = () => { pendingAction = null; };
+    window.addEventListener('wheel', cancelPendingAction, {passive:true});
+    window.addEventListener('touchstart', cancelPendingAction, {passive:true});
+    document.addEventListener('keydown', event => {
+      if (['Escape','PageUp','PageDown','Home','End','ArrowUp','ArrowDown'].includes(event.key)) cancelPendingAction();
+    });
+  }
+  hero.querySelectorAll('[data-tu-action]').forEach(el => {
+    el.addEventListener('click', event => {
+      event.preventDefault();
+      if (!mapSection) return;
+      pendingAction = el.dataset.tuAction;
+      mapSection.scrollIntoView({block:'start', behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+      runPendingAction();
     });
   });
 
