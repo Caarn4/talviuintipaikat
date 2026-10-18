@@ -1054,12 +1054,7 @@
     <p class="tu-hero__lead">Suomen kattavin avantokarttapalvelu. Yli 400 talviuinti- ja avantouintipaikkaa kunnista, yhdistyksistä ja saunoilta.</p>
   </div>
 
-  <ul class="tu-hero__quick">
-    <li><a href="/kunnat.html">Tutustu kohteisiin alueittain →</a></li>
-    <li><a href="#kartta" data-tu-action="suggest">＋ Vinkkaa puuttuva talviuintipaikka</a></li>
-  </ul>
 
-  <a class="tu-hero__scroll" href="#kartta">Kartalle<span aria-hidden="true">↓</span></a>
 
   <button class="tu-hero__pause" type="button" aria-label="Pysäytä taustavideo" hidden>
     <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><rect x="2" y="1" width="3.5" height="12" fill="currentColor"/><rect x="8.5" y="1" width="3.5" height="12" fill="currentColor"/></svg>
@@ -1568,7 +1563,49 @@
     }
 
     function initMap() {
-      map = L.map('map', { zoomControl: true }).setView([64.5, 26.0], 5);
+      map = L.map('map', { zoomControl: true, scrollWheelZoom: false }).setView([64.5, 26.0], 5);
+      // Ordinary wheel/one-finger gestures belong to the page, not the map.
+      const mapEl = map.getContainer();
+      const gestureHint = document.createElement('div');
+      gestureHint.className = 'mapGestureHint';
+      gestureHint.setAttribute('role', 'status');
+      mapEl.appendChild(gestureHint);
+      let hintTimer, wheelTimer, wheelDelta = 0;
+      function showGestureHint(text) {
+        gestureHint.textContent = text;
+        gestureHint.classList.add('visible');
+        clearTimeout(hintTimer);
+        hintTimer = setTimeout(() => gestureHint.classList.remove('visible'), 1800);
+      }
+      mapEl.addEventListener('wheel', event => {
+        if (event.target.closest('.leaflet-control')) return;
+        if (!event.shiftKey) {
+          showGestureHint('Zoomaa karttaa: Vaihto + vieritys');
+          return;
+        }
+        event.preventDefault();
+        gestureHint.classList.remove('visible');
+        // Shift can remap a vertical wheel to deltaX on some systems.
+        wheelDelta += event.deltaY || event.deltaX;
+        const point = map.mouseEventToContainerPoint(event);
+        clearTimeout(wheelTimer);
+        wheelTimer = setTimeout(() => {
+          if (wheelDelta) map.setZoomAround(point, map.getZoom() + (wheelDelta < 0 ? 1 : -1));
+          wheelDelta = 0;
+        }, 60);
+      }, {passive:false});
+      // Keep Leaflet's two-touch zoom/pan, but do not capture a single-finger drag.
+      mapEl.addEventListener('pointerdown', event => {
+        if (event.pointerType === 'touch') map.dragging.disable();
+        else map.dragging.enable();
+      }, {capture:true, passive:true});
+      mapEl.addEventListener('touchstart', event => {
+        if (event.target.closest('.leaflet-control')) return;
+        map.dragging.disable();
+        if (event.touches.length === 1) showGestureHint('Liikuta ja zoomaa karttaa kahdella sormella');
+        else gestureHint.classList.remove('visible');
+      }, {capture:true, passive:true});
+
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
