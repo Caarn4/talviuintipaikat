@@ -52,13 +52,12 @@ const HERO_VIDEOS = [
     });
   });
 
-  // Video vain kun siitä on hyötyä: iso näyttö, ei säästötilaa, ei liikkeen vähennystä
+  // Video myös mobiilissa; kunnioita datansäästöä ja vähennettyä liikettä.
   const video = hero.querySelector('video');
   const pauseBtn = hero.querySelector('.tu-hero__pause');
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const saveData = navigator.connection && navigator.connection.saveData;
-  const wide = window.matchMedia('(min-width: 768px)').matches;
-  if (!video || reduced || saveData || !wide || !HERO_VIDEOS.length) return;
+  if (!video || reduced || saveData || !HERO_VIDEOS.length) return;
 
   const pick = HERO_VIDEOS[Math.floor(Math.random() * HERO_VIDEOS.length)];
   const posterImg = hero.querySelector('.tu-hero__media img');
@@ -72,15 +71,29 @@ const HERO_VIDEOS = [
     s.type = 'video/' + type;
     video.appendChild(s);
   });
+  video.muted = true;
+  video.playsInline = true;
   video.load();
   video.play().then(() => {
     video.classList.add('is-playing');
     pauseBtn.hidden = false;
-  }).catch(() => { /* jää kansikuvaan */ });
+  }).catch(() => {
+    // A user gesture can start video when mobile autoplay is blocked.
+    if (!video.error) {
+      pauseBtn.hidden = false;
+      pauseBtn.setAttribute('aria-label', 'Toista taustavideo');
+      pauseBtn.textContent = '▶';
+    }
+  });
+  video.addEventListener('playing', () => video.classList.add('is-playing'));
+  video.addEventListener('error', () => { video.classList.remove('is-playing'); pauseBtn.hidden = true; });
 
   pauseBtn.addEventListener('click', () => {
     if (video.paused) {
-      video.play();
+      video.play().catch(() => {
+        pauseBtn.setAttribute('aria-label', 'Toista taustavideo');
+        pauseBtn.textContent = '▶';
+      });
       pauseBtn.setAttribute('aria-label', 'Pysäytä taustavideo');
       pauseBtn.innerHTML = '<svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><rect x="2" y="1" width="3.5" height="12" fill="currentColor"/><rect x="8.5" y="1" width="3.5" height="12" fill="currentColor"/></svg>';
     } else {

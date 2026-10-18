@@ -71,7 +71,7 @@
   settings.type = 'button'; settings.id = 'analytics-settings'; settings.textContent = 'Evästeasetukset';
   const dialog = document.createElement('section');
   dialog.id = 'analytics-dialog'; dialog.setAttribute('aria-labelledby', 'analytics-heading');
-  dialog.innerHTML = '<h2 id="analytics-heading">Saammeko mitata kävijöitä?</h2><p>Google Analytics käyttää luvallasi evästeitä ja lähettää käyttötietoja Googlelle. Kartta toimii ilmankin. <a href="/analytiikan-tietosuoja.html">Tietosuoja</a></p><div class="analytics-actions"><button type="button" data-choice="no">Ei kiitos</button><button type="button" data-choice="yes">Hyväksyn</button></div><small>Voit muuttaa valintaa Evästeasetuksista.</small><p id="analytics-status" role="status"></p>';
+  dialog.innerHTML = '<h2 id="analytics-heading">Evästeasetukset</h2><p>Käytämme Google Analyticsin evästeitä kävijämittaukseen vain luvallasi. Käyttötietoja välitetään Googlelle. <a href="/analytiikan-tietosuoja.html">Lisätiedot</a></p><div class="analytics-actions"><button type="button" data-choice="no">Hylkää analytiikka</button><button type="button" data-choice="yes">Hyväksy analytiikka</button></div><p id="analytics-status" role="status"></p>';
   dialog.hidden = true;
   const showPanel = () => { dialog.hidden = false; settings.hidden = true; };
   const hidePanel = () => { dialog.hidden = true; settings.hidden = false; };
