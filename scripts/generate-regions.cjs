@@ -1,11 +1,12 @@
 const fs=require('node:fs'),path=require('node:path');
 const areas=require('./regions.cjs');
 const root=path.resolve(__dirname,'..');
+const cssVersion=require('node:crypto').createHash('sha256').update(fs.readFileSync(path.join(root,'assets/regions.css'))).digest('hex').slice(0,12);
 const mapping=require('./data/municipality-regions-2026.json').municipalities;
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const aliases={'Kittilä':['Levi'],'Kolari':['Ylläs'],'Inari':['Saariselkä'],'Kuusamo':['Ruka'],'Sotkamo':['Vuokatti'],'Pelkosenniemi':['Pyhä'],'Sodankylä':['Luosto'],'Savonlinna':[],'Puumala':[],'Lappeenranta':[],'Imatra':[]};
 const brand='<header class="site-header"><a class="brand" href="/"><img src="/assets/images/logo-v1-mobile.png" width="72" height="86" alt=""><span><strong>Talviuintipaikat.fi</strong><small>Suomen kattavin avantokarttapalvelu</small></span></a><a class="button" href="/#kartta">Pääkartalle ↗</a></header>';
-function shell(title,description,url,body,map=false){return `<!doctype html><html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} | Talviuintipaikat.fi</title><meta name="description" content="${esc(description)}"><link rel="canonical" href="https://talviuintipaikat.fi${url}"><link rel="stylesheet" href="/assets/regions.css"><link rel="stylesheet" href="/assets/analytics.css"><script defer src="/assets/analytics.js"></script>${map?'<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"><script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>':''}<script defer src="/assets/regions.js"></script></head><body><main>${brand}${body}<footer><a href="/kunnat.html">Tutustu alueisiin</a><a href="/analytiikan-tietosuoja.html">Analytiikan tietosuoja</a></footer></main></body></html>`;}
+function shell(title,description,url,body,map=false){return `<!doctype html><html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} | Talviuintipaikat.fi</title><meta name="description" content="${esc(description)}"><link rel="canonical" href="https://talviuintipaikat.fi${url}"><link rel="stylesheet" href="/assets/regions.css?v=${cssVersion}"><link rel="stylesheet" href="/assets/analytics.css"><script defer src="/assets/analytics.js"></script>${map?'<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"><script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>':''}<script defer src="/assets/regions.js"></script></head><body><main>${brand}${body}<footer><a href="/kunnat.html">Tutustu alueisiin</a><a href="/analytiikan-tietosuoja.html">Analytiikan tietosuoja</a></footer></main></body></html>`;}
 function safeUrl(v){try {let u=new URL(v);return ['https:','http:'].includes(u.protocol)&&!u.username&&!u.password?u.href:'';}catch{return '';}}
 module.exports=function(out,cities){
  const features=JSON.parse(fs.readFileSync(path.join(root,'talviuintipaikat_enriched.geojson'))).features;
@@ -18,8 +19,8 @@ module.exports=function(out,cities){
  const project=([lon,lat])=>[ ((lon-19)*6+8).toFixed(1), ((71-lat)*10+4).toFixed(1) ];
  const silhouette=outline.rings.map(r=>r.map((p,i)=>(i?'L':'M')+project(p).join(',')).join(' ')+'Z').join(' ');
  function miniMap(area){
-  const dots=features.slice().sort((a,b)=>(memberships.get(a)===area.slug)-(memberships.get(b)===area.slug)).map(f=>{const [x,y]=project(f.geometry.coordinates);const active=memberships.get(f)===area.slug;return `<circle cx="${x}" cy="${y}" r="${active?'1.8':'0.9'}" class="${active?'area-dot':'other-dot'}"/>`;}).join('');
-  return `<svg class="area-map" viewBox="0 0 100 135" aria-hidden="true"><path class="finland-outline" d="${silhouette}"/>${dots}</svg>`;
+  const dots=features.slice().sort((a,b)=>(memberships.get(a)===area.slug)-(memberships.get(b)===area.slug)).map(f=>{const [x,y]=project(f.geometry.coordinates);const active=memberships.get(f)===area.slug;return `<circle cx="${x}" cy="${y}" r="${active?'1.8':'0.9'}" class="${active?'area-dot':'other-dot'}" fill="${active?'#7cc6d8':'#66788e'}" fill-opacity="${active?'1':'.38'}"/>`;}).join('');
+  return `<svg class="area-map" viewBox="0 0 100 135" aria-hidden="true"><path class="finland-outline" fill="#7cc6d8" fill-opacity=".07" stroke="#a9b7ce" stroke-opacity=".25" stroke-width=".45" stroke-linejoin="round" d="${silhouette}"/>${dots}</svg>`;
  }
  function partnerLogos(area){
   const partners=(visitPartners[area.slug]||[]).filter(p=>p.approved===true);
