@@ -1011,6 +1011,7 @@
 <link rel="preload" as="image" href="/assets/hero/hero-1.jpg" fetchpriority="high">
 <link rel="stylesheet" href="/assets/hero/hero.css">
 <link rel="stylesheet" href="/assets/hero/integration.css">
+<link rel="stylesheet" href="/assets/dippaajat.css">
 </head>
 
 <body>
@@ -1139,6 +1140,7 @@
           <div class="cardTitle" id="detailTitle">—</div>
           <div class="cardSub" id="detailAddress" hidden></div>
           <div class="cardSub" id="detailSubtitle"></div>
+<div id="detailDippaajat" hidden></div>
           <span class="submissionBadge" id="detailSourceBadge" hidden>💡 Käyttäjien vinkkaama</span>
           <p class="premiumTestIntro" id="detailPremiumIntro" hidden>Tutustu Kokkolan Hickarö Resortiin. Katso ajankohtaiset vierailutiedot kohteen verkkosivuilta.</p>
 
@@ -1257,6 +1259,7 @@
           <button class="btn sheetCloseBtn" id="msClose" aria-label="Sulje kohdekortti" title="Sulje kohdekortti">×</button>
         </div>
 
+        <div id="msDippaajat" hidden></div>
         <div class="premiumTestExtras" id="msPremiumGallery" hidden>
           <strong>Kuvagalleria</strong>
           <div class="hickaroMockGallery" tabindex="0" role="region" aria-label="Mockup-kuvat, selaa sivusuunnassa">
@@ -1351,6 +1354,8 @@
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 
+<script src="/assets/dippaajat-data.js"></script>
+<script src="/assets/dippaajat.js"></script>
   <script>
     const $ = (id) => document.getElementById(id);
 
@@ -1728,6 +1733,8 @@
             card.appendChild(address);
           }
           card.appendChild(meta);
+          const review = window.TWDippaajat.create(props);
+          if (review) card.appendChild(review);
 
           if (website) {
             const a = document.createElement("a");
@@ -1861,6 +1868,8 @@
       updateMobilePanelState();
 
       const props = feature.properties || {};
+      window.TWDippaajat.mount($("detailDippaajat"), props);
+      window.TWDippaajat.mount($("msDippaajat"), props);
       const { name, addr } = featureLabel(feature);
 
       const muni = getMunicipality(props);

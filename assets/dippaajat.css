@@ -1,0 +1,7 @@
+.dippaajat-review{margin:16px 0;display:flex;align-items:center;gap:12px;max-width:100%}
+a.dippaajat-badge{display:inline-flex;flex:0 0 auto;padding:0;border:0;background:transparent;text-decoration:none;min-height:44px}
+a.dippaajat-badge img{display:block;width:88px;height:auto;max-width:100%;border-radius:6px}
+a.dippaajat-badge:hover{opacity:.9}
+a.dippaajat-badge:focus-visible{outline:3px solid #7cc6d8;outline-offset:4px}
+.dippaajat-note{font:12px/1.5 system-ui;color:inherit;opacity:.85;max-width:145px}
+[data-dippaajat-key][hidden],#detailDippaajat[hidden],#msDippaajat[hidden]{display:none}

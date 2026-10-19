@@ -57,6 +57,7 @@
   </style>
   <link rel="stylesheet" href="/assets/analytics.css">
   <script defer src="/assets/analytics.js"></script>
+<link rel="stylesheet" href="/assets/dippaajat.css">
 </head>
 <body>
 <main>
@@ -85,6 +86,8 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script src="/municipalities.js"></script>
 <script src="/city-publication.js"></script>
+<script src="/assets/dippaajat-data.js"></script>
+<script src="/assets/dippaajat.js"></script>
 <script>
   // Finnish UI package; replace this package when adding another language.
   const UI = {
@@ -245,6 +248,8 @@
       copy.append(element('p', 'municipality', municipality(props)));
       if (props.source === 'user_submission') copy.append(element('span', 'badge', UI.badge));
       card.append(copy);
+      const review = window.TWDippaajat.create(props);
+      if (review) card.append(review);
       const actions = element('div', 'actions');
       const point = position(feature);
       if (point) actions.append(link(UI.directions, 'https://www.google.com/maps?q=' + encodeURIComponent(point.join(',')), true));
