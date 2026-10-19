@@ -29,7 +29,7 @@ module.exports=function(out,cities){
  const project=p=>{const [x,y]=projected(p);return [(50+(x-(minX+maxX)/2)*scale).toFixed(2),(67.5+(y-(minY+maxY)/2)*scale).toFixed(2)];};
  const silhouette=outline.rings.map(r=>r.map((p,i)=>(i?'L':'M')+project(p).join(',')).join(' ')+'Z').join(' ');
  function miniMap(area){
-  const dots=features.slice().sort((a,b)=>(memberships.get(a)===area.slug)-(memberships.get(b)===area.slug)).map(f=>{const [x,y]=project(f.geometry.coordinates);const active=memberships.get(f)===area.slug;return `<circle cx="${x}" cy="${y}" r="${active?'1.8':'1.05'}" class="${active?'area-dot':'other-dot'}" fill="${active?'#7cc6d8':'#a9b7ce'}" fill-opacity="${active?'1':'.65'}"/>`;}).join('');
+  const dots=features.slice().sort((a,b)=>(memberships.get(a)===area.slug)-(memberships.get(b)===area.slug)).map(f=>{const [x,y]=project(f.geometry.coordinates);const active=memberships.get(f)===area.slug;return `<circle cx="${x}" cy="${y}" r="${active?'1.8':'1.05'}" class="${active?'area-dot':'other-dot'}" fill="${active?'#7cc6d8':'#a9b7ce'}" fill-opacity="${active?'1':'.48'}"/>`;}).join('');
   return `<svg class="area-map" viewBox="0 0 100 135" aria-hidden="true"><path class="finland-outline" fill="#7cc6d8" fill-opacity=".07" stroke="#a9b7ce" stroke-opacity=".25" stroke-width=".45" stroke-linejoin="round" d="${silhouette}"/>${dots}</svg>`;
  }
  function partnerLogos(area){
