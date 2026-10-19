@@ -16,10 +16,20 @@ module.exports=function(out,cities){
  const summary=areas.map(a=>({...a,features:features.filter(f=>memberships.get(f)===a.slug)}));
  const outline=require('./data/finland-outline.json');
  const visitPartners=require('./data/visit-partners.json');
- const project=([lon,lat])=>[ ((lon-19)*6+8).toFixed(1), ((71-lat)*10+4).toFixed(1) ];
+ // Spherical transverse Mercator, central meridian 27°E.
+ // Fit both axes with one scale so Finland is not stretched horizontally.
+ const projected=([lon,lat])=>{
+  const phi=lat*Math.PI/180,lambda=(lon-27)*Math.PI/180;
+  return [Math.atanh(Math.cos(phi)*Math.sin(lambda)),-Math.atan2(Math.tan(phi),Math.cos(lambda))];
+ };
+ const coordinates=[...outline.rings.flat(),...features.map(f=>f.geometry.coordinates)].map(projected);
+ const xs=coordinates.map(p=>p[0]),ys=coordinates.map(p=>p[1]);
+ const minX=Math.min(...xs),maxX=Math.max(...xs),minY=Math.min(...ys),maxY=Math.max(...ys);
+ const scale=Math.min(90/(maxX-minX),125/(maxY-minY));
+ const project=p=>{const [x,y]=projected(p);return [(50+(x-(minX+maxX)/2)*scale).toFixed(2),(67.5+(y-(minY+maxY)/2)*scale).toFixed(2)];};
  const silhouette=outline.rings.map(r=>r.map((p,i)=>(i?'L':'M')+project(p).join(',')).join(' ')+'Z').join(' ');
  function miniMap(area){
-  const dots=features.slice().sort((a,b)=>(memberships.get(a)===area.slug)-(memberships.get(b)===area.slug)).map(f=>{const [x,y]=project(f.geometry.coordinates);const active=memberships.get(f)===area.slug;return `<circle cx="${x}" cy="${y}" r="${active?'1.8':'0.9'}" class="${active?'area-dot':'other-dot'}" fill="${active?'#7cc6d8':'#66788e'}" fill-opacity="${active?'1':'.38'}"/>`;}).join('');
+  const dots=features.slice().sort((a,b)=>(memberships.get(a)===area.slug)-(memberships.get(b)===area.slug)).map(f=>{const [x,y]=project(f.geometry.coordinates);const active=memberships.get(f)===area.slug;return `<circle cx="${x}" cy="${y}" r="${active?'1.8':'1.05'}" class="${active?'area-dot':'other-dot'}" fill="${active?'#7cc6d8':'#a9b7ce'}" fill-opacity="${active?'1':'.65'}"/>`;}).join('');
   return `<svg class="area-map" viewBox="0 0 100 135" aria-hidden="true"><path class="finland-outline" fill="#7cc6d8" fill-opacity=".07" stroke="#a9b7ce" stroke-opacity=".25" stroke-width=".45" stroke-linejoin="round" d="${silhouette}"/>${dots}</svg>`;
  }
  function partnerLogos(area){
