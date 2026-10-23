@@ -1,3 +1,7 @@
 [build]
   command = "node scripts/build-site.cjs"
   publish = "dist"
+
+[context.deploy-preview]
+  command = "node scripts/build-winter-preview.cjs"
+  publish = "dist-preview"

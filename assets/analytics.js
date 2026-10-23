@@ -36,6 +36,7 @@
     else expiryTimer = setTimeout(checkExpiry, Math.min(expires - Date.now(), 2147483647));
   }
   function start(until) {
+    if (document.documentElement.dataset.preview === "true") return;
     expires = until;
     if (started) return;
     started = true;

@@ -2011,6 +2011,7 @@
     }
 
     async function submitHint() {
+      if (document.documentElement.dataset.preview === "true") { alert("Preview only: suggestions are not sent."); return; }
       const submitButton = $("btnSubmitHint");
       if (submitButton.disabled) return;
 
