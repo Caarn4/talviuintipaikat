@@ -36,6 +36,7 @@
     else expiryTimer = setTimeout(checkExpiry, Math.min(expires - Date.now(), 2147483647));
   }
   function start(until) {
+    if (document.documentElement.dataset.preview === "true") return;
     expires = until;
     if (started) return;
     started = true;
@@ -55,7 +56,7 @@
       send_page_view: true,
       page_location: location.origin + location.pathname,
       page_referrer: referrer,
-      page_title: location.pathname === '/' ? 'Talviuintipaikat.fi' : 'Talviuintipaikat.fi – aluesivu',
+      page_title: document.documentElement.dataset.site === 'winterswim' ? (location.pathname === '/' ? 'WinterSwim.fi' : 'WinterSwim.fi – region') : (location.pathname === '/' ? 'Talviuintipaikat.fi' : 'Talviuintipaikat.fi – aluesivu'),
       allow_google_signals: false,
       allow_ad_personalization_signals: false,
       cookie_domain: 'none', cookie_expires: 15552000, cookie_update: false
@@ -68,10 +69,12 @@
     checkExpiry();
   }
   const settings = document.createElement('button');
-  settings.type = 'button'; settings.id = 'analytics-settings'; settings.textContent = 'Evästeasetukset';
+  settings.type = 'button'; settings.id = 'analytics-settings'; settings.textContent = window.TWLocale?.text('Evästeasetukset') || 'Evästeasetukset';
   const dialog = document.createElement('section');
   dialog.id = 'analytics-dialog'; dialog.setAttribute('aria-labelledby', 'analytics-heading');
   dialog.innerHTML = '<h2 id="analytics-heading">Evästeasetukset</h2><p>Käytämme Google Analyticsin evästeitä kävijämittaukseen vain luvallasi. Käyttötietoja välitetään Googlelle. <a href="/analytiikan-tietosuoja.html">Lisätiedot</a></p><div class="analytics-actions"><button type="button" data-choice="no">Hylkää analytiikka</button><button type="button" data-choice="yes">Hyväksy analytiikka</button></div><p id="analytics-status" role="status"></p>';
+  if (window.TWLocale?.en) dialog.innerHTML = '<h2 id="analytics-heading">Cookie settings</h2><p>We use Google Analytics cookies to measure visits only with your permission. Usage data is sent to Google. <a href="/en/analytics-privacy/">More information</a></p><div class="analytics-actions"><button type="button" data-choice="no">Reject analytics</button><button type="button" data-choice="yes">Accept analytics</button></div><p id="analytics-status" role="status"></p>';
+  if(document.documentElement.dataset.site === 'winterswim') dialog.querySelector('a').href='/analytics-privacy/';
   dialog.hidden = true;
   const showPanel = () => { dialog.hidden = false; settings.hidden = true; };
   const hidePanel = () => { dialog.hidden = true; settings.hidden = false; };
@@ -88,7 +91,7 @@
         // Preserve an opt-out even when the previous stored choice was accepted.
         document.cookie = 'tw-analytics-denied=1; Max-Age=15552000; path=/; SameSite=Lax; Secure';
         stop();
-        status.textContent = 'Valintaa ei voitu tallentaa. Mittaus pysyy pois päältä.';
+        status.textContent = window.TWLocale?.en ? 'Your choice could not be saved. Analytics remains off.' : 'Valintaa ei voitu tallentaa. Mittaus pysyy pois päältä.';
         return;
       }
       if (accepted) start(c.expires); else stop();

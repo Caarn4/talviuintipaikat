@@ -13,11 +13,11 @@
     const block = document.createElement('div'); block.className = 'dippaajat-review';
     const link = document.createElement('a'); link.className = 'dippaajat-badge';
     link.href = url.href; link.target = '_blank'; link.rel = 'noopener noreferrer';
-    link.setAttribute('aria-label', 'Lue Dippaajien kokemus: ' + review.name + ' (Instagram, uusi välilehti)');
+    link.setAttribute('aria-label', window.TWLocale?.en ? 'Read Dippaajat’s review of ' + review.name + ' on Instagram (opens in a new tab)' : 'Lue Dippaajien kokemus: ' + review.name + ' (Instagram, uusi välilehti)');
     const logo = document.createElement('img'); logo.src = '/assets/images/dippaajat-suosittelee.png';
-    logo.alt = 'Dippaajat suosittelee'; logo.width = 44; logo.height = 44; logo.loading = 'lazy';
+    logo.alt = window.TWLocale.text('Dippaajat suosittelee'); logo.width = 44; logo.height = 44; logo.loading = 'lazy';
     link.append(logo);
-    link.title = 'Lue Dippaajien kokemus Instagramissa';
+    link.title = window.TWLocale.text('Lue Dippaajien kokemus Instagramissa');
     block.append(link); return block;
   }
   function mount(container, props) {
@@ -33,13 +33,13 @@
   function card(props, coordinates) {
     const el = document.createElement('article'); el.className = 'tw-place-card';
     const add = (tag, value, cls) => { if (!value) return; const n=document.createElement(tag); n.textContent=value; if(cls)n.className=cls; el.append(n); };
-    add('h3', props.nimi || props.name || 'Nimetön paikka');
+    add('h3', props.nimi || props.name || window.TWLocale.text('Nimetön paikka'));
     add('p', props.address, 'location-address'); add('p', props.kunta || props.municipality, 'municipality');
     const badge=create(props); if(badge)el.append(badge);
     const actions=document.createElement('div');actions.className='actions';
     function link(label, href){try{const u=new URL(href);if(!['https:','http:'].includes(u.protocol)||u.username||u.password)return;const a=document.createElement('a');a.textContent=label;a.href=u.href;a.target='_blank';a.rel='noopener noreferrer';actions.append(a);}catch{}}
-    if(coordinates?.length===2)link('Reittiohjeet ↗','https://www.google.com/maps?q='+coordinates[1]+','+coordinates[0]);
-    link('Kohteen lisätiedot ↗',props.website||props.url||props.lipas_url);
+    if(coordinates?.length===2)link(window.TWLocale.text('Reittiohjeet ↗'),'https://www.google.com/maps?q='+coordinates[1]+','+coordinates[0]);
+    link(window.TWLocale.text('Kohteen lisätiedot ↗'),props.website||props.url||props.lipas_url);
     el.append(actions);return el;
   }
   window.TWPlaceCard = Object.freeze({create:card});

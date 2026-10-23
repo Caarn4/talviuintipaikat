@@ -1012,6 +1012,10 @@
 <link rel="stylesheet" href="/assets/hero/hero.css">
 <link rel="stylesheet" href="/assets/hero/integration.css">
 <link rel="stylesheet" href="/assets/dippaajat.css?v=approved-20261023">
+<script src="/assets/locale.js"></script>
+<link rel="canonical" href="https://talviuintipaikat.fi/">
+<link rel="alternate" hreflang="fi" href="https://talviuintipaikat.fi/">
+<link rel="alternate" hreflang="en" href="https://talviuintipaikat.fi/en/">
 </head>
 
 <body>
@@ -1021,6 +1025,7 @@
       <a href="/" id="navigationMap">Kartta<small>Etsi talviuintipaikka koko Suomesta</small></a>
       <a href="/kunnat.html">Tutustu kohteisiin alueittain<small>Lappi, järviseudut ja rannikko</small></a>
       <a href="/analytiikan-tietosuoja.html">Tietosuoja<small>Tietoa kävijämittauksesta</small></a>
+      <a data-language-switch href="/en/" lang="en">English</a>
     </nav>
   </dialog>
 <!-- =================== VIDEOHEADER =================== -->
@@ -1045,7 +1050,7 @@
         <li><a href="#kartta" data-tu-action="suggest">Vinkkaa paikka</a></li>
       </ul>
       <div class="tu-hero__lang">
-        <a href="/" aria-current="true" lang="fi">FI</a>
+        <a href="/" aria-current="true" lang="fi">FI</a> <a href="/en/" lang="en">EN</a>
       </div>
     </nav>
   </div>
@@ -1079,7 +1084,7 @@
         <div class="searchRow">
           <div class="search" role="search">
             🔎
-            <input id="searchInput" type="text" enterkeyhint="search" placeholder="Hae nimellä / kunnalla…" autocomplete="off" />
+            <input id="searchInput" aria-label="Hae nimellä / kunnalla…" type="text" enterkeyhint="search" placeholder="Hae nimellä / kunnalla…" autocomplete="off" />
           </div>
         </div>
 
@@ -1130,6 +1135,7 @@
         </div>
       </div>
 
+      <p id="searchStatus" role="status" hidden></p>
       <div class="selectedWrap">
         <div id="selectedEmpty" class="selectedEmpty">
           Valitse paikka kartalta (tai hae nimellä), niin näet lisätiedot tässä.
@@ -1187,11 +1193,12 @@
     <div class="searchRow">
       <div class="search" role="search">
         🔎
-        <input id="mSearchInput" type="text" enterkeyhint="search" placeholder="Hae nimellä / kunnalla…" autocomplete="off" />
+        <input id="mSearchInput" aria-label="Hae nimellä / kunnalla…" type="text" enterkeyhint="search" placeholder="Hae nimellä / kunnalla…" autocomplete="off" />
       </div>
       <button class="btn" id="mBtnClear" hidden>↩︎ Nollaa</button>
     </div>
 
+    <p id="mSearchStatus" role="status" hidden></p>
     <div class="mobileActions">
       <button class="btn btnPrimary" id="mBtnNear">📍 Lähelläni</button>
       <button class="btn btnPrimary" id="mBtnAdd">＋ Vinkkaa puuttuva paikka</button>
@@ -1255,7 +1262,7 @@
             <div class="sheetSub" id="msSubtitle"></div>
             <span class="submissionBadge" id="msSourceBadge" hidden>💡 Käyttäjien vinkkaama</span>
           </div>
-          <img id="msBasicPanorama" src="assets/basic-location-panorama.png" alt="Talvinen avantouintimaisema, yleinen kuvituskuva" hidden />
+          <img id="msBasicPanorama" src="/assets/basic-location-panorama.png" alt="Talvinen avantouintimaisema, yleinen kuvituskuva" hidden />
           <button class="btn sheetCloseBtn" id="msClose" aria-label="Sulje kohdekortti" title="Sulje kohdekortti">×</button>
         </div>
 
@@ -1263,8 +1270,8 @@
         <div class="premiumTestExtras" id="msPremiumGallery" hidden>
           <strong>Kuvagalleria</strong>
           <div class="hickaroMockGallery" tabindex="0" role="region" aria-label="Mockup-kuvat, selaa sivusuunnassa">
-            <img src="assets/hickaro-pilot/avanto-mockup.jpg" alt="Mockup-kuva: talviuintiavanto ja tikkaat jäätyneellä järvellä" width="1440" height="1920" loading="lazy" />
-            <img src="assets/hickaro-pilot/laituri-mockup.jpg" alt="Mockup-kuva: luminen laituri ja avantotikkaat" width="640" height="359" loading="lazy" />
+            <img src="/assets/hickaro-pilot/avanto-mockup.jpg" alt="Mockup-kuva: talviuintiavanto ja tikkaat jäätyneellä järvellä" width="1440" height="1920" loading="lazy" />
+            <img src="/assets/hickaro-pilot/laituri-mockup.jpg" alt="Mockup-kuva: luminen laituri ja avantotikkaat" width="640" height="359" loading="lazy" />
           </div>
         </div>
           <p class="premiumTestIntro" id="msPremiumIntro" hidden>Tutustu Kokkolan Hickarö Resortiin. Katso ajankohtaiset vierailutiedot kohteen verkkosivuilta.</p>
@@ -1392,7 +1399,7 @@
 
     function featureLabel(feature) {
       const props = feature.properties || {};
-      const name = safeText(pick(props, ["name", "nimi", "Nimi", "Name", "title"])) || "Nimetön paikka";
+      const name = safeText(pick(props, ["name", "nimi", "Nimi", "Name", "title"])) || window.TWLocale.text("Nimetön paikka");
       const addr = safeText(pick(props, ["address", "osoite", "Address", "street", "paikka", "location"])) || "";
       return { name, addr };
     }
@@ -1539,9 +1546,9 @@
 
     function updatePinStatus() {
       if (addLatLng) {
-        $("pinStatus").innerHTML = `📌 Pinni: <b>${addLatLng.lat.toFixed(5)}, ${addLatLng.lng.toFixed(5)}</b>`;
+        $("pinStatus").innerHTML = `${window.TWLocale.en ? "📌 Pin:" : "📌 Pinni:"} <b>${addLatLng.lat.toFixed(5)}, ${addLatLng.lng.toFixed(5)}</b>`;
       } else {
-        $("pinStatus").innerHTML = `📌 Pinni: <b>ei asetettu</b>`;
+        $("pinStatus").innerHTML = `${window.TWLocale.en ? "📌 Pin:" : "📌 Pinni:"} <b>${window.TWLocale.en ? "not set" : "ei asetettu"}</b>`;
       }
     }
 
@@ -1627,7 +1634,7 @@
     }
 
     async function loadGeoJSON() {
-      const res = await fetch("talviuintipaikat_enriched.geojson", { cache: "no-store" });
+      const res = await fetch("/talviuintipaikat_enriched.geojson", { cache: "no-store" });
       if (!res.ok) throw new Error("GeoJSON ei latautunut: " + res.status);
       const gj = await res.json();
 
@@ -1692,7 +1699,7 @@
 
         const lng = coords[0], lat = coords[1];
         const props = feature.properties || {};
-        const name = safeText(pick(props, ["name", "nimi", "Nimi", "Name", "title"])) || "Nimetön paikka";
+        const name = safeText(pick(props, ["name", "nimi", "Nimi", "Name", "title"])) || window.TWLocale.text("Nimetön paikka");
 
         const m = L.marker([lat, lng], {icon: map.getZoom() <= 5
           ? overviewMarkerIcon() : new L.Icon.Default()});
@@ -1764,6 +1771,10 @@
         return true;
       });
 
+      for(const statusId of ['searchStatus','mSearchStatus']){
+        const status=$(statusId);status.hidden=!q||filteredFeatures.length>0;
+        status.textContent=window.TWLocale.text('Ei osumia. Kokeile toista paikkakuntaa tai paikan nimeä.');
+      }
       rebuildMarkers();
 
       if (isMobile()) syncDesktopToMobile();
@@ -1889,8 +1900,8 @@
           $("detailThumb").style.display = "block";
           const finalSrc = withCacheBust(img);
           imgEl.src = finalSrc;
-          captionEl.textContent = "Kuva kohteesta";
-          imgEl.onerror = () => { captionEl.textContent = "Kuva ei latautunut"; };
+          captionEl.textContent = window.TWLocale.text("Kuva kohteesta");
+          imgEl.onerror = () => { captionEl.textContent = window.TWLocale.text("Kuva ei latautunut"); };
         } else {
           $("detailThumb").style.display = "none";
           imgEl.removeAttribute("src");
@@ -1930,8 +1941,8 @@
           $("msThumb").style.display = "block";
           const finalSrc2 = withCacheBust(img);
           imgEl2.src = finalSrc2;
-          captionEl2.textContent = "Kuva kohteesta";
-          imgEl2.onerror = () => { captionEl2.textContent = "Kuva ei latautunut"; };
+          captionEl2.textContent = window.TWLocale.text("Kuva kohteesta");
+          imgEl2.onerror = () => { captionEl2.textContent = window.TWLocale.text("Kuva ei latautunut"); };
         } else {
           $("msThumb").style.display = "none";
           imgEl2.removeAttribute("src");
@@ -1959,7 +1970,7 @@
 
     function nearMe() {
       if (!navigator.geolocation) {
-        alert("Paikannus ei ole käytettävissä.");
+        alert(window.TWLocale.text("Paikannus ei ole käytettävissä."));
         return;
       }
       navigator.geolocation.getCurrentPosition(
@@ -1980,7 +1991,7 @@
             fillOpacity: 0.08
           }).addTo(map);
         },
-        () => alert("Paikannus epäonnistui."),
+        () => alert(window.TWLocale.text("Paikannus epäonnistui.")),
         { enableHighAccuracy: true, timeout: 8000 }
       );
     }
@@ -2000,12 +2011,13 @@
     }
 
     async function submitHint() {
+      if (document.documentElement.dataset.preview === "true") { alert("Preview only: suggestions are not sent."); return; }
       const submitButton = $("btnSubmitHint");
       if (submitButton.disabled) return;
 
       const name = safeText($("newName").value);
-      if (!name) { alert("Anna paikan nimi."); return; }
-      if (!addLatLng) { alert("Lisää kohde kartalle (paina 'Lisää kohde kartalle')."); return; }
+      if (!name) { alert(window.TWLocale.text("Anna paikan nimi.")); return; }
+      if (!addLatLng) { alert(window.TWLocale.text("Lisää kohde kartalle (paina 'Lisää kohde kartalle').")); return; }
 
       const payload = {
         name,
@@ -2033,10 +2045,10 @@
 
         if (!response.ok) throw new Error("HTTP " + response.status);
 
-        alert("Kiitos! Vinkki vastaanotettu.");
+        alert(window.TWLocale.text("Kiitos! Vinkki vastaanotettu."));
         closeAddModal();
       } catch (e) {
-        alert("Vinkin lähetys epäonnistui. Tietoja ei tyhjennetty. Yritä uudelleen.");
+        alert(window.TWLocale.text("Vinkin lähetys epäonnistui. Tietoja ei tyhjennetty. Yritä uudelleen."));
       } finally {
         submitButton.disabled = false;
       }
@@ -2137,6 +2149,11 @@
     }
 
     (async function boot() {
+      if (!window.L || !L.markerClusterGroup) {
+        const message=document.createElement('p');
+        message.textContent=window.TWLocale.en ? 'The map could not be loaded. Explore the places by region instead.' : 'Karttaa ei voitu ladata. Selaa kohteita alueittain.';
+        $('map').append(message); return;
+      }
       initMap();
       bindUI();
 
@@ -2149,7 +2166,7 @@
         applyFilters();
       } catch (e) {
         console.error(e);
-        alert("Virhe: data ei latautunut (talviuintipaikat_enriched.geojson).");
+        alert(window.TWLocale.text("Virhe: data ei latautunut (talviuintipaikat_enriched.geojson)."));
       }
     })();
   </script>

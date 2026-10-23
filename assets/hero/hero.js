@@ -81,7 +81,7 @@ const HERO_VIDEOS = [
     // A user gesture can start video when mobile autoplay is blocked.
     if (!video.error) {
       pauseBtn.hidden = false;
-      pauseBtn.setAttribute('aria-label', 'Toista taustavideo');
+      pauseBtn.setAttribute('aria-label', window.TWLocale.text('Toista taustavideo'));
       pauseBtn.textContent = '▶';
     }
   });
@@ -91,14 +91,14 @@ const HERO_VIDEOS = [
   pauseBtn.addEventListener('click', () => {
     if (video.paused) {
       video.play().catch(() => {
-        pauseBtn.setAttribute('aria-label', 'Toista taustavideo');
+        pauseBtn.setAttribute('aria-label', window.TWLocale.text('Toista taustavideo'));
         pauseBtn.textContent = '▶';
       });
-      pauseBtn.setAttribute('aria-label', 'Pysäytä taustavideo');
+      pauseBtn.setAttribute('aria-label', window.TWLocale.text('Pysäytä taustavideo'));
       pauseBtn.innerHTML = '<svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><rect x="2" y="1" width="3.5" height="12" fill="currentColor"/><rect x="8.5" y="1" width="3.5" height="12" fill="currentColor"/></svg>';
     } else {
       video.pause();
-      pauseBtn.setAttribute('aria-label', 'Toista taustavideo');
+      pauseBtn.setAttribute('aria-label', window.TWLocale.text('Toista taustavideo'));
       pauseBtn.innerHTML = '<svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5v11l9-5.5z" fill="currentColor"/></svg>';
     }
   });
