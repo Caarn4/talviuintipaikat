@@ -11,3 +11,21 @@ a.dippaajat-badge:focus-visible{outline:3px solid #7cc6d8;outline-offset:4px}
 .place-card:has(.dippaajat-badge)>h3,.place-card:has(.dippaajat-badge)>.eyebrow{padding-right:56px}
 .place-card>.dippaajat-review,.place-card>[data-dippaajat-key]:not([hidden]){position:absolute;top:16px;right:16px;margin:0}
 .place-card [data-dippaajat-key] .dippaajat-review{margin:0}
+
+/* Same compact recommendation in every place-card surface. */
+.tw-place-card,.location-card:has(.dippaajat-badge),#selectedCard:has(.dippaajat-badge),.sheetBody:has(.dippaajat-badge){position:relative}
+.tw-place-card:has(.dippaajat-badge)>h3,.location-card:has(.dippaajat-badge)>h3,#selectedCard:has(.dippaajat-badge) .cardTitle{padding-right:60px}
+.tw-place-card>.dippaajat-review,.location-card>.dippaajat-review{position:absolute;right:0;top:0;margin:0}
+.location-card>.dippaajat-review{right:12px;top:12px}
+#detailDippaajat{position:absolute;right:12px;top:12px}
+#detailDippaajat .dippaajat-review,#msDippaajat .dippaajat-review{margin:0}
+#msDippaajat{position:absolute;right:62px;top:16px}
+.sheetBody:has(.dippaajat-badge) .sheetTitle{padding-right:60px}
+.leaflet-popup-content .tw-place-card{min-width:220px;padding:8px 0;border:0;background:transparent;color:inherit}
+.leaflet-popup-content .tw-place-card>.dippaajat-review{right:0;top:8px}
+.tw-place-card h3{margin:0 0 12px;line-height:1.3}
+.tw-place-card .actions{display:flex;flex-wrap:wrap;gap:12px}
+.tw-place-card .actions a{display:inline-flex;align-items:center;min-height:44px}
+.sheetBody:has(.dippaajat-badge) .sheetHeader>div:first-child{padding-right:60px;min-width:0}
+.sheetBody:has(.dippaajat-badge) .sheetTitle{padding-right:0}
+#selectedCard:has(.dippaajat-badge) #detailAddress,#selectedCard:has(.dippaajat-badge) #detailSubtitle{padding-right:60px}

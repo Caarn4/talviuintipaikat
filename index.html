@@ -1011,7 +1011,7 @@
 <link rel="preload" as="image" href="/assets/hero/hero-1.jpg" fetchpriority="high">
 <link rel="stylesheet" href="/assets/hero/hero.css">
 <link rel="stylesheet" href="/assets/hero/integration.css">
-<link rel="stylesheet" href="/assets/dippaajat.css?v=compact-20261022">
+<link rel="stylesheet" href="/assets/dippaajat.css?v=approved-20261023">
 </head>
 
 <body>
@@ -1152,8 +1152,8 @@
           <div class="kv" id="detailKv"></div>
 
           <div class="detailActions">
-            <a class="chip chipPrimary" id="detailGoogle" target="_blank" rel="noopener">Avaa kohteen sijainti</a>
-            <a class="chip" id="detailLink" target="_blank" rel="noopener" style="display:none;">🌐 Verkkosivut</a>
+            <a class="chip chipPrimary" id="detailGoogle" target="_blank" rel="noopener">Reittiohjeet ↗</a>
+            <a class="chip" id="detailLink" target="_blank" rel="noopener" style="display:none;">Kohteen lisätiedot ↗</a>
           </div>
         <div class="premiumTestExtras" id="detailPremiumExtras" hidden>
           <strong>Palvelut</strong>
@@ -1277,8 +1277,8 @@
         <div class="sheetKv" id="msKv"></div>
 
         <div class="sheetActions">
-          <a class="chip chipPrimary" id="msGoogle" target="_blank" rel="noopener">Reittiohjeet</a>
-          <a class="chip" id="msLink" target="_blank" rel="noopener" style="display:none;">🌐 Verkkosivut</a>
+          <a class="chip chipPrimary" id="msGoogle" target="_blank" rel="noopener">Reittiohjeet ↗</a>
+          <a class="chip" id="msLink" target="_blank" rel="noopener" style="display:none;">Kohteen lisätiedot ↗</a>
         </div>
         <div class="premiumTestExtras" id="msPremiumExtras" hidden>
           <strong>Palvelut</strong>
@@ -1354,8 +1354,8 @@
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 
-<script src="/assets/dippaajat-data.js"></script>
-<script src="/assets/dippaajat.js?v=compact-20261022"></script>
+<script src="/assets/dippaajat-data.js?v=approved-20261023"></script>
+<script src="/assets/dippaajat.js?v=approved-20261023"></script>
   <script>
     const $ = (id) => document.getElementById(id);
 
@@ -1705,56 +1705,7 @@
           const muniText = muni ? `📍 ${muni}` : "📍 Paikkakunta ei tiedossa";
           const website = getWebsite(props);
 
-          const card = document.createElement("div");
-          card.style.minWidth = "240px";
-
-          const t = document.createElement("div");
-          t.style.fontWeight = "1200";
-          t.style.fontSize = "14px";
-          t.style.marginBottom = "6px";
-          t.textContent = name;
-
-          const meta = document.createElement("div");
-          meta.style.fontSize = "12px";
-          meta.style.fontWeight = "900";
-          meta.style.borderRadius = "12px";
-          meta.style.padding = "6px 8px";
-          meta.style.marginBottom = "10px";
-          meta.style.background = "rgba(51,136,255,.10)";
-          meta.style.border = "1px solid rgba(51,136,255,.25)";
-          meta.textContent = muniText;
-
-          card.appendChild(t);
-          if (safeText(props.address)) {
-            const address = document.createElement("div");
-            address.className = "location-address";
-            address.textContent = `📍 ${props.address}`;
-            address.style.marginBottom = "6px";
-            card.appendChild(address);
-          }
-          card.appendChild(meta);
-          const review = window.TWDippaajat.create(props);
-          if (review) card.appendChild(review);
-
-          if (website) {
-            const a = document.createElement("a");
-            a.href = website;
-            a.target = "_blank";
-            a.rel = "noopener";
-            a.textContent = "🌐 Verkkosivut";
-            a.style.display = "inline-flex";
-            a.style.alignItems = "center";
-            a.style.justifyContent = "center";
-            a.style.width = "100%";
-            a.style.padding = "10px 12px";
-            a.style.borderRadius = "12px";
-            a.style.background = "var(--leaflet-blue)";
-            a.style.color = "#fff";
-            a.style.fontWeight = "1200";
-            a.style.textDecoration = "none";
-            card.appendChild(a);
-          }
-
+          const card = window.TWPlaceCard.create(props, coords);
           m.bindPopup(card, { closeButton: true });
         }
 
@@ -1905,7 +1856,7 @@
       }
 
       $("msPremiumGallery").hidden = !isHickaroTest;
-      $("msBasicPanorama").hidden = isHickaroTest;
+      $("msBasicPanorama").hidden = true;
       $("msKv").hidden = true;
 
       // Desktop detail
@@ -1914,8 +1865,8 @@
         $("detailAddress").textContent = props.address ? `📍 ${props.address}` : "";
         $("detailAddress").hidden = !safeText(props.address);
         $("detailSubtitle").textContent = subtitleText;
-        $("detailSourceBadge").hidden = props.source !== "user_submission";
-        renderKvInto($("detailKv"), kv.slice(0, 1));
+        $("detailSourceBadge").hidden = true;
+        $("detailKv").hidden = true;
 
         if (lat != null && lng != null) {
           $("detailGoogle").href = mapsLink(lat, lng);
@@ -1934,7 +1885,7 @@
 
         const imgEl = $("detailImg");
         const captionEl = $("detailImgCaption");
-        if (img) {
+        if (img && isHickaroTest) {
           $("detailThumb").style.display = "block";
           const finalSrc = withCacheBust(img);
           imgEl.src = finalSrc;
@@ -1955,7 +1906,7 @@
         $("msAddress").textContent = props.address ? `📍 ${props.address}` : "";
         $("msAddress").hidden = !safeText(props.address);
         $("msSubtitle").textContent = subtitleText;
-        $("msSourceBadge").hidden = props.source !== "user_submission";
+        $("msSourceBadge").hidden = true;
         renderKvInto($("msKv"), kv.slice(0, 1));
 
         if (lat != null && lng != null) {
@@ -1975,7 +1926,7 @@
 
         const imgEl2 = $("msImg");
         const captionEl2 = $("msImgCaption");
-        if (img) {
+        if (img && isHickaroTest) {
           $("msThumb").style.display = "block";
           const finalSrc2 = withCacheBust(img);
           imgEl2.src = finalSrc2;
