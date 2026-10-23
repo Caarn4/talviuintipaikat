@@ -55,7 +55,7 @@
       send_page_view: true,
       page_location: location.origin + location.pathname,
       page_referrer: referrer,
-      page_title: location.pathname === '/' ? 'Talviuintipaikat.fi' : 'Talviuintipaikat.fi – aluesivu',
+      page_title: document.documentElement.dataset.site === 'winterswim' ? (location.pathname === '/' ? 'WinterSwim.fi' : 'WinterSwim.fi – region') : (location.pathname === '/' ? 'Talviuintipaikat.fi' : 'Talviuintipaikat.fi – aluesivu'),
       allow_google_signals: false,
       allow_ad_personalization_signals: false,
       cookie_domain: 'none', cookie_expires: 15552000, cookie_update: false
@@ -73,6 +73,7 @@
   dialog.id = 'analytics-dialog'; dialog.setAttribute('aria-labelledby', 'analytics-heading');
   dialog.innerHTML = '<h2 id="analytics-heading">Evästeasetukset</h2><p>Käytämme Google Analyticsin evästeitä kävijämittaukseen vain luvallasi. Käyttötietoja välitetään Googlelle. <a href="/analytiikan-tietosuoja.html">Lisätiedot</a></p><div class="analytics-actions"><button type="button" data-choice="no">Hylkää analytiikka</button><button type="button" data-choice="yes">Hyväksy analytiikka</button></div><p id="analytics-status" role="status"></p>';
   if (window.TWLocale?.en) dialog.innerHTML = '<h2 id="analytics-heading">Cookie settings</h2><p>We use Google Analytics cookies to measure visits only with your permission. Usage data is sent to Google. <a href="/en/analytics-privacy/">More information</a></p><div class="analytics-actions"><button type="button" data-choice="no">Reject analytics</button><button type="button" data-choice="yes">Accept analytics</button></div><p id="analytics-status" role="status"></p>';
+  if(document.documentElement.dataset.site === 'winterswim') dialog.querySelector('a').href='/analytics-privacy/';
   dialog.hidden = true;
   const showPanel = () => { dialog.hidden = false; settings.hidden = true; };
   const hidePanel = () => { dialog.hidden = true; settings.hidden = false; };
