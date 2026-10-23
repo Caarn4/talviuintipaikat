@@ -516,6 +516,126 @@ window.TWDippaajatData = {
         }
       ],
       "url": "https://www.instagram.com/dippaajat/p/DVRp5GJjA6O/"
+    },
+    {
+      "masterId": null,
+      "candidateId": "DIP-20261019-24",
+      "key": "id:dippaajat_dip-20261019-24",
+      "name": "Teivaan Hehku",
+      "municipality": "Lahti",
+      "approved": false,
+      "url": "https://www.instagram.com/dippaajat/p/DWY_slnDJPO/",
+      "reviews": [
+        {
+          "url": "https://www.instagram.com/dippaajat/p/DWY_slnDJPO/",
+          "sourceNumber": 24
+        }
+      ]
+    },
+    {
+      "masterId": null,
+      "candidateId": "DIP-20261019-31",
+      "key": "id:dippaajat_dip-20261019-31",
+      "name": "Teijon kyläsauna",
+      "municipality": "Salo",
+      "approved": false,
+      "url": "https://www.instagram.com/dippaajat/p/DV6x0PgjCYV/",
+      "reviews": [
+        {
+          "url": "https://www.instagram.com/dippaajat/p/DV6x0PgjCYV/",
+          "sourceNumber": 31
+        }
+      ]
+    },
+    {
+      "masterId": null,
+      "candidateId": "DIP-20261019-38",
+      "key": "id:dippaajat_dip-20261019-38",
+      "name": "Poliisien kesäkodin sauna",
+      "municipality": "Helsinki",
+      "approved": false,
+      "url": "https://www.instagram.com/dippaajat/p/DVuAP4oDE0B/",
+      "reviews": [
+        {
+          "url": "https://www.instagram.com/dippaajat/p/DVuAP4oDE0B/",
+          "sourceNumber": 38
+        }
+      ]
+    },
+    {
+      "masterId": null,
+      "candidateId": "DIP-20261019-45",
+      "key": "id:dippaajat_dip-20261019-45",
+      "name": "Villa Salmelan Autereinen-sauna",
+      "municipality": "Helsinki",
+      "approved": false,
+      "url": "https://www.instagram.com/dippaajat/p/DVaWO4sjKGP/",
+      "reviews": [
+        {
+          "url": "https://www.instagram.com/dippaajat/p/DVaWO4sjKGP/",
+          "sourceNumber": 45
+        }
+      ]
+    },
+    {
+      "masterId": null,
+      "candidateId": "DIP-20261019-7",
+      "key": "id:dippaajat_dip-20261019-7",
+      "name": "Vierumäen Valkjärven rantasaunat",
+      "municipality": "Heinola",
+      "approved": false,
+      "url": "https://www.instagram.com/dippaajat/p/DX4LJNajNGW/",
+      "reviews": [
+        {
+          "url": "https://www.instagram.com/dippaajat/p/DX4LJNajNGW/",
+          "sourceNumber": 7
+        }
+      ]
+    },
+    {
+      "masterId": null,
+      "candidateId": "DIP-20261019-14",
+      "key": "id:dippaajat_dip-20261019-14",
+      "name": "Ukonlinnan saunat / Metsäterapiakeskus",
+      "municipality": "Imatra",
+      "approved": false,
+      "url": "https://www.instagram.com/dippaajat/p/DW_ytQZDIHk/",
+      "reviews": [
+        {
+          "url": "https://www.instagram.com/dippaajat/p/DW_ytQZDIHk/",
+          "sourceNumber": 14
+        }
+      ]
+    },
+    {
+      "masterId": null,
+      "candidateId": "DIP-20261019-43",
+      "key": "id:dippaajat_dip-20261019-43",
+      "name": "Korjärven uimala ja sauna",
+      "municipality": "Kouvola",
+      "approved": false,
+      "url": "https://www.instagram.com/dippaajat/p/DVfeZe-DB67/",
+      "reviews": [
+        {
+          "url": "https://www.instagram.com/dippaajat/p/DVfeZe-DB67/",
+          "sourceNumber": 43
+        }
+      ]
+    },
+    {
+      "masterId": null,
+      "candidateId": "DIP-20261019-46",
+      "key": "id:dippaajat_dip-20261019-46",
+      "name": "Vuokatti Sportin talviuinti ja saunat",
+      "municipality": "Sotkamo",
+      "approved": false,
+      "url": "https://www.instagram.com/dippaajat/p/DVYEioKDA3Q/",
+      "reviews": [
+        {
+          "url": "https://www.instagram.com/dippaajat/p/DVYEioKDA3Q/",
+          "sourceNumber": 46
+        }
+      ]
     }
   ]
 };

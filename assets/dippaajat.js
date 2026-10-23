@@ -15,10 +15,10 @@
     link.href = url.href; link.target = '_blank'; link.rel = 'noopener noreferrer';
     link.setAttribute('aria-label', 'Lue Dippaajien kokemus: ' + review.name + ' (Instagram, uusi välilehti)');
     const logo = document.createElement('img'); logo.src = '/assets/images/dippaajat-suosittelee.webp';
-    logo.alt = 'Dippaajat suosittelee'; logo.width = 88; logo.height = 89; logo.loading = 'lazy';
+    logo.alt = 'Dippaajat suosittelee'; logo.width = 44; logo.height = 44; logo.loading = 'lazy';
     link.append(logo);
-    const note = document.createElement('span'); note.className = 'dippaajat-note'; note.textContent = 'Lue kokemus Instagramissa ↗';
-    block.append(link, note); return block;
+    link.title = 'Lue Dippaajien kokemus Instagramissa';
+    block.append(link); return block;
   }
   function mount(container, props) {
     if (!container) return;

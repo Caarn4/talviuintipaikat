@@ -1,7 +1,13 @@
-.dippaajat-review{margin:16px 0;display:flex;align-items:center;gap:12px;max-width:100%}
+.dippaajat-review{margin:8px 0;display:flex;align-items:center;gap:12px;max-width:100%}
 a.dippaajat-badge{display:inline-flex;flex:0 0 auto;padding:0;border:0;background:transparent;text-decoration:none;min-height:44px}
-a.dippaajat-badge img{display:block;width:88px;height:auto;max-width:100%;border-radius:6px}
+a.dippaajat-badge img{display:block;width:44px;height:auto;max-width:100%;border-radius:6px}
 a.dippaajat-badge:hover{opacity:.9}
 a.dippaajat-badge:focus-visible{outline:3px solid #7cc6d8;outline-offset:4px}
 .dippaajat-note{font:12px/1.5 system-ui;color:inherit;opacity:.85;max-width:145px}
 [data-dippaajat-key][hidden],#detailDippaajat[hidden],#msDippaajat[hidden]{display:none}
+
+/* A recommendation stays secondary to the place and paid partner content. */
+.place-card:has(.dippaajat-badge){position:relative}
+.place-card:has(.dippaajat-badge)>h3,.place-card:has(.dippaajat-badge)>.eyebrow{padding-right:56px}
+.place-card>.dippaajat-review,.place-card>[data-dippaajat-key]:not([hidden]){position:absolute;top:16px;right:16px;margin:0}
+.place-card [data-dippaajat-key] .dippaajat-review{margin:0}

@@ -12611,6 +12611,198 @@
         "address_source": "",
         "address_checked_at": ""
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.6406461,
+          60.9884762
+        ]
+      },
+      "properties": {
+        "id": "dippaajat_dip-20261019-24",
+        "nimi": "Teivaan Hehku",
+        "kunta": "Lahti",
+        "url": "https://teivaanhehku.fi/",
+        "address": "Jalkarannantie 19, 15900 Lahti",
+        "sauna": "kyllä",
+        "huomio": "Tarkista vuorot ja varaus kohteen verkkosivuilta.",
+        "source_candidate_id": "DIP-20261019-24",
+        "coordinate_source": "https://www.openstreetmap.org/node/13680254316",
+        "coordinate_accuracy": "saunakohde",
+        "data_status": "local-preview",
+        "source_checked_at": "2026-10-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.951591128836,
+          60.255402154107
+        ]
+      },
+      "properties": {
+        "id": "dippaajat_dip-20261019-31",
+        "nimi": "Teijon kyläsauna",
+        "kunta": "Salo",
+        "url": "https://www.teijo.fi/palveluja/kylasauna/",
+        "address": "Telakkatie 31, 25570 Teijo",
+        "sauna": "kyllä",
+        "huomio": "Tarkista vuorot ja varaus kohteen verkkosivuilta.",
+        "source_candidate_id": "DIP-20261019-31",
+        "coordinate_source": "https://kohteet.visitsalo.fi/kylasauna-teijon-ruukkikylilla-vuokrattavana/",
+        "coordinate_accuracy": "saunakohde",
+        "data_status": "local-preview",
+        "source_checked_at": "2026-10-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.8578,
+          60.1528
+        ]
+      },
+      "properties": {
+        "id": "dippaajat_dip-20261019-38",
+        "nimi": "Poliisien kesäkodin sauna",
+        "kunta": "Helsinki",
+        "url": "https://poliisienkesakoti.fi/yleiset-saunavuorot/",
+        "address": "Länsiulapanpolku 27, Lauttasaari, Helsinki",
+        "sauna": "kyllä",
+        "huomio": "Karttapiste osoittaa kohteen rakennukseen. Tarkista vuorot ja varaus kohteen verkkosivuilta.",
+        "source_candidate_id": "DIP-20261019-38",
+        "coordinate_source": "https://finland-map.fi/venue.html?id=poliisien-kesakoti-helsinki",
+        "coordinate_accuracy": "kohteen rakennus",
+        "data_status": "local-preview",
+        "source_checked_at": "2026-10-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.0953235,
+          60.1601254
+        ]
+      },
+      "properties": {
+        "id": "dippaajat_dip-20261019-45",
+        "nimi": "Villa Salmelan Autereinen-sauna",
+        "kunta": "Helsinki",
+        "url": "https://villasalmela.fi/sauna-2/",
+        "address": "Meri Perttilän polku 8, 00850 Helsinki",
+        "sauna": "kyllä",
+        "huomio": "Karttapiste osoittaa kohteen rakennukseen. Tarkista vuorot ja varaus kohteen verkkosivuilta.",
+        "source_candidate_id": "DIP-20261019-45",
+        "coordinate_source": "https://villasalmela.fi/yhteystiedot/",
+        "coordinate_accuracy": "kohteen rakennus",
+        "data_status": "local-preview",
+        "source_checked_at": "2026-10-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.0092101,
+          61.1160864
+        ]
+      },
+      "properties": {
+        "id": "dippaajat_dip-20261019-7",
+        "nimi": "Vierumäen Valkjärven rantasaunat",
+        "kunta": "Heinola",
+        "url": "https://vierumaki.fi/liikuntapalveluiden-paasivu/liikuntatilat-ja-liikuntapaikat/saunat-uinti-uimarannat",
+        "address": "Saunatie 5, 19120 Heinola (VisitLahti); Valkjärven Palmu / Pihka ja Kaski",
+        "sauna": "kyllä",
+        "huomio": "Tarkista vuorot ja varaus kohteen verkkosivuilta.",
+        "source_candidate_id": "DIP-20261019-7",
+        "coordinate_source": "https://www.openstreetmap.org/node/10978715145",
+        "coordinate_accuracy": "saunakohde",
+        "data_status": "local-preview",
+        "source_checked_at": "2026-10-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.7235718,
+          61.2061984
+        ]
+      },
+      "properties": {
+        "id": "dippaajat_dip-20261019-14",
+        "nimi": "Ukonlinnan saunat / Metsäterapiakeskus",
+        "kunta": "Imatra",
+        "url": "https://gosaimaa.com/ukonlinna/",
+        "address": "Ukonlinnanpolku 7, 55420 Imatra",
+        "sauna": "kyllä",
+        "huomio": "Karttapiste osoittaa kohteen rakennukseen. Tarkista vuorot ja varaus kohteen verkkosivuilta.",
+        "source_candidate_id": "DIP-20261019-14",
+        "coordinate_source": "https://www.openstreetmap.org/way/207629358",
+        "coordinate_accuracy": "kohteen rakennus",
+        "data_status": "local-preview",
+        "source_checked_at": "2026-10-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.8750966,
+          60.7106323
+        ]
+      },
+      "properties": {
+        "id": "dippaajat_dip-20261019-43",
+        "nimi": "Korjärven uimala ja sauna",
+        "kunta": "Kouvola",
+        "url": "https://mammala.kylille.fi/korjarven-uimala/",
+        "address": "Koirojantie 26, Inkeroinen, Kouvola",
+        "sauna": "kyllä",
+        "huomio": "Talviuinti vain kotiseutuyhdistyksen jäsenille. Tarkista vuorot ja varaus kohteen verkkosivuilta.",
+        "source_candidate_id": "DIP-20261019-43",
+        "coordinate_source": "https://www.openstreetmap.org/way/459094533",
+        "coordinate_accuracy": "saunakohde",
+        "data_status": "local-preview",
+        "source_checked_at": "2026-10-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.2886587,
+          64.1378599
+        ]
+      },
+      "properties": {
+        "id": "dippaajat_dip-20261019-46",
+        "nimi": "Vuokatti Sportin talviuinti ja saunat",
+        "kunta": "Sotkamo",
+        "url": "https://vuokatti.fi/activity/avantouinti-vuokatti-sportilla/",
+        "address": "Opistontie 4, 88610 Vuokatti; Särkisen ranta",
+        "sauna": "kyllä",
+        "huomio": "Tarkista vuorot ja varaus kohteen verkkosivuilta.",
+        "source_candidate_id": "DIP-20261019-46",
+        "coordinate_source": "https://www.openstreetmap.org/way/606452018",
+        "coordinate_accuracy": "saunakohde",
+        "data_status": "local-preview",
+        "source_checked_at": "2026-10-19"
+      }
     }
   ]
 }
