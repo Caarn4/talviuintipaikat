@@ -27,11 +27,15 @@ for(const {name,features} of groups.values()){
  html=html.replace('data-text="back"></a>','data-text="back">← Takaisin pääkartalle</a>').replace('data-text="heading"></h1>',`data-text="heading">${escape(heading)}</h1>`).replace('data-text="intro"></p>',`data-text="intro">${escape(description)}</p>`).replace('data-text="loadingCount"></p>',`data-text="loadingCount">${features.length} talviuintipaikkaa</p>`).replace('<!-- STATIC_CITY_CONTENT -->',`<section id="static-city-content" aria-label="Kohdelista">${cards}</section>`);
  const published=publicNames.some(n=>normalize(n)===normalize(name));
  if(!published) html=html.replace('content="index,follow"','content="noindex,nofollow"');
+ const area=require('./regions.cjs').find(a=>a.regions.includes(require('./data/municipality-regions-2026.json').municipalities[name]));
+ if(area)html=html.replace('<body>', '<body><nav class="language-switch" aria-label="Kieli"><a href="'+require('./localization.cjs').route('/alueet/'+area.slug+'/')+'?kunta='+encodeURIComponent(name)+'" lang="en">English · '+escape(name)+'</a></nav>');
  outputs.push({route,html,count:features.length,published,name});
 }
 // Validate every route before writing any output.
 for(const {route,html}of outputs){const dir=path.join(out,route);fs.mkdirSync(dir,{recursive:true});fs.writeFileSync(path.join(dir,'index.html'),html);}
 require('./generate-regions.cjs')(out,outputs);
+require('./generate-regions.cjs')(out,outputs,'en');
+require('./generate-english.cjs')(out);
 const hidden=outputs.filter(p=>!p.published);
 const redirects=['# Generated publication gates; hidden city HTML remains preserved.', '/helsinki.html /helsinki/ 301', ...hidden.flatMap(p=>[`/${p.route} / 302!`, `/${p.route}/* / 302!`])];
 fs.writeFileSync(path.join(out,'_redirects'),redirects.join('\n')+'\n');
