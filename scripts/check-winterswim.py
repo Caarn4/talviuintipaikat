@@ -3,8 +3,8 @@ import re,json
 r=Path(__file__).resolve().parents[1]
 d=r/'dist'
 fi=re.findall(r'<loc>(.*?)</loc>',(d/'sitemap.xml').read_text()); en=re.findall(r'<loc>(.*?)</loc>',(d/'en/sitemap.xml').read_text())
-assert len(fi)==42,(len(fi),fi)
-assert len(en)==12
+assert len(fi)==43,(len(fi),fi)
+assert len(en)==20
 for u in en:
  p=u.removeprefix('https://winterswim.fi'); h=(d/'en'/p.lstrip('/')/'index.html').read_text()
  assert f'rel="canonical" href="{u}"' in h,u
@@ -18,7 +18,7 @@ rules=(d/'_redirects').read_text()
 for u in en: assert u+' /en'+u.removeprefix('https://winterswim.fi')+'index.html 200!' in rules
 assert 'https://winterswim.fi/* /en/404.html 404!' in rules
 assert 'https://www.winterswim.fi/* https://winterswim.fi/:splat 301!' in rules
-print('PASS: 42 Finnish and 12 English sitemap URLs; English canonicals/navigation; 481 shared records unchanged; domain route rules; source scripts excluded.')
+print('PASS: 43 Finnish and 20 English sitemap URLs; English canonicals/navigation; 481 shared records unchanged; domain route rules; source scripts excluded.')
 
 for slug in ['find','learn','experience']:
  h=(d/'en'/slug/'index.html').read_text()
@@ -40,3 +40,13 @@ for slug in ['find','learn','experience']:
  built=(d/'en'/slug/'index.html').read_text()
  for url in re.findall(r'href="(https://[^" ]+)"',source): assert url.startswith("https://winterswim.fi/") or url in built,url
 print('PASS: external article URLs preserved, including language paths.')
+
+# City views must only contain their intended municipality records.
+city_groups={'helsinki-region':['Helsinki','Espoo','Vantaa'],'turku':['Turku'],'tampere':['Tampere'],'jyvaskyla':['Jyväskylä'],'oulu':['Oulu'],'kuopio':['Kuopio'],'rovaniemi':['Rovaniemi'],'lahti':['Lahti']}
+records=json.loads((r/'talviuintipaikat_enriched.geojson').read_text())['features']
+for slug,names in city_groups.items():
+ html=(d/'en/cities'/slug/'index.html').read_text()
+ actual=re.findall(r'data-city="([^"]+)"',html)
+ expected=[f['properties']['kunta'] for f in records if f['properties']['kunta'] in names]
+ assert sorted(actual)==sorted(expected),(slug,len(actual),len(expected))
+print('PASS: eight city views contain exactly their intended places.')

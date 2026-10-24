@@ -33,6 +33,7 @@ const enPaths=Object.values(i18n.routes).map(p=>p.slice(3)).concat(contentRoutes
 const xml=urls=>'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+urls.map(u=>'  <url><loc>'+u+'</loc></url>').join('\n')+'\n</urlset>\n';
 const fiUrls=[...fs.readFileSync(path.join(root,'sitemap.xml'),'utf8').matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>m[1]).filter(u=>!u.startsWith(FI+'/en/'));
 fiUrls.push(FI+'/analytiikan-tietosuoja.html');
+fiUrls.push(FI+'/kaupungit/helsingin-seutu/');
 fs.writeFileSync(path.join(out,'sitemap.xml'),xml([...new Set(fiUrls)]));
 fs.writeFileSync(path.join(out,'en/sitemap.xml'),xml(enPaths.map(p=>EN+p)));
 fs.writeFileSync(path.join(out,'en/robots.txt'),'User-agent: *\nAllow: /\n\nSitemap: '+EN+'/sitemap.xml\n');
