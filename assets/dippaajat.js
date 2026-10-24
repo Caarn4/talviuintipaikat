@@ -5,6 +5,7 @@
   const entries = window.TWDippaajatData?.entries || [];
   const key = p => p?.id ? 'id:' + p.id : p?.lipas_id ? 'lipas:' + p.lipas_id : '';
   function create(props) {
+    if (document.documentElement.lang === "en") return null;
     const review = entries.find(r => r.key === (props?.reviewKey || key(props)) && (r.approved === true || preview));
     if (!review) return null;
     let url;
@@ -13,7 +14,7 @@
     const block = document.createElement('div'); block.className = 'dippaajat-review';
     const link = document.createElement('a'); link.className = 'dippaajat-badge';
     link.href = url.href; link.target = '_blank'; link.rel = 'noopener noreferrer';
-    link.setAttribute('aria-label', window.TWLocale?.en ? 'Read Dippaajat’s review of ' + review.name + ' on Instagram (opens in a new tab)' : 'Lue Dippaajien kokemus: ' + review.name + ' (Instagram, uusi välilehti)');
+    link.setAttribute('aria-label', window.TWLocale?.en ? 'See Finnish winter swimming duo Dippaajat’s visit to ' + review.name + ' on Instagram (opens in a new tab)' : 'Lue Dippaajien kokemus: ' + review.name + ' (Instagram, uusi välilehti)');
     const logo = document.createElement('img'); logo.src = '/assets/images/dippaajat-suosittelee.png';
     logo.alt = window.TWLocale.text('Dippaajat suosittelee'); logo.width = 44; logo.height = 44; logo.loading = 'lazy';
     link.append(logo);
