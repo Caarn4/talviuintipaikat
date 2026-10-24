@@ -2068,7 +2068,7 @@
 
       if (isMobile()) {
         map.stop();
-        map.setView([64.5, 26.0], 5, { animate: false });
+        map.fitBounds([[59.7,19.0],[70.15,31.7]], {paddingTopLeft:[18,$('mobileControls').getBoundingClientRect().height+28],paddingBottomRight:[18,46],animate:false});
       }
     }
 
@@ -2079,7 +2079,17 @@
       });
       document.addEventListener('tu-hero:near-me', nearMe);
       document.addEventListener('tu-hero:suggest', openAddModal);
-      document.addEventListener('tu-hero:map-visible', () => map.invalidateSize({pan:true, animate:false}));
+      let overviewFitted = false;
+      const fitOverview = () => {
+        if (!document.body.classList.contains('map-mode')) return;
+        map.invalidateSize({pan:true, animate:false});
+        if (overviewFitted) return;
+        const controls = isMobile() ? $('mobileControls').getBoundingClientRect().height : 0;
+        map.fitBounds([[59.7,19.0],[70.15,31.7]], {paddingTopLeft:[18,controls+28], paddingBottomRight:[18,46], animate:false});
+        overviewFitted = true;
+      };
+      document.addEventListener('tu-hero:map-visible', fitOverview);
+      requestAnimationFrame(fitOverview);
       // Desktop
       $("btnNear").addEventListener("click", nearMe);
       $("btnClear").addEventListener("click", resetAll);
