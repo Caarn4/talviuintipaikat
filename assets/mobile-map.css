@@ -35,3 +35,4 @@ body:has(.article-layout) .winter-brand-note a,body:has(.find-grid) .winter-bran
 }
 
 @media(max-width:920px){body.sheet-open #kartta .mobileActions{display:none}#kartta .mobileControls>.searchRow{flex-wrap:nowrap}#kartta #mBtnClear{font-size:12px;padding:8px;min-width:40px}}
+@media(max-width:920px){#kartta .leaflet-top.leaflet-left{top:auto;left:auto;right:10px;bottom:76px}body.sheet-open #kartta .leaflet-top.leaflet-left{bottom:calc(52dvh + 12px)}}
