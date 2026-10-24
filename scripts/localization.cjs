@@ -3,6 +3,7 @@ const copy=require('./en-copy.json');
 const slugs=['lapland','north-ostrobothnia-and-kainuu','eastern-finland','central-finland-and-tampere-region','west-coast-and-ostrobothnia','southern-finland-and-archipelago'];
 const routes={'/':'/en/','/kunnat.html':'/en/regions/','/analytiikan-tietosuoja.html':'/en/analytics-privacy/'};
 require('./regions.cjs').forEach((a,i)=>routes['/alueet/'+a.slug+'/']='/en/regions/'+slugs[i]+'/');
+require('./city-destinations.cjs').forEach(c=>routes[(c.fiSlug?'/kaupungit/'+c.fiSlug+'/':'/'+c.slug+'/')]='/en/cities/'+c.slug+'/');
 const escape=s=>s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
 function text(s){
  const trimmed=s.trim();if(copy[trimmed])return s.replace(trimmed,copy[trimmed]);

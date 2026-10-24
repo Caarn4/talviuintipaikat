@@ -13,8 +13,9 @@ for(const route of contentRoutes){
 }
 function convert(html,english){
  html=html.replaceAll(FI+'/en/',EN+'/');
- html=html.replace(/src="\/assets\/(?:images\/logo-v1-mobile.png|content\/logo.png)"/g,'src="/assets/images/winterswim-logo-v2.webp"');
+ html=html.replace(/src="\/assets\/(?:images\/logo-v1-mobile.png|content\/logo.png)"/g,'src="/assets/images/winterswim-logo-transparent.png"');
   html=html.replace('</head>','<link rel="stylesheet" href="/assets/winterswim-brand.css"></head>');
+ html=html.replace('</head>','<link rel="stylesheet" href="/assets/mobile-map.css"><script defer src="/assets/mobile-map.js"></script></head>');
  if(english){
   html=require('./content-navigation.cjs')(html);
   // Only language links go to the Finnish host. English navigation stays same-origin.
@@ -32,6 +33,7 @@ const enPaths=Object.values(i18n.routes).map(p=>p.slice(3)).concat(contentRoutes
 const xml=urls=>'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+urls.map(u=>'  <url><loc>'+u+'</loc></url>').join('\n')+'\n</urlset>\n';
 const fiUrls=[...fs.readFileSync(path.join(root,'sitemap.xml'),'utf8').matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>m[1]).filter(u=>!u.startsWith(FI+'/en/'));
 fiUrls.push(FI+'/analytiikan-tietosuoja.html');
+fiUrls.push(FI+'/kaupungit/helsingin-seutu/');
 fs.writeFileSync(path.join(out,'sitemap.xml'),xml([...new Set(fiUrls)]));
 fs.writeFileSync(path.join(out,'en/sitemap.xml'),xml(enPaths.map(p=>EN+p)));
 fs.writeFileSync(path.join(out,'en/robots.txt'),'User-agent: *\nAllow: /\n\nSitemap: '+EN+'/sitemap.xml\n');
