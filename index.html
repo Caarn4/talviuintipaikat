@@ -1454,7 +1454,7 @@
     function openSheet() {
       $("mobileSheet").classList.add("open");
       document.body.classList.add("sheet-open");
-      $("mobileControls").style.display = "block";
+      $("mobileControls").style.removeProperty("display");
       $("mobileControls").classList.add("collapsed");
       updateMobilePanelState();
     }
@@ -1592,7 +1592,7 @@
       mapEl.addEventListener('wheel', event => {
         if (event.target.closest('.leaflet-control')) return;
         if (!event.shiftKey) {
-          showGestureHint('Zoomaa karttaa: Vaihto + vieritys');
+          showGestureHint(document.documentElement.lang === 'en' ? 'Hold Shift and scroll to zoom' : 'Zoomaa karttaa: Vaihto + vieritys');
           return;
         }
         event.preventDefault();
@@ -1608,14 +1608,14 @@
       }, {passive:false});
       // Keep Leaflet's two-touch zoom/pan, but do not capture a single-finger drag.
       mapEl.addEventListener('pointerdown', event => {
-        if (event.pointerType === 'touch') map.dragging.disable();
+        if (event.pointerType === 'touch' && !document.body.classList.contains('map-mode')) map.dragging.disable();
         else map.dragging.enable();
       }, {capture:true, passive:true});
       mapEl.addEventListener('touchstart', event => {
         if (event.target.closest('.leaflet-control')) return;
-        map.dragging.disable();
-        if (event.touches.length === 1) showGestureHint('Liikuta ja zoomaa karttaa kahdella sormella');
-        else gestureHint.classList.remove('visible');
+        if (document.body.classList.contains('map-mode')) map.dragging.enable();
+        else map.dragging.disable();
+        gestureHint.classList.remove('visible');
       }, {capture:true, passive:true});
 
 
@@ -2074,12 +2074,12 @@
 
     function bindUI() {
       document.addEventListener('tu-hero:search', () => {
-        map.invalidateSize({pan:false});
+        map.invalidateSize({pan:true, animate:false});
         $(isMobile() ? 'mSearchInput' : 'searchInput').focus({preventScroll:true});
       });
       document.addEventListener('tu-hero:near-me', nearMe);
       document.addEventListener('tu-hero:suggest', openAddModal);
-      document.addEventListener('tu-hero:map-visible', () => map.invalidateSize({pan:false}));
+      document.addEventListener('tu-hero:map-visible', () => map.invalidateSize({pan:true, animate:false}));
       // Desktop
       $("btnNear").addEventListener("click", nearMe);
       $("btnClear").addEventListener("click", resetAll);
