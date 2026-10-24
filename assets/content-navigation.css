@@ -1,0 +1,22 @@
+/* One hierarchical menu on desktop and mobile. */
+.ws-header{display:flex;align-items:center;justify-content:space-between;gap:20px;position:relative}
+.ws-header>.ws-toggle,.ws-header>.tu-hero__menu-btn{display:block;min-height:44px;min-width:52px;cursor:pointer;flex-shrink:0}
+.ws-toggle{background:transparent;color:inherit;border:1px solid #9aafb9;border-radius:9px;font:600 15px/1.4 system-ui;padding:10px 16px}
+.ws-header>.ws-secondary,.ws-header>.tu-hero__nav{display:none;position:absolute;top:calc(100% + 8px);left:auto;right:0;z-index:30;width:310px;max-width:100%;padding:18px;background:#fff;color:#152d43;border:1px solid #d8e1e5;border-radius:12px;box-shadow:0 12px 30px #0003;align-items:stretch;gap:0;flex-direction:column}
+.ws-header>.ws-secondary.is-open,.ws-header>.tu-hero__nav.is-open{display:flex}
+.ws-header .ws-main-link{display:block;padding:13px 12px;font:750 18px/1.4 system-ui;text-decoration:none;color:#152d43;border:0}
+.ws-more{border-top:1px solid #d8e1e5;margin-top:8px;padding-top:8px}
+.ws-more summary{display:flex;justify-content:space-between;cursor:pointer;list-style:none;padding:13px 12px;font:600 16px/1.4 system-ui}
+.ws-more summary::-webkit-details-marker{display:none}
+.ws-more[open] summary span{transform:rotate(180deg)}
+.ws-more>div{margin:0 12px 12px 22px;padding-left:14px;border-left:2px solid #d8e1e5}
+.ws-more>div>a{display:block;padding:10px 8px!important;font:500 15px/1.5 system-ui;color:#152d43!important;text-decoration:none;border:0!important}
+.ws-header .ws-suggest{display:block;border:0;border-top:1px solid #d8e1e5;margin-top:10px;padding:16px 12px 8px;font:400 13px/1.5 system-ui;color:#526477;text-decoration:none}
+.ws-header .tu-hero__lang{padding:12px}
+.ws-header .tu-hero__lang a{color:#152d43}
+.ws-header nav a:hover,.ws-more summary:hover{background:#eaf3f5;border-radius:6px}
+.ws-header :focus-visible{outline:3px solid #3998b1;outline-offset:3px}
+.ws-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+@media(max-width:620px){.ws-header{gap:12px}.ws-header>.ws-secondary,.ws-header>.tu-hero__nav{width:100%;max-height:70dvh;overflow:auto}}
+/* Let the expanded menu extend past the hero without the map covering it. */
+.tu-hero:has(.tu-hero__nav.is-open){overflow:visible;z-index:1200}
