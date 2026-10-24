@@ -6,3 +6,6 @@
 .prose h2.before-trip{margin-top:56px}
 
 .evidence-note{margin-top:32px;font-size:15px;color:var(--muted)}.evidence-note summary{cursor:pointer;padding:10px 0;color:var(--blue);min-height:44px}.evidence-note summary:focus-visible{outline:3px solid var(--blue);outline-offset:3px}.evidence-note>p{margin-top:14px}
+
+/* Editorial photographs retain their full composition on every screen. */
+.content-photo{margin:36px 0 42px}.content-photo img{display:block;width:100%;height:auto;border-radius:4px}.content-photo--portrait{max-width:320px;margin-inline:auto}@media(max-width:620px){.content-photo{margin-block:28px 34px}.content-photo--portrait{max-width:260px}}
