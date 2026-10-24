@@ -13,7 +13,7 @@ for(const route of contentRoutes){
 }
 function convert(html,english){
  html=html.replaceAll(FI+'/en/',EN+'/');
- html=html.replace(/src="\/assets\/(?:images\/logo-v1-mobile.png|content\/logo.png)"/g,'src="/assets/images/winterswim-logo-v2.webp"');
+ html=html.replace(/src="\/assets\/(?:images\/logo-v1-mobile.png|content\/logo.png)"/g,'src="/assets/images/winterswim-logo-transparent.png"');
   html=html.replace('</head>','<link rel="stylesheet" href="/assets/winterswim-brand.css"></head>');
  html=html.replace('</head>','<link rel="stylesheet" href="/assets/mobile-map.css"><script defer src="/assets/mobile-map.js"></script></head>');
  if(english){
