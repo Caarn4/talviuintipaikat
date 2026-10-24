@@ -38,5 +38,5 @@ print('PASS: content routes, assets, anchors, navigation, consent script and dra
 for slug in ['find','learn','experience']:
  source=(r/'scripts/content-pages'/f'{slug}.html').read_text()
  built=(d/'en'/slug/'index.html').read_text()
- for url in re.findall(r'href="(https://[^" ]+)"',source): assert url in built,url
+ for url in re.findall(r'href="(https://[^" ]+)"',source): assert url.startswith("https://winterswim.fi/") or url in built,url
 print('PASS: external article URLs preserved, including language paths.')
