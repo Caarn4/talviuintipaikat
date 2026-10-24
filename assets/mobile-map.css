@@ -1,0 +1,37 @@
+/* Shared menu and dedicated mobile map viewport. */
+.winter-brand-note{color:#b8c8da}.winter-brand-note a{color:#8bcee0}
+body:has(.article-layout) .winter-brand-note,body:has(.find-grid) .winter-brand-note{color:#40576a}
+body:has(.article-layout) .winter-brand-note a,body:has(.find-grid) .winter-brand-note a{color:#24667d}
+#mobileNavigation{background:#fff;color:#152d43;width:min(90vw,380px);padding:24px;box-sizing:border-box}
+#mobileNavigation .navigationLinks{display:flex;flex-direction:column;gap:0}
+#mobileNavigation .navigationLinks>a{display:block;color:#152d43;background:none;border:0;border-radius:6px;padding:14px 10px;font:650 18px/1.4 system-ui;text-decoration:none}
+#mobileNavigation .navigationLinks>.ws-suggest{font-size:14px;font-weight:400;border-top:1px solid #d8e1e5;margin-top:10px}
+#mobileNavigation .navigationHeading .btn{color:#152d43;background:#eef4f6;border-color:#b7cbd4}
+#mobileNavigation .ws-more{border-top:1px solid #d8e1e5;padding:8px 0}
+#mobileNavigation .ws-more summary{padding:14px 10px;cursor:pointer}
+#mobileNavigation .ws-more div{padding-left:24px;display:grid}
+#mobileNavigation .ws-more div a{color:#152d43;padding:12px;text-decoration:none}
+
+.map-introduction{max-width:1100px;margin:0 auto;padding:36px 24px 56px;display:grid;grid-template-columns:1fr 1.2fr;gap:36px;align-items:center;color:#ebf0fe}
+.map-introduction h2{font-size:clamp(26px,4vw,38px);line-height:1.15;margin:0 0 20px}
+.map-introduction p{font-size:18px;line-height:1.65;color:#b9c9db}
+.map-preview-link{display:block;position:relative;overflow:hidden;border-radius:18px;border:1px solid #58748b;color:#fff;text-decoration:none;box-shadow:0 12px 32px #0003}
+.map-preview-link img{display:block;width:100%;height:auto;object-fit:contain}
+.map-preview-link span{display:block;padding:18px 22px;background:#1a344b;font-weight:700;font-size:18px}
+.map-preview-link:focus-visible{outline:3px solid #8bcee0;outline-offset:5px}
+.map-home{display:block;color:inherit;text-decoration:none;padding:8px 0 16px}
+body:not(.map-mode) #kartta{display:none}
+body.map-mode{height:100dvh;overflow:hidden;overscroll-behavior:none}
+body.map-mode>.tu-hero,body.map-mode>.winter-brand-note,body.map-mode>.map-introduction{display:none}
+body.map-mode #kartta{position:fixed;inset:0;width:100%;height:100dvh;margin:0;border:0;border-radius:0;z-index:100}
+body.map-mode #kartta #map{touch-action:none}
+.mapGestureHint{top:auto;bottom:36px;transform:translateX(-50%);padding:6px 10px;font-size:12px}
+@media(max-width:920px){
+ .map-introduction{display:block;padding:24px 20px 40px}
+ .map-preview-link{margin-top:24px}
+ #kartta .mobileControls{top:max(8px,env(safe-area-inset-top))}
+ #kartta .mapGestureHint{display:none}
+ #kartta .mobileSheet{max-height:52dvh;bottom:max(8px,env(safe-area-inset-bottom))}
+ #kartta .leaflet-top.leaflet-left{top:auto;left:auto;right:10px;bottom:76px}
+ body.sheet-open #kartta .leaflet-top.leaflet-left{bottom:calc(52dvh + 12px)}
+}
