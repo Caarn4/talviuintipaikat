@@ -1,0 +1,12 @@
+/* Shared Finnish and English logo. The supplied artwork keeps its white background. */
+html .brand img,
+html .tu-hero__logo img{width:144px;height:144px;object-fit:contain;flex:0 0 144px;border-radius:12px}
+html .brand{gap:18px;min-width:0}
+@media(max-width:620px){
+ html .brand img,
+ html .tu-hero__logo img{width:108px;height:108px;flex-basis:108px;border-radius:9px}
+ html .brand{gap:12px}
+ html .brand span{min-width:0}
+ html .brand strong{font-size:23px}
+ html .site-header{flex-wrap:wrap}
+}

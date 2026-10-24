@@ -13,6 +13,8 @@ for(const route of contentRoutes){
 }
 function convert(html,english){
  html=html.replaceAll(FI+'/en/',EN+'/');
+ html=html.replace(/src="\/assets\/(?:images\/logo-v1-mobile.png|content\/logo.png)"/g,'src="/assets/images/winterswim-logo-v2.webp"');
+  html=html.replace('</head>','<link rel="stylesheet" href="/assets/winterswim-brand.css"></head>');
  if(english){
   // Only language links go to the Finnish host. English navigation stays same-origin.
   html=html.replace(/<a\b[^>]*lang="fi"[^>]*>/g,tag=>tag.replace(/href="(\/[^" ]*)"/,(_,url)=>`href="${FI}${url}"`));
