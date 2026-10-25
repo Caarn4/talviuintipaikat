@@ -1075,17 +1075,18 @@
       <div class="sidebarHeader">
         <h2 class="mapSearchTitle">Etsi talviuintipaikka</h2>
 
-        <div class="actionsGrid">
-          <button class="btn btnPrimary" id="btnNear">📍 Näytä lähelläni</button>
-          <button class="btn" id="btnClear" title="Nollaa haku ja filtterit">↩︎ Nollaa</button>
-          <button class="btn btnPrimary btnWide" id="btnAdd">＋ Vinkkaa puuttuva talviuintipaikka</button>
-        </div>
+        <p class="mapSearchIntro">Hae nimellä tai valitse kohde kartalta.</p>
 
         <div class="searchRow">
           <div class="search" role="search">
             🔎
             <input id="searchInput" aria-label="Hae nimellä / kunnalla…" type="text" enterkeyhint="search" placeholder="Hae nimellä / kunnalla…" autocomplete="off" />
           </div>
+        </div>
+
+        <div class="actionsGrid">
+          <button class="btn btnPrimary" id="btnNear">📍 Näytä lähelläni</button>
+          <button class="btn" id="btnClear" title="Nollaa haku ja filtterit">↩︎ Nollaa</button>
         </div>
 
         <a class="cityPagesLink" href="/kunnat.html"><span>Tutustu kohteisiin alueittain</span><span aria-hidden="true">→</span></a>
@@ -1177,6 +1178,7 @@
           </div>
         </div>
       </div>
+      <div class="mapSuggest"><button type="button" id="btnAdd">📍 Puuttuuko kohde? Auta lisäämään se kartalle →</button></div>
     </aside>
 
     <main style="position:relative;">

@@ -35,3 +35,12 @@ body.map-mode #kartta #map{touch-action:none}
  #kartta .leaflet-top.leaflet-left{top:auto;left:auto;right:10px;bottom:76px}
  body.sheet-open #kartta .leaflet-top.leaflet-left{bottom:calc(52dvh + 12px)}
 }
+
+/* Sidebar discovery hierarchy preview. */
+.mapSearchIntro{color:#b9c9db;font-size:15px;line-height:1.5;margin:8px 0 16px}
+.sidebarHeader .actionsGrid{margin-top:12px;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.sidebarHeader .actionsGrid .btn{width:100%;min-height:44px}
+.mapSuggest{padding:16px 20px 60px}
+.mapSuggest button{font:inherit;font-size:14px;font-weight:600;line-height:1.5;color:#a7becf;background:none;border:0;padding:8px 0;text-align:left;text-decoration:underline;text-underline-offset:4px;cursor:pointer}
+.mapSuggest button:hover{color:#eaf4ff}
+.mapSuggest button:focus-visible{outline:2px solid #8bcee0;outline-offset:4px}

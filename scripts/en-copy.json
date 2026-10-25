@@ -11,7 +11,7 @@
   "Kartta": "Map",
   "Alueittain": "Regions",
   "Vinkkaa paikka": "Suggest a missing swimming spot",
-  "Tutustu kohteisiin alueittain": "Explore by region",
+  "Tutustu kohteisiin alueittain": "Explore by city or region",
   "Etsi talviuintipaikka koko Suomesta": "Find winter swimming spots across Finland",
   "Lappi, järviseudut ja rannikko": "Lapland, lakes and coast",
   "Tietosuoja": "Privacy",
@@ -138,5 +138,7 @@
   "Mockup-kuvat, selaa sivusuunnassa": "Illustrative photos, scroll horizontally",
   "Mockup-kuva: talviuintiavanto ja tikkaat jäätyneellä järvellä": "Illustration: ice swimming hole with steps on a frozen lake",
   "Mockup-kuva: luminen laituri ja avantotikkaat": "Illustration: snowy jetty and swimming steps",
-  "Ei osumia. Kokeile toista paikkakuntaa tai paikan nimeä.": "No places found. Try another town or place name."
+  "Ei osumia. Kokeile toista paikkakuntaa tai paikan nimeä.": "No places found. Try another town or place name.",
+  "Hae nimellä tai valitse kohde kartalta.": "Search by name or select a spot on the map.",
+  "Puuttuuko kohde? Auta lisäämään se kartalle →": "Missing a spot? Help us add it to the map →"
 }
