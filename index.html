@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Talviuintipaikat.fi❄️</title>
+  <title>Talviuintipaikat ja avannot kartalla | Talviuintipaikat.fi</title>
+  <meta name="description" content="Löydä lähes 500 avantoa ja talviuintipaikkaa ympäri Suomen. Etsi kartalta tai selaa kohteita kaupungeittain ja alueittain.">
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
@@ -1034,7 +1035,7 @@
     <!-- Kansikuva: näkyy heti, mobiilissa ja jos video ei lataudu -->
     <img src="/assets/hero/hero-1.jpg" alt="" fetchpriority="high">
     <!-- Video valitaan satunnaisesti HERO_VIDEOS-listasta (ks. skripti), vain isoille näytöille -->
-    <video muted loop playsinline preload="none"></video>
+    <video muted loop playsinline preload="none" poster="/assets/hero/hero-1.jpg"></video>
   </div>
 
   <div class="tu-hero__bar">
@@ -1067,6 +1068,15 @@
   </button>
 </header>
 <!-- ================= /VIDEOHEADER ================= -->
+<section class="map-introduction" role="main" aria-labelledby="map-introduction-title">
+  <div>
+    <h2 id="map-introduction-title">Löydä oma talviuintipaikkasi</h2>
+    <p>Tutustu lähes 500 talviuintipaikkaan ympäri Suomen. Hae nimellä tai paikkakunnalla, löydä lähimmät avannot tai selaa karttaa etelärannikolta Lappiin.</p>
+    <a class="map-region-link" href="/kunnat.html">Tutustu kohteisiin alueittain</a>
+  </div>
+  <a class="map-preview-link" href="#kartta"><img src="/assets/content/map-clean.png" alt="Esikatselu Suomen avantokartasta" width="1280" height="720" loading="lazy" decoding="async"><span>Tutustu avantokarttaan →</span></a>
+</section>
+
 
 <section id="kartta" aria-label="Talviuintipaikkojen kartta">
   <div class="app">
