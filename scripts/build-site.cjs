@@ -24,7 +24,11 @@ function convert(html,english){
   html=html.replaceAll('>Talviuintipaikat.fi','>WinterSwim.fi').replaceAll(' | Talviuintipaikat.fi</title>',' | WinterSwim.fi</title>').replaceAll(' – Talviuintipaikat.fi</title>',' – WinterSwim.fi</title>');
   const guideNav=html.includes('class="article-layout"')||html.includes('class="find-grid"')?'':'<nav aria-label="Winter swimming guides" style="display:flex;flex-wrap:wrap;gap:20px;margin-bottom:12px"><a href="/find/">Find a place</a><a href="/learn/">Your first winter swim</a><a href="/experience/">Experience Finland</a></nav>';
   html=html.replace('</body>','<footer class="winter-brand-note" style="padding:16px;font:14px/1.5 system-ui">'+guideNav+'WinterSwim.fi is the English edition of <a href="'+FI+'/">Talviuintipaikat.fi</a>.</footer></body>');
- }else { html=html.replace(/href="\/en\//g,'href="'+EN+'/'); if(!html.includes('id="yhteys"')) html=html.replace('</body>','<footer style="padding:24px;text-align:center;font:16px/1.5 system-ui"><a href="/kumppaniksi/" style="color:inherit;text-underline-offset:4px">Kumppaniksi?</a></footer></body>'); }
+  }else { html=html.replace(/<header\b[^>]*>[\s\S]*?<\/header>/g,header=>{
+   if(header.includes('href="/kumppaniksi/"'))return header;
+   const link='<a class="button" href="/kumppaniksi/">Kumppaniksi?</a>';
+   return header.includes('<h1')?header.replace('<h1',link+'<h1'):header.replace('</header>',link+'</header>');
+  }); html=html.replace(/href="\/en\//g,'href="'+EN+'/'); if(!html.includes('id="yhteys"')) html=html.replace('</body>','<footer style="padding:24px;text-align:center;font:16px/1.5 system-ui"><a href="/kumppaniksi/" style="color:inherit;text-underline-offset:4px">Kumppaniksi?</a></footer></body>'); }
  return html;
 }
 function walk(dir){for(const f of fs.readdirSync(dir,{withFileTypes:true})){const file=path.join(dir,f.name);if(f.isDirectory()&&f.name!=='assets')walk(file);else if(f.isFile()&&f.name.endsWith('.html'))fs.writeFileSync(file,convert(fs.readFileSync(file,'utf8'),file.startsWith(path.join(out,'en')+path.sep)));}}
