@@ -6,7 +6,7 @@ fs.rmSync(out,{recursive:true,force:true});fs.mkdirSync(out);
 for(const file of ['kumppaniksi','assets','index.html','municipality.html','analytiikan-tietosuoja.html','municipalities.js','city-publication.js','talviuintipaikat_enriched.geojson','robots.txt'])fs.cpSync(path.join(root,file),path.join(out,file),{recursive:true});
 execFileSync(process.execPath,[path.join(root,'scripts/generate-city-pages.cjs'),out],{stdio:'inherit'});
 execFileSync(process.execPath,[path.join(root,'scripts/generate-sitemap.cjs')],{stdio:'inherit'});
-const contentRoutes=['/find/','/learn/','/experience/'];
+const contentRoutes=['/find/','/learn/','/experience/','/partners/'];
 for(const route of contentRoutes){
  const dir=path.join(out,'en',route.slice(1));fs.mkdirSync(dir,{recursive:true});
  fs.copyFileSync(path.join(root,'scripts/content-pages',route.split('/')[1]+'.html'),path.join(dir,'index.html'));
@@ -23,7 +23,7 @@ function convert(html,english){
   html=html.replace(/(["'])\/en\//g,'$1/').replace('<html lang="en"','<html lang="en" data-site="winterswim"');
   html=html.replaceAll('>Talviuintipaikat.fi','>WinterSwim.fi').replaceAll(' | Talviuintipaikat.fi</title>',' | WinterSwim.fi</title>').replaceAll(' – Talviuintipaikat.fi</title>',' – WinterSwim.fi</title>');
   const guideNav=html.includes('class="article-layout"')||html.includes('class="find-grid"')?'':'<nav aria-label="Winter swimming guides" style="display:flex;flex-wrap:wrap;gap:20px;margin-bottom:12px"><a href="/find/">Find a place</a><a href="/learn/">Your first winter swim</a><a href="/experience/">Experience Finland</a></nav>';
-  html=html.replace('</body>','<footer class="winter-brand-note" style="padding:16px;font:14px/1.5 system-ui">'+guideNav+'WinterSwim.fi is the English edition of <a href="'+FI+'/">Talviuintipaikat.fi</a>.</footer></body>');
+  html=html.replace('</body>','<footer class="winter-brand-note" style="padding:16px;font:14px/1.5 system-ui">'+guideNav+'<p><a href="/partners/">Partner with us</a></p>WinterSwim.fi is the English edition of <a href="'+FI+'/">Talviuintipaikat.fi</a>.</footer></body>');
   }else { html=html.replace(/<header\b[^>]*>[\s\S]*?<\/header>/g,header=>{
    if(header.includes('href="/kumppaniksi/"'))return header;
    const link='<a class="button" href="/kumppaniksi/">Kumppaniksi?</a>';
