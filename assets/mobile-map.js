@@ -9,7 +9,7 @@
  // Both entry points open exactly the same dialog. Preserve legacy IDs used by the map.
  const menu=dialog.querySelector('.navigationLinks');
  menu.innerHTML=en ? '<a id="navigationMap" href="#kartta">Map</a><a href="/regions/">Regions</a><details class="ws-more"><summary>Learn more <span aria-hidden="true">⌄</span></summary><div><a href="/find/">Find</a><a href="/learn/">Learn</a><a href="/experience/">Experience</a></div></details>' : '<a id="navigationMap" href="#kartta">Avantokartta</a><a href="/kunnat.html">Alueet</a><a href="/kumppaniksi/">Kumppaniksi?</a>';
- menu.insertAdjacentHTML('beforeend','<a href="#kartta" data-map-suggest class="ws-suggest">'+(en?'Suggest a missing swimming spot':'Vinkkaa puuttuva paikka')+'</a>'+(en?'<a class="ws-suggest" href="/partners/">Partner with us</a>':'')+'<a class="ws-suggest" href="'+(en?'/analytics-privacy/':'/analytiikan-tietosuoja.html')+'">'+(en?'Privacy':'Tietosuoja')+'</a><a href="'+(en?'https://talviuintipaikat.fi/':'https://winterswim.fi/')+'">'+(en?'Suomeksi':'English')+'</a>');
+ menu.insertAdjacentHTML('beforeend','<a href="#kartta" data-map-suggest class="ws-suggest">'+(en?'Suggest a missing swimming spot':'Vinkkaa puuttuva paikka')+'</a>'+(en?'<a class="ws-suggest" href="/partners/">Become a partner</a>':'')+'<a class="ws-suggest" href="'+(en?'/analytics-privacy/':'/analytiikan-tietosuoja.html')+'">'+(en?'Privacy':'Tietosuoja')+'</a><a href="'+(en?'https://talviuintipaikat.fi/':'https://winterswim.fi/')+'">'+(en?'Suomeksi':'English')+'</a>');
  let opener=heroButton;
  document.addEventListener('click',e=>{
   const trigger=e.target.closest('.tu-hero__menu-btn,#mToggleControls');
