@@ -6,7 +6,7 @@ fs.rmSync(out,{recursive:true,force:true});fs.mkdirSync(out);
 for(const file of ['kumppaniksi','assets','index.html','municipality.html','analytiikan-tietosuoja.html','municipalities.js','city-publication.js','talviuintipaikat_enriched.geojson','robots.txt'])fs.cpSync(path.join(root,file),path.join(out,file),{recursive:true});
 execFileSync(process.execPath,[path.join(root,'scripts/generate-city-pages.cjs'),out],{stdio:'inherit'});
 execFileSync(process.execPath,[path.join(root,'scripts/generate-sitemap.cjs')],{stdio:'inherit'});
-const contentRoutes=['/find/','/learn/','/experience/'];
+const contentRoutes=['/find/','/learn/','/experience/','/partners/'];
 for(const route of contentRoutes){
  const dir=path.join(out,'en',route.slice(1));fs.mkdirSync(dir,{recursive:true});
  fs.copyFileSync(path.join(root,'scripts/content-pages',route.split('/')[1]+'.html'),path.join(dir,'index.html'));
