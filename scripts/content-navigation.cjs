@@ -1,7 +1,7 @@
 // Shared English navigation: the map and regions are the primary product actions.
 module.exports=function(html){
  const hero=html.includes('class="tu-hero"');
- const secondary='<a class="ws-main-link" href="'+(hero?'#kartta':'/#kartta')+'">Map</a><a class="ws-main-link" href="/regions/">Regions</a><details class="ws-more"><summary>Learn more <span aria-hidden="true">⌄</span></summary><div><a href="/find/">Find</a><a href="/learn/">Learn</a><a href="/experience/">Experience</a></div></details><a class="ws-suggest" href="'+(hero?'#kartta':'/?suggest=1#kartta')+'" '+(hero?'data-tu-action="suggest"':'')+'>Suggest a missing swimming spot</a><a class="ws-suggest" href="/partners/">Partner with us</a>';
+ const secondary='<a class="ws-main-link" href="'+(hero?'#kartta':'/#kartta')+'">Map</a><a class="ws-main-link" href="/regions/">Regions</a><details class="ws-more"><summary>Learn more <span aria-hidden="true">⌄</span></summary><div><a href="/find/">Find</a><a href="/learn/">Learn</a><a href="/experience/">Experience</a></div></details><a class="ws-suggest" href="'+(hero?'#kartta':'/?suggest=1#kartta')+'" '+(hero?'data-tu-action="suggest"':'')+'>Suggest a missing swimming spot</a><a class="ws-suggest" href="/partners/">Become a partner</a>';
  if(hero){
   html=html.replace('class="tu-hero__bar"','class="tu-hero__bar ws-header"');
   html=html.replace(/(<button class="tu-hero__menu-btn"[^>]*>).*?(<\/button>)/,'$1<span aria-hidden="true">☰</span> Menu$2');
