@@ -4,6 +4,7 @@ const root=path.resolve(__dirname,'..'),dist=path.join(root,'dist'),out=path.joi
 execFileSync(process.execPath,[path.join(__dirname,'build-site.cjs')],{stdio:'inherit'});
 fs.rmSync(out,{recursive:true,force:true});
 fs.cpSync(path.join(dist,'en'),out,{recursive:true});
+fs.cpSync(path.join(dist,'kumppaniksi'),path.join(out,'kumppaniksi'),{recursive:true});
 for(const name of ['assets','talviuintipaikat_enriched.geojson']) fs.cpSync(path.join(dist,name),path.join(out,name),{recursive:true});
 function walk(dir){for(const f of fs.readdirSync(dir,{withFileTypes:true})){const file=path.join(dir,f.name);if(f.isDirectory())walk(file);else if(f.name.endsWith('.html')){
  let html=fs.readFileSync(file,'utf8').replace('<html lang="en"','<html lang="en" data-preview="true"').replace('</head>','<meta name="robots" content="noindex,nofollow"></head>');
