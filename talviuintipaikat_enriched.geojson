@@ -12803,6 +12803,166 @@
         "data_status": "local-preview",
         "source_checked_at": "2026-10-19"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.3986329,
+          66.7137557
+        ]
+      },
+      "properties": {
+        "id": "user_tip_u095",
+        "nimi": "Teehuone Taigahetki",
+        "kunta": "Kemijärvi",
+        "url": "https://taigahetki.fi/",
+        "address": "Lepistöntie 17, 98120 Kemijärvi",
+        "sauna": "kyllä",
+        "source": "Käyttäjävinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.2406197,
+          63.2689785
+        ]
+      },
+      "properties": {
+        "id": "user_tip_u096",
+        "nimi": "Hellnäs Marina",
+        "kunta": "Vöyri",
+        "url": "https://www.hellnasmarina.com/",
+        "address": "Satamatie 15, 66710 Vöyri",
+        "sauna": "kyllä",
+        "source": "Käyttäjävinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.0366135,
+          63.8402599
+        ]
+      },
+      "properties": {
+        "id": "user_tip_u097",
+        "nimi": "Kahvila Saha",
+        "kunta": "Kokkola",
+        "url": "https://www.facebook.com/KahvilaSaha/",
+        "address": "Sahakatu 3, 67900 Kokkola",
+        "sauna": "kyllä",
+        "source": "Käyttäjävinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.7330704,
+          66.4811282
+        ]
+      },
+      "properties": {
+        "id": "user_tip_u098",
+        "nimi": "Heishala",
+        "kunta": "Rovaniemi",
+        "url": "https://www.heishala.fi/avanto/",
+        "address": "Korvanranta 36B, 96300 Rovaniemi",
+        "sauna": "kyllä",
+        "source": "Käyttäjävinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.7282854,
+          60.3243805
+        ]
+      },
+      "properties": {
+        "id": "user_tip_u099",
+        "nimi": "Hotelli Korpilampi",
+        "kunta": "Espoo",
+        "url": "https://www.korpilampi.fi/palvelut/",
+        "address": "Korpilammentie 5, 02970 Espoo",
+        "sauna": "kyllä",
+        "source": "Käyttäjävinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.628974,
+          60.5946064
+        ]
+      },
+      "properties": {
+        "id": "user_tip_u060",
+        "nimi": "Hovimäki Campingin talviuintipaikka",
+        "kunta": "Somero",
+        "url": "https://hovimakicamping.fi/",
+        "address": "Hovimäentie 28, 31460 Somero",
+        "sauna": "kyllä",
+        "source": "Käyttäjävinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.6097492,
+          60.1558627
+        ]
+      },
+      "properties": {
+        "id": "user_tip_u100",
+        "nimi": "Sarfvik Beach club",
+        "kunta": "Kirkkonummi",
+        "url": "https://sarfvikbeachclub.fi/fi-fi/pages/yleinen-sauna",
+        "address": "Siltarannankuja 2, 02390 Kirkkonummi",
+        "sauna": "kyllä",
+        "source": "Käyttäjävinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.1282029,
+          61.3349908
+        ]
+      },
+      "properties": {
+        "id": "user_tip_u101",
+        "nimi": "Harjavallan Latumaja",
+        "kunta": "Harjavalta",
+        "url": "https://www.facebook.com/Harjavallanlatu/",
+        "address": "Pyydyskatu 4, 29200 Harjavalta",
+        "sauna": "kyllä",
+        "source": "Käyttäjävinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-01"
+      }
     }
   ]
 }
