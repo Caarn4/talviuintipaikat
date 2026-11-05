@@ -13003,6 +13003,66 @@
         "source": "Visit Savonlinna ja palveluntarjoaja",
         "source_checked_at": "2026-11-05"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.8039999,
+          60.9603985
+        ]
+      },
+      "properties": {
+        "id": "visit_u104",
+        "nimi": "Hotelli Salpan avanto",
+        "kunta": "Luumäki",
+        "address": "Lappeenrannantie 265, 54530 Luumäki",
+        "url": "https://hotellisalpa.fi/spa-osasto/",
+        "sauna": "kyllä",
+        "source": "goSaimaa ja palveluntarjoaja",
+        "source_checked_at": "2026-11-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.6726617,
+          61.2019136
+        ]
+      },
+      "properties": {
+        "id": "visit_u105",
+        "nimi": "Olkkolan Hovin rantasaunat",
+        "kunta": "Savitaipale",
+        "address": "Olkkolantie 2, 54800 Savitaipale",
+        "url": "https://olkkolanhovi.fi/tapahtumat/",
+        "sauna": "kyllä",
+        "source": "goSaimaa ja palveluntarjoaja",
+        "source_checked_at": "2026-11-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.3866684,
+          60.8075134
+        ]
+      },
+      "properties": {
+        "id": "visit_u106",
+        "nimi": "Saunalaituri Höyry",
+        "kunta": "Uusikaupunki",
+        "address": "Pilssitie 23, 23500 Uusikaupunki",
+        "url": "https://saunalaiturihoyry.fi/hinnasto/",
+        "sauna": "kyllä",
+        "source": "Visit Uusikaupunki ja palveluntarjoaja",
+        "source_checked_at": "2026-11-05"
+      }
     }
   ]
 }
