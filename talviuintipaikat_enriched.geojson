@@ -3448,9 +3448,9 @@
         "website_source": "LIPAS www + sisältötarkistus",
         "website_checked_at": "2026-09-19",
         "lipas_url": "https://lipas.fi/liikuntapaikat/612002",
-        "address": "",
-        "address_source": "",
-        "address_checked_at": ""
+        "address": "Lepikontie 22, 82430 Puhos",
+        "address_source": "https://lakelandkarelia.johku.com/fi_FI/lastun-savusauna",
+        "address_checked_at": "2026-11-05"
       }
     },
     {
@@ -12962,6 +12962,46 @@
         "sauna": "kyllä",
         "source": "Käyttäjävinkki ja lähdetarkistus",
         "source_checked_at": "2026-11-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.2931576,
+          61.8031235
+        ]
+      },
+      "properties": {
+        "id": "visit_u102",
+        "nimi": "Harjun Portin Saunaranta",
+        "kunta": "Savonlinna",
+        "address": "Tuunaansaarentie 2, 58450 Punkaharju",
+        "url": "https://www.harjunportti.fi/saunaranta",
+        "sauna": "kyllä",
+        "source": "Visit Savonlinna ja palveluntarjoaja",
+        "source_checked_at": "2026-11-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.3806558,
+          61.7836258
+        ]
+      },
+      "properties": {
+        "id": "visit_u103",
+        "nimi": "Saunakeskus Lempeä",
+        "kunta": "Sulkava",
+        "address": "Alanteentie 3, 58700 Sulkava",
+        "url": "https://www.tiittalankartano.fi/saunakeskus-lempea/",
+        "sauna": "kyllä",
+        "source": "Visit Savonlinna ja palveluntarjoaja",
+        "source_checked_at": "2026-11-05"
       }
     }
   ]
