@@ -5,7 +5,6 @@ module.exports=function(out){
  fs.mkdirSync(path.join(out,'assets'),{recursive:true});fs.writeFileSync(path.join(out,'assets/locale.js'),locale);
  let html=i18n.markup(fs.readFileSync(path.join(root,'index.html'),'utf8')).replace('lang="fi"','lang="en"');
  html=html.replace('<a data-language-switch href="/en/" lang="en">English</a>','<a data-language-switch href="/" lang="fi">Suomeksi</a>');
- html=html.replace('<title>Talviuintipaikat.fi❄️</title>','<title>Winter swimming spots in Finland | Talviuintipaikat.fi</title><meta name="description" content="Find winter swimming spots across Finland. Explore the map or browse Lapland, the lakes and the coast by region.">');
  html=html.replace('<link rel="canonical" href="https://talviuintipaikat.fi/">','<link rel="canonical" href="https://talviuintipaikat.fi/en/">');
  html=html.replace('<a href="/en/" aria-current="true" lang="fi">FI</a> <a href="/en/" lang="en">EN</a>','<a href="/" lang="fi">FI</a> <a href="/en/" aria-current="true" lang="en">EN</a>');
  html=html.replace('</section>\n\n  <!-- helper', '<noscript><p><a href="/en/regions/">Browse winter swimming spots by region without JavaScript.</a></p></noscript></section>\n\n  <!-- helper');

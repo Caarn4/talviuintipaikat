@@ -18,9 +18,8 @@
   nav.classList.remove('is-open');dialog.showModal();trigger.setAttribute('aria-expanded','true');
  },true);
  dialog.addEventListener('close',()=>{heroButton.setAttribute('aria-expanded','false');mapButton.setAttribute('aria-expanded','false');requestAnimationFrame(()=>opener.focus());});
- const intro=document.createElement('section');intro.className='map-introduction';
- intro.innerHTML='<div><h2>'+(en?'Find your winter swimming spot':'Löydä oma talviuintipaikkasi')+'</h2><p>'+(en?'Explore nearly 500 places across Finland. Search by name or town, find a spot near you, or browse the map from the southern coast to Lapland.':'Tutustu lähes 500 talviuintipaikkaan ympäri Suomen. Hae nimellä tai paikkakunnalla, löydä lähimmät avannot tai selaa karttaa etelärannikolta Lappiin.')+'</p></div><a class="map-preview-link" href="#kartta"><img src="/assets/content/map-clean.png" alt="'+(en?'Preview of the winter swimming map of Finland':'Esikatselu Suomen avantokartasta')+'" width="1200" height="800"><span>'+(en?'Explore the map →':'Tutustu avantokarttaan →')+'</span></a>';
- hero.after(intro);const open=intro.querySelector('a');
+ const intro=document.querySelector('.map-introduction');
+ const open=intro.querySelector('.map-preview-link');
  const back=document.createElement('a');back.href='#';back.className='map-home';back.textContent=en?'← Home':'← Etusivu';
  menu.prepend(back);
  const desktopBack=back.cloneNode(true);document.querySelector('.sidebarHeader').prepend(desktopBack);
