@@ -1016,17 +1016,17 @@
       },
       "properties": {
         "lipas_id": "513521",
-        "nimi": "Kylpylän talviuintipaikka",
+        "nimi": "Kylpylänrannan sauna ja talviuinti",
         "kunta": "Heinola",
-        "url": "https://lipas.fi/liikuntapaikat/513521",
+        "url": "https://www.rantakylpyla.fi/sauna",
         "maksullinen": "",
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://www.heinola.fi/hyvinvointi-ja-vapaa-aika/liikunta-ja-ulkoilu/ulkoliikunta/uimarannat-ja-talviuinti/",
-        "website_source": "LIPAS www + sisältötarkistus",
-        "website_checked_at": "2026-09-19",
+        "website": "https://www.rantakylpyla.fi/sauna",
+        "website_source": "Visit-vinkki ja toimijan lähdetarkistus",
+        "website_checked_at": "2026-11-13",
         "lipas_url": "https://lipas.fi/liikuntapaikat/513521",
         "address": "Maaherrankatu 1a, 18100 Heinola",
         "address_source": "https://lipas.fi/liikuntapaikka/513521",
@@ -3173,7 +3173,7 @@
         "lipas_id": "612378",
         "nimi": "Ekniemen talviuintipaikka",
         "kunta": "Kemiönsaari",
-        "url": "https://lipas.fi/liikuntapaikat/612378",
+        "url": "https://ekniemenlomakyla.fi/m-kki/yhteiset-tilat",
         "maksullinen": "",
         "kertapääsy": "",
         "pukuhuone": "",
@@ -3182,7 +3182,10 @@
         "lipas_url": "https://lipas.fi/liikuntapaikat/612378",
         "address": "Leirintäalueentie 55, 25700 Kemiönsaari",
         "address_source": "https://lipas.fi/liikuntapaikka/612378",
-        "address_checked_at": "2026-10-03"
+        "address_checked_at": "2026-10-03",
+        "website": "https://ekniemenlomakyla.fi/m-kki/yhteiset-tilat",
+        "website_source": "Visit-vinkki ja toimijan lähdetarkistus",
+        "website_checked_at": "2026-11-13"
       }
     },
     {
@@ -3246,18 +3249,21 @@
       },
       "properties": {
         "lipas_id": "513828",
-        "nimi": "Kalliomontun talviuintipaikka",
+        "nimi": "Kalliomontun talviuintipaikka / Montun Sauna & Cafe",
         "kunta": "Kempele",
-        "url": "https://lipas.fi/liikuntapaikat/513828",
+        "url": "https://www.montunsaunacafe.fi/",
         "maksullinen": "",
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
         "lipas_url": "https://lipas.fi/liikuntapaikat/513828",
-        "address": "Kokkokankaantie",
+        "address": "Kokkokankaantie 414, Kempele",
         "address_source": "",
-        "address_checked_at": ""
+        "address_checked_at": "",
+        "website": "https://www.montunsaunacafe.fi/",
+        "website_source": "Visit-vinkki ja toimijan lähdetarkistus",
+        "website_checked_at": "2026-11-13"
       }
     },
     {
@@ -4252,15 +4258,15 @@
         "lipas_id": "611843",
         "nimi": "Myllysaaren talviuinti",
         "kunta": "Lahti",
-        "url": "https://lipas.fi/liikuntapaikat/611843",
+        "url": "https://lahtisail.fi/myllysaari/aktiviteetit",
         "maksullinen": "",
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
-        "website": "https://lahtisail.fi/myllysaari/aktiviteetit/",
-        "website_source": "LIPAS www + sisältötarkistus",
-        "website_checked_at": "2026-09-19",
+        "website": "https://lahtisail.fi/myllysaari/aktiviteetit",
+        "website_source": "Visit-vinkki ja toimijan lähdetarkistus",
+        "website_checked_at": "2026-11-13",
         "lipas_url": "https://lipas.fi/liikuntapaikat/611843",
         "address": "Myllysaarenkatu 12, Lahti",
         "address_source": "",
@@ -6418,9 +6424,9 @@
       },
       "properties": {
         "lipas_id": "612216",
-        "nimi": "Elämyspoukaman talviuintipaikka",
+        "nimi": "Emsvikin talviuintipaikka (ent. Elämyspoukama)",
         "kunta": "Porvoo",
-        "url": "https://lipas.fi/liikuntapaikat/612216",
+        "url": "https://emsvik.fi/",
         "maksullinen": "",
         "kertapääsy": "",
         "pukuhuone": "",
@@ -6429,7 +6435,10 @@
         "lipas_url": "https://lipas.fi/liikuntapaikat/612216",
         "address": "Emäsalontie 152, 06950 Emäsalo",
         "address_source": "https://lipas.fi/liikuntapaikka/612216",
-        "address_checked_at": "2026-10-03"
+        "address_checked_at": "2026-10-03",
+        "website": "https://emsvik.fi/",
+        "website_source": "Visit-vinkki ja toimijan lähdetarkistus",
+        "website_checked_at": "2026-11-13"
       }
     },
     {
@@ -7821,15 +7830,15 @@
         "lipas_id": "612288",
         "nimi": "Avantosauna Lauteet",
         "kunta": "Siilinjärvi",
-        "url": "https://lipas.fi/liikuntapaikat/612288",
+        "url": "https://lauteetsauna.fi/",
         "maksullinen": "",
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
         "huomio": "",
         "website": "https://lauteetsauna.fi/",
-        "website_source": "LIPAS www + sisältötarkistus",
-        "website_checked_at": "2026-09-19",
+        "website_source": "Visit-vinkki ja toimijan lähdetarkistus",
+        "website_checked_at": "2026-11-13",
         "lipas_url": "https://lipas.fi/liikuntapaikat/612288",
         "address": "Jokisuuntie 16, 71800 Siilinjärvi",
         "address_source": "",
@@ -10941,19 +10950,19 @@
       },
       "properties": {
         "lipas_id": "",
-        "nimi": "Grelsby Strandin talviuinti",
+        "nimi": "Grelsby Strandin talviuinti (saatavuus tarkistettava)",
         "kunta": "Finström",
         "url": "https://grelsby.ax/",
         "maksullinen": "",
-        "kertapääsy": "",
+        "kertapääsy": "ei vahvistettu",
         "pukuhuone": "",
         "sauna": "",
         "huomio": "Master-ID: U058. Palveluntarjoaja: Grelsby Strand. Osoite: Stornäsvägen 40, 22410 Finström. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
         "id": "U058",
         "source": "master_v2_6_pm_approved_2026_10_03",
         "website": "https://grelsby.ax/",
-        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
-        "website_checked_at": "2026-10-03",
+        "website_source": "Visit-vinkki ja toimijan lähdetarkistus",
+        "website_checked_at": "2026-11-13",
         "address": "Stornäsvägen 40, 22410 Finström",
         "address_source": "",
         "address_checked_at": ""
@@ -11175,17 +11184,17 @@
         "lipas_id": "",
         "nimi": "Kipinäniemen talviuinti",
         "kunta": "Hämeenlinna",
-        "url": "https://www.pulahtajat.fi/?page_id=20",
+        "url": "https://hameenlinnansoutajat.sporttisaitti.com/avantouinti/",
         "maksullinen": "",
         "kertapääsy": "",
         "pukuhuone": "",
         "sauna": "",
-        "huomio": "Master-ID: U012. Palveluntarjoaja: Avantouinti- ja saunaseura Pulahtajat ry. Osoite: Kipinäniementie 42. Koordinaatin tyyppi: TARKISTETTU PALVELU-/OSOITEPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
+        "huomio": "Ylläpitäjä: Hämeenlinnan Soutajat ry. Pulahtajat ry käyttää saunavuoroja. Master-ID: U012.",
         "id": "U012",
         "source": "master_v2_6_pm_approved_2026_10_03",
-        "website": "https://www.pulahtajat.fi/?page_id=20",
-        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
-        "website_checked_at": "2026-10-03",
+        "website": "https://hameenlinnansoutajat.sporttisaitti.com/avantouinti/",
+        "website_source": "Visit-vinkki ja toimijan lähdetarkistus",
+        "website_checked_at": "2026-11-13",
         "address": "Kipinäniementie 42",
         "address_source": "",
         "address_checked_at": ""
@@ -12306,7 +12315,7 @@
         "lipas_id": "",
         "nimi": "Kunnonpaikan savusaunan avanto",
         "kunta": "Siilinjärvi",
-        "url": "https://www.huimausjameniereliitto.fi/tapahtumat/viikonloppu-kunnonpaikassa/",
+        "url": "https://kunnonpaikka.com/majoitu-ja-rentoudu/saunat/#savusauna",
         "maksullinen": "",
         "kertapääsy": "",
         "pukuhuone": "",
@@ -12314,9 +12323,9 @@
         "huomio": "Master-ID: U081. Palveluntarjoaja: Kylpylähotelli Kunnonpaikka. Osoite: Jokiharjuntie 3, 70910 Vuorela. Koordinaatin tyyppi: OSOITEPISTE – EI UINTIPISTE. Koordinaatti riittää palveluun navigointiin; uintilaiturin tai avannon tarkka piste voidaan täsmentää myöhemmin.",
         "id": "U081",
         "source": "master_v2_6_pm_approved_2026_10_03",
-        "website": "https://www.huimausjameniereliitto.fi/tapahtumat/viikonloppu-kunnonpaikassa/",
-        "website_source": "Master v2.6 / W2 REVIEW-tarkistus",
-        "website_checked_at": "2026-10-03",
+        "website": "https://kunnonpaikka.com/majoitu-ja-rentoudu/saunat/#savusauna",
+        "website_source": "Visit-vinkki ja toimijan lähdetarkistus",
+        "website_checked_at": "2026-11-13",
         "address": "Jokiharjuntie 3, 70910 Vuorela",
         "address_source": "",
         "address_checked_at": ""
@@ -13062,6 +13071,280 @@
         "sauna": "kyllä",
         "source": "Visit Uusikaupunki ja palveluntarjoaja",
         "source_checked_at": "2026-11-05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.4707,
+          65.0108
+        ]
+      },
+      "properties": {
+        "id": "visit_u107",
+        "nimi": "Bastu Sauna – Hehku-saunalautta",
+        "kunta": "Oulu",
+        "url": "https://bastusauna.fi/saunalautta-oulu",
+        "website": "https://bastusauna.fi/saunalautta-oulu",
+        "address": "Kiikelinlaituri, Oulu",
+        "sauna": "kyllä",
+        "source": "Visit-vinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.5701605,
+          64.9963816
+        ]
+      },
+      "properties": {
+        "id": "visit_u108",
+        "nimi": "Lainesauna",
+        "kunta": "Oulu",
+        "url": "https://www.lainesauna.fi/",
+        "website": "https://www.lainesauna.fi/",
+        "address": "Nissiläntie 21, 90650 Oulu",
+        "sauna": "kyllä",
+        "source": "Visit-vinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.0307594,
+          63.2906193
+        ]
+      },
+      "properties": {
+        "id": "visit_u109",
+        "nimi": "Saunalautta Santtu",
+        "kunta": "Kuopio",
+        "url": "https://www.saunalauttasanttu.fi/",
+        "website": "https://www.saunalauttasanttu.fi/",
+        "address": "Tahkon Huoltotie 62, Tahko, Kuopio",
+        "sauna": "kyllä",
+        "source": "Visit-vinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.6364128,
+          60.9898159
+        ]
+      },
+      "properties": {
+        "id": "visit_u110",
+        "nimi": "Nosturin saunat ja kylmäuinti",
+        "kunta": "Lahti",
+        "url": "https://www.ravintolanosturi.fi/nosturin-saunat-ja-kylmauinti/",
+        "website": "https://www.ravintolanosturi.fi/nosturin-saunat-ja-kylmauinti/",
+        "address": "Jalkarannantie 23, 15900 Lahti",
+        "sauna": "kyllä",
+        "source": "Visit-vinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.425183,
+          61.2484469
+        ]
+      },
+      "properties": {
+        "id": "visit_u111",
+        "nimi": "AISTI Sauna & Spa – Lehmonkärki",
+        "kunta": "Asikkala",
+        "url": "https://lehmonkarkiresort.fi/aisti-sauna-spa/",
+        "website": "https://lehmonkarkiresort.fi/aisti-sauna-spa/",
+        "address": "Lehmonkärjentie 180, 17320 Asikkala",
+        "sauna": "kyllä",
+        "source": "Visit-vinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.5661557,
+          61.1527981
+        ]
+      },
+      "properties": {
+        "id": "visit_u112",
+        "nimi": "Hinkanrannan talvisauna",
+        "kunta": "Lappeenranta",
+        "url": "https://www.hinkanrannansaunat.fi/",
+        "website": "https://www.hinkanrannansaunat.fi/",
+        "address": "Rantatie 540, 54100 Joutseno, Lappeenranta",
+        "sauna": "kyllä",
+        "source": "Visit-vinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.9636873,
+          61.8041962
+        ]
+      },
+      "properties": {
+        "id": "visit_u113",
+        "nimi": "Papinniemi Campingin avanto",
+        "kunta": "Parikkala",
+        "url": "https://papinniemibooking.com/aktiviteetit/talviaktiviteetit",
+        "website": "https://papinniemibooking.com/aktiviteetit/talviaktiviteetit",
+        "address": "Papinniementie 178, 59730 Uukuniemi",
+        "sauna": "kyllä",
+        "source": "Visit-vinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.128271,
+          60.1977707
+        ]
+      },
+      "properties": {
+        "id": "visit_u114",
+        "nimi": "Solid Sauna – Vuosaaren melontakeskus",
+        "kunta": "Helsinki",
+        "url": "https://naturaviva.fi/fi_FI/tutustu-palveluihin/suosittua-juuri-nyt/solid-sauna-vuosaaren-melontakeskuksella-yleisetvuorot",
+        "website": "https://naturaviva.fi/fi_FI/tutustu-palveluihin/suosittua-juuri-nyt/solid-sauna-vuosaaren-melontakeskuksella-yleisetvuorot",
+        "address": "Harbonkatu 13, Helsinki",
+        "sauna": "kyllä",
+        "source": "Visit-vinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-13",
+        "related_place_id": "609502"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.945043,
+          60.1085404
+        ]
+      },
+      "properties": {
+        "id": "visit_u115",
+        "nimi": "Mariebadin meritalviuinti",
+        "kunta": "Maarianhamina - Mariehamn",
+        "url": "https://www.mariehamn.ax/idrott-och-fritid/badhuset-mariebad",
+        "website": "https://www.mariehamn.ax/idrott-och-fritid/badhuset-mariebad",
+        "address": "Österleden 68, 22100 Maarianhamina",
+        "sauna": "kyllä",
+        "source": "Visit-vinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.9443607,
+          60.9686245
+        ]
+      },
+      "properties": {
+        "id": "visit_u116",
+        "nimi": "Lake Pool Pajulahti",
+        "kunta": "Lahti",
+        "url": "https://www.kolmekampusta.fi/fi/vapaa-aika/aktiviteetit/lake-pool-pajulahti",
+        "website": "https://www.kolmekampusta.fi/fi/vapaa-aika/aktiviteetit/lake-pool-pajulahti",
+        "address": "Pajulahdentie 167, 15560 Nastola",
+        "sauna": "kyllä",
+        "source": "Visit-vinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.7195667,
+          61.8296333
+        ]
+      },
+      "properties": {
+        "id": "visit_u117",
+        "nimi": "Tervastuvan sauna ja talviuinti",
+        "kunta": "Savonlinna",
+        "url": "https://olavinretkeilijat.sporttisaitti.com/tervastupa/retkisaunat/",
+        "website": "https://olavinretkeilijat.sporttisaitti.com/tervastupa/retkisaunat/",
+        "address": "Pihlajaniementie 705, 57600 Savonlinna",
+        "sauna": "kyllä",
+        "source": "Visit-vinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.6435975,
+          61.0154177
+        ]
+      },
+      "properties": {
+        "id": "visit_u118",
+        "nimi": "Mukkulan kartanon rantasauna (tilauskäyttö)",
+        "kunta": "Lahti",
+        "url": "https://www.mukkulankartano.fi/fi/rantasauna",
+        "website": "https://www.mukkulankartano.fi/fi/rantasauna",
+        "address": "Niemenkatu 30, 15240 Lahti",
+        "sauna": "kyllä",
+        "source": "Visit-vinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.3117776,
+          62.1210814
+        ]
+      },
+      "properties": {
+        "id": "visit_u119",
+        "nimi": "Järvisydämen kylmävesialtaat",
+        "kunta": "Rantasalmi",
+        "url": "https://www.jarvisydan.com/jarvikylpyla/",
+        "website": "https://www.jarvisydan.com/jarvikylpyla/",
+        "address": "Porosalmentie 313, 58900 Rantasalmi",
+        "sauna": "kyllä",
+        "source": "Visit-vinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-13"
       }
     }
   ]
