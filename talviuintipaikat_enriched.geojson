@@ -13346,6 +13346,195 @@
         "source": "Visit-vinkki ja lähdetarkistus",
         "source_checked_at": "2026-11-13"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.4105526,
+          59.9204524
+        ]
+      },
+      "properties": {
+        "id": "visit_u120",
+        "nimi": "Kasnäsin sauna ja talviuinti",
+        "kunta": "Kemiönsaari",
+        "url": "https://www.kasnas.com/fi/spa/saunat",
+        "website": "https://www.kasnas.com/fi/spa/saunat",
+        "address": "Kasnäsintie 1294, 25930 Kasnäs",
+        "sauna": "kyllä",
+        "source": "Visit-vinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.3355,
+          59.806666666666665
+        ]
+      },
+      "properties": {
+        "id": "visit_u121",
+        "nimi": "Örön rantasauna ja talviuinti",
+        "kunta": "Kemiönsaari",
+        "url": "https://www.visitoro.fi/saunat/",
+        "website": "https://www.visitoro.fi/saunat/",
+        "address": "Örön vierasvenesatama, Kemiönsaari",
+        "sauna": "kyllä",
+        "source": "Visit-vinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.5074826,
+          60.0235639
+        ]
+      },
+      "properties": {
+        "id": "visit_u122",
+        "nimi": "Masuunin vanha sauna ja talviuinti",
+        "kunta": "Kemiönsaari",
+        "url": "https://www.facebook.com/Masuuninvanhasauna/",
+        "website": "https://www.facebook.com/Masuuninvanhasauna/",
+        "address": "Masuunitie 2 A, Taalintehdas",
+        "sauna": "kyllä",
+        "source": "Visit-vinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.579232,
+          61.0637
+        ]
+      },
+      "properties": {
+        "id": "visit_u123",
+        "nimi": "Siikaniemen rantasauna ja talviuinti",
+        "kunta": "Hollola",
+        "url": "https://siikaniemi.fi/ajankohtaista/",
+        "website": "https://siikaniemi.fi/ajankohtaista/",
+        "address": "Siikaniementie 210, 16730 Kutajärvi",
+        "sauna": "kyllä",
+        "source": "Visit-vinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1844706,
+          61.083781
+        ]
+      },
+      "properties": {
+        "id": "visit_u124",
+        "nimi": "Lossirannan kartanon sauna ja talviuinti",
+        "kunta": "Iitti",
+        "url": "https://lossirannankartano.fi/tapahtumat",
+        "website": "https://lossirannankartano.fi/tapahtumat",
+        "address": "Vuolenkoskentie 1501 A, 19160 Huutotöyry",
+        "sauna": "kyllä",
+        "source": "Visit-vinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.0157982,
+          61.2054131
+        ]
+      },
+      "properties": {
+        "id": "visit_u125",
+        "nimi": "Hullu Poro – Kumpeli Spa ja talviuinti",
+        "kunta": "Heinola",
+        "url": "https://hulluporospa.fi/en-1/info/guest-dock-info",
+        "website": "https://hulluporospa.fi/en-1/info/guest-dock-info",
+        "address": "Muonamiehenkatu 3, 18100 Heinola",
+        "sauna": "kyllä",
+        "source": "Visit-vinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.8795871,
+          61.864424
+        ]
+      },
+      "properties": {
+        "id": "visit_u126",
+        "nimi": "PikkuSaimaan talviuintipaikka (Savonlinnan uimahalli)",
+        "kunta": "Savonlinna",
+        "url": "https://www.savonlinna.fi/asukas/liikunta-ja-ulkoilu/uimahalli/",
+        "website": "https://www.savonlinna.fi/asukas/liikunta-ja-ulkoilu/uimahalli/",
+        "address": "Uimahallinkatu 2, 57100 Savonlinna",
+        "sauna": "kyllä",
+        "source": "Visit-vinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.5393,
+          60.1096
+        ]
+      },
+      "properties": {
+        "id": "visit_u127",
+        "nimi": "Storfinnhova Gårdin savusauna ja kylmäuinti",
+        "kunta": "Kemiönsaari",
+        "url": "https://www.storfinnhova.com/ajankohtaista/",
+        "website": "https://www.storfinnhova.com/ajankohtaista/",
+        "address": "Finnhovantie 163, 25860 Björkboda",
+        "sauna": "kyllä",
+        "source": "Visit-vinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.752839809523817,
+          61.272296992288624
+        ]
+      },
+      "properties": {
+        "id": "visit_u128",
+        "nimi": "Villa Lummelahden sauna ja talviuinti (majoitusasiakkaille)",
+        "kunta": "Savitaipale",
+        "url": "https://villalummelahti.fi/en_US/cabin-guide",
+        "website": "https://villalummelahti.fi/en_US/cabin-guide",
+        "address": "Kopinniementie 251, 54950 Pettilä",
+        "sauna": "kyllä",
+        "source": "Visit-vinkki ja lähdetarkistus",
+        "source_checked_at": "2026-11-14"
+      }
     }
   ]
 }
