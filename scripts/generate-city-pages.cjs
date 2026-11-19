@@ -32,11 +32,18 @@ for(const {name,features} of groups.values()){
  outputs.push({route,html,count:features.length,published,name});
 }
 // Validate every route before writing any output.
-for(const {route,html}of outputs){const dir=path.join(out,route);fs.mkdirSync(dir,{recursive:true});fs.writeFileSync(path.join(dir,'index.html'),html);}
+for(const {route,html}of outputs.filter(p=>!p.published)){const dir=path.join(out,route);fs.mkdirSync(dir,{recursive:true});fs.writeFileSync(path.join(dir,'index.html'),html);}
 require('./generate-regions.cjs')(out,outputs);
 require('./generate-regions.cjs')(out,outputs,'en');
 require('./generate-english.cjs')(out);
 const hidden=outputs.filter(p=>!p.published);
-const redirects=['# Generated publication gates; hidden city HTML remains preserved.', '/helsinki.html /helsinki/ 301', ...hidden.flatMap(p=>[`/${p.route} / 302!`, `/${p.route}/* / 302!`])];
+const queryRedirects=[];
+for(const destination of require('./city-destinations.cjs')){
+ const from=destination.fiSlug?'/kaupungit/'+destination.fiSlug+'/':'/'+destination.slug+'/';
+ for(const name of destination.cities){const city=outputs.find(c=>c.published&&c.name===name);if(!city||from===`/${city.route}/`)continue;
+  for(const source of [from,from.slice(0,-1)])queryRedirects.push(`${source} kunta=${encodeURIComponent(name)} /${city.route}/ 301!`);
+ }
+}
+const redirects=[...queryRedirects,'# Generated publication gates; hidden city HTML remains preserved.', '/helsinki.html /helsinki/ 301', ...hidden.flatMap(p=>[`/${p.route} / 302!`, `/${p.route}/* / 302!`])];
 fs.writeFileSync(path.join(out,'_redirects'),redirects.join('\n')+'\n');
 console.log(JSON.stringify({published:outputs.filter(p=>p.published).length,hidden:hidden.length,waiting:publicNames.filter(n=>!outputs.some(p=>normalize(p.name)===normalize(n))),cities:outputs.length,places:outputs.reduce((n,p)=>n+p.count,0),output:out}));
