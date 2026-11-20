@@ -1658,7 +1658,7 @@
         : $("selectedCard").style.display === "block";
       markersById.forEach((marker, id) => {
         marker.getElement()?.classList.toggle("active-location-marker", cardVisible && id === activeId);
-        marker.setOpacity(cardVisible && activeId && id !== activeId ? 0.3 : 1);
+        marker.setOpacity(cardVisible && activeId && id !== activeId ? 0.8 : 1);
       });
     }
 
