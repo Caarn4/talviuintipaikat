@@ -1016,7 +1016,7 @@
 <link rel="canonical" href="https://talviuintipaikat.fi/">
 <link rel="alternate" hreflang="fi" href="https://talviuintipaikat.fi/">
 <link rel="alternate" hreflang="en" href="https://talviuintipaikat.fi/en/">
-</head>
+<link rel="stylesheet" href="/assets/partner-cards.css?v=20261120"><script src="/assets/partner-profiles-data.js?v=20261120"></script><script src="/assets/partner-profiles.js?v=20261120"></script></head>
 
 <body>
   <dialog id="mobileNavigation" aria-label="Sivuston valikko">
@@ -1365,7 +1365,7 @@
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 
 <script src="/assets/dippaajat-data.js?v=approved-20261023"></script>
-<script src="/assets/dippaajat.js?v=approved-20261023"></script>
+<script src="/assets/dippaajat.js?v=20261120"></script>
   <script>
     const $ = (id) => document.getElementById(id);
 
@@ -1658,6 +1658,7 @@
         : $("selectedCard").style.display === "block";
       markersById.forEach((marker, id) => {
         marker.getElement()?.classList.toggle("active-location-marker", cardVisible && id === activeId);
+        marker.setOpacity(cardVisible && activeId && id !== activeId ? 0.3 : 1);
       });
     }
 
@@ -1668,8 +1669,8 @@
     }
     function updateOverviewMarkerIcons() {
       const overview = map.getZoom() <= 5;
-      markersById.forEach(marker => marker.setIcon(overview
-        ? overviewMarkerIcon() : new L.Icon.Default()));
+      markersById.forEach((marker,id) => marker.setIcon(window.TWPartners.get(id)
+        ? window.TWPartners.markerIcon() : overview ? overviewMarkerIcon() : new L.Icon.Default()));
       updateActiveMarker();
     }
 
@@ -1704,8 +1705,8 @@
         const props = feature.properties || {};
         const name = safeText(pick(props, ["name", "nimi", "Nimi", "Name", "title"])) || window.TWLocale.text("Nimetön paikka");
 
-        const m = L.marker([lat, lng], {icon: map.getZoom() <= 5
-          ? overviewMarkerIcon() : new L.Icon.Default()});
+        const m = L.marker([lat, lng], {icon: window.TWPartners.get(props.id)
+          ? window.TWPartners.markerIcon() : map.getZoom() <= 5 ? overviewMarkerIcon() : new L.Icon.Default()});
         markersById.set(feature.__id, m);
         m.on("add", updateActiveMarker);
 
@@ -1716,7 +1717,8 @@
           const website = getWebsite(props);
 
           const card = window.TWPlaceCard.create(props, coords);
-          m.bindPopup(card, { closeButton: true });
+          window.TWPartners.mount(card, props.id);
+          m.bindPopup(card, { closeButton: true, maxWidth:310, maxHeight:Math.max(180,Math.min(430,window.innerHeight-160)) });
         }
 
         m.on("click", () => {
@@ -1954,6 +1956,8 @@
         openSheet();
       }
 
+      window.TWPartners.mount($("selectedCard"), props.id);
+      window.TWPartners.mount(document.querySelector("#mobileSheet .sheetBody"), props.id);
       updateActiveMarker();
       const marker = markersById.get(id);
       if (marker && !isMobile()) marker.openPopup();
@@ -1969,6 +1973,7 @@
       $("selectedEmpty").style.display = "block";
       map.closePopup();
       closeSheet();
+      updateActiveMarker();
     }
 
     function nearMe() {
@@ -2087,6 +2092,8 @@
         if (!document.body.classList.contains('map-mode')) return;
         map.invalidateSize({pan:true, animate:false});
         if (overviewFitted) return;
+        const saved=window.TWPartners.readOrigin();
+        if(new URLSearchParams(location.search).has('kohde') || (saved?.map && saved.url===location.pathname+location.search+location.hash && Date.now()-saved.at<86400000)){ overviewFitted=true; return; }
         const controls = isMobile() ? $('mobileControls').getBoundingClientRect().height : 0;
         map.fitBounds([[59.7,19.0],[70.15,31.7]], {paddingTopLeft:[18,controls+28], paddingBottomRight:[18,46], animate:false});
         overviewFitted = true;
@@ -2169,14 +2176,35 @@
       }
       initMap();
       bindUI();
+      document.addEventListener('tw-partner:save', e => {
+        if (!e.detail.map) return;
+        e.detail.center=[map.getCenter().lat,map.getCenter().lng];
+        e.detail.zoom=map.getZoom(); e.detail.search=$("searchInput").value;
+      });
 
       // start collapsed on mobile
       if (isMobile()) $("mobileControls").classList.add("collapsed");
 
       try {
         await loadGeoJSON();
+        const saved=window.TWPartners.readOrigin();
+        const restoring=saved?.map && saved.url===location.pathname+location.search+location.hash && Date.now()-saved.at<86400000;
+        if(restoring) $("searchInput").value=saved.search||'';
         syncDesktopToMobile();
         applyFilters();
+        const requested=new URLSearchParams(location.search).get('kohde');
+        if(restoring || requested){
+          const selected=restoring?saved.id:requested;
+          openDetail(selected,{flyTo:false});
+          requestAnimationFrame(()=>{
+            map.stop();
+            map.invalidateSize({pan:false});
+            const validSaved=restoring&&Array.isArray(saved.center)&&saved.center.length===2&&saved.center.every(Number.isFinite)&&Number.isFinite(saved.zoom);
+            const marker=markersById.get(selected);
+            if(validSaved) map.setView(saved.center,saved.zoom,{animate:false});
+            else if(marker) map.setView(marker.getLatLng(),12,{animate:false});
+          });
+        }
       } catch (e) {
         console.error(e);
         alert(window.TWLocale.text("Virhe: data ei latautunut (talviuintipaikat_enriched.geojson)."));

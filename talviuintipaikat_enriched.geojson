@@ -13535,6 +13535,27 @@
         "source": "Visit-vinkki ja lähdetarkistus",
         "source_checked_at": "2026-11-14"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.0289840826,
+          60.162842805
+        ]
+      },
+      "properties": {
+        "id": "visit_u129",
+        "nimi": "Stansvikin kartanon rantasauna",
+        "kunta": "Helsinki",
+        "address": "Stansvikintie 1, 00590 Helsinki",
+        "website": "https://stansvikinkartano.fi/rantasauna",
+        "url": "https://stansvikinkartano.fi/rantasauna",
+        "sauna": "kyllä",
+        "source": "Käyttäjän vinkki ja palveluntarjoajan sivu; sijainti MyHelsinki",
+        "source_checked_at": "2026-11-20"
+      }
     }
   ]
 }
