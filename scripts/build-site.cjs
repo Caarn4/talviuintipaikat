@@ -60,7 +60,13 @@ for(const p of enPaths){
 }
 rules.push(`${EN}/robots.txt /en/robots.txt 200!`,`${EN}/sitemap.xml /en/sitemap.xml 200!`);
 // Shared resources are served before the domain-specific 404, with no Finnish HTML fallback.
-rules.push(`${EN}/assets/* /assets/:splat 200!`,`${EN}/talviuintipaikat_enriched.geojson /talviuintipaikat_enriched.geojson 200!`,`${EN}/* /en/404.html 404!`);
+rules.push(`${EN}/favicon.ico /favicon.ico 200!`,`${EN}/assets/* /assets/:splat 200!`,`${EN}/talviuintipaikat_enriched.geojson /talviuintipaikat_enriched.geojson 200!`,`${EN}/* /en/404.html 404!`);
 fs.writeFileSync(path.join(out,'_redirects'),rules.join('\n')+'\n'+fs.readFileSync(path.join(out,'_redirects'),'utf8'));
 require('./generate-partner-profiles.cjs')(out);
+// Add the shared brand favicon after all page generators, including partner profiles.
+const faviconLinks='<link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicon-192.png"><link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">';
+function addFavicons(dir){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){const file=path.join(dir,entry.name);if(entry.isDirectory())addFavicons(file);else if(entry.name.endsWith('.html')){let html=fs.readFileSync(file,'utf8');html=html.includes('</head>')?html.replace('</head>',faviconLinks+'</head>'):html.replace('<meta charset="utf-8">','<meta charset="utf-8">'+faviconLinks);fs.writeFileSync(file,html);}}}
+addFavicons(out);
+fs.copyFileSync(path.join(root,'assets/images/favicon.ico'),path.join(out,'favicon.ico'));
+fs.copyFileSync(path.join(root,'assets/images/favicon.ico'),path.join(out,'en/favicon.ico'));
 console.log('Dual domain build ready: '+out);
