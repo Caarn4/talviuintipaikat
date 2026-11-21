@@ -20,16 +20,16 @@ window.TWPartnerProfiles = {
         "alt": "Saunan kiuas ja suuri ikkuna järvelle"
       },
       {
+        "src": "/assets/lempea/sauna-vaaka.jpg",
+        "alt": "Saunan lauteet ja kiuas iltavalaistuksessa"
+      },
+      {
         "src": "/assets/lempea/lauteet.jpg",
         "alt": "Saunan kiuas ja puiset lauteet"
       },
       {
         "src": "/assets/lempea/ulkokuva.jpg",
         "alt": "Saunakeskus Lempeän punainen rakennus syksyisessä pihapiirissä"
-      },
-      {
-        "src": "/assets/lempea/sauna-vaaka.jpg",
-        "alt": "Saunan lauteet ja kiuas iltavalaistuksessa"
       }
     ],
     "logo": "/assets/lempea/logo.png",
@@ -55,16 +55,16 @@ window.TWPartnerProfiles = {
           "alt": "Sauna heater and large windows overlooking the lake"
         },
         {
+          "src": "/assets/lempea/sauna-vaaka.jpg",
+          "alt": "Sauna benches and heater in evening light"
+        },
+        {
           "src": "/assets/lempea/lauteet.jpg",
           "alt": "Wooden sauna benches and a stone-filled heater"
         },
         {
           "src": "/assets/lempea/ulkokuva.jpg",
           "alt": "The red Saunakeskus Lempeä building in its autumn surroundings"
-        },
-        {
-          "src": "/assets/lempea/sauna-vaaka.jpg",
-          "alt": "Sauna benches and heater in evening light"
         }
       ]
     }
