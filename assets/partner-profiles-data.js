@@ -28,7 +28,7 @@ window.TWPartnerProfiles = {
         "alt": "Saunakeskus Lempeän punainen rakennus syksyisessä pihapiirissä"
       },
       {
-        "src": "/assets/lempea/sauna.jpg",
+        "src": "/assets/lempea/sauna-vaaka.jpg",
         "alt": "Saunan lauteet ja kiuas iltavalaistuksessa"
       }
     ],
@@ -63,7 +63,7 @@ window.TWPartnerProfiles = {
           "alt": "The red Saunakeskus Lempeä building in its autumn surroundings"
         },
         {
-          "src": "/assets/lempea/sauna.jpg",
+          "src": "/assets/lempea/sauna-vaaka.jpg",
           "alt": "Sauna benches and heater in evening light"
         }
       ]
