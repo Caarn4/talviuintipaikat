@@ -1124,16 +1124,19 @@
         "lipas_id": "609503",
         "nimi": "Aurinkolahden talviuintipaikka / uintilaituri",
         "kunta": "Helsinki",
-        "url": "https://lipas.fi/liikuntapaikat/609503",
-        "maksullinen": "",
+        "url": "https://aurinkolahti.fi/talviuinti",
+        "maksullinen": "kyllä",
         "kertapääsy": "",
-        "pukuhuone": "",
+        "pukuhuone": "kyllä",
         "sauna": "",
-        "huomio": "",
+        "huomio": "Talviuinti kausirannekkeella. Uintijäsenyys ei sisällä saunan käyttöä. Toimija Big Kapa Oy.",
         "lipas_url": "https://lipas.fi/liikuntapaikat/609503",
-        "address": "Urheilukalastajankuja 1, 00990 Helsinki",
-        "address_source": "https://palvelukartta.hel.fi/en/unit/70874",
-        "address_checked_at": "2026-10-03"
+        "address": "Lohikallionranta 31, 00990 Helsinki",
+        "address_source": "https://aurinkolahti.fi/talviuinti",
+        "address_checked_at": "2026-11-22",
+        "website": "https://aurinkolahti.fi/talviuinti",
+        "source": "Palveluntarjoajan talviuintisivu: kausi 2026–2027",
+        "source_checked_at": "2026-11-22"
       }
     },
     {
@@ -13555,6 +13558,33 @@
         "sauna": "kyllä",
         "source": "Käyttäjän vinkki ja palveluntarjoajan sivu; sijainti MyHelsinki",
         "source_checked_at": "2026-11-20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.105971,
+          60.207811
+        ]
+      },
+      "properties": {
+        "id": "visit_u130",
+        "nimi": "Hyvän Tuulen Sauna",
+        "kunta": "Helsinki",
+        "address": "Meripellontie 11C, 00970 Helsinki",
+        "website": "https://www.hyvantuulensauna.fi/julkinen-sauna/",
+        "url": "https://www.hyvantuulensauna.fi/julkinen-sauna/",
+        "maksullinen": "kyllä",
+        "kertapääsy": "kyllä",
+        "pukuhuone": "kyllä",
+        "sauna": "kyllä",
+        "huomio": "Yleiset ja yksityiset saunavuorot sekä talviuinti Puotilassa. Varaa vuoro toimijan sivulta.",
+        "source": "Toimijan talviosoite ja GeoCoordinates; yleisen saunan palvelusivu",
+        "source_checked_at": "2026-11-22",
+        "address_source": "https://www.hyvantuulensauna.fi/sijainti/",
+        "address_checked_at": "2026-11-22"
       }
     }
   ]
