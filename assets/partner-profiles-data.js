@@ -68,5 +68,65 @@ window.TWPartnerProfiles = {
         }
       ]
     }
+  },
+  "visit_u102": {
+    "slug": "harjun-portin-saunaranta",
+    "heading": "Kolme saunaa ja pulahdus Punkaharjun talveen",
+    "summary": "Saunan lämpöä ja virkistäviä pulahduksia Punkaharjun Saunarannassa.",
+    "listingIntro": "Vaihda talvipäivän viileys saunan lämpöön Punkaharjulla. Saunarannan yleisille vuoroille voit tulla ilman ajanvarausta ja ostaa kertalipun läheisestä kahvila-ravintolasta.",
+    "paragraphs": [
+      "Harjun Portin Saunarannassa löylyt ja järvipulahdus kuuluvat yhteen. Satamasauna, tynnyrisauna ja maisemasauna sijaitsevat samalla rannan patioalueella. Käytössä olevat saunat vaihtelevat päivän ja sesongin mukaan.",
+      "Yleisille saunavuoroille pääset ilman ajanvarausta. Osta lippu Harjun Portin kahvila-ravintolasta, joka sijaitsee noin sadan metrin päässä rannasta. Satamarakennuksessa on pukuhuoneet, suihkut ja WC:t. Maisemasaunan voi varata myös yksityiskäyttöön."
+    ],
+    "services": [
+      "Talviuinti",
+      "Kolme saunaa",
+      "Yleiset saunavuorot",
+      "Pukuhuoneet ja suihkut",
+      "Kahvila-ravintola",
+      "Yksityisvaraukset"
+    ],
+    "noticeTitle": "Suunnittele saunaretkesi",
+    "notice": "Tarkista ajantasaiset vuorot, käytössä olevat saunat ja hinnat Harjun Portin sivuilta ennen käyntiä.",
+    "cardNotice": "Yleisille vuoroille ilman ajanvarausta",
+    "logo": "/assets/harjunportti/logo.png",
+    "images": [
+      {
+        "src": "/assets/harjunportti/avanto.jpg",
+        "alt": "Talviuimareita Saunarannan avannossa ja valaistut saunat rannalla"
+      },
+      {
+        "src": "/assets/harjunportti/loylyt.jpg",
+        "alt": "Löylynheittoa saunassa järvimaiseman äärellä"
+      },
+      {
+        "src": "/assets/harjunportti/maisemasauna.jpg",
+        "alt": "Maisemasaunan lauteet, kiuas ja ikkunanäkymä rantaan"
+      },
+      {
+        "src": "/assets/harjunportti/talviuinti.jpg",
+        "alt": "Talviuintia Saunarannan iltavalaistuksessa"
+      }
+    ],
+    "en": {
+      "heading": "Three saunas and a winter dip in Punkaharju",
+      "summary": "Warm up in the sauna and enjoy a refreshing dip at Harjun Portti’s lakeside sauna area.",
+      "listingIntro": "Enjoy a sauna and winter dip in Punkaharju. Public sauna sessions welcome walk-in visitors; buy your ticket at the nearby café-restaurant.",
+      "paragraphs": [
+        "Harjun Portti’s lakeside sauna area brings together a harbour sauna, a barrel sauna and a panorama sauna on one waterfront terrace. The saunas in use vary with the day and season.",
+        "No advance booking is needed for public sessions. Buy your ticket at the café-restaurant, about 100 metres from the shore. Changing rooms, showers and toilets are in the harbour building. The panorama sauna is also available for private bookings."
+      ],
+      "services": [
+        "Winter swimming",
+        "Three saunas",
+        "Public sauna sessions",
+        "Changing rooms and showers",
+        "Café-restaurant",
+        "Private bookings"
+      ],
+      "noticeTitle": "Plan your visit",
+      "notice": "Check the current sauna sessions, available saunas and prices on Harjun Portti’s website before visiting.",
+      "cardNotice": "Walk-in public sauna sessions"
+    }
   }
 };
