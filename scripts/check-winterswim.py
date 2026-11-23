@@ -3,8 +3,8 @@ import re,json
 r=Path(__file__).resolve().parents[1]
 d=r/'dist'
 fi=re.findall(r'<loc>(.*?)</loc>',(d/'sitemap.xml').read_text()); en=re.findall(r'<loc>(.*?)</loc>',(d/'en/sitemap.xml').read_text())
-assert len(fi)==45,(len(fi),fi)
-assert len(en)==22
+assert len(fi)==46,(len(fi),fi)
+assert len(en)==23
 for u in en:
  p=u.removeprefix('https://winterswim.fi'); h=(d/'en'/p.lstrip('/')/'index.html').read_text()
  assert f'rel="canonical" href="{u}"' in h,u
@@ -18,7 +18,7 @@ rules=(d/'_redirects').read_text()
 for u in en: assert u+' /en'+u.removeprefix('https://winterswim.fi')+'index.html 200!' in rules
 assert 'https://winterswim.fi/* /en/404.html 404!' in rules
 assert 'https://www.winterswim.fi/* https://winterswim.fi/:splat 301!' in rules
-print('PASS: 45 Finnish and 22 English sitemap URLs; English canonicals/navigation; 518 shared records; domain route rules; source scripts excluded.')
+print('PASS: 46 Finnish and 23 English sitemap URLs; English canonicals/navigation; 518 shared records; domain route rules; source scripts excluded.')
 
 for slug in ['find','learn','experience']:
  h=(d/'en'/slug/'index.html').read_text()
