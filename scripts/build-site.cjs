@@ -33,11 +33,11 @@ function convert(html,english){
 }
 function walk(dir){for(const f of fs.readdirSync(dir,{withFileTypes:true})){const file=path.join(dir,f.name);if(f.isDirectory()&&f.name!=='assets')walk(file);else if(f.isFile()&&f.name.endsWith('.html'))fs.writeFileSync(file,convert(fs.readFileSync(file,'utf8'),file.startsWith(path.join(out,'en')+path.sep)));}}
 walk(out);
-const enPaths=Object.values(i18n.routes).map(p=>p.slice(3)).concat(contentRoutes,['/venues/saunakeskus-lempea/']);
+const enPaths=Object.values(i18n.routes).map(p=>p.slice(3)).concat(contentRoutes,['/venues/saunakeskus-lempea/','/venues/harjun-portin-saunaranta/']);
 const xml=urls=>'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+urls.map(u=>'  <url><loc>'+u+'</loc></url>').join('\n')+'\n</urlset>\n';
 const fiUrls=[...fs.readFileSync(path.join(root,'sitemap.xml'),'utf8').matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>m[1]).filter(u=>!u.startsWith(FI+'/en/'));
 fiUrls.push(FI+'/analytiikan-tietosuoja.html',FI+'/kumppaniksi/');
-fiUrls.push(FI+'/kaupungit/helsingin-seutu/',FI+'/kohteet/saunakeskus-lempea/');
+fiUrls.push(FI+'/kaupungit/helsingin-seutu/',FI+'/kohteet/saunakeskus-lempea/',FI+'/kohteet/harjun-portin-saunaranta/');
 fs.writeFileSync(path.join(out,'sitemap.xml'),xml([...new Set(fiUrls)]));
 fs.writeFileSync(path.join(out,'en/sitemap.xml'),xml(enPaths.map(p=>EN+p)));
 fs.writeFileSync(path.join(out,'en/robots.txt'),'User-agent: *\nAllow: /\n\nSitemap: '+EN+'/sitemap.xml\n');
