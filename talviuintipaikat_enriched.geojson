@@ -7544,34 +7544,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          29.3863,
-          61.7515
-        ]
-      },
-      "properties": {
-        "lipas_id": "511670",
-        "nimi": "Punkaharjun avantouintipaikka",
-        "kunta": "Savonlinna",
-        "url": "https://lipas.fi/liikuntapaikat/511670",
-        "maksullinen": "",
-        "kertapääsy": "",
-        "pukuhuone": "",
-        "sauna": "",
-        "huomio": "",
-        "website": "https://www.savonlinna.fi/asukas/liikunta-ja-ulkoilu/punkaharjun-liikuntapalvelut/liikuntapaikat/",
-        "website_source": "LIPAS www + sisältötarkistus",
-        "website_checked_at": "2026-09-19",
-        "lipas_url": "https://lipas.fi/liikuntapaikat/511670",
-        "address": "Urheilutie, 58500 Punkaharju",
-        "address_source": "https://lipas.fi/liikuntapaikka/511670",
-        "address_checked_at": "2026-10-03"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           22.8386,
           62.7769
         ]
